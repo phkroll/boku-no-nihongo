@@ -5,5 +5,8 @@
   "scripts": {
     "test": "node --test \"test/**/*.test.js\"",
     "serve": "node scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=24"
   }
 }

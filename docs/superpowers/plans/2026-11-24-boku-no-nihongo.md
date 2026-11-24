@@ -1,166 +1,136 @@
-# Boku no Nihongo Implementation Plan
+# Boku no Nihongo v2 Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Offline Home Screen web app on iPhone to collect Japanese words, kanji, sentences and grammar points, tag them and link them.
+**Goal:** Replace the v1 prototype with the v2 learning-unit model so the user can collect, connect, rate and investigate Japanese learning data on the phone, starting from the converted seed.
 
-**Architecture:** Static files, no build. Pure data logic in `js/model.js` (Node-testable, no DOM), persistence in `js/store.js` (one IndexedDB record), screens in `js/ui/*.js` behind a hash router in `js/app.js`. Service worker + manifest make it installable and offline.
+**Architecture:** Pure data logic in `js/model/*.js` (Node-testable, no DOM); persistence in `js/store.js` (one IndexedDB record, unchanged mechanism); generic screens in `js/ui/*.js` driven by per-kind descriptions in `js/ui/kinds.js`; seed converter in `scripts/`.
 
-**Tech Stack:** HTML, CSS, ES modules, IndexedDB, Service Worker; Node 24 `node --test` for tests; no dependencies.
+**Tech Stack:** HTML, CSS, ES modules, IndexedDB, Service Worker; Node 24 `node --test`; no dependencies.
 
-**Spec:** `docs/superpowers/specs/2026-11-24-boku-no-nihongo-design.md`
+**Spec:** `docs/superpowers/specs/2026-11-24-boku-no-nihongo-design.md` (working hypothesis; `docs/grooming.md` collects open points)
 
 ## Global Constraints
 
-- No runtime or dev dependencies; `package.json` has none (`"type": "module"`)
-- No framework, no build step; files served as-is
-- Kinds: `word`, `kanji`, `sentence`, `grammar`
-- Word types: `noun`, `verb`, `i-adjective`, `na-adjective`, `adverb`, `pronoun`, `particle`, `expression`, `other`
-- kind and wordType are plain strings; data carries `version: 1`
-- No data leaves the phone; no network calls besides loading the app's own files
-- UI text in English; never `innerHTML` with data — build DOM via `js/ui/dom.js`
-- Commit after each task directly on `main`; no remote, no push (user pushes in the end); commit messages end with `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`
-- Repo root: this repository (Linux sandbox, Node 24 available, no browser)
+- No dependencies, no build; Node 24 (`.nvmrc` `24`, `engines.node >=24`)
+- Data `version: 2`; collections `kanji, words, grammar, sentences, notes, relations, ratings, tags, imports`; `meta.lastExport`
+- Unit kinds and refs: `kanji | word | grammar | sentence | note | relation`, ref `"<kind>:<id>"`
+- Field states: absent = missing, `'unknown'`, `'n/a'` (constants `UNKNOWN`, `NA`)
+- Unknown fields on records are kept on load, import and update — never stripped
+- Never `innerHTML`; DOM via `js/ui/dom.js`; UI text English
+- v1 data is discarded (decision by user): a stored `version: 1` record loads as empty v2 data, raw v1 kept under `meta.discardedV1`
+- Commit per task on `main`; message ends with `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`
+- Seed files live in gitignored `out/`; tests use small synthetic seed snippets only
 
 ## Review Focus
 
-1. Imported or typed text containing `<script>`/HTML shows as plain text → test: no `innerHTML`/`outerHTML`/`insertAdjacentHTML` in `js/` (Task 6)
-2. Importing a broken or foreign JSON file leaves current data untouched → `importJson` throws before anything is replaced (Task 3)
-3. Search ignores case and full-/half-width differences and surrounding spaces (`ＴＡＢＥ` finds `tabe`) → NFKC + lowercase (Task 1)
-4. Deleting an entry or tag leaves no dangling links/tagIds; import drops dangling refs (Tasks 2, 3)
-5. Offline after first load: every app file is in the service worker's precache list → test compares list with files on disk (Task 6)
+1. Import of a file with unknown fields or an older version keeps every field → test in Task 5
+2. Merge import never overwrites learner-entered values; re-import adds nothing twice → Task 5
+3. Deleting a unit leaves no dangling refs (relations, ratings, sentence uses, note refs, kanjiUses) → Task 2
+4. Search finds katakana with hiragana input and full-width with half-width → Task 1
+5. Capturing a word with only kana or only writing works end to end → Task 1 test + Task 7 form
 
 ---
 
-### Task 1: Repo, entries and search
+### Task 1: Data core, units, meanings, search
 
-**Files:**
-- Create: `package.json`, `.gitignore` (`node_modules/`, `.DS_Store`), `js/model.js`
-- Test: `test/model.test.js`
+**Files:** Create `js/model/data.js`, `js/model/units.js`, `js/model/search.js`, `.nvmrc`; Modify `package.json` (engines); Delete v1 `js/model.js`, `test/model.test.js`, `js/ui/*` v1 screens stay until Task 7; Test `test/model/units.test.js`
 
-**Interfaces:**
-- Produces (in `js/model.js`):
-  - `KINDS: string[]`, `WORD_TYPES: string[]` (values from Global Constraints)
-  - `emptyData(): Data` → `{ version: 1, entries: [], tags: [], links: [] }`
-  - `addEntry(data, fields, opts?): Entry` — fields `{ kind, text, reading?, meaning?, notes?, wordType?, tagIds? }`; opts `{ id?, now? }` (defaults `crypto.randomUUID()`, `new Date().toISOString()`); mutates `data`
-  - `updateEntry(data, id, fields, opts?): Entry` — merges, sets `updated`
-  - `deleteEntry(data, id): void`
-  - `getEntry(data, id): Entry | undefined`
-  - `search(data, { query?, kind?, tagId? }): Entry[]` — sorted by `updated` desc
-  - Entry shape: `{ id, kind, text, reading, meaning, notes, wordType, tagIds, created, updated }` (strings default `''`, `wordType` `''` unless kind `word`, `tagIds` `[]`)
+**Interfaces (produces):**
+- `data.js`: `VERSION=2`, `UNKNOWN`, `NA`, `KINDS`, `COLLECTION` (kind → array name), `WORD_CLASSES`, `VERB_GROUPS`, `READING_TYPES`, `RELATION_TYPES`, `FORM_KEYS`, `emptyData()`, `newId()`, `nowIso()`, `normalize(s)` (NFKC, lowercase, trim, katakana → hiragana), `makeRef(kind,id)`, `parseRef(ref) → {kind,id}`, `getUnit(data, ref)`, `allUnits(data, kind?)`
+- `units.js`: `addUnit(data, kind, fields, opts?) → unit` · `updateUnit(data, ref, fields, opts?) → unit` · `deleteUnit(data, ref)` (cascade in Task 2) · `addMeaning(unit, {gloss, usage?})` · `splitMeaning(unit, meaningId, glosses[]) → newMeanings` · `deleteMeaning(data, ref, meaningId)` · `addReading(kanji, {kana, type})` · `deleteReading(data, ref, readingId)`; opts `{ id?, now?, origin?, importId? }`
+- `search.js`: `search(data, kind, { query?, tagId?, openOnly? }) → unit[]` newest first; matches writing(s)/char/title/text, reading(s), glosses, note text
+- Validation errors: `kanji needs a character` (exactly one char), `word needs a writing or a reading`, `grammar needs a title`, `sentence needs a text`, `note needs a text`; duplicate kanji char → `kanji 月 exists`
 
-- [ ] **Step 1: `git init`, `package.json`** (`name: boku-no-nihongo`, `private: true`, `type: module`, scripts `test: node --test test/`, `serve: node scripts/serve.mjs`), `.gitignore`
-
-- [ ] **Step 2: Write failing tests** in `test/model.test.js`:
-  - `addEntry trims text and fills defaults` — `addEntry(d, {kind:'word', text:'  食べる ', reading:'たべる', wordType:'verb'}, {id:'e1', now:'2026-01-01T00:00:00Z'})` → `text === '食べる'`, `meaning === ''`, `tagIds` deep-equals `[]`, `created === updated === now`
-  - `addEntry rejects empty text` — `text:'   '` throws `/text/`
-  - `addEntry rejects unknown kind` — `kind:'x'` throws `/kind/`
-  - `wordType only kept for words` — kanji with `wordType:'noun'` → `''`
-  - `updateEntry changes fields and updated, keeps created`
-  - `search matches text, reading, meaning, case- and width-insensitive` — entries `食べる/たべる/to eat` and `本/ほん/book`; `query:'ＥＡＴ '` → only 食べる; `query:'ほん'` → only 本
-  - `search filters by kind and tagId, newest first`
-
-- [ ] **Step 3: Run** `npm test` → FAIL (module not found)
-
-- [ ] **Step 4: Implement** `js/model.js`; normalize with `s.normalize('NFKC').toLowerCase().trim()`
-
-- [ ] **Step 5: Run** `npm test` → all pass
-
-- [ ] **Step 6: Commit** `git add -A && git commit` — "Data model: entries and search"
-
-### Task 2: Tags and links
-
-**Files:** Modify `js/model.js`; Test `test/model.test.js`
-
-**Interfaces:**
-- Produces:
-  - `addTag(data, name, opts?): Tag` — `{ id, name }`; trims; empty throws `/name/`; same name ignoring case returns the existing tag
-  - `renameTag(data, id, name): Tag`; `deleteTag(data, id): void` — also removes the id from every entry's `tagIds`
-  - `addLink(data, from, to, note?, opts?): Link` — `{ id, from, to, note, created }`; throws `/itself/` for `from === to`, `/not found/` for unknown ids; existing link between the two in either direction is returned
-  - `deleteLink(data, id): void`
-  - `linksOf(data, entryId): { link, other: Entry }[]` — both directions
-  - `deleteEntry` (Task 1) now also removes the entry's links
-  - `addEntry`/`updateEntry` (Task 1) drop `tagIds` that don't exist in `data.tags`
-
-- [ ] **Step 1: Failing tests:** `addTag dedupes case-insensitively` (`'JLPT N5'` then `'jlpt n5'` → same id, 1 tag); `deleteTag removes tag from entries`; `addLink both directions` (link e1→e2; `linksOf(d,'e2')[0].other.id === 'e1'`); `addLink returns existing for reverse duplicate`; `addLink rejects self-link`; `deleteEntry removes its links`
-- [ ] **Step 2: Run** `npm test` → new tests FAIL
+- [ ] **Step 1: Failing tests:** `word with only reading` · `word with only writing` · `word with neither throws` · `kanji must be one character, unique` · `unknown fields survive update` (`updateUnit` on unit with `foo: 1` keeps it) · `splitMeaning hides old, keeps id, sets splitInto` · `deleteMeaning removes it` · `search: katakana by hiragana` (ビール via `びーる`) · `search: full-width` · `search by gloss, tag, openOnly for notes` · `origin defaults to learner`
+- [ ] **Step 2: Run** `npm test` → FAIL
 - [ ] **Step 3: Implement**
-- [ ] **Step 4: Run** `npm test` → all pass
-- [ ] **Step 5: Commit** — "Data model: tags and links"
+- [ ] **Step 4: Run** `npm test` → PASS
+- [ ] **Step 5: Commit** "Model v2: units, meanings, search"
 
-### Task 3: Export and import
+### Task 2: Relations, notes refs, cascade, calculated relations
 
-**Files:** Modify `js/model.js`; Test `test/model.test.js`
+**Files:** Create `js/model/relations.js`, `js/model/calculated.js`; Modify `units.js`; Test `test/model/relations.test.js`
 
-**Interfaces:**
-- Produces:
-  - `exportJson(data): string` — pretty JSON, adds `exportedAt`
-  - `importJson(text): Data` — returns a new `Data`; throws `/not a Boku no Nihongo backup/` on invalid JSON, missing/other `version`, or non-array `entries`/`tags`/`links`; drops entries without `text`/`id`, links whose ends are missing, tagIds of missing tags; unknown kind/wordType strings are kept (forward-compatible)
+**Interfaces (produces):**
+- `addRelation(data, { type, members[], direction?, status?, notes?, origin? }, opts?) → relation` (members = refs; 2+ or 1 + `UNKNOWN`; status default `confirmed`, `proposed` when origin kind `suggested`; same type + same member set → returns existing)
+- `setRelationStatus(data, id, status)` · `deleteRelation(data, id)` · `relationsOf(data, ref, { includeRejected? }) → relation[]`
+- `deleteUnit` cascade: member removed (relation deleted when < 2 real members and no `UNKNOWN`), ratings with that unit / relation target removed, sentence `uses` → `{ text }`, note `refs` filtered, `kanjiUses.readingId` cleared on `deleteReading`
+- `calculatedRelations(data, ref) → { type, refs[], detail? }[]`; types `kanji-in-word`, `same-writing`, `same-reading`, `shared-gloss`, `in-sentence`, `reading-used`
 
-- [ ] **Step 1: Failing tests:** `round trip keeps entries, tags, links` (deep-equal after `importJson(exportJson(d))`, ignoring `exportedAt`); `importJson throws on garbage` (`'{'`, `'[]'`, `'{"version":2,...}'`); `importJson drops dangling refs`; `importJson keeps unknown kind`
-- [ ] **Step 2: Run** → FAIL
-- [ ] **Step 3: Implement**
-- [ ] **Step 4: Run** `npm test` → all pass
-- [ ] **Step 5: Commit** — "Data model: JSON export and import"
+- [ ] **Step 1: Failing tests:** `group of 6 kanji` · `confuses with unknown partner` · `suggested relation is proposed` · `duplicate relation returns existing` · `reject keeps relation, hidden by default` · `deleteUnit cascades` (relation shrinks/deleted, ratings gone, sentence use becomes text, note ref removed) · calculated: `開 in 開く`, `開く あく / ひらく same writing`, `橋 / 箸 same reading`, `shared gloss only for split meanings`, `sentence uses word`, `kanji reading used via readingId`
+- [ ] **Step 2–4:** run FAIL → implement → PASS
+- [ ] **Step 5: Commit** "Model v2: relations, cascade, calculated relations"
 
-### Task 4: Store, app shell, list and form
+### Task 3: Ratings
 
-**Files:**
-- Create: `index.html`, `app.css`, `js/store.js`, `js/app.js`, `js/ui/dom.js`, `js/ui/list.js`, `js/ui/form.js`, `scripts/serve.mjs`
-- Test: `test/ui.test.js`
+**Files:** Create `js/model/ratings.js`; Test `test/model/ratings.test.js`
 
-**Interfaces:**
-- Consumes: Task 1–2 model functions
-- Produces:
-  - `store.js`: `loadData(): Promise<Data>` (empty data if none), `saveData(data): Promise<void>`, `requestPersist(): Promise<boolean>`; DB `boku-no-nihongo`, store `kv`, key `data`
-  - `dom.js`: `h(tag, attrs?, ...children): HTMLElement` — strings become text nodes; `on*` attrs become listeners; `clear(el)`
-  - Screen contract: each `js/ui/<screen>.js` exports `render(root: HTMLElement, ctx, params): void`; `ctx = { data, save(): Promise<void>, go(hash: string): void }`
-  - `app.js` on start: `requestPersist()`, `loadData()`, then route
-  - Routes in `app.js`: `#/` list, `#/new`, `#/entry/:id`, `#/entry/:id/edit`, `#/entry/:id/link`, `#/settings`; unknown → list
-  - `scripts/serve.mjs`: static server on `127.0.0.1:8080` (port from `PORT`), serves repo root, correct MIME for `.js .css .html .json .webmanifest .png .svg`
+**Interfaces (produces):**
+- `targetKey(target) → string` (stable over key order; `form` order kept; `members` order kept = direction)
+- `addRating(data, target, { value, confidence='sure', source='learner', note? }, opts?) → rating` — value in `unknown | partly | known | cleared`
+- `currentRatings(data, unitRef) → { key, target, rating }[]` latest per key, `cleared` dropped; includes ratings targeting a relation the unit belongs to only via the relation's own detail
+- `ratingHistory(data, target) → rating[]` oldest first
 
-- [ ] **Step 1: Failing test** `test/ui.test.js`: `every screen module exports render` — dynamic import of `js/ui/list.js`, `js/ui/form.js` (Tasks 5–6 add theirs) → `typeof render === 'function'`
-- [ ] **Step 2: Run** → FAIL
-- [ ] **Step 3: Implement** store, dom, router, list (search box, kind chips, tag select, rows showing text · reading · meaning · kind badge, + button, settings link), form (kind select; reading/meaning/notes; word type select only for `word`; tag chips toggle + "new tag" input; Save → `ctx.save()` → detail; Cancel). Mobile-first CSS, safe-area insets, dark mode via `prefers-color-scheme`, `lang="ja"` on Japanese text fields' display
-- [ ] **Step 4: Run** `npm test` → pass; `npm run serve` then `curl -s localhost:8080/ | grep -q '<script type="module"'` and `curl -sI localhost:8080/js/app.js | grep -i 'javascript'`
-- [ ] **Step 5: Commit** — "App shell, list and entry form"
+- [ ] **Step 1: Failing tests:** `latest wins per target` · `cleared means not assessed` · `targetKey ignores key order` · `imprecise target is separate from precise` (`{from: writing}` vs `{from: writing, to: reading}`) · `relation pair target with direction`
+- [ ] **Step 2–4:** FAIL → implement → PASS
+- [ ] **Step 5: Commit** "Model v2: ratings"
 
-### Task 5: Detail and link picker
+### Task 4: Starter grammar forms and migrations
 
-**Files:** Create `js/ui/detail.js`, `js/ui/link-picker.js`; Modify `js/app.js`, `test/ui.test.js`
+**Files:** Create `js/model/migrate.js`, `js/model/starter.js`; Modify `js/store.js` (`loadData` runs `migrate` + `ensureStarter`); Test `test/model/migrate.test.js`
 
-**Interfaces:**
-- Consumes: `getEntry`, `linksOf`, `addLink`, `deleteLink`, `deleteEntry`, `search`; screen contract from Task 4
-- Produces: detail (all fields, tags, linked entries tappable to their detail, unlink button, Edit, Delete with `confirm()`, "Link…" → `#/entry/:id/link`); link picker (search box, results excluding the entry itself and already-linked ones, optional note, tap → `addLink` → save → back to detail)
+**Interfaces (produces):**
+- `migrate(raw) → data` — `undefined/null` → `emptyData()`; `version 1` → `emptyData()` with `meta.discardedV1 = raw`; `version 2` → missing collections filled, unknown fields kept; higher version → throws `made by a newer app version`
+- `ensureStarter(data, now?)` — adds missing form grammar points by `formKey` from `FORM_KEYS` (origin `reference`), never touches existing
 
-- [ ] **Step 1: Extend test** — add `detail.js`, `link-picker.js` to the module list → FAIL
+- [ ] **Step 1: Failing tests:** `v1 is discarded but kept raw` · `v2 missing collections filled` · `newer version throws` · `starter forms added once, existing untouched`
+- [ ] **Step 2–4:** FAIL → implement → PASS
+- [ ] **Step 5: Commit** "Model v2: migrations and starter forms"
+
+### Task 5: Export, restore, merge import
+
+**Files:** Create `js/model/io.js`; Test `test/model/io.test.js`
+
+**Interfaces (produces):**
+- `exportJson(data, now?) → string` (sets `meta.lastExport`)
+- `parseBackup(text) → data` (JSON + `migrate`; throws `not a Boku no Nihongo file`)
+- `mergeImport(data, incoming, { file, now? }) → { added, updated, skipped }` — creates `Import`; match by `id`, else natural key (kanji `char`; word first writing + reading; grammar `formKey` or `title`; sentence `text`; note `text`); on match: missing scalar fields filled only, lists combined without duplicates (readings `kana`+`type`, meanings by gloss, writings by text, tags by name → ids remapped); relations matched by type + member set; ratings by `targetKey` + `at` + `value`; refs remapped to matched ids; refs to missing units dropped
+
+- [ ] **Step 1: Failing tests:** `round trip` · `parseBackup rejects garbage` · `merge fills, never overwrites` · `merge combines readings and meanings` · `re-import is idempotent` (second run: added 0) · `refs remapped to matched ids` · `unknown fields survive import`
+- [ ] **Step 2–4:** FAIL → implement → PASS
+- [ ] **Step 5: Commit** "Model v2: export, restore, merge import"
+
+### Task 6: Seed converter
+
+**Files:** Create `scripts/seed-convert.mjs` (pure `convertSeed(seed, { now }) → v2 partial data`), `scripts/convert-seed.mjs` (CLI: `node scripts/convert-seed.mjs out/japanese-learning-linked-seed.json out/seed-import.json`); Test `test/scripts/seed-convert.test.js` (synthetic snippet)
+
+Mapping = spec table "Seed `linked-seed-1`"; ids kept from seed (`k:月` → id `k-月` style safe id); `reported_confusion*` → `confuses` confirmed origin learner; `suspected_confusion` → `confuses` proposed origin suggested; `visual_similarity` groups → `looks-similar` proposed suggested; pairwise edges already in a group of same type dropped; `other_item_unknown` → member `UNKNOWN`; duplicates in groups removed; tags `known`, `probably known`, `should know`, `easy to learn` not created (familiarity → ratings); unsplit meaning per gloss text.
+
+- [ ] **Step 1: Failing tests:** `kanji readings with types and unknown` · `word with writing, reading, unsplit meaning, verbGroup` · `familiarity → estimate rating` · `known kanji gloss → imprecise rating with note` · `confusion group with unknown partner` · `candidate group → proposed suggested` · `pair inside group dropped` · `sentence uses with form chain` · `output passes mergeImport into empty data`
+- [ ] **Step 2–4:** FAIL → implement → PASS; run CLI on the real seed, print counts
+- [ ] **Step 5: Commit** "Seed converter"
+
+### Task 7: UI foundation: shell, lists, detail, edit
+
+**Files:** Replace `js/app.js`, `js/ui/dom.js` (keep `h`, `clear`, `isSubmitEnter`); Create `js/ui/kinds.js` (per kind: label, row, fields), `js/ui/list.js`, `js/ui/detail.js`, `js/ui/edit.js`, `js/ui/fields.js` (field editors: text, select, list of texts, meanings, readings, writings, kanji uses, sentence uses, form chain); Delete v1 `js/ui/form.js`, `js/ui/link-picker.js`; Modify `app.css`, `test/ui.test.js`
+
+**Routes:** `#/k/<kind>` list · `#/k/<kind>/new` · `#/u/<ref>` detail · `#/u/<ref>/edit` · `#/settings`; default `#/k/word`
+**Interfaces:** screen contract unchanged: `render(root, ctx, params)`, `ctx = { data, save(), go(hash, {replace}) }`
+
+- [ ] **Step 1: Failing test:** screen list in `test/ui.test.js` → `list, detail, edit, settings, relation, rate, picker`; `kinds.js` describes all 5 kinds (each has `label`, `row`, `fields`)
+- [ ] **Step 2: Implement** shell (bottom tabs Words · Kanji · Grammar · Sentences · Notes, top bar with one exit), generic list (search, tag filter, open-only for notes, export reminder), detail (fields, meanings with split, readings, kanji uses, calculated + stored relations, current ratings, notes about it, actions: Edit · Rate · Relate · Note), edit form (core field first; quick capture works with one field)
+- [ ] **Step 3: Run** `npm test` → PASS (Task 8 screens stubbed until then); `node --check` all js
+- [ ] **Step 4: Commit** "UI v2: shell, lists, detail, edit"
+
+### Task 8: Relations, ratings, notes, settings, offline
+
+**Files:** Create `js/ui/picker.js` (search any unit → ref), `js/ui/relation.js` (new/edit relation: type, members, direction, status, note; confirm / reject), `js/ui/rate.js` (target parts from the unit's facets, meanings, readings, forms, relation members; value, confidence, note; history); Modify `js/ui/settings.js` (export with reminder, restore, add data with summary, tags), `sw.js` FILES + `CACHE = 'bnn-v3'`, `README.md`
+
+- [ ] **Step 1: Failing tests** stay from Task 7 + `sw precaches every app file` + `no HTML injection sinks`
 - [ ] **Step 2: Implement**
-- [ ] **Step 3: Run** `npm test` → pass
-- [ ] **Step 4: Commit** — "Entry detail and linking"
+- [ ] **Step 3: Run** `npm test` → PASS; serve and `curl` each js file 200
+- [ ] **Step 4: Commit** "UI v2: relations, ratings, notes, settings"
 
-### Task 6: Settings, offline, install, README
-
-**Files:**
-- Create: `js/ui/settings.js`, `manifest.webmanifest`, `sw.js`, `scripts/make-icons.mjs`, `icons/icon-180.png`, `icons/icon-512.png`, `README.md`
-- Modify: `index.html` (manifest, `apple-touch-icon`, `apple-mobile-web-app-capable`, theme-color, SW registration in `app.js`), `test/ui.test.js`
-
-**Interfaces:**
-- Consumes: `exportJson`, `importJson`, `saveData`, tag functions
-- Produces:
-  - settings: entry/tag counts; Export → `navigator.share({ files: [File] })` when `navigator.canShare` allows, else download link; file name `boku-no-nihongo-YYYY-MM-DD.json`; Import via `<input type=file accept=application/json>` → `importJson` → `confirm('Replace all N entries…')` → replace `ctx.data` contents → save; error shown on throw, data untouched; tag rename/delete list
-  - `sw.js`: `const CACHE = 'bnn-v1'`, `const FILES = [...]` precache on install; fetch = network-first, cache fallback; old caches deleted on activate
-  - `make-icons.mjs`: writes PNGs with `node:zlib` only (white background, red circle, rounded-corner safe)
-  - README: what it is, `npm test`, `npm run serve`, deploy to GitHub Pages (new repo, `git remote add`, push, Settings → Pages → main/root), install (Safari → Share → Add to Home Screen), backup habit (export regularly)
-
-- [ ] **Step 1: Failing tests** in `test/ui.test.js`:
-  - add `settings.js` to the module list
-  - `sw precaches every app file` — parse `FILES` from `sw.js`; set equals `./`, `index.html`, `app.css`, `manifest.webmanifest`, all `js/**/*.js`, all `icons/*.png` found on disk
-  - `no HTML injection sinks` — no file under `js/` contains `innerHTML`, `outerHTML` or `insertAdjacentHTML`
-- [ ] **Step 2: Run** → FAIL
-- [ ] **Step 3: Implement**; run `node scripts/make-icons.mjs`
-- [ ] **Step 4: Run** `npm test` → all pass; `file icons/*.png` → PNG 180x180 / 512x512
-- [ ] **Step 5: Commit** — "Settings, offline support, icons, README"
-
-### Hand-off to the user (not a task)
-- Mac: `npm run serve`, open `http://localhost:8080`, click through
-- Phone: checklist from the spec's Verification section after deploying
+### Hand-off
+- User: `npm run serve` on the Mac → Settings → Add data → `out/seed-import.json`; deploy per README
