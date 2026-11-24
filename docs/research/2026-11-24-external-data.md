@@ -9,6 +9,8 @@ Input for domain discovery and enrichment; doesn't change the design. Checked ag
 - **Best relation sources:** Kanjium (hand-made lookalikes, phonetic series, antonyms, pitch accent); dictionary vi/vt tags give transitivity-pair candidates
 - **New concepts worth grooming:** pitch accent, learning order / frequency, reading ↔ writing ↔ meaning restrictions, writing flags (gikun, ateji, usually kana), kanji components
 - **Licence decides where enrichment can live:** almost everything is CC BY-SA → published `data/` would become CC BY-SA + credits; Kaishi: private use only
+- **Grammar:** Tae Kim fits our grammar point 1:1 and adds "alternatives for one function" (から/ので, 4× "if") and "requires" (ている ← て ← past); NC licence → own wording only
+- **Todaii:** no API, no export, no licence → reference while entering by hand; JMdict covers prefixes, suffixes, particles, counters openly
 
 ## Sources at a glance
 | Source | What | Covers ours | Licence | Verdict |
@@ -23,6 +25,8 @@ Input for domain discovery and enrichment; doesn't change the design. Checked ag
 | Kanjium | lookalikes, phonetic components, synonyms, antonyms, homonyms, pitch accent | 77–171 by file | CC BY-SA 4.0 | ✅ relations + pitch |
 | kanji-db-data | computed similar kanji, phonetic series | 132/214 | CC BY-SA 4.0 | grooming: noisy (本~車) |
 | japanese-language-data | repackaged JMdict/KANJIDIC/Kanjium/JLPT; draft grammar | – | CC BY-SA 4.0 | ❌ take upstreams; grammar unreviewed, likely AI |
+| Tae Kim's Guide (web, PDF 2012) | grammar lessons: rule boxes, conjugation tables, examples, learning order | grammar (we have 0) | CC BY-NC-SA 3.0 US | private reference; publish only own wording |
+| Todaii Japanese (eUp, Mazii family) | news, dictionary, JLPT, decks (prefixes, particles, suffixes, counters) | decks not public | copyright, no licence, no API | reference while typing by hand |
 
 ## Findings on our data
 | Topic | Example | Finding |
@@ -56,6 +60,26 @@ Read from its GitHub release (1,500 notes); AnkiWeb deck list not seen (needs a 
 | 116 of our 187 words in it | missing: 電車, 駅, 会社, 天気, 卵 | we collect outside beginner lists |
 | ~1,380 words we don't have | | possible private "what next" list |
 
+## Grammar: Tae Kim
+Page = lesson with several points, chained Previous/Next; regular HTML (rule box `sumbox`, tables, examples JA + EN).
+
+| Finding | Example | For us |
+|---|---|---|
+| fields map 1:1 | heading / rule box / summary / body → title / pattern / meaning / explanation | starter grammar points in own words |
+| alternatives for one function | reason: から / ので ("softer, slightly more polite"); if: と · なら · ば · たら | group by function + nuance / formality per member |
+| builds on | て = past with た → て; ている = て + いる; ので needs explanatory の | "requires" between grammar points |
+| rules per verb group + exceptions | past u-verb: む ぶ ぬ → んだ; 行く → 行った | rule as text now; as data only with a conjugation engine |
+| appliesTo per word class within one point | verbs / i-adj / nouns + na-adj | `appliesTo` list, maybe per variant |
+| our sentence | 昨日は早く寝ました。 → 寝る [polite, past]; grammar polite + past | fits the form chain |
+
+## Affixes, particles, counters (Todaii decks, JMdict)
+| Concept | JMdict (open) | Our model |
+|---|---|---|
+| prefixes / suffixes | 104 common `pref`, 175 `suf` (お / ご: kun vs on; さん, 屋, 中 ちゅう / じゅう) | word class `other`; no "attaches to" |
+| particles with several functions | 79 common `prt`; は 3 senses, を 6 | class `particle`; functions = split meanings |
+| counters + what they count | 111 common `ctr`: 本 long thin, 枚 flat, 匹 small animals | class `counter` |
+| counter sound changes | some entries (一本 いっぽん, 三本 さんぼん), no rules | out of scope; rule table e.g. Wikipedia (CC BY-SA) |
+
 ## Concepts we don't model
 | Concept | Source | When |
 |---|---|---|
@@ -66,6 +90,8 @@ Read from its GitHub release (1,500 notes); AnkiWeb deck list not seen (needs a 
 | kanji components, phonetic component, formation type | KRADFILE, KanjiVG, Kanjium | grooming |
 | antonym, phonetic-series relations | Kanjium | grooming |
 | reference id per record (e.g. JMdict 1586270, Tatoeba 145651) to refresh and credit | all | grooming |
+| grammar: same-function alternatives, nuance / formality, requires | Tae Kim | grooming |
+| affix as unit ("attaches to"), particle functions, counter "counts what" | JMdict, Todaii | grooming |
 | sentence quality (checked, native-reviewed) | Tatoeba | later |
 | audio, stroke order, note vs card / scheduling | Tatoeba, KanjiVG, Anki | later |
 

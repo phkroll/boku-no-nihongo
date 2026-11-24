@@ -40,4 +40,7 @@ Open questions, assumptions and limitations found while building and using the a
 - Learning order / frequency / JLPT: a field, or a tag?
 - New relation types: antonym (開↔閉), phonetic series (門 → 聞 間 問); kanji components
 - Reference id on records (JMdict / Tatoeba id) for credit and later refresh
-- Licence: enriched `data/` becomes CC BY-SA + credits — or enrich privately only?
+- Grammar alternatives for one function (から / ので; と · なら · ば · たら): relation type or a "function" field? nuance / formality per member
+- Grammar "requires" (ている ← て ← past): relation or derived from form chains?
+- Affixes (お〜, 〜さん, 〜屋) and counters ("counts what", 一本 いっぽん): own unit kind or word class + fields?
+- Tae Kim (NC licence): grammar points only in own words if published
