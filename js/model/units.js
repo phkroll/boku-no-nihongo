@@ -70,9 +70,9 @@ export function updateUnit(data, ref, fields, { now = nowIso() } = {}) {
 
 export function deleteUnit(data, ref) {
   const { kind, id } = parseRef(ref);
+  removeUnitReferences(data, ref);
   const list = COLLECTION[kind];
   data[list] = data[list].filter((u) => u.id !== id);
-  removeUnitReferences(data, ref);
 }
 
 export function addMeaning(unit, { gloss, usage, unsplit }) {
