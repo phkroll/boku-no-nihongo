@@ -301,3 +301,32 @@ test('settings: load published data — content only', async () => {
   assert.equal(d.ratings.length, 0);
   delete globalThis.fetch;
 });
+
+test('word list: views by class, class badge on rows, unclassified view', () => {
+  const { d } = sampleData();
+  addUnit(d, 'word', { writings: [{ text: '高い' }], reading: 'たかい', wordClass: 'i-adjective' });
+  addUnit(d, 'word', { writings: [{ text: '本' }], reading: 'ほん' });
+  const root = page();
+  screens.list.render(root, makeCtx(d), { kind: 'word' });
+  assert.match(text(root), /i-adj/);
+  clickText(root, 'Adjectives');
+  const rows = () => root.all((n) => n.tagName === 'A' && n.attrs.class === 'row').map((r) => r.textContent);
+  assert.equal(rows().length, 1);
+  assert.match(rows()[0], /高い/);
+  clickText(root, 'Not classified');
+  assert.ok(rows().some((r) => /本/.test(r)));
+  assert.ok(!rows().some((r) => /高い/.test(r)));
+  clickText(root, 'All');
+});
+
+test('word detail shows the class, or that it is not set', () => {
+  const { d } = sampleData();
+  const takai = addUnit(d, 'word', { writings: [{ text: '高い' }], reading: 'たかい', wordClass: 'i-adjective' });
+  const hon = addUnit(d, 'word', { writings: [{ text: '本' }], reading: 'ほん' });
+  const a = page();
+  screens.detail.render(a, makeCtx(d), { ref: makeRef('word', takai.id) });
+  assert.match(text(a), /i-adjective/);
+  const b = page();
+  screens.detail.render(b, makeCtx(d), { ref: makeRef('word', hon.id) });
+  assert.match(text(b), /not set/);
+});

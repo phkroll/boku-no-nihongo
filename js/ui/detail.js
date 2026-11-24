@@ -2,7 +2,7 @@ import { UNKNOWN, getUnit, makeRef, parseRef, visibleMeanings } from '../model/d
 import { deleteUnit, splitMeaning } from '../model/units.js';
 import { relationsOf } from '../model/relations.js';
 import { calculatedRelations } from '../model/calculated.js';
-import { KIND_UI, STATE_LABEL } from './kinds.js';
+import { KIND_UI, STATE_LABEL, classTag } from './kinds.js';
 import { h, topBar, link, section, jp, badge, button, errorLine, fill } from './dom.js';
 import { RELATION_LABEL, describeTarget, ratingText, refLink, formText } from './describe.js';
 import { backLink } from './nav.js';
@@ -10,6 +10,7 @@ import { detailRatings, overallRating } from './questions.js';
 import { rateHref } from './rate.js';
 
 const state = (v) => STATE_LABEL[v] ?? v;
+const notSet = () => h('span', { class: 'muted' }, 'not set');
 const row = (label, value) => value !== undefined && value !== '' && h('div', { class: 'kv' }, h('span', { class: 'muted' }, label), h('span', {}, value));
 
 function meaningsSection(ctx, ref, unit, error) {
@@ -46,8 +47,8 @@ function wordParts(data, unit) {
     section('Word',
       row('writing', writings && jp(writings)),
       row('reading', unit.reading && jp(unit.reading)),
-      row('class', unit.wordClass && state(unit.wordClass) + (unit.suru ? ' (する)' : '')),
-      row('verb group', unit.verbGroup && state(unit.verbGroup)),
+      row('class', unit.wordClass ? state(unit.wordClass) + (unit.suru ? ' (する)' : '') : notSet()),
+      unit.wordClass === 'verb' && row('verb group', unit.verbGroup ? state(unit.verbGroup) : notSet()),
       row('usually written', unit.usuallyWritten),
       unit.wholeWordReading && row('reading', 'belongs to the whole word')),
     unit.kanjiUses?.length > 0 && section('Kanji readings used', unit.kanjiUses.map((u) => {
@@ -136,6 +137,7 @@ export function render(root, ctx, { ref }) {
       h('div', { class: 'detail-head' },
         jp(ui.title(unit), kind === 'note' || kind === 'sentence' ? 'detail-text small' : 'detail-text'),
         kind === 'word' && unit.writings && unit.reading && h('div', { class: 'reading' }, jp(unit.reading)),
+        kind === 'word' && badge(classTag(unit), unit.wordClass && unit.wordClass !== UNKNOWN ? 'tag' : 'warn'),
         kind !== 'note' && overallChip(ctx, ref),
         h('div', { class: 'row-sub' },
           unit.origin?.kind && unit.origin.kind !== 'learner' && badge(unit.origin.kind, 'muted-badge'),

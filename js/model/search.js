@@ -1,4 +1,4 @@
-import { COLLECTION, normalize, visibleMeanings } from './data.js';
+import { COLLECTION, UNKNOWN, normalize, visibleMeanings } from './data.js';
 
 function texts(kind, u) {
   const out = [u.notes];
@@ -11,10 +11,13 @@ function texts(kind, u) {
   return out;
 }
 
-export function search(data, kind, { query = '', tagId = '', openOnly = false } = {}) {
+// wordClasses: keep words of these classes; unclassified: keep words without a known class.
+export function search(data, kind, { query = '', tagId = '', openOnly = false, wordClasses, unclassified = false } = {}) {
   const q = normalize(query);
   return data[COLLECTION[kind]]
     .filter((u) => !tagId || (u.tagIds ?? []).includes(tagId))
+    .filter((u) => !wordClasses || wordClasses.includes(u.wordClass))
+    .filter((u) => !unclassified || !u.wordClass || u.wordClass === UNKNOWN)
     .filter((u) => !openOnly || u.open === true)
     .filter((u) => !q || texts(kind, u).some((t) => t && normalize(t).includes(q)))
     .sort((a, b) => String(b.updated).localeCompare(String(a.updated)));

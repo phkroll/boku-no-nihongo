@@ -91,4 +91,30 @@ export const KIND_UI = {
 
 export const TABS = ['word', 'kanji', 'grammar', 'sentence', 'note'];
 
+// Short word class for list rows and the entry header; 'class?' when not set.
+export function classTag(w) {
+  switch (w.wordClass) {
+    case undefined:
+    case UNKNOWN: return 'class?';
+    case 'i-adjective': return 'i-adj';
+    case 'na-adjective': return 'na-adj';
+    case 'verb': return ['ru', 'u', 'irregular'].includes(w.verbGroup) ? `verb · ${w.verbGroup}` : 'verb';
+    case 'noun': return w.suru ? 'noun · する' : 'noun';
+    default: return w.wordClass;
+  }
+}
+
+const MAIN_CLASSES = ['noun', 'proper-noun', 'verb', 'i-adjective', 'na-adjective'];
+
+// Views of the word list: label and the search options they set.
+export const WORD_VIEWS = [
+  ['all', 'All', {}],
+  ['noun', 'Nouns', { wordClasses: ['noun', 'proper-noun'] }],
+  ['verb', 'Verbs', { wordClasses: ['verb'] }],
+  ['adj', 'Adjectives', { wordClasses: ['i-adjective', 'na-adjective'] }],
+  ['other', 'Other', { wordClasses: WORD_CLASSES.filter((c) => !MAIN_CLASSES.includes(c) && c !== UNKNOWN) }],
+  ['none', 'Not classified', { unclassified: true }],
+];
+export const SINGLE_CLASSES = WORD_CLASSES.filter((c) => c !== UNKNOWN);
+
 export const STATE_LABEL = { [UNKNOWN]: 'unknown', [NA]: 'n/a' };

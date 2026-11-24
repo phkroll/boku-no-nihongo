@@ -124,3 +124,16 @@ test('cleanupRemovedParts drops ratings and uses of meanings/readings removed in
   assert.deepEqual(d.ratings.map((x) => x.id), ['c']);
   assert.equal(w.kanjiUses[0].readingId, undefined);
 });
+
+test('search words by class: one or several classes, or unclassified', () => {
+  const d = emptyData();
+  addUnit(d, 'word', { reading: 'たかい', wordClass: 'i-adjective' });
+  addUnit(d, 'word', { reading: 'かんたん', wordClass: 'na-adjective' });
+  addUnit(d, 'word', { reading: 'ねる', wordClass: 'verb' });
+  addUnit(d, 'word', { reading: 'ほん' });
+  addUnit(d, 'word', { reading: 'かえる', wordClass: UNKNOWN });
+  const readings = (opts) => search(d, 'word', opts).map((w) => w.reading).sort();
+  assert.deepEqual(readings({ wordClasses: ['i-adjective', 'na-adjective'] }), ['かんたん', 'たかい']);
+  assert.deepEqual(readings({ wordClasses: ['verb'] }), ['ねる']);
+  assert.deepEqual(readings({ unclassified: true }), ['かえる', 'ほん']);
+});

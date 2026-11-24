@@ -1,7 +1,7 @@
 // Offline-first: the app always runs from one complete, consistent copy of its files.
 // A new version is downloaded in full in the background (bypassing the browser cache);
 // only if every file arrives does it replace the old copy — any error keeps the old one.
-const BUILD = '4ca05e108c73';
+const BUILD = '2e20c2a61532';
 const CACHE = `bnn-${BUILD}`;
 const FILES = [
   './',

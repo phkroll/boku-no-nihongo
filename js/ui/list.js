@@ -1,6 +1,6 @@
 import { search } from '../model/search.js';
-import { KIND_UI } from './kinds.js';
-import { h, clear, topBar, link, jp, badge, fill } from './dom.js';
+import { KIND_UI, WORD_VIEWS, SINGLE_CLASSES, classTag } from './kinds.js';
+import { h, clear, topBar, link, jp, badge, fill, chips } from './dom.js';
 import { hrefOf } from './describe.js';
 import { COLLECTION, makeRef } from '../model/data.js';
 
@@ -18,20 +18,35 @@ function backupReminder(data) {
 export function render(root, ctx, { kind }) {
   const ui = KIND_UI[kind];
   if (!ui) return ctx.go('#/k/word', { replace: true });
-  const f = (filters[kind] ??= { query: '', tagId: '', openOnly: kind === 'note' });
+  const f = (filters[kind] ??= { query: '', tagId: '', openOnly: kind === 'note', view: 'all' });
+  const viewOptions = () => {
+    if (f.view.startsWith('class:')) return { wordClasses: [f.view.slice(6)] };
+    return WORD_VIEWS.find(([v]) => v === f.view)?.[2] ?? {};
+  };
   const results = h('ul', { class: 'list' });
   let shown = PAGE;
 
   const draw = () => {
     clear(results);
-    const units = search(ctx.data, kind, f);
+    const units = search(ctx.data, kind, { ...f, ...(kind === 'word' ? viewOptions() : {}) });
     if (units.length === 0) fill(results, h('li', { class: 'empty' }, ctx.data[COLLECTION[kind]].length ? 'Nothing matches.' : `No ${ui.plural.toLowerCase()} yet. Tap + to add one.`));
     for (const u of units.slice(0, shown)) {
       fill(results, h('li', {}, h('a', { href: hrefOf(makeRef(kind, u.id)), class: 'row' },
         h('span', { class: 'row-main' }, jp(ui.title(u), kind === 'kanji' ? 'big' : '')),
-        h('span', { class: 'row-sub' }, kind === 'note' && u.open && badge('open', 'open'), ui.sub(u)))));
+        h('span', { class: 'row-sub' }, kind === 'note' && u.open && badge('open', 'open'),
+          kind === 'word' && badge(classTag(u), u.wordClass && u.wordClass !== 'unknown' ? 'tag' : 'warn'), ui.sub(u)))));
     }
     if (units.length > shown) fill(results, h('li', {}, h('button', { type: 'button', class: 'plain more', onclick: () => { shown += PAGE; draw(); } }, `Show more (${units.length - shown})`)));
+  };
+
+  const views = h('div', {});
+  const drawViews = () => {
+    clear(views);
+    fill(views,
+      chips(WORD_VIEWS.map(([v, label]) => [v, label]), (v) => f.view === v, (v) => { f.view = v; shown = PAGE; drawViews(); draw(); }),
+      h('select', { onchange: (ev) => { f.view = ev.target.value ? `class:${ev.target.value}` : 'all'; shown = PAGE; drawViews(); draw(); } },
+        h('option', { value: '' }, 'One word class…'),
+        SINGLE_CLASSES.map((c) => h('option', { value: c, selected: f.view === `class:${c}` }, c))));
   };
 
   const tags = [...ctx.data.tags].sort((a, b) => a.name.localeCompare(b.name));
@@ -43,6 +58,7 @@ export function render(root, ctx, { kind }) {
     backupReminder(ctx.data),
     kind === 'note' && proposed > 0 && h('a', { href: '#/review', class: 'reminder' }, `${proposed} suggested relations to check`),
     h('div', { class: 'filters' },
+      kind === 'word' && views,
       h('input', { type: 'search', placeholder: `Search ${ui.plural.toLowerCase()}`, value: f.query, oninput: (ev) => { f.query = ev.target.value; shown = PAGE; draw(); } }),
       tags.length > 0 && h('select', { onchange: (ev) => { f.tagId = ev.target.value; draw(); } },
         h('option', { value: '' }, 'All tags'), tags.map((t) => h('option', { value: t.id, selected: f.tagId === t.id }, t.name))),
@@ -50,5 +66,6 @@ export function render(root, ctx, { kind }) {
     ),
     results,
   );
+  if (kind === 'word') drawViews();
   draw();
 }
