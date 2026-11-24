@@ -16,6 +16,8 @@ Open questions, assumptions and limitations found while building and using the a
 - "What I know" offers a fixed list of questions per entry type; a missing question = note it here
 - Seed's regular forms of 寝る kept as `word.forms` (example forms) although forms are meant to be derived — drop or keep once conjugation exists
 - Seed kanji readings/glosses are common examples, not verified; 192 readings have unknown type
+- A word has one class only; words with two (毎日 noun + adverb, 少し adverb + noun, 生 noun used like an adjective) stay unclassified for now
+- Word classes of the seed words filled by Claude (unmarked, user's choice); 9 two-class words left unclassified
 - Counter sound changes (一本 いっぽん) not modelled
 - Calculated "shared gloss" only works on split meanings
 - Data lives on one phone; backup = manual export

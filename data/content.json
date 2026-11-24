@@ -5086,8 +5086,7 @@
      "id": "v-少し-すこし-m1",
      "gloss": "A little"
     }
-   ],
-   "wordClass": "adverb"
+   ]
   },
   {
    "id": "v-分かる-わかる",
@@ -6325,8 +6324,7 @@
      "gloss": "Number one, most",
      "unsplit": true
     }
-   ],
-   "wordClass": "noun"
+   ]
   },
   {
    "id": "v-横-よこ",
@@ -6391,8 +6389,7 @@
      "id": "v-後で-あとで-m1",
      "gloss": "Later"
     }
-   ],
-   "wordClass": "adverb"
+   ]
   },
   {
    "id": "v-簡単-かんたん",
@@ -6581,8 +6578,7 @@
      "id": "v-たくさん-たくさん-m1",
      "gloss": "A lot"
     }
-   ],
-   "wordClass": "adverb"
+   ]
   },
   {
    "id": "v-野菜-やさい",
@@ -6714,8 +6710,7 @@
      "id": "v-生-なま-m1",
      "gloss": "Raw"
     }
-   ],
-   "wordClass": "noun"
+   ]
   },
   {
    "id": "v-辛い-からい",
@@ -7465,8 +7460,7 @@
      "id": "v-毎日-まいにち-m1",
      "gloss": "Every day"
     }
-   ],
-   "wordClass": "noun"
+   ]
   },
   {
    "id": "v-時々-ときどき",
@@ -8160,8 +8154,7 @@
      "id": "v-多く-おおく-m1",
      "gloss": "Many"
     }
-   ],
-   "wordClass": "adverb"
+   ]
   },
   {
    "id": "v-ありがとう-ありがとう",
@@ -8628,8 +8621,7 @@
      "id": "v-分-ふん-m1",
      "gloss": "Minute"
     }
-   ],
-   "wordClass": "counter"
+   ]
   },
   {
    "id": "v-万-まん",
@@ -8650,8 +8642,7 @@
      "id": "v-万-まん-m1",
      "gloss": "Ten thousand"
     }
-   ],
-   "wordClass": "noun"
+   ]
   },
   {
    "id": "v-早く-はやく",
