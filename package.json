@@ -7,7 +7,8 @@
     "serve": "node scripts/serve.mjs",
     "convert-seed": "node scripts/convert-seed.mjs out/japanese-learning-linked-seed.json out/seed-import.json",
     "stamp": "node scripts/stamp.mjs",
-    "publish-data": "node scripts/publish-data.mjs"
+    "publish-data": "node scripts/publish-data.mjs",
+    "enrich": "node scripts/run-enrich.mjs"
   },
   "engines": {
     "node": ">=24"

@@ -32,6 +32,17 @@ Update the published data from the phone: Settings → Export backup → copy th
 
 The original seed: `npm run convert-seed` → `out/seed-import.json`, then `npm run publish-data -- out/seed-import.json`.
 
+**Enrich from reference data** (fills reading types, kanji uses, example sentences; suggests lookalikes; never overwrites):
+1. Put the sources into `out/sources/` (used: jmdict-simplified 3.6.2 of 2026-11-23, JmdictFurigana 2.3.1, Kanjium master, Tatoeba exports of 2026-11):
+   `jmdict-eng.json`, `kanjidic2-en.json` ([jmdict-simplified releases](https://github.com/scriptin/jmdict-simplified/releases)) ·
+   `JmdictFurigana.json` ([releases](https://github.com/Doublevil/JmdictFurigana/releases)) ·
+   `kanjium-lookalikes.txt` (Kanjium `data/source_files/lookalikes.txt`) ·
+   `jpn_indices.csv`, `jpn_sentences_detailed.tsv`, `jpn_transcriptions.tsv`, `eng_sentences.tsv` ([Tatoeba downloads](https://tatoeba.org/en/downloads), unpacked)
+2. Phone: Export backup → copy to `out/`
+3. `npm run enrich -- out/<backup>.json` → `out/enrich-import.json` + `out/enrich-review.txt` (things to check by hand)
+4. Phone: Settings → Add data from file → `enrich-import.json`; confirm or reject the suggested lookalikes under Notes
+5. Export again → `npm run publish-data -- out/<backup>.json` → commit and push
+
 ## Develop
 
 Needs Node 24, no dependencies.
@@ -71,3 +82,11 @@ The phone needs an https address to install the app. GitHub Pages serves the fil
 
 Push to `main`. When the app opens online it downloads the complete new version in the background and reloads once; offline or on a server error it keeps running the version it has. Settings shows the running version.
 After changing app files: `npm run stamp` (writes the build stamp and the offline file list). `npm test` and the pre-push check fail when it was forgotten.
+
+## Credits
+
+`data/content.json` is licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (see `data/LICENSE`) and is partly derived from:
+- **JMdict, KANJIDIC2** – Electronic Dictionary Research and Development Group, CC BY-SA 4.0 ([licence](https://www.edrdg.org/edrdg/licence.html)); via [jmdict-simplified](https://github.com/scriptin/jmdict-simplified)
+- **JmdictFurigana** – Doublevil, under the JMdict licence ([repo](https://github.com/Doublevil/JmdictFurigana))
+- **Kanjium** – Uros O., CC BY-SA 4.0 ([repo](https://github.com/mifunetoshiro/kanjium)); lookalike kanji
+- **Tatoeba** – example sentences and translations, CC BY 2.0 FR ([tatoeba.org](https://tatoeba.org)); each sentence keeps its Tatoeba id (`origin.detail`)

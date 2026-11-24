@@ -4,6 +4,14 @@ import { h, topBar, section, button, errorLine, fill, clear, chips } from './dom
 import { backLink } from './nav.js';
 import { BUILD, BUILT } from '../version.js';
 
+// Sources of the published data (README "Credits"); [name, licence, link].
+const CREDITS = [
+  ['JMdict, KANJIDIC2 (EDRDG)', 'CC BY-SA 4.0', 'https://www.edrdg.org/edrdg/licence.html'],
+  ['JmdictFurigana', 'JMdict licence', 'https://github.com/Doublevil/JmdictFurigana'],
+  ['Kanjium', 'CC BY-SA 4.0', 'https://github.com/mifunetoshiro/kanjium'],
+  ['Tatoeba', 'CC BY 2.0 FR', 'https://tatoeba.org'],
+];
+
 function backupName() {
   return `boku-no-nihongo-${new Date().toISOString().slice(0, 10)}.json`;
 }
@@ -163,6 +171,10 @@ export function render(root, ctx) {
       section('Tags', d.tags.length === 0 && h('p', { class: 'muted' }, 'No tags yet.'),
         [...d.tags].sort((a, b) => a.name.localeCompare(b.name)).map((t) => h('div', { class: 'kv' }, h('span', {}, t.name),
           h('span', { class: 'inline' }, button('Rename', () => renameTag(t), 'small'), button('Delete', () => deleteTag(t), 'small danger'))))),
+      section('Credits',
+        h('p', { class: 'muted small' }, 'Published data partly derived from:'),
+        CREDITS.map(([name, licence, href]) => h('div', { class: 'kv' },
+          h('a', { href, target: '_blank', rel: 'noopener' }, name), h('span', { class: 'muted small' }, licence)))),
     ),
   );
 }

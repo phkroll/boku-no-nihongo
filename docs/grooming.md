@@ -31,3 +31,13 @@ Open questions, assumptions and limitations found while building and using the a
 - How should knowledge of a whole group differ from knowledge of its pairs in practice?
 - Which meaning does an imprecise seed rating ("familiar sense only") refer to? Resolve while splitting meanings.
 - 西 confused with: 四, 酉 or 酒? (suspected only)
+
+## From external data (2026-11-24, details: `docs/research/2026-11-24-external-data.md`)
+- Word class per meaning instead of per word? (JMdict does this; resolves the 9 two-class words)
+- Meaning valid for one reading or writing only (今日 こんにち "these days"; あく "esp. 開く")
+- Writing flags: gikun, ateji, usually kana; overlap with `wholeWordReading` / `usuallyWritten`
+- Pitch accent per word; homophone pairs (橋/箸) differ by it
+- Learning order / frequency / JLPT: a field, or a tag?
+- New relation types: antonym (開↔閉), phonetic series (門 → 聞 間 問); kanji components
+- Reference id on records (JMdict / Tatoeba id) for credit and later refresh
+- Licence: enriched `data/` becomes CC BY-SA + credits — or enrich privately only?
