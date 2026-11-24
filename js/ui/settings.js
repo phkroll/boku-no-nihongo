@@ -1,12 +1,13 @@
-import { exportJson, importJson, renameTag, deleteTag } from '../model.js';
-import { h, topBar, link } from './dom.js';
+import { exportJson, parseBackup, mergeImport } from '../model/io.js';
+import { ensureStarter } from '../model/starter.js';
+import { h, topBar, link, section, button, errorLine } from './dom.js';
 
 function backupName() {
   return `boku-no-nihongo-${new Date().toISOString().slice(0, 10)}.json`;
 }
 
-async function exportBackup(data) {
-  const file = new File([exportJson(data)], backupName(), { type: 'application/json' });
+async function share(text) {
+  const file = new File([text], backupName(), { type: 'application/json' });
   if (navigator.canShare?.({ files: [file] })) {
     try {
       await navigator.share({ files: [file] });
@@ -20,73 +21,83 @@ async function exportBackup(data) {
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
-export function render(root, ctx) {
-  const message = h('p', { class: 'error', role: 'alert' });
-  const fail = (e) => { message.textContent = e.message; };
-  const redraw = () => ctx.go('#/settings', { replace: true });
-
-  const importFile = async (ev) => {
+const fileButton = (label, onfile) => h('label', { class: 'button-like' }, label,
+  h('input', { type: 'file', accept: 'application/json,.json', class: 'hidden', onchange: async (ev) => {
     const [file] = ev.target.files;
     ev.target.value = '';
-    if (!file) return;
+    if (file) await onfile(file);
+  } }));
+
+export function render(root, ctx) {
+  const error = errorLine();
+  const info = h('p', { class: 'ok', role: 'status' });
+  const d = ctx.data;
+  const redraw = () => ctx.go('#/settings', { replace: true });
+
+  const exportNow = async () => {
     try {
-      const next = importJson(await file.text());
-      const question = `Replace all ${ctx.data.entries.length} entries with the ${next.entries.length} entries from this backup?`;
-      if (!confirm(question)) return;
-      Object.assign(ctx.data, next);
+      await share(exportJson(d));
       await ctx.save();
       redraw();
     } catch (e) {
-      fail(e);
+      error.show(e);
     }
   };
 
-  const rename = async (tag) => {
-    const name = prompt('Rename tag', tag.name);
-    if (name === null) return;
+  const addData = async (file) => {
     try {
-      renameTag(ctx.data, tag.id, name);
+      const incoming = parseBackup(await file.text());
+      const s = mergeImport(d, incoming, { file: file.name });
+      await ctx.save();
+      info.textContent = `Added ${s.added}, completed ${s.updated}, already there ${s.skipped}.`;
+    } catch (e) {
+      error.show(e);
+    }
+  };
+
+  const restore = async (file) => {
+    try {
+      const next = ensureStarter(parseBackup(await file.text()));
+      if (!confirm(`Replace everything (${d.words.length} words, ${d.kanji.length} kanji, ${d.ratings.length} ratings) with this backup?`)) return;
+      for (const k of Object.keys(d)) delete d[k];
+      Object.assign(d, next);
       await ctx.save();
       redraw();
     } catch (e) {
-      fail(e);
+      error.show(e);
     }
   };
 
-  const removeTag = async (tag) => {
-    if (!confirm(`Delete tag “${tag.name}”? Entries keep everything else.`)) return;
-    deleteTag(ctx.data, tag.id);
+  const renameTag = async (t) => {
+    const name = prompt('Rename tag', t.name);
+    if (!name?.trim()) return;
+    t.name = name.trim();
+    await ctx.save();
+    redraw();
+  };
+  const deleteTag = async (t) => {
+    if (!confirm(`Delete tag “${t.name}”?`)) return;
+    d.tags = d.tags.filter((x) => x.id !== t.id);
+    for (const k of ['kanji', 'words', 'grammar', 'sentences', 'notes']) for (const u of d[k]) if (u.tagIds) u.tagIds = u.tagIds.filter((x) => x !== t.id);
     await ctx.save();
     redraw();
   };
 
-  const tags = [...ctx.data.tags].sort((a, b) => a.name.localeCompare(b.name));
-  const { entries, links } = ctx.data;
-
   root.append(
-    topBar('Settings', link('#/', '‹ All'), null),
+    topBar('Settings', link('#/k/word', '‹ Back'), null),
     h('div', { class: 'detail' },
-      h('p', { class: 'muted' }, `${entries.length} entries · ${tags.length} tags · ${links.length} links`),
-      message,
-      h('section', { class: 'section' },
-        h('h2', {}, 'Backup'),
-        h('p', { class: 'muted' }, 'Your notebook lives only on this phone. Export a backup now and then, e.g. to Files or iCloud Drive.'),
+      h('p', { class: 'muted' }, `${d.words.length} words · ${d.kanji.length} kanji · ${d.grammar.length} grammar · ${d.sentences.length} sentences · ${d.notes.length} notes · ${d.relations.length} relations · ${d.ratings.length} ratings`),
+      error.el, info,
+      section('Backup',
+        h('p', { class: 'muted' }, `Data lives only on this device. Last export: ${d.meta?.lastExport?.slice(0, 10) ?? 'never'}.`),
         h('div', { class: 'stack' },
-          h('button', { type: 'button', class: 'primary', onclick: () => exportBackup(ctx.data).catch(fail) }, 'Export backup'),
-          h('label', { class: 'button-like' }, 'Import backup…',
-            h('input', { type: 'file', accept: 'application/json,.json', class: 'hidden', onchange: importFile })),
-        ),
-      ),
-      h('section', { class: 'section' },
-        h('h2', {}, 'Tags'),
-        tags.length === 0 && h('p', { class: 'muted' }, 'No tags yet. Add them while editing an entry.'),
-        h('ul', { class: 'list flush' }, tags.map((t) =>
-          h('li', { class: 'link-row' },
-            h('span', { class: 'row grow' }, t.name),
-            h('button', { type: 'button', onclick: () => rename(t) }, 'Rename'),
-            h('button', { type: 'button', class: 'danger', onclick: () => removeTag(t) }, 'Delete'),
-          ))),
-      ),
+          button('Export backup', exportNow, 'primary'),
+          fileButton('Add data from file… (merge)', addData),
+          fileButton('Restore backup… (replace all)', restore))),
+      section('Imports', d.imports.length === 0 ? h('p', { class: 'muted' }, 'None yet.') : d.imports.map((i) => h('div', { class: 'kv' }, h('span', {}, i.file), h('span', { class: 'muted' }, i.at.slice(0, 10))))),
+      section('Tags', d.tags.length === 0 && h('p', { class: 'muted' }, 'No tags yet.'),
+        [...d.tags].sort((a, b) => a.name.localeCompare(b.name)).map((t) => h('div', { class: 'kv' }, h('span', {}, t.name),
+          h('span', { class: 'inline' }, button('Rename', () => renameTag(t), 'small'), button('Delete', () => deleteTag(t), 'small danger'))))),
     ),
   );
 }

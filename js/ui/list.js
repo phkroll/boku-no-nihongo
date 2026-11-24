@@ -1,57 +1,54 @@
-import { KINDS, search } from '../model.js';
-import { h, clear, topBar, link, kindBadge, KIND_LABELS } from './dom.js';
+import { search } from '../model/search.js';
+import { KIND_UI } from './kinds.js';
+import { h, clear, topBar, link, jp, badge } from './dom.js';
+import { hrefOf } from './describe.js';
+import { COLLECTION, makeRef } from '../model/data.js';
 
-// Kept across navigation so going back keeps the filter.
-const filter = { query: '', kind: '', tagId: '' };
+const PAGE = 100;
+const BACKUP_DAYS = 14;
+const filters = {}; // per kind, kept while navigating
 
-export function render(root, ctx) {
+function backupReminder(data) {
+  const last = data.meta?.lastExport;
+  const days = last ? Math.floor((Date.now() - Date.parse(last)) / 86400000) : null;
+  if (days !== null && days < BACKUP_DAYS) return null;
+  return h('a', { href: '#/settings', class: 'reminder' }, days === null ? 'No backup yet — export one in Settings' : `Last backup ${days} days ago — export in Settings`);
+}
+
+export function render(root, ctx, { kind }) {
+  const ui = KIND_UI[kind];
+  if (!ui) return ctx.go('#/k/word', { replace: true });
+  const f = (filters[kind] ??= { query: '', tagId: '', openOnly: kind === 'note' });
   const results = h('ul', { class: 'list' });
+  let shown = PAGE;
 
-  const showResults = () => {
+  const draw = () => {
     clear(results);
-    const entries = search(ctx.data, filter);
-    if (entries.length === 0) {
-      results.append(h('li', { class: 'empty' }, ctx.data.entries.length ? 'Nothing matches.' : 'No entries yet. Tap + to add one.'));
+    const units = search(ctx.data, kind, f);
+    if (units.length === 0) results.append(h('li', { class: 'empty' }, ctx.data[COLLECTION[kind]].length ? 'Nothing matches.' : `No ${ui.plural.toLowerCase()} yet. Tap + to add one.`));
+    for (const u of units.slice(0, shown)) {
+      results.append(h('li', {}, h('a', { href: hrefOf(makeRef(kind, u.id)), class: 'row' },
+        h('span', { class: 'row-main' }, jp(ui.title(u), kind === 'kanji' ? 'big' : '')),
+        h('span', { class: 'row-sub' }, kind === 'note' && u.open && badge('open', 'open'), ui.sub(u)))));
     }
-    for (const e of entries) {
-      results.append(
-        h('li', {}, h('a', { href: `#/entry/${e.id}`, class: 'row' },
-          h('span', { class: 'row-main' }, h('span', { class: 'jp', lang: 'ja' }, e.text), e.reading && h('span', { class: 'reading', lang: 'ja' }, e.reading)),
-          h('span', { class: 'row-sub' }, kindBadge(e.kind), e.meaning),
-        )),
-      );
-    }
+    if (units.length > shown) results.append(h('li', {}, h('button', { type: 'button', class: 'plain more', onclick: () => { shown += PAGE; draw(); } }, `Show more (${units.length - shown})`)));
   };
 
-  const kindChips = h('div', { class: 'chips' });
-  const showChips = () => {
-    clear(kindChips);
-    for (const kind of ['', ...KINDS]) {
-      kindChips.append(
-        h('button', {
-          type: 'button',
-          class: `chip${filter.kind === kind ? ' on' : ''}`,
-          onclick: () => { filter.kind = kind; showChips(); showResults(); },
-        }, kind ? KIND_LABELS[kind] : 'All'),
-      );
-    }
-  };
-
-  const tagSelect = h('select', { onchange: (ev) => { filter.tagId = ev.target.value; showResults(); } },
-    h('option', { value: '' }, 'All tags'),
-    [...ctx.data.tags].sort((a, b) => a.name.localeCompare(b.name)).map((t) => h('option', { value: t.id, selected: filter.tagId === t.id }, t.name)),
-  );
-  if (!ctx.data.tags.some((t) => t.id === filter.tagId)) filter.tagId = '';
+  const tags = [...ctx.data.tags].sort((a, b) => a.name.localeCompare(b.name));
+  if (!tags.some((t) => t.id === f.tagId)) f.tagId = '';
+  const proposed = ctx.data.relations.filter((r) => r.status === 'proposed').length;
 
   root.append(
-    topBar('僕の日本語', link('#/settings', 'Settings'), link('#/new', '+', 'add')),
+    topBar(ui.plural, link('#/settings', 'Settings'), link(`#/k/${kind}/new`, '+', 'add')),
+    backupReminder(ctx.data),
+    kind === 'note' && proposed > 0 && h('a', { href: '#/review', class: 'reminder' }, `${proposed} suggested relations to check`),
     h('div', { class: 'filters' },
-      h('input', { type: 'search', placeholder: 'Search word, reading, meaning', value: filter.query, oninput: (ev) => { filter.query = ev.target.value; showResults(); } }),
-      kindChips,
-      ctx.data.tags.length > 0 && tagSelect,
+      h('input', { type: 'search', placeholder: `Search ${ui.plural.toLowerCase()}`, value: f.query, oninput: (ev) => { f.query = ev.target.value; shown = PAGE; draw(); } }),
+      tags.length > 0 && h('select', { onchange: (ev) => { f.tagId = ev.target.value; draw(); } },
+        h('option', { value: '' }, 'All tags'), tags.map((t) => h('option', { value: t.id, selected: f.tagId === t.id }, t.name))),
+      kind === 'note' && h('label', { class: 'check' }, h('input', { type: 'checkbox', checked: f.openOnly, onchange: (ev) => { f.openOnly = ev.target.checked; draw(); } }), 'Only open'),
     ),
     results,
   );
-  showChips();
-  showResults();
+  draw();
 }

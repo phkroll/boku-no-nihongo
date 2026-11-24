@@ -1,5 +1,5 @@
 // Offline support: network first (always fresh when online), cache as fallback.
-const CACHE = 'bnn-v2';
+const CACHE = 'bnn-v3';
 const NETWORK_TIMEOUT = 2500;
 const FILES = [
   './',
@@ -7,13 +7,27 @@ const FILES = [
   'app.css',
   'manifest.webmanifest',
   'js/app.js',
-  'js/model.js',
+  'js/model/calculated.js',
+  'js/model/data.js',
+  'js/model/io.js',
+  'js/model/migrate.js',
+  'js/model/ratings.js',
+  'js/model/relations.js',
+  'js/model/search.js',
+  'js/model/starter.js',
+  'js/model/units.js',
   'js/store.js',
+  'js/ui/describe.js',
   'js/ui/detail.js',
   'js/ui/dom.js',
-  'js/ui/form.js',
-  'js/ui/link-picker.js',
+  'js/ui/edit.js',
+  'js/ui/fields.js',
+  'js/ui/kinds.js',
   'js/ui/list.js',
+  'js/ui/picker.js',
+  'js/ui/rate.js',
+  'js/ui/relation.js',
+  'js/ui/review.js',
   'js/ui/settings.js',
   'icons/icon-180.png',
   'icons/icon-512.png',

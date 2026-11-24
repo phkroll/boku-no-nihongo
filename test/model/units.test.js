@@ -105,3 +105,22 @@ test('search by gloss, char, tag; openOnly for notes', () => {
   assert.equal(search(d, 'kanji', { query: '寝' }).length, 1);
   assert.deepEqual(search(d, 'note', { openOnly: true }).map((n) => n.text), ['open question']);
 });
+
+test('cleanupRemovedParts drops ratings and uses of meanings/readings removed in an edit', async () => {
+  const { cleanupRemovedParts } = await import('../../js/model/units.js');
+  const d = emptyData();
+  const k = addUnit(d, 'kanji', { char: '学' });
+  const r = addReading(k, { kana: 'がく', type: 'on' });
+  const m = addMeaning(k, { gloss: 'study' });
+  const ref = makeRef('kanji', k.id);
+  const w = addUnit(d, 'word', { writings: [{ text: '学校' }], kanjiUses: [{ char: '学', readingId: r.id, reading: 'がっ' }] });
+  d.ratings.push({ id: 'a', target: { unit: ref, meaningId: m.id }, value: 'known' });
+  d.ratings.push({ id: 'b', target: { unit: ref, readingId: r.id }, value: 'known' });
+  d.ratings.push({ id: 'c', target: { unit: ref }, value: 'known' });
+  const before = structuredClone(k);
+  k.meanings = [];
+  k.readings = [];
+  cleanupRemovedParts(d, ref, before);
+  assert.deepEqual(d.ratings.map((x) => x.id), ['c']);
+  assert.equal(w.kanjiUses[0].readingId, undefined);
+});

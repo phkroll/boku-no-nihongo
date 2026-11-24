@@ -121,3 +121,17 @@ export function deleteReading(data, ref, readingId) {
 export function sameText(a, b) {
   return normalize(a) === normalize(b);
 }
+
+// After an edit removed meanings or readings: ratings and kanji uses that pointed at them go too.
+export function cleanupRemovedParts(data, ref, before) {
+  const unit = getUnit(data, ref);
+  const gone = (list) => {
+    const now = new Set((unit?.[list] ?? []).map((x) => x.id));
+    return (before[list] ?? []).map((x) => x.id).filter((id) => !now.has(id));
+  };
+  for (const id of gone('meanings')) data.ratings = data.ratings.filter((r) => !(r.target.unit === ref && r.target.meaningId === id));
+  for (const id of gone('readings')) {
+    data.ratings = data.ratings.filter((r) => r.target.readingId !== id);
+    clearReadingUses(data, id);
+  }
+}

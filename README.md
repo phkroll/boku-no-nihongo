@@ -5,12 +5,27 @@ Web app installed on the Home Screen; works offline; data stays on the phone.
 
 ## Use
 
-- **List:** search by word, reading or meaning; filter by kind and tag; `+` adds an entry
-- **Entry:** Edit, Delete, `Link…` to connect it with another entry (links show on both sides)
-- **Settings:** export/import a JSON backup, rename or delete tags
+A tool for collecting and investigating learning data while the real learning app is still being discovered.
 
-**Backups:** the data lives only in this app on this phone. Deleting the app from the Home Screen deletes it too.
-Export a backup now and then (Settings → Export backup → save to Files / iCloud Drive).
+- **Tabs:** Words · Kanji · Grammar · Sentences · Notes; search and tag filter on each list
+- **Quick capture:** `+` saves with only the starred field (e.g. a word you only heard in kana)
+- **Entry page:** meanings (split imported ones), readings, relations (yours + automatic), what I know, notes & questions
+- **Relations:** groups or pairs, optional direction, status suspected / confirmed / rejected; "I mix these up" can have an unknown partner
+- **What I know:** rate only the parts you're sure about; empty parts mean "unclear which"
+- **Notes tab:** open questions and discoveries; suggested relations to check (from imports)
+- **Settings:** export backup, add data (merge), restore (replace), tags
+
+Open questions and limitations for the next review: `docs/grooming.md`.
+
+**Backups:** the data lives only in this app on this device. Export regularly (reminder after 14 days).
+Safari and the Home Screen app keep separate data — use the installed app.
+
+## Load the seed (once)
+
+```sh
+node scripts/convert-seed.mjs out/japanese-learning-linked-seed.json out/seed-import.json
+```
+Then in the app: Settings → **Add data from file…** → `out/seed-import.json` (AirDrop/iCloud Drive to the phone). Importing twice adds nothing.
 
 ## Develop
 
@@ -19,6 +34,7 @@ Needs Node 24, no dependencies.
 ```sh
 npm test          # data logic and structure checks
 npm run serve     # http://localhost:8765 (or the next free port it prints)
+npm run convert-seed  # out/japanese-learning-linked-seed.json → out/seed-import.json
 ```
 
 After adding a file under `js/` or `icons/`, add it to `FILES` in `sw.js` (a test checks this).

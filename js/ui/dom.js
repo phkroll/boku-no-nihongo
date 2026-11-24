@@ -14,7 +14,7 @@ export function h(tag, attrs = {}, ...children) {
 
 function append(el, children) {
   for (const child of children) {
-    if (child === null || child === undefined || child === false) continue;
+    if (child === null || child === undefined || child === false || child === '') continue;
     if (Array.isArray(child)) append(el, child);
     else el.append(child instanceof Node ? child : document.createTextNode(String(child)));
   }
@@ -29,6 +29,7 @@ export function clear(el) {
   el.replaceChildren();
 }
 
+// One top bar per screen: one way back on the left, one main action on the right.
 export function topBar(title, left, right) {
   return h('header', { class: 'bar' }, h('div', { class: 'bar-side' }, left), h('h1', {}, title), h('div', { class: 'bar-side end' }, right));
 }
@@ -37,8 +38,44 @@ export function link(href, label, cls = '') {
   return h('a', { href, class: cls }, label);
 }
 
-export const KIND_LABELS = { word: 'Word', kanji: 'Kanji', sentence: 'Sentence', grammar: 'Grammar' };
+export function button(label, onclick, cls = '') {
+  return h('button', { type: 'button', class: cls, onclick }, label);
+}
 
-export function kindBadge(kind) {
-  return h('span', { class: `badge kind-${kind}` }, KIND_LABELS[kind] ?? kind);
+export function section(title, ...body) {
+  return h('section', { class: 'section' }, h('h2', {}, title), ...body);
+}
+
+export function field(label, input, hint) {
+  return h('label', { class: 'field' }, h('span', {}, label), input, hint && h('small', { class: 'muted' }, hint));
+}
+
+// options: [value, label][]; '' = missing.
+export function select(options, value, onchange) {
+  return h('select', { onchange: (ev) => onchange(ev.target.value) },
+    options.map(([v, label]) => h('option', { value: v, selected: v === (value ?? '') }, label)));
+}
+
+export function badge(text, cls = '') {
+  return h('span', { class: `badge ${cls}` }, text);
+}
+
+export function chips(items, isOn, onToggle) {
+  return h('div', { class: 'chips' }, items.map(([v, label]) => h('button', {
+    type: 'button', class: `chip${isOn(v) ? ' on' : ''}`, onclick: () => onToggle(v),
+  }, label)));
+}
+
+export function jp(text, cls = '') {
+  return h('span', { lang: 'ja', class: `jp ${cls}` }, text);
+}
+
+// Reports errors from model calls on the screen instead of losing them.
+export function errorLine() {
+  const el = h('p', { class: 'error', role: 'alert' });
+  return {
+    el,
+    show: (e) => { el.textContent = e?.message ?? String(e); },
+    clear: () => { el.textContent = ''; },
+  };
 }
