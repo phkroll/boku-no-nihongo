@@ -1,6 +1,6 @@
 import { exportJson, parseBackup, parseRestore, markExported, mergeImport } from '../model/io.js';
 import { ensureStarter } from '../model/starter.js';
-import { h, topBar, section, button, errorLine, fill, clear } from './dom.js';
+import { h, topBar, section, button, errorLine, fill, clear, chips } from './dom.js';
 import { backLink } from './nav.js';
 import { BUILD, BUILT } from '../version.js';
 
@@ -27,11 +27,13 @@ async function share(text) {
 
 // Published with the app (data/ in the repo). Content first: knowledge refers to its entries.
 // data/knowledge.json may be missing (later only content is published) — then it's skipped.
-const PUBLISHED = ['data/content.json', 'data/knowledge.json'];
+const CONTENT = 'data/content.json';
+const KNOWLEDGE = 'data/knowledge.json';
+const LOAD_CHOICES = [['content', 'Learning content only'], ['all', 'Content + what I know']];
 
-async function loadPublished(d) {
+async function loadPublished(d, files) {
   const total = { added: 0, updated: 0, skipped: 0, conflicts: [], duplicates: [], checks: [] };
-  for (const file of PUBLISHED) {
+  for (const file of files) {
     const res = await fetch(file, { cache: 'no-cache' });
     if (res.status === 404) continue;
     if (!res.ok) throw new Error(`Could not load ${file} (${res.status})`);
@@ -84,16 +86,32 @@ export function render(root, ctx) {
     }
   };
 
-  const addPublished = async () => {
+  let loadChoice = 'all';
+  const loadPanel = h('div', { class: 'stack card hidden' });
+  const drawLoadPanel = () => {
+    clear(loadPanel);
+    fill(loadPanel,
+      h('p', { class: 'muted small' }, 'Learning content: kanji, words, grammar, sentences, relations. What I know: ratings, mix-ups, notes. Already there stays as it is.'),
+      chips(LOAD_CHOICES, (v) => loadChoice === v, (v) => { loadChoice = v; drawLoadPanel(); }),
+      button('Load', addPublished, 'primary'));
+  };
+  let loadOpen = false;
+  const toggleLoadPanel = () => {
+    loadOpen = !loadOpen;
+    loadPanel.setAttribute('class', loadOpen ? 'stack card' : 'stack card hidden');
+    drawLoadPanel();
+  };
+
+  async function addPublished() {
     error.clear();
     try {
-      const s = await loadPublished(d);
+      const s = await loadPublished(d, loadChoice === 'all' ? [CONTENT, KNOWLEDGE] : [CONTENT]);
       await ctx.save();
       showResult(s);
     } catch (e) {
       error.show(e);
     }
-  };
+  }
 
   const restore = async (file) => {
     try {
@@ -133,7 +151,8 @@ export function render(root, ctx) {
         h('p', { class: 'muted' }, `Data lives only on this device. Last export: ${d.meta?.lastExport?.slice(0, 10) ?? 'never'}.`),
         h('div', { class: 'stack' },
           button('Export backup', exportNow, 'primary'),
-          button('Load published data', addPublished, 'wide'),
+          button('Load published data…', toggleLoadPanel, 'wide'),
+          loadPanel,
           fileButton('Add data from file… (merge)', addData),
           fileButton('Restore backup… (replace all)', restore))),
       h('p', { class: 'muted small' }, `Version ${BUILT} · ${BUILD.slice(0, 7)}`),

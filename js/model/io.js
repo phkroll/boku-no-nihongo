@@ -103,8 +103,10 @@ export function mergeImport(data, incomingRaw, { file = '', now = nowIso() } = {
 
   for (const tag of incoming.tags) {
     const found = data.tags.find((t) => normalize(t.name) === normalize(tag.name));
-    if (found) tagMap.set(tag.id, found.id);
-    else {
+    if (found) {
+      tagMap.set(tag.id, found.id);
+      report.skipped += 1;
+    } else {
       data.tags.push({ ...tag });
       tagMap.set(tag.id, tag.id);
       report.added += 1;
@@ -151,7 +153,7 @@ export function mergeImport(data, incomingRaw, { file = '', now = nowIso() } = {
     const sameId = data.relations.find((x) => x.id === r.id);
     if (sameId) {
       relationMap.set(makeRef('relation', r.id), makeRef('relation', sameId.id));
-      if (!sameId.notes && r.notes) sameId.notes = r.notes;
+      report[fillNotes(sameId, r) ? 'updated' : 'skipped'] += 1;
       continue;
     }
     const members = r.members.map(mapRef).filter(Boolean);
@@ -160,7 +162,7 @@ export function mergeImport(data, incomingRaw, { file = '', now = nowIso() } = {
     const existing = findRelation(data, r.type, members);
     if (existing) {
       relationMap.set(makeRef('relation', r.id), makeRef('relation', existing.id));
-      if (!existing.notes && r.notes) existing.notes = r.notes;
+      report[fillNotes(existing, r) ? 'updated' : 'skipped'] += 1;
       continue;
     }
     const overlapping = data.relations.filter((x) => x.type === r.type && x.members.filter((m) => m !== UNKNOWN && real.includes(m)).length >= 2);
@@ -182,7 +184,10 @@ export function mergeImport(data, incomingRaw, { file = '', now = nowIso() } = {
     if (t.meaningId) t.meaningId = partMap.get(t.meaningId) ?? t.meaningId;
     if (t.readingId) t.readingId = partMap.get(t.readingId) ?? t.readingId;
     const key = `${targetKey(t)}@${r.at}=${r.value}`;
-    if (seen.has(key)) continue;
+    if (seen.has(key)) {
+      report.skipped += 1;
+      continue;
+    }
     seen.add(key);
     data.ratings.push({ ...r, target: t, importId: record.id });
     report.added += 1;
@@ -191,6 +196,12 @@ export function mergeImport(data, incomingRaw, { file = '', now = nowIso() } = {
   record.report = { conflicts: report.conflicts, duplicates: report.duplicates, checks: report.checks };
   data.imports.push(record);
   return report;
+}
+
+function fillNotes(local, incoming) {
+  if (local.notes || !incoming.notes) return false;
+  local.notes = incoming.notes;
+  return true;
 }
 
 // Fills fields the local unit lacks, combines readings / meanings / writings, reports contradictions.

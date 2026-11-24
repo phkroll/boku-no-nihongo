@@ -222,7 +222,9 @@ test('settings: load published data — content first, knowledge only if present
   const d = ensureStarter(emptyData());
   const root = page();
   screens.settings.render(root, makeCtx(d), {});
-  clickText(root, 'Load published data');
+  clickText(root, 'Load published data…');
+  clickText(root, 'Content + what I know');
+  clickText(root, 'Load');
   await tick();
   await tick();
   assert.deepEqual(requested, ['data/content.json', 'data/knowledge.json']);
@@ -276,4 +278,26 @@ test('a tag created in an edit exists only once the edit is saved', async () => 
   assert.ok(tag);
   assert.deepEqual(d.kanji.find((k) => k.char === '鳥').tagIds, [tag.id]);
   assert.ok(!d.tags.some((t) => t.name === 'Never saved'));
+});
+
+test('settings: load published data — content only', async () => {
+  const { splitData } = await import('../js/model/split.js');
+  const { content, knowledge } = splitData(sampleData().d);
+  const requested = [];
+  globalThis.fetch = async (url) => {
+    requested.push(url);
+    const body = url === 'data/content.json' ? content : knowledge;
+    return { ok: true, status: 200, text: async () => JSON.stringify(body) };
+  };
+  const d = ensureStarter(emptyData());
+  const root = page();
+  screens.settings.render(root, makeCtx(d), {});
+  clickText(root, 'Load published data…');
+  clickText(root, 'Learning content only');
+  clickText(root, 'Load');
+  await tick();
+  await tick();
+  assert.deepEqual(requested, ['data/content.json']);
+  assert.equal(d.ratings.length, 0);
+  delete globalThis.fetch;
 });

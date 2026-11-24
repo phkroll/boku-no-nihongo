@@ -133,3 +133,19 @@ test('report is kept with the import record', () => {
   merge(d, set((x) => addUnit(x, 'word', { writings: [{ text: '帰る' }], reading: 'かえる', verbGroup: 'ru' })));
   assert.equal(d.imports.at(-1).report.conflicts.length, 1);
 });
+
+test('a second import counts everything as already there, not only entries', async () => {
+  const { addRating } = await import('../../js/model/ratings.js');
+  const inc = set((x) => {
+    const a = makeRef('kanji', addUnit(x, 'kanji', { char: '聞' }).id);
+    const b = makeRef('kanji', addUnit(x, 'kanji', { char: '間' }).id);
+    addRelation(x, { type: 'looks-similar', members: [a, b] });
+    addRating(x, { unit: a }, { value: 'known' }, { now: T });
+    x.tags.push({ id: 't1', name: 'N5' });
+  });
+  const d = emptyData();
+  const first = merge(d, inc);
+  const second = merge(d, inc);
+  assert.equal(first.added, 5);
+  assert.deepEqual([second.added, second.updated, second.skipped], [0, 0, 5]);
+});
