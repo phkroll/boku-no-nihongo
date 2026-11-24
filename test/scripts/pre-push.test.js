@@ -97,3 +97,15 @@ test('an @file include line is not an email address', () => {
   assert.equal(r.status, 0, r.stderr);
   rmSync(t.dir, { recursive: true });
 });
+
+test('changes to files that run on this Mac are flagged, not blocked', () => {
+  const t = setup();
+  t.commit('package.json', '{"scripts":{"x":"echo hi"}}\n');
+  t.commit('scripts/tool.mjs', 'console.log(1)\n');
+  const r = t.push();
+  assert.equal(r.status, 0, r.stderr);
+  assert.match(r.stderr, /run on this Mac/);
+  assert.match(r.stderr, /package\.json/);
+  assert.match(r.stderr, /scripts\/tool\.mjs/);
+  rmSync(t.dir, { recursive: true });
+});

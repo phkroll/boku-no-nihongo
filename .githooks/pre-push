@@ -40,6 +40,7 @@ $(git log -1 --format='%an <%ae>%n%cn <%ce>%n%B' "$c")"
 }
 
 findings=""
+hostrun=""
 while read -r local_ref local_sha remote_ref remote_sha; do
   [ "$local_sha" = "$zero" ] && continue
   if [ "$remote_sha" = "$zero" ]; then
@@ -50,6 +51,8 @@ while read -r local_ref local_sha remote_ref remote_sha; do
   for c in $commits; do
     findings="$findings$(check_commit "$c")
 "
+    hostrun="$hostrun$(git diff-tree --no-commit-id --name-only -r --root "$c" | grep -E '^(package\.json$|scripts/|\.githooks/)')
+"
   done
 done
 
@@ -57,6 +60,14 @@ done
 if [ -f scripts/stamp.mjs ] && ! node scripts/stamp.mjs --check >/dev/null 2>&1; then
   findings="$findings
 stale build stamp: run npm run stamp and commit, otherwise phones keep the old version"
+fi
+
+# Not blocking: files that run on this Mac (npm scripts, hooks) changed — worth a look,
+# since work inside the sandbox could have changed them.
+hostrun=$(printf '%s' "$hostrun" | grep -v '^$' | sort -u)
+if [ -n "$hostrun" ]; then
+  echo "pre-push: note — these files run on this Mac and changed; check them before running them:" >&2
+  printf '%s\n' "$hostrun" | sed 's/^/  /' >&2
 fi
 
 findings=$(printf '%s' "$findings" | grep -v '^$')
