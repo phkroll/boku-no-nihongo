@@ -155,3 +155,4 @@ button.small { padding: 4px 10px; font-size: 14px; }
 .row-main .badge { margin-left: auto; }
 .report-item { padding: 8px 0; border-bottom: 1px solid var(--line); }
 a.kv { color: inherit; }
+.inline-select { width: auto; padding: 4px 8px; font-size: 15px; }

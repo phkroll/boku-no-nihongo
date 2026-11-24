@@ -6,6 +6,16 @@ import { RELATION_LABEL, hrefOf, refLink } from './describe.js';
 import { picker } from './picker.js';
 import { backLink } from './nav.js';
 
+// What each type means, with an example — shown under the type.
+const TYPE_HELP = {
+  'looks-similar': 'Kanji or words that look alike, e.g. 聞 / 間, 土 / 士. A fact — not whether you mix them up.',
+  'similar-meaning': 'Different words with a similar meaning but different use, e.g. 話す / 言う / 喋る. Note how they differ.',
+  'transitivity-pair': 'A verb pair: something happens by itself vs. someone does it, e.g. 開く (opens) / 開ける (opens something). Direction: by itself → does it.',
+  'politeness-variant': 'The same meaning at another politeness level, e.g. 食べる → 召し上がる.',
+  related: 'Any other connection worth remembering; describe it in the note.',
+  confuses: 'Personal: I mix these up. Tick “other member unknown” if you can’t remember with what.',
+};
+
 export function render(root, ctx, params) {
   const existing = params.id ? ctx.data.relations.find((r) => r.id === params.id) : undefined;
   if (params.id && !existing) return ctx.go('#/k/word', { replace: true });
@@ -17,16 +27,19 @@ export function render(root, ctx, params) {
   const body = h('div', { class: 'form' });
 
   const real = () => draft.members.filter((m) => m !== UNKNOWN);
+  const fixed = existing ? undefined : params.with; // the entry this relation was started from
 
   function draw() {
     clear(body);
     const unknown = draft.members.includes(UNKNOWN);
     fill(body, 
       field('Type', select(RELATION_TYPES.map((t) => [t, RELATION_LABEL[t]]), draft.type, (v) => { draft.type = v; draw(); })),
+      h('p', { class: 'muted small' }, TYPE_HELP[draft.type]),
       field('Members', h('div', { class: 'stack' },
-        h('div', { class: 'chips' }, real().map((m) => h('span', { class: 'chip on' }, refLink(ctx.data, m, { withKind: true }), ' ',
-          button('×', () => { draft.members = draft.members.filter((x) => x !== m); draw(); }, 'small')))),
-        picker(ctx, { exclude: draft.members, placeholder: 'Add member…', onPick: (ref) => { draft.members = [...draft.members, ref]; draw(); } }),
+        h('div', { class: 'chips' }, real().map((m) => h('span', { class: 'chip on' }, refLink(ctx.data, m, { withKind: true }),
+          m === fixed ? h('small', {}, ' (this entry)') : [' ', button('×', () => { draft.members = draft.members.filter((x) => x !== m); draw(); }, 'small')]))),
+        h('small', { class: 'muted' }, fixed ? 'Add the other member(s):' : 'Add members:'),
+        picker(ctx, { exclude: draft.members, placeholder: 'Search word, kanji, grammar…', onPick: (ref) => { draft.members = [...draft.members, ref]; draw(); } }),
         h('label', { class: 'check' }, h('input', { type: 'checkbox', checked: unknown, onchange: (ev) => {
           draft.members = ev.target.checked ? [...real(), UNKNOWN] : real();
           draw();

@@ -1,5 +1,5 @@
-import { UNKNOWN, getUnit, makeRef, parseRef, visibleMeanings } from '../model/data.js';
-import { deleteUnit, splitMeaning } from '../model/units.js';
+import { UNKNOWN, VERB_GROUPS, WORD_CLASSES, getUnit, makeRef, parseRef, visibleMeanings } from '../model/data.js';
+import { deleteUnit, splitMeaning, updateUnit } from '../model/units.js';
 import { relationsOf } from '../model/relations.js';
 import { calculatedRelations } from '../model/calculated.js';
 import { KIND_UI, STATE_LABEL, classTag } from './kinds.js';
@@ -10,7 +10,6 @@ import { detailRatings, overallRating } from './questions.js';
 import { rateHref } from './rate.js';
 
 const state = (v) => STATE_LABEL[v] ?? v;
-const notSet = () => h('span', { class: 'muted' }, 'not set');
 const row = (label, value) => value !== undefined && value !== '' && h('div', { class: 'kv' }, h('span', { class: 'muted' }, label), h('span', {}, value));
 
 function meaningsSection(ctx, ref, unit, error) {
@@ -41,14 +40,28 @@ function kanjiParts(data, unit) {
     : h('p', { class: 'muted' }, 'No reading yet.'));
 }
 
-function wordParts(data, unit) {
+// Word class and verb group are set right here (they matter for forms later), not only via Edit.
+function quickSelect(ctx, ref, field, label, values) {
+  const unit = getUnit(ctx.data, ref);
+  return h('select', {
+    'aria-label': label,
+    class: 'inline-select',
+    onchange: async (ev) => {
+      updateUnit(ctx.data, ref, { [field]: ev.target.value || undefined });
+      await ctx.save();
+      ctx.go(`#/u/${encodeURIComponent(ref)}`, { replace: true });
+    },
+  }, h('option', { value: '' }, 'not set — choose…'), values.map((v) => h('option', { value: v, selected: unit[field] === v }, v)));
+}
+
+function wordParts(data, unit, ctx, ref) {
   const writings = Array.isArray(unit.writings) ? unit.writings.map((w) => w.text).join('・') : state(unit.writings);
   return [
     section('Word',
       row('writing', writings && jp(writings)),
       row('reading', unit.reading && jp(unit.reading)),
-      row('class', unit.wordClass ? state(unit.wordClass) + (unit.suru ? ' (する)' : '') : notSet()),
-      unit.wordClass === 'verb' && row('verb group', unit.verbGroup ? state(unit.verbGroup) : notSet()),
+      row('class', quickSelect(ctx, ref, 'wordClass', 'Word class', WORD_CLASSES)),
+      unit.wordClass === 'verb' && row('verb group', quickSelect(ctx, ref, 'verbGroup', 'Verb group', VERB_GROUPS)),
       row('usually written', unit.usuallyWritten),
       unit.wholeWordReading && row('reading', 'belongs to the whole word')),
     unit.kanjiUses?.length > 0 && section('Kanji readings used', unit.kanjiUses.map((u) => {
@@ -99,7 +112,7 @@ function ratingsSection(ctx, ref) {
       h('a', { href: rateHref(ref, question?.key ?? `t:${key}`), class: 'row' },
         h('span', { class: 'row-main' }, question?.label ?? describeTarget(ctx.data, target), badge(ratingText(rating), `rating-${rating.value}`)),
         h('span', { class: 'row-sub' }, question?.hint ?? '', rating.note && ` · ${rating.note}`))))),
-    link(rateHref(ref), '+ Add detail', 'button-link'));
+    link(rateHref(ref), '+ Rate something I know', 'button-link'));
 }
 
 function notesSection(ctx, ref) {
@@ -145,7 +158,7 @@ export function render(root, ctx, { ref }) {
       error.el,
       kind === 'note' && button(unit.open ? 'Mark as resolved' : 'Reopen', toggleOpen, 'wide'),
       (kind === 'kanji' || kind === 'word') && meaningsSection(ctx, ref, unit, error),
-      PARTS[kind](ctx.data, unit),
+      PARTS[kind](ctx.data, unit, ctx, ref),
       unit.notes && section('Notes', h('p', { class: 'pre' }, unit.notes)),
       relationsSection(ctx, ref),
       kind !== 'note' && notesSection(ctx, ref),

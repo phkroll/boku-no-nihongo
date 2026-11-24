@@ -330,3 +330,47 @@ test('word detail shows the class, or that it is not set', () => {
   screens.detail.render(b, makeCtx(d), { ref: makeRef('word', hon.id) });
   assert.match(text(b), /not set/);
 });
+
+test('word class can be set right on the entry page', async () => {
+  const { d } = sampleData();
+  const hon = addUnit(d, 'word', { writings: [{ text: '本' }], reading: 'ほん' });
+  const ctx = makeCtx(d);
+  const root = page();
+  screens.detail.render(root, ctx, { ref: makeRef('word', hon.id) });
+  const select = root.all((n) => n.tagName === 'SELECT' && n.attrs['aria-label'] === 'Word class')[0];
+  assert.ok(select, 'class select on the entry page');
+  select.fire('change', { target: { value: 'noun' } });
+  await tick();
+  assert.equal(hon.wordClass, 'noun');
+  assert.equal(ctx.saved, 1);
+});
+
+test('verb group can be set right on the entry page', async () => {
+  const { d } = sampleData();
+  const kaeru = addUnit(d, 'word', { writings: [{ text: '帰る' }], reading: 'かえる', wordClass: 'verb' });
+  const root = page();
+  screens.detail.render(root, makeCtx(d), { ref: makeRef('word', kaeru.id) });
+  root.all((n) => n.tagName === 'SELECT' && n.attrs['aria-label'] === 'Verb group')[0].fire('change', { target: { value: 'u' } });
+  await tick();
+  assert.equal(kaeru.verbGroup, 'u');
+});
+
+test('clear names: rate link and the class question', () => {
+  const { d, refs } = sampleData();
+  const root = page();
+  screens.detail.render(root, makeCtx(d), { ref: refs.w });
+  assert.match(text(root), /Rate something I know/);
+  const rate = page();
+  screens.rate.render(rate, makeCtx(d), { ref: refs.w });
+  assert.match(text(rate), /Know its word class/);
+});
+
+test('new relation: the entry you came from is fixed, types are explained', () => {
+  const { d, refs } = sampleData();
+  const root = page();
+  screens.relation.render(root, makeCtx(d), { with: refs.k });
+  assert.match(text(root), /this entry/);
+  assert.match(text(root), /Add the other member/);
+  assert.match(text(root), /Related/);
+  assert.match(text(root), /any other connection/i);
+});

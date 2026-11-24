@@ -16,7 +16,7 @@ function wordQuestions(ref, w) {
     q('understand-heard', 'Understand it heard', `${said} → meaning`, { unit: ref, from: 'reading', to: 'meaning' }),
     q('say', 'Say it', `meaning → ${said}`, { unit: ref, from: 'meaning', to: 'reading' }),
     writing && q('write', 'Write it in kanji', `meaning → ${writing}`, { unit: ref, from: 'meaning', to: 'writing' }),
-    q('class', 'Word class / verb group', 'e.g. ru-verb, na-adjective', { unit: ref, to: 'class' }),
+    q('class', 'Know its word class', 'e.g. that it is a ru-verb or na-adjective (the class itself is set on the entry)', { unit: ref, to: 'class' }),
     writing && q('recognise', 'Recognise it written', 'unclear whether reading or meaning', { unit: ref, from: 'writing' }),
     ...(meanings.length > 1 ? meanings.map((m) => q(`meaning:${m.id}`, `Meaning “${m.gloss}”`, '', { unit: ref, to: 'meaning', meaningId: m.id })) : []),
     { ...q('form', 'A form', 'e.g. casual past', { unit: ref }), needsForm: true },
