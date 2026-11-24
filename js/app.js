@@ -1,5 +1,5 @@
 import { loadData, saveData, requestPersist, guardedSave } from './store.js';
-import { h, clear } from './ui/dom.js';
+import { h, clear, fill } from './ui/dom.js';
 import { KIND_UI, TABS } from './ui/kinds.js';
 import * as list from './ui/list.js';
 import * as detail from './ui/detail.js';
@@ -8,6 +8,7 @@ import * as relation from './ui/relation.js';
 import * as rate from './ui/rate.js';
 import * as review from './ui/review.js';
 import * as settings from './ui/settings.js';
+import { createNav } from './ui/nav.js';
 
 const ROUTES = [
   [/^#\/settings$/, settings, () => ({})],
@@ -25,14 +26,21 @@ const root = document.getElementById('app');
 
 const ctx = {
   data: null,
+  nav: createNav(location.hash || '#/k/word'),
   save: guardedSave(() => saveData(ctx.data), (message) => alert(message)),
   go(hash, { replace = false } = {}) {
     if (replace || location.hash === hash) {
       history.replaceState(null, '', hash);
+      ctx.nav.replace(hash);
       show();
     } else {
       location.hash = hash;
     }
+  },
+  // One step back after saving or cancelling; fallback when this is the first page.
+  back(fallback) {
+    if (ctx.nav.previous()) history.back();
+    else ctx.go(fallback, { replace: true });
   },
 };
 
@@ -53,14 +61,14 @@ function tabBar(active) {
 function draw(screen, params) {
   clear(root);
   const page = h('div', { class: 'page' });
-  root.append(page);
+  fill(root, page);
   try {
     screen.render(page, ctx, params);
   } catch (e) {
-    page.append(h('p', { class: 'error' }, `Something went wrong: ${e.message}`));
+    fill(page, h('p', { class: 'error' }, `Something went wrong: ${e.message}`));
   }
   const tab = params.tab ?? (params.ref ? params.ref.split(':')[0] : undefined);
-  root.append(tabBar(tab));
+  fill(root, tabBar(tab));
   window.scrollTo(0, 0);
 }
 
@@ -68,7 +76,10 @@ async function start() {
   navigator.serviceWorker?.register('sw.js');
   requestPersist();
   ctx.data = await loadData();
-  window.addEventListener('hashchange', show);
+  window.addEventListener('hashchange', () => {
+    ctx.nav.visit(location.hash);
+    show();
+  });
   show();
 }
 

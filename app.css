@@ -146,3 +146,5 @@ button.small { padding: 4px 10px; font-size: 14px; }
 .ok { color: var(--sentence); margin: 0; }
 .ok:empty { display: none; }
 .inline .field { flex: 1; }
+.kind-tag { font-size: 11px; color: #fff; border-radius: 4px; padding: 0 4px; margin-right: 4px; vertical-align: middle; background: var(--muted); }
+.small-link { font-size: 14px; align-self: center; }

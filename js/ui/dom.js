@@ -25,6 +25,12 @@ export function isSubmitEnter(ev) {
   return ev.key === 'Enter' && !ev.isComposing && ev.keyCode !== 229;
 }
 
+// Adds children like h() does: false, null, undefined and '' are skipped (the DOM's own append prints them).
+export function fill(el, ...children) {
+  append(el, children);
+  return el;
+}
+
 export function clear(el) {
   el.replaceChildren();
 }

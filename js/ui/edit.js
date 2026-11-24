@@ -2,9 +2,10 @@
 import { getUnit, parseRef } from '../model/data.js';
 import { addUnit, updateUnit, cleanupRemovedParts } from '../model/units.js';
 import { KIND_UI } from './kinds.js';
-import { h, clear, topBar, link, field, select, errorLine } from './dom.js';
+import { h, clear, topBar, field, select, errorLine, fill } from './dom.js';
 import { hrefOf } from './describe.js';
 import * as F from './fields.js';
+import { backLink } from './nav.js';
 
 function emptyDraft(kind, about) {
   const draft = {};
@@ -69,11 +70,11 @@ export function render(root, ctx, params) {
     clear(form);
     for (const f of ui.fields) {
       if (f.when && !f.when(draft)) continue;
-      form.append(f.type === 'check'
+      fill(form, f.type === 'check'
         ? h('label', { class: 'check' }, editor(f), f.label)
         : field(f.label + (f.core ? ' *' : ''), editor(f)));
     }
-    form.append(error.el, h('button', { type: 'submit', class: 'primary' }, 'Save'));
+    fill(form, error.el, h('button', { type: 'submit', class: 'primary' }, 'Save'));
   }
 
   async function save() {
@@ -88,14 +89,15 @@ export function render(root, ctx, params) {
         saved = addUnit(ctx.data, kind, fields);
       }
       await ctx.save();
-      ctx.go(hrefOf(`${kind}:${saved.id}`), { replace: true });
+      if (existing) ctx.back(hrefOf(ref));
+      else ctx.go(hrefOf(`${kind}:${saved.id}`), { replace: true });
     } catch (e) {
       error.show(e);
     }
   }
 
   const back = existing ? hrefOf(ref) : params.about ? hrefOf(params.about) : `#/k/${kind}`;
-  root.append(topBar(existing ? `Edit ${ui.label.toLowerCase()}` : `New ${ui.label.toLowerCase()}`, link(back, 'Cancel'), null),
+  fill(root, topBar(existing ? `Edit ${ui.label.toLowerCase()}` : `New ${ui.label.toLowerCase()}`, backLink(ctx, 'Cancel', back), null),
     h('p', { class: 'muted pad' }, '* is enough to save. Fill in the rest when you know it.'),
     form);
   draw();

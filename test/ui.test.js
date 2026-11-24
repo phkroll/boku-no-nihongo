@@ -41,6 +41,12 @@ test('sw precaches every app file', () => {
   assert.deepEqual([...listed].sort(), expected.sort());
 });
 
+test('screens add children via fill(), never the DOM append that prints false/null', () => {
+  for (const file of filesUnder('js', '.js').filter((f) => !f.endsWith('ui/dom.js'))) {
+    assert.doesNotMatch(readFileSync(join(ROOT, file), 'utf8'), /\.append\(/, file);
+  }
+});
+
 test('no HTML injection sinks', () => {
   for (const file of filesUnder('js', '.js')) {
     const src = readFileSync(join(ROOT, file), 'utf8');

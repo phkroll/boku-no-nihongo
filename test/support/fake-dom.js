@@ -11,7 +11,8 @@ class FakeNode {
     this.selected = false;
     this.files = [];
   }
-  append(...nodes) { for (const n of nodes) this.children.push(typeof n === 'string' ? new FakeText(n) : n); }
+  // Like the real DOM: anything that isn't a node becomes text (false → "false").
+  append(...nodes) { for (const n of nodes) this.children.push(n instanceof FakeNode || n instanceof FakeText ? n : new FakeText(String(n))); }
   replaceChildren(...nodes) { this.children = []; this.append(...nodes); }
   setAttribute(k, v) { this.attrs[k] = String(v); }
   getAttribute(k) { return this.attrs[k]; }
@@ -41,6 +42,18 @@ export function installFakeDom() {
 export function fieldInput(root, label) {
   const f = root.all((n) => n.tagName === 'LABEL' && n.attrs.class === 'field' && n.children[0]?.textContent?.startsWith(label))[0];
   return f?.all((n) => n.tagName === 'INPUT' || n.tagName === 'TEXTAREA')[0];
+}
+
+export function strayTexts(root) {
+  const out = [];
+  const walk = (n) => {
+    for (const c of n.children ?? []) {
+      if (c instanceof FakeText && ['false', 'null', 'undefined', 'true'].includes(c.textContent.trim())) out.push(c.textContent);
+      if (c instanceof FakeNode) walk(c);
+    }
+  };
+  walk(root);
+  return out;
 }
 
 export function text(root) {

@@ -1,6 +1,7 @@
 import { exportJson, parseBackup, parseRestore, markExported, mergeImport } from '../model/io.js';
 import { ensureStarter } from '../model/starter.js';
-import { h, topBar, link, section, button, errorLine } from './dom.js';
+import { h, topBar, section, button, errorLine, fill } from './dom.js';
+import { backLink } from './nav.js';
 
 function backupName() {
   return `boku-no-nihongo-${new Date().toISOString().slice(0, 10)}.json`;
@@ -87,8 +88,8 @@ export function render(root, ctx) {
     redraw();
   };
 
-  root.append(
-    topBar('Settings', link('#/k/word', '‹ Back'), null),
+  fill(root, 
+    topBar('Settings', backLink(ctx, '‹ Back', ctx.nav?.lastList() ?? '#/k/word'), null),
     h('div', { class: 'detail' },
       h('p', { class: 'muted' }, `${d.words.length} words · ${d.kanji.length} kanji · ${d.grammar.length} grammar · ${d.sentences.length} sentences · ${d.notes.length} notes · ${d.relations.length} relations · ${d.ratings.length} ratings`),
       error.el, info,

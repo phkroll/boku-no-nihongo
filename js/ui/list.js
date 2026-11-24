@@ -1,6 +1,6 @@
 import { search } from '../model/search.js';
 import { KIND_UI } from './kinds.js';
-import { h, clear, topBar, link, jp, badge } from './dom.js';
+import { h, clear, topBar, link, jp, badge, fill } from './dom.js';
 import { hrefOf } from './describe.js';
 import { COLLECTION, makeRef } from '../model/data.js';
 
@@ -25,20 +25,20 @@ export function render(root, ctx, { kind }) {
   const draw = () => {
     clear(results);
     const units = search(ctx.data, kind, f);
-    if (units.length === 0) results.append(h('li', { class: 'empty' }, ctx.data[COLLECTION[kind]].length ? 'Nothing matches.' : `No ${ui.plural.toLowerCase()} yet. Tap + to add one.`));
+    if (units.length === 0) fill(results, h('li', { class: 'empty' }, ctx.data[COLLECTION[kind]].length ? 'Nothing matches.' : `No ${ui.plural.toLowerCase()} yet. Tap + to add one.`));
     for (const u of units.slice(0, shown)) {
-      results.append(h('li', {}, h('a', { href: hrefOf(makeRef(kind, u.id)), class: 'row' },
+      fill(results, h('li', {}, h('a', { href: hrefOf(makeRef(kind, u.id)), class: 'row' },
         h('span', { class: 'row-main' }, jp(ui.title(u), kind === 'kanji' ? 'big' : '')),
         h('span', { class: 'row-sub' }, kind === 'note' && u.open && badge('open', 'open'), ui.sub(u)))));
     }
-    if (units.length > shown) results.append(h('li', {}, h('button', { type: 'button', class: 'plain more', onclick: () => { shown += PAGE; draw(); } }, `Show more (${units.length - shown})`)));
+    if (units.length > shown) fill(results, h('li', {}, h('button', { type: 'button', class: 'plain more', onclick: () => { shown += PAGE; draw(); } }, `Show more (${units.length - shown})`)));
   };
 
   const tags = [...ctx.data.tags].sort((a, b) => a.name.localeCompare(b.name));
   if (!tags.some((t) => t.id === f.tagId)) f.tagId = '';
   const proposed = ctx.data.relations.filter((r) => r.status === 'proposed').length;
 
-  root.append(
+  fill(root, 
     topBar(ui.plural, link('#/settings', 'Settings'), link(`#/k/${kind}/new`, '+', 'add')),
     backupReminder(ctx.data),
     kind === 'note' && proposed > 0 && h('a', { href: '#/review', class: 'reminder' }, `${proposed} suggested relations to check`),

@@ -4,8 +4,9 @@ import { relationsOf } from '../model/relations.js';
 import { calculatedRelations } from '../model/calculated.js';
 import { currentRatings } from '../model/ratings.js';
 import { KIND_UI, STATE_LABEL } from './kinds.js';
-import { h, topBar, link, section, jp, badge, button, errorLine } from './dom.js';
+import { h, topBar, link, section, jp, badge, button, errorLine, fill } from './dom.js';
 import { RELATION_LABEL, describeTarget, ratingText, refLink, formText } from './describe.js';
+import { backLink } from './nav.js';
 
 const state = (v) => STATE_LABEL[v] ?? v;
 const row = (label, value) => value !== undefined && value !== '' && h('div', { class: 'kv' }, h('span', { class: 'muted' }, label), h('span', {}, value));
@@ -75,10 +76,10 @@ function relationsSection(ctx, ref) {
       r.status !== 'confirmed' && badge(r.status === 'proposed' && r.type === 'confuses' ? 'suspected' : r.status, 'warn'),
       r.origin?.kind === 'suggested' && badge('suggested', 'muted-badge'),
       r.direction && h('span', { class: 'muted' }, r.direction[0] === ref ? ' →' : ' ←'),
-      h('span', { class: 'rel-members' }, others(r.members).map((m) => refLink(ctx.data, m))))),
+      h('span', { class: 'rel-members' }, others(r.members).map((m) => refLink(ctx.data, m, { withKind: true }))))),
     calculated.map((c) => h('div', { class: 'rel calc' },
       h('span', { class: 'rel-type' }, RELATION_LABEL[c.type] ?? c.type), badge('auto', 'muted-badge'),
-      h('span', { class: 'rel-members' }, others(c.refs).map((m) => refLink(ctx.data, m)), c.detail && h('span', { class: 'muted' }, ` ${c.detail}`)))),
+      h('span', { class: 'rel-members' }, others(c.refs).map((m) => refLink(ctx.data, m, { withKind: true })), c.detail && h('span', { class: 'muted' }, ` ${c.detail}`)))),
     !stored.length && !calculated.length && h('p', { class: 'muted' }, 'No relations yet.'),
     link(`#/relation/new?with=${encodeURIComponent(ref)}`, '+ Add relation', 'button-link'));
 }
@@ -122,8 +123,8 @@ export function render(root, ctx, { ref }) {
     ctx.go(`#/u/${encodeURIComponent(ref)}`, { replace: true });
   };
 
-  root.append(
-    topBar(ui.label, link(`#/k/${kind}`, `‹ ${ui.plural}`), link(`#/u/${encodeURIComponent(ref)}/edit`, 'Edit')),
+  fill(root, 
+    topBar(ui.label, backLink(ctx, '‹ Back', `#/k/${kind}`), link(`#/u/${encodeURIComponent(ref)}/edit`, 'Edit')),
     h('article', { class: 'detail' },
       h('div', { class: 'detail-head' },
         jp(ui.title(unit), kind === 'note' || kind === 'sentence' ? 'detail-text small' : 'detail-text'),

@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { installFakeDom, fieldInput, text } from './support/fake-dom.js';
+import { installFakeDom, fieldInput, text, strayTexts } from './support/fake-dom.js';
 import { emptyData, makeRef, UNKNOWN } from '../js/model/data.js';
 import { addUnit, addMeaning, addReading } from '../js/model/units.js';
 import { addRelation } from '../js/model/relations.js';
@@ -137,4 +137,22 @@ test('Enter in a text field does not save the form; Enter in the tag field adds 
   tagInput.value = 'にほ';
   tagInput.fire('keydown', { key: 'Enter', isComposing: true, keyCode: 229 });
   assert.ok(!d.tags.some((t) => t.name === 'にほ'));
+});
+
+test('no screen shows stray false / null / undefined', () => {
+  const { d, refs } = sampleData();
+  const renders = [
+    ...['word', 'kanji', 'grammar', 'sentence', 'note'].map((kind) => [screens.list, { kind }]),
+    ...[refs.k, refs.w, refs.s].flatMap((ref) => [[screens.detail, { ref }], [screens.rate, { ref }], [screens.edit, { ref }]]),
+    [screens.rate, { ref: makeRef('relation', refs.rel.id) }],
+    [screens.relation, { with: refs.k }],
+    [screens.relation, { id: refs.rel.id }],
+    [screens.review, {}],
+    [screens.settings, {}],
+  ];
+  for (const [screen, params] of renders) {
+    const root = page();
+    screen.render(root, makeCtx(d), params);
+    assert.deepEqual(strayTexts(root), [], JSON.stringify(params));
+  }
 });

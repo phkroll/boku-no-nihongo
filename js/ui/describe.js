@@ -25,10 +25,13 @@ export function hrefOf(ref) {
   return parseRef(ref).kind === 'relation' ? `#/relation/${encodeURIComponent(parseRef(ref).id)}` : `#/u/${encodeURIComponent(ref)}`;
 }
 
-export function refLink(data, ref) {
+// withKind: shows whether the link leads to a kanji, a word, … (本 the kanji vs 本 the word).
+export function refLink(data, ref, { withKind = false } = {}) {
   if (ref === UNKNOWN) return h('span', { class: 'muted' }, '? (unknown)');
   if (!getUnit(data, ref)) return h('span', { class: 'muted' }, '(deleted)');
-  return h('a', { href: hrefOf(ref), class: 'ref' }, jp(unitLabel(data, ref)));
+  const kind = parseRef(ref).kind;
+  return h('a', { href: hrefOf(ref), class: 'ref' },
+    withKind && h('span', { class: `kind-tag kind-${kind}` }, kindLabel(ref)), jp(unitLabel(data, ref)));
 }
 
 export function kindLabel(ref) {

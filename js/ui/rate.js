@@ -2,8 +2,9 @@
 import { CONFIDENCE, FORM_KEYS, UNKNOWN, getUnit, parseRef, unitLabel, visibleMeanings } from '../model/data.js';
 import { addRating, currentRatings, ratingHistory } from '../model/ratings.js';
 import { KIND_UI } from './kinds.js';
-import { h, clear, topBar, link, field, select, chips, errorLine, badge } from './dom.js';
+import { h, clear, topBar, field, select, chips, errorLine, badge, fill } from './dom.js';
 import { FACET_LABEL, describeTarget, hrefOf, ratingText } from './describe.js';
+import { backLink } from './nav.js';
 
 const VALUES = [['unknown', 'Don’t know'], ['partly', 'Partly'], ['known', 'Know it'], ['cleared', 'Not assessed']];
 
@@ -25,7 +26,7 @@ export function render(root, ctx, { ref }) {
     clear(body);
     const members = isRelation ? unit.members.filter((m) => m !== UNKNOWN) : [];
     const history = ratingHistory(ctx.data, target);
-    body.append(
+    fill(body, 
       h('p', { class: 'muted' }, 'Fill in only what you know. Empty parts mean “not sure which part”.'),
       facets.length > 0 && h('div', { class: 'inline' }, field('From', facetSelect('from')), field('To', facetSelect('to'))),
       visibleMeanings(unit).length > 0 && field('Meaning', select([['', '— (any / unclear)'], ...visibleMeanings(unit).map((m) => [m.id, m.gloss])], target.meaningId, (v) => { target.meaningId = v || undefined; draw(); })),
@@ -63,12 +64,12 @@ export function render(root, ctx, { ref }) {
       if (t.members && t.members.length !== 2) throw new Error('Pick two members to rate telling them apart');
       addRating(ctx.data, t, rating);
       await ctx.save();
-      ctx.go(back, { replace: true });
+      ctx.back(back);
     } catch (e) {
       error.show(e);
     }
   }
 
-  root.append(topBar(`Rate ${isRelation ? 'relation' : unitLabel(ctx.data, ref)}`, link(back, 'Cancel'), null), body);
+  fill(root, topBar(`Rate ${isRelation ? 'relation' : unitLabel(ctx.data, ref)}`, backLink(ctx, 'Cancel', back), null), body);
   draw();
 }

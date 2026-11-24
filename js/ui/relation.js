@@ -1,9 +1,10 @@
 // Create or edit a stored relation: type, members (2+ or 1 + unknown), optional direction, status, note.
 import { RELATION_TYPES, RELATION_STATUS, UNKNOWN, makeRef, unitLabel } from '../model/data.js';
 import { addRelation, updateRelation, deleteRelation } from '../model/relations.js';
-import { h, clear, topBar, link, field, select, button, errorLine, chips } from './dom.js';
-import { RELATION_LABEL, hrefOf, refLink, kindLabel } from './describe.js';
+import { h, clear, topBar, link, field, select, button, errorLine, chips, fill } from './dom.js';
+import { RELATION_LABEL, hrefOf, refLink } from './describe.js';
 import { picker } from './picker.js';
+import { backLink } from './nav.js';
 
 export function render(root, ctx, params) {
   const existing = params.id ? ctx.data.relations.find((r) => r.id === params.id) : undefined;
@@ -20,10 +21,10 @@ export function render(root, ctx, params) {
   function draw() {
     clear(body);
     const unknown = draft.members.includes(UNKNOWN);
-    body.append(
+    fill(body, 
       field('Type', select(RELATION_TYPES.map((t) => [t, RELATION_LABEL[t]]), draft.type, (v) => { draft.type = v; draw(); })),
       field('Members', h('div', { class: 'stack' },
-        h('div', { class: 'chips' }, real().map((m) => h('span', { class: 'chip on' }, refLink(ctx.data, m), h('small', { class: 'muted' }, ` ${kindLabel(m)} `),
+        h('div', { class: 'chips' }, real().map((m) => h('span', { class: 'chip on' }, refLink(ctx.data, m, { withKind: true }), ' ',
           button('×', () => { draft.members = draft.members.filter((x) => x !== m); draw(); }, 'small')))),
         picker(ctx, { exclude: draft.members, placeholder: 'Add member…', onPick: (ref) => { draft.members = [...draft.members, ref]; draw(); } }),
         h('label', { class: 'check' }, h('input', { type: 'checkbox', checked: unknown, onchange: (ev) => {
@@ -50,7 +51,7 @@ export function render(root, ctx, params) {
       if (existing) updateRelation(ctx.data, existing.id, fields);
       else addRelation(ctx.data, fields);
       await ctx.save();
-      ctx.go(back, { replace: true });
+      ctx.back(back);
     } catch (e) {
       error.show(e);
     }
@@ -63,6 +64,6 @@ export function render(root, ctx, params) {
     ctx.go(back, { replace: true });
   }
 
-  root.append(topBar(existing ? 'Relation' : 'New relation', link(back, 'Cancel'), null), body);
+  fill(root, topBar(existing ? 'Relation' : 'New relation', backLink(ctx, 'Cancel', back), null), body);
   draw();
 }
