@@ -129,3 +129,53 @@ export function linksOf(data, entryId) {
     .map((link) => ({ link, other: getEntry(data, link.from === entryId ? link.to : link.from) }))
     .filter(({ other }) => other);
 }
+
+export function exportJson(data) {
+  return JSON.stringify({ ...data, exportedAt: nowIso() }, null, 2);
+}
+
+const NOT_A_BACKUP = 'This file is not a Boku no Nihongo backup';
+
+const str = (v) => (typeof v === 'string' ? v : '');
+
+// Returns a fresh Data object; throws before anything is replaced.
+// Unknown kind/wordType strings are kept so newer backups survive older app versions.
+export function importJson(text) {
+  let raw;
+  try {
+    raw = JSON.parse(text);
+  } catch {
+    throw new Error(NOT_A_BACKUP);
+  }
+  const valid =
+    raw && typeof raw === 'object' && raw.version === 1 &&
+    ['entries', 'tags', 'links'].every((k) => Array.isArray(raw[k]));
+  if (!valid) throw new Error(NOT_A_BACKUP);
+
+  const tags = raw.tags
+    .filter((t) => str(t?.id) && str(t?.name).trim())
+    .map((t) => ({ id: t.id, name: t.name.trim() }));
+  const tagIds = new Set(tags.map((t) => t.id));
+
+  const entries = raw.entries
+    .filter((e) => str(e?.id) && str(e?.text).trim())
+    .map((e) => ({
+      id: e.id,
+      kind: str(e.kind),
+      text: e.text.trim(),
+      reading: str(e.reading),
+      meaning: str(e.meaning),
+      notes: str(e.notes),
+      wordType: str(e.wordType),
+      tagIds: (Array.isArray(e.tagIds) ? e.tagIds : []).filter((id) => tagIds.has(id)),
+      created: str(e.created),
+      updated: str(e.updated),
+    }));
+  const entryIds = new Set(entries.map((e) => e.id));
+
+  const links = raw.links
+    .filter((l) => str(l?.id) && entryIds.has(l.from) && entryIds.has(l.to) && l.from !== l.to)
+    .map((l) => ({ id: l.id, from: l.from, to: l.to, note: str(l.note), created: str(l.created) }));
+
+  return { version: 1, entries, tags, links };
+}

@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {
   emptyData, addEntry, updateEntry, getEntry, deleteEntry, search,
   addTag, renameTag, deleteTag, addLink, deleteLink, linksOf,
+  exportJson, importJson,
 } from '../js/model.js';
 
 const T0 = '2026-01-01T00:00:00.000Z';
@@ -141,4 +142,51 @@ test('deleteEntry removes its links', () => {
   addLink(d, 'e1', 'e2');
   deleteEntry(d, 'e1');
   assert.equal(d.links.length, 0);
+});
+
+function withoutExportedAt(text) {
+  const { exportedAt, ...rest } = JSON.parse(text);
+  return rest;
+}
+
+test('round trip keeps entries, tags, links', () => {
+  const d = sample();
+  const t = addTag(d, 'food');
+  updateEntry(d, 'e1', { tagIds: [t.id] });
+  addLink(d, 'e1', 'e2', 'note');
+  const text = exportJson(d);
+  assert.ok(JSON.parse(text).exportedAt);
+  assert.deepEqual(importJson(text), withoutExportedAt(text));
+  assert.deepEqual(importJson(text), JSON.parse(JSON.stringify(d)));
+});
+
+test('importJson throws on garbage', () => {
+  for (const bad of ['{', '[]', 'null', '{"version":2,"entries":[],"tags":[],"links":[]}', '{"version":1,"entries":{},"tags":[],"links":[]}']) {
+    assert.throws(() => importJson(bad), /not a Boku no Nihongo backup/, bad);
+  }
+});
+
+test('importJson drops dangling refs', () => {
+  const text = JSON.stringify({
+    version: 1,
+    tags: [{ id: 't1', name: 'food' }],
+    entries: [
+      { id: 'e1', kind: 'word', text: 'a', tagIds: ['t1', 'gone'] },
+      { id: 'e2', kind: 'word', text: '' },
+      { kind: 'word', text: 'no id' },
+    ],
+    links: [{ id: 'l1', from: 'e1', to: 'e2' }],
+  });
+  const d = importJson(text);
+  assert.deepEqual(d.entries.map((e) => e.id), ['e1']);
+  assert.deepEqual(d.entries[0].tagIds, ['t1']);
+  assert.deepEqual(d.links, []);
+});
+
+test('importJson keeps unknown kind', () => {
+  const text = JSON.stringify({
+    version: 1, tags: [], links: [],
+    entries: [{ id: 'e1', kind: 'counter', text: '本', created: 'x', updated: 'x' }],
+  });
+  assert.equal(importJson(text).entries[0].kind, 'counter');
 });
