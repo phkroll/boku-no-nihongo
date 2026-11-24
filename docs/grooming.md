@@ -12,6 +12,8 @@ Open questions, assumptions and limitations found while building and using the a
 | Confirmed relation types: looks-similar, similar-meaning, transitivity-pair, politeness-variant, related, confuses | a relation fits none (record it as a note) |
 
 ## Limitations (known, accepted for now)
+- Seed's regular forms of 寝る kept as `word.forms` (example forms) although forms are meant to be derived — drop or keep once conjugation exists
+- Seed kanji readings/glosses are common examples, not verified; 192 readings have unknown type
 - Counter sound changes (一本 いっぽん) not modelled
 - Calculated "shared gloss" only works on split meanings
 - Data lives on one phone; backup = manual export
