@@ -23,6 +23,7 @@ Safari and the Home Screen app keep separate data — use the installed app.
 ## Load data
 
 **Published data** (in this repo, `data/`): Settings → **Load published data**. Importing twice adds nothing.
+After a push, wait until GitHub Pages has published (1–2 min, green in the Actions tab); loading earlier gets the old files.
 - `data/content.json`: kanji, words, grammar, sentences, relations
 - `data/knowledge.json`: what I know, mix-ups, notes (personal; delete the file to stop publishing it)
 
