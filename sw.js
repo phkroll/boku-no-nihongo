@@ -1,5 +1,6 @@
 // Offline support: network first (always fresh when online), cache as fallback.
-const CACHE = 'bnn-v5';
+// GitHub Pages lets browsers keep files for 10 minutes; 'no-cache' revalidates every request instead.
+const CACHE = 'bnn-v6';
 const NETWORK_TIMEOUT = 2500;
 const FILES = [
   './',
@@ -31,6 +32,7 @@ const FILES = [
   'js/ui/relation.js',
   'js/ui/review.js',
   'js/ui/settings.js',
+  'js/version.js',
   'icons/icon-180.png',
   'icons/icon-512.png',
 ];
@@ -55,7 +57,7 @@ self.addEventListener('fetch', (event) => {
 
 // Network first, but a hanging network (weak signal) falls back to the cache after a timeout.
 function respond(request, timeout = NETWORK_TIMEOUT) {
-  const network = fetch(request).then((response) => {
+  const network = fetch(request, { cache: 'no-cache' }).then((response) => {
     if (response.ok) {
       const copy = response.clone();
       caches.open(CACHE).then((c) => c.put(request, copy));

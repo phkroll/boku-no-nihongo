@@ -64,4 +64,5 @@ The phone needs an https address to install the app. GitHub Pages serves the fil
 
 ## Update
 
-Push to `main`. The app loads the newest files when online (open it twice to be sure); offline it uses the last copy.
+Push to `main`. The app checks for a new version each time it opens (online) and reloads once by itself; Settings shows the running version.
+When changing app files, bump `APP_VERSION` in `js/version.js` and `CACHE` in `sw.js` to the same number (a test checks they match).

@@ -20,6 +20,19 @@ test('sw falls back to cache when the network hangs', async () => {
   assert.equal(await sw.respond('req', 20), 'cached');
 });
 
+test('sw always revalidates with the server instead of using the browser cache', async () => {
+  const calls = [];
+  const sw = loadSw({ fetch: (...args) => { calls.push(args); return Promise.resolve({ ok: true, clone() { return this; } }); }, match: async () => undefined });
+  await sw.respond('req', 20);
+  assert.equal(calls[0][1]?.cache, 'no-cache');
+});
+
+test('sw cache name matches the app version shown in Settings', async () => {
+  const { APP_VERSION } = await import('../js/version.js');
+  const sw = readFileSync(new URL('../sw.js', import.meta.url), 'utf8');
+  assert.equal(sw.match(/const CACHE = '([^']+)'/)[1], `bnn-${APP_VERSION}`);
+});
+
 test('sw waits for the network when nothing is cached', async () => {
   const sw = loadSw({ fetch: () => new Promise((r) => setTimeout(() => r({ ok: true, clone() { return this; }, v: 'net' }), 50)), match: async () => undefined });
   assert.equal((await sw.respond('req', 20)).v, 'net');

@@ -72,8 +72,23 @@ function draw(screen, params) {
   window.scrollTo(0, 0);
 }
 
+// A new version takes over right after install; reload once so the screen shows it.
+function watchForUpdates() {
+  const sw = navigator.serviceWorker;
+  if (!sw) return;
+  const hadController = Boolean(sw.controller);
+  let reloaded = false;
+  sw.addEventListener('controllerchange', () => {
+    if (hadController && !reloaded) {
+      reloaded = true;
+      location.reload();
+    }
+  });
+  sw.register('sw.js', { updateViaCache: 'none' }).then((reg) => reg.update()).catch(() => {});
+}
+
 async function start() {
-  navigator.serviceWorker?.register('sw.js');
+  watchForUpdates();
   requestPersist();
   ctx.data = await loadData();
   window.addEventListener('hashchange', () => {

@@ -2,6 +2,7 @@ import { exportJson, parseBackup, parseRestore, markExported, mergeImport } from
 import { ensureStarter } from '../model/starter.js';
 import { h, topBar, section, button, errorLine, fill } from './dom.js';
 import { backLink } from './nav.js';
+import { APP_VERSION } from '../version.js';
 
 function backupName() {
   return `boku-no-nihongo-${new Date().toISOString().slice(0, 10)}.json`;
@@ -99,6 +100,7 @@ export function render(root, ctx) {
           button('Export backup', exportNow, 'primary'),
           fileButton('Add data from file… (merge)', addData),
           fileButton('Restore backup… (replace all)', restore))),
+      h('p', { class: 'muted small' }, `App version ${APP_VERSION}`),
       section('Imports', d.imports.length === 0 ? h('p', { class: 'muted' }, 'None yet.') : d.imports.map((i) => h('div', { class: 'kv' }, h('span', {}, i.file), h('span', { class: 'muted' }, i.at.slice(0, 10))))),
       section('Tags', d.tags.length === 0 && h('p', { class: 'muted' }, 'No tags yet.'),
         [...d.tags].sort((a, b) => a.name.localeCompare(b.name)).map((t) => h('div', { class: 'kv' }, h('span', {}, t.name),
