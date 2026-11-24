@@ -1,6 +1,9 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { emptyData, addEntry, updateEntry, getEntry, deleteEntry, search } from '../js/model.js';
+import {
+  emptyData, addEntry, updateEntry, getEntry, deleteEntry, search,
+  addTag, renameTag, deleteTag, addLink, deleteLink, linksOf,
+} from '../js/model.js';
 
 const T0 = '2026-01-01T00:00:00.000Z';
 const T1 = '2026-01-02T00:00:00.000Z';
@@ -66,4 +69,76 @@ test('search filters by kind and tagId, newest first', () => {
   assert.deepEqual(search(d, {}).map((e) => e.id), ['e3', 'e2', 'e1']);
   assert.deepEqual(search(d, { kind: 'word' }).map((e) => e.id), ['e2', 'e1']);
   assert.deepEqual(search(d, { tagId: 't1' }).map((e) => e.id), ['e3']);
+});
+
+test('addTag dedupes case-insensitively', () => {
+  const d = emptyData();
+  const a = addTag(d, ' JLPT N5 ');
+  const b = addTag(d, 'jlpt n5');
+  assert.equal(a.name, 'JLPT N5');
+  assert.equal(a.id, b.id);
+  assert.equal(d.tags.length, 1);
+});
+
+test('addTag rejects empty name', () => {
+  assert.throws(() => addTag(emptyData(), '  '), /name/);
+});
+
+test('renameTag changes the name', () => {
+  const d = emptyData();
+  const t = addTag(d, 'food');
+  assert.equal(renameTag(d, t.id, 'Food ').name, 'Food');
+});
+
+test('deleteTag removes tag from entries', () => {
+  const d = emptyData();
+  const t = addTag(d, 'food');
+  addEntry(d, { kind: 'word', text: '食べる', tagIds: [t.id] }, { id: 'e1' });
+  deleteTag(d, t.id);
+  assert.equal(d.tags.length, 0);
+  assert.deepEqual(getEntry(d, 'e1').tagIds, []);
+});
+
+test('addEntry and updateEntry drop unknown tagIds', () => {
+  const d = emptyData();
+  const t = addTag(d, 'food');
+  const e = addEntry(d, { kind: 'word', text: 'a', tagIds: [t.id, 'nope'] });
+  assert.deepEqual(e.tagIds, [t.id]);
+  assert.deepEqual(updateEntry(d, e.id, { tagIds: ['nope'] }).tagIds, []);
+});
+
+test('addLink both directions', () => {
+  const d = sample();
+  const l = addLink(d, 'e1', 'e2', ' see also ');
+  assert.equal(l.note, 'see also');
+  assert.equal(linksOf(d, 'e2')[0].other.id, 'e1');
+  assert.equal(linksOf(d, 'e1')[0].other.id, 'e2');
+});
+
+test('addLink returns existing for reverse duplicate', () => {
+  const d = sample();
+  const a = addLink(d, 'e1', 'e2');
+  const b = addLink(d, 'e2', 'e1');
+  assert.equal(a.id, b.id);
+  assert.equal(d.links.length, 1);
+});
+
+test('addLink rejects self-link and unknown entries', () => {
+  const d = sample();
+  assert.throws(() => addLink(d, 'e1', 'e1'), /itself/);
+  assert.throws(() => addLink(d, 'e1', 'nope'), /not found/);
+});
+
+test('deleteLink removes the link', () => {
+  const d = sample();
+  const l = addLink(d, 'e1', 'e2');
+  deleteLink(d, l.id);
+  assert.deepEqual(linksOf(d, 'e1'), []);
+});
+
+test('deleteEntry removes its links', () => {
+  const d = sample();
+  addLink(d, 'e1', 'e2');
+  deleteEntry(d, 'e1');
+  assert.equal(d.links.length, 0);
 });
