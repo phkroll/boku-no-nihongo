@@ -39,7 +39,7 @@ export function render(root, ctx, params) {
       existing && h('p', { class: 'muted small' }, `origin: ${existing.origin?.kind ?? '—'}${existing.origin?.detail ? ` (${existing.origin.detail})` : ''}`),
       error.el,
       button('Save', save, 'primary'),
-      existing && link(`#/u/${encodeURIComponent(makeRef('relation', existing.id))}/rate`, 'Rate what I know about this relation', 'button-link'),
+      existing && link(`#/u/${encodeURIComponent(makeRef('relation', existing.id))}/rate`, 'What I know about this relation', 'button-link'),
       existing && button('Delete relation', remove, 'danger wide'),
     );
   }

@@ -2,11 +2,12 @@ import { UNKNOWN, getUnit, makeRef, parseRef, visibleMeanings } from '../model/d
 import { deleteUnit, splitMeaning } from '../model/units.js';
 import { relationsOf } from '../model/relations.js';
 import { calculatedRelations } from '../model/calculated.js';
-import { currentRatings } from '../model/ratings.js';
 import { KIND_UI, STATE_LABEL } from './kinds.js';
 import { h, topBar, link, section, jp, badge, button, errorLine, fill } from './dom.js';
 import { RELATION_LABEL, describeTarget, ratingText, refLink, formText } from './describe.js';
 import { backLink } from './nav.js';
+import { detailRatings, overallRating } from './questions.js';
+import { rateHref } from './rate.js';
 
 const state = (v) => STATE_LABEL[v] ?? v;
 const row = (label, value) => value !== undefined && value !== '' && h('div', { class: 'kv' }, h('span', { class: 'muted' }, label), h('span', {}, value));
@@ -84,14 +85,20 @@ function relationsSection(ctx, ref) {
     link(`#/relation/new?with=${encodeURIComponent(ref)}`, '+ Add relation', 'button-link'));
 }
 
+function overallChip(ctx, ref) {
+  const r = overallRating(ctx.data, ref);
+  return h('a', { href: rateHref(ref, 'overall'), class: `status-chip${r ? ` rating-${r.value}` : ''}` }, r ? ratingText(r) : 'Not assessed', ' ▾');
+}
+
 function ratingsSection(ctx, ref) {
-  const current = currentRatings(ctx.data, ref);
-  return section('What I know',
-    current.length === 0 && h('p', { class: 'muted' }, 'Not assessed yet.'),
-    current.map(({ target, rating }) => h('div', { class: 'kv' },
-      h('span', {}, describeTarget(ctx.data, target)),
-      h('span', {}, badge(ratingText(rating), `rating-${rating.value}`), rating.note && h('small', { class: 'muted block' }, rating.note)))),
-    link(`#/u/${encodeURIComponent(ref)}/rate`, '+ Rate what I know', 'button-link'));
+  const rows = detailRatings(ctx.data, ref);
+  return section('What I know in detail',
+    rows.length === 0 && h('p', { class: 'muted' }, 'Nothing rated in detail yet.'),
+    h('ul', { class: 'list flush' }, rows.map(({ key, target, rating, question }) => h('li', {},
+      h('a', { href: rateHref(ref, question?.key ?? `t:${key}`), class: 'row' },
+        h('span', { class: 'row-main' }, question?.label ?? describeTarget(ctx.data, target), badge(ratingText(rating), `rating-${rating.value}`)),
+        h('span', { class: 'row-sub' }, question?.hint ?? '', rating.note && ` · ${rating.note}`))))),
+    link(rateHref(ref), '+ Add detail', 'button-link'));
 }
 
 function notesSection(ctx, ref) {
@@ -129,6 +136,7 @@ export function render(root, ctx, { ref }) {
       h('div', { class: 'detail-head' },
         jp(ui.title(unit), kind === 'note' || kind === 'sentence' ? 'detail-text small' : 'detail-text'),
         kind === 'word' && unit.writings && unit.reading && h('div', { class: 'reading' }, jp(unit.reading)),
+        kind !== 'note' && overallChip(ctx, ref),
         h('div', { class: 'row-sub' },
           unit.origin?.kind && unit.origin.kind !== 'learner' && badge(unit.origin.kind, 'muted-badge'),
           (unit.tagIds ?? []).map((t) => badge(ctx.data.tags.find((x) => x.id === t)?.name ?? '?', 'tag')))),
@@ -137,9 +145,9 @@ export function render(root, ctx, { ref }) {
       (kind === 'kanji' || kind === 'word') && meaningsSection(ctx, ref, unit, error),
       PARTS[kind](ctx.data, unit),
       unit.notes && section('Notes', h('p', { class: 'pre' }, unit.notes)),
-      kind !== 'note' && ratingsSection(ctx, ref),
       relationsSection(ctx, ref),
       kind !== 'note' && notesSection(ctx, ref),
+      kind !== 'note' && ratingsSection(ctx, ref),
       h('p', { class: 'muted small' }, `Source: ${unit.source ?? '—'} · origin: ${unit.origin?.kind ?? '—'}${unit.origin?.detail ? ` (${unit.origin.detail})` : ''}`),
       button(`Delete ${ui.label.toLowerCase()}`, remove, 'danger wide'),
     ),

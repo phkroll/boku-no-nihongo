@@ -1,5 +1,5 @@
 // Offline support: network first (always fresh when online), cache as fallback.
-const CACHE = 'bnn-v4';
+const CACHE = 'bnn-v5';
 const NETWORK_TIMEOUT = 2500;
 const FILES = [
   './',
@@ -26,6 +26,7 @@ const FILES = [
   'js/ui/list.js',
   'js/ui/nav.js',
   'js/ui/picker.js',
+  'js/ui/questions.js',
   'js/ui/rate.js',
   'js/ui/relation.js',
   'js/ui/review.js',

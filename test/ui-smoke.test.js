@@ -156,3 +156,54 @@ test('no screen shows stray false / null / undefined', () => {
     assert.deepEqual(strayTexts(root), [], JSON.stringify(params));
   }
 });
+
+const tick = () => new Promise((r) => setImmediate(r));
+const clickText = (root, label) => root.all((n) => n.tagName === 'BUTTON' && n.textContent === label)[0].click();
+
+test('rate: overall from the chip, saved as the whole-entry rating', async () => {
+  const { d, refs } = sampleData();
+  const ctx = makeCtx(d);
+  const root = page();
+  screens.rate.render(root, ctx, { ref: refs.k, q: 'overall' });
+  clickText(root, 'Partly');
+  clickText(root, 'Save');
+  await tick();
+  const r = d.ratings.at(-1);
+  assert.deepEqual([r.target, r.value], [{ unit: refs.k }, 'partly']);
+});
+
+test('rate: tell apart from a kanji page, then set back to not assessed', async () => {
+  const { d, refs } = sampleData();
+  const k2 = makeRef('kanji', d.kanji[1].id);
+  const list = page();
+  screens.rate.render(list, makeCtx(d), { ref: k2 });
+  assert.match(text(list), /Tell apart from 月/);
+  const key = `apart:${d.relations[1].id}:${refs.k}`;
+  const root = page();
+  screens.rate.render(root, makeCtx(d), { ref: k2, q: key });
+  clickText(root, 'Don’t know');
+  clickText(root, 'Save');
+  await tick();
+  assert.deepEqual(d.ratings.at(-1).target.members, [k2, refs.k]);
+  const detail = page();
+  screens.detail.render(detail, makeCtx(d), { ref: refs.k });
+  assert.match(text(detail), /What I know in detail/);
+  const again = page();
+  screens.rate.render(again, makeCtx(d), { ref: k2, q: key });
+  clickText(again, 'Set back to not assessed');
+  await tick();
+  assert.equal(d.ratings.at(-1).value, 'cleared');
+});
+
+test('rate: a form question needs a form', async () => {
+  const { d, refs } = sampleData();
+  const root = page();
+  screens.rate.render(root, makeCtx(d), { ref: refs.w, q: 'form' });
+  clickText(root, 'Save');
+  await tick();
+  assert.match(text(root), /Pick the form/);
+  clickText(root, 'past');
+  clickText(root, 'Save');
+  await tick();
+  assert.deepEqual(d.ratings.at(-1).target.form, ['past']);
+});

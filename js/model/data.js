@@ -27,7 +27,7 @@ export const RELATION_TYPES = [
 export const RELATION_STATUS = ['proposed', 'confirmed', 'rejected'];
 export const RATING_VALUES = ['unknown', 'partly', 'known', 'cleared'];
 export const CONFIDENCE = ['sure', 'probably'];
-export const FACETS = ['writing', 'reading', 'meaning', 'class', 'kanji-reading', 'form'];
+export const FACETS = ['writing', 'reading', 'meaning', 'class', 'kanji-reading', 'form', 'use'];
 export const FORM_KEYS = [
   ['polite', 'Polite (〜ます)'],
   ['negative', 'Negative (〜ない)'],

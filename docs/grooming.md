@@ -12,6 +12,8 @@ Open questions, assumptions and limitations found while building and using the a
 | Confirmed relation types: looks-similar, similar-meaning, transitivity-pair, politeness-variant, related, confuses | a relation fits none (record it as a note) |
 
 ## Limitations (known, accepted for now)
+- Relations the app works out itself (same reading 橋/箸, kanji in word, …) can't be rated; create them as a relation first
+- "What I know" offers a fixed list of questions per entry type; a missing question = note it here
 - Seed's regular forms of 寝る kept as `word.forms` (example forms) although forms are meant to be derived — drop or keep once conjugation exists
 - Seed kanji readings/glosses are common examples, not verified; 192 readings have unknown type
 - Counter sound changes (一本 いっぽん) not modelled

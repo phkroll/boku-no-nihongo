@@ -148,3 +148,8 @@ button.small { padding: 4px 10px; font-size: 14px; }
 .inline .field { flex: 1; }
 .kind-tag { font-size: 11px; color: #fff; border-radius: 4px; padding: 0 4px; margin-right: 4px; vertical-align: middle; background: var(--muted); }
 .small-link { font-size: 14px; align-self: center; }
+.status-chip { display: inline-block; margin-top: 10px; padding: 4px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--text); font-size: 15px; }
+.status-chip.rating-known { background: var(--sentence); color: #fff; border-color: transparent; }
+.status-chip.rating-partly { background: #b5832f; color: #fff; border-color: transparent; }
+.status-chip.rating-unknown { background: var(--accent); color: #fff; border-color: transparent; }
+.row-main .badge { margin-left: auto; }
