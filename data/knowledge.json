@@ -1,0 +1,2934 @@
+{
+ "version": 2,
+ "kanji": [],
+ "words": [],
+ "grammar": [],
+ "sentences": [],
+ "notes": [],
+ "relations": [
+  {
+   "id": "group-12",
+   "type": "confuses",
+   "members": [
+    "kanji:k-聞",
+    "kanji:k-間"
+   ],
+   "origin": {
+    "kind": "learner"
+   },
+   "status": "confirmed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-13",
+   "type": "confuses",
+   "members": [
+    "kanji:k-時",
+    "kanji:k-持"
+   ],
+   "origin": {
+    "kind": "learner"
+   },
+   "status": "confirmed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-14",
+   "type": "confuses",
+   "members": [
+    "kanji:k-持",
+    "kanji:k-待"
+   ],
+   "origin": {
+    "kind": "learner"
+   },
+   "status": "confirmed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-15",
+   "type": "confuses",
+   "members": [
+    "kanji:k-万",
+    "kanji:k-分"
+   ],
+   "origin": {
+    "kind": "learner"
+   },
+   "status": "confirmed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-16",
+   "type": "confuses",
+   "members": [
+    "kanji:k-年",
+    "kanji:k-先",
+    "kanji:k-生"
+   ],
+   "origin": {
+    "kind": "learner"
+   },
+   "status": "confirmed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-17",
+   "type": "confuses",
+   "members": [
+    "kanji:k-右",
+    "kanji:k-石"
+   ],
+   "origin": {
+    "kind": "suggested",
+    "detail": "seed candidate"
+   },
+   "status": "proposed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-18",
+   "type": "confuses",
+   "members": [
+    "kanji:k-西",
+    "kanji:k-四"
+   ],
+   "origin": {
+    "kind": "suggested",
+    "detail": "seed candidate"
+   },
+   "status": "proposed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-19",
+   "type": "confuses",
+   "members": [
+    "kanji:k-西",
+    "kanji:k-酉"
+   ],
+   "origin": {
+    "kind": "suggested",
+    "detail": "seed candidate"
+   },
+   "status": "proposed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-20",
+   "type": "confuses",
+   "members": [
+    "kanji:k-西",
+    "kanji:k-酒"
+   ],
+   "origin": {
+    "kind": "suggested",
+    "detail": "seed candidate"
+   },
+   "status": "proposed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-21",
+   "type": "confuses",
+   "members": [
+    "kanji:k-西",
+    "unknown"
+   ],
+   "origin": {
+    "kind": "learner"
+   },
+   "status": "confirmed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  }
+ ],
+ "ratings": [
+  {
+   "id": "rating-kanji-k-一-estimate-known",
+   "target": {
+    "unit": "kanji:k-一"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-二-estimate-known",
+   "target": {
+    "unit": "kanji:k-二"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-三-estimate-known",
+   "target": {
+    "unit": "kanji:k-三"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-四-estimate-known",
+   "target": {
+    "unit": "kanji:k-四"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-五-estimate-known",
+   "target": {
+    "unit": "kanji:k-五"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-六-estimate-known",
+   "target": {
+    "unit": "kanji:k-六"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-七-estimate-known",
+   "target": {
+    "unit": "kanji:k-七"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-八-estimate-known",
+   "target": {
+    "unit": "kanji:k-八"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-九-estimate-known",
+   "target": {
+    "unit": "kanji:k-九"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-十-estimate-known",
+   "target": {
+    "unit": "kanji:k-十"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-百-estimate-known",
+   "target": {
+    "unit": "kanji:k-百"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-千-estimate-known",
+   "target": {
+    "unit": "kanji:k-千"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-万-estimate-known",
+   "target": {
+    "unit": "kanji:k-万"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-日-estimate-known",
+   "target": {
+    "unit": "kanji:k-日"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-月-estimate-known",
+   "target": {
+    "unit": "kanji:k-月"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-本-estimate-known",
+   "target": {
+    "unit": "kanji:k-本"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-木-estimate-known",
+   "target": {
+    "unit": "kanji:k-木"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-水-estimate-known",
+   "target": {
+    "unit": "kanji:k-水"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-火-estimate-known",
+   "target": {
+    "unit": "kanji:k-火"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-山-estimate-known",
+   "target": {
+    "unit": "kanji:k-山"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-川-estimate-known",
+   "target": {
+    "unit": "kanji:k-川"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-森-estimate-known",
+   "target": {
+    "unit": "kanji:k-森"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-雨-estimate-known",
+   "target": {
+    "unit": "kanji:k-雨"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-人-estimate-known",
+   "target": {
+    "unit": "kanji:k-人"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-子-estimate-known",
+   "target": {
+    "unit": "kanji:k-子"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-友-estimate-known",
+   "target": {
+    "unit": "kanji:k-友"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-口-estimate-known",
+   "target": {
+    "unit": "kanji:k-口"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-目-estimate-known",
+   "target": {
+    "unit": "kanji:k-目"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-手-estimate-known",
+   "target": {
+    "unit": "kanji:k-手"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-大-estimate-known",
+   "target": {
+    "unit": "kanji:k-大"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-小-estimate-known",
+   "target": {
+    "unit": "kanji:k-小"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-中-estimate-known",
+   "target": {
+    "unit": "kanji:k-中"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-高-estimate-known",
+   "target": {
+    "unit": "kanji:k-高"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-上-estimate-known",
+   "target": {
+    "unit": "kanji:k-上"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-下-estimate-known",
+   "target": {
+    "unit": "kanji:k-下"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-左-estimate-known",
+   "target": {
+    "unit": "kanji:k-左"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-右-estimate-known",
+   "target": {
+    "unit": "kanji:k-右"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-前-estimate-known",
+   "target": {
+    "unit": "kanji:k-前"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-外-estimate-known",
+   "target": {
+    "unit": "kanji:k-外"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-東-estimate-known",
+   "target": {
+    "unit": "kanji:k-東"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-西-estimate-known",
+   "target": {
+    "unit": "kanji:k-西"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-北-estimate-known",
+   "target": {
+    "unit": "kanji:k-北"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-今-estimate-known",
+   "target": {
+    "unit": "kanji:k-今"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-時-estimate-known",
+   "target": {
+    "unit": "kanji:k-時"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-間-estimate-known",
+   "target": {
+    "unit": "kanji:k-間"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-学-estimate-known",
+   "target": {
+    "unit": "kanji:k-学"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-校-estimate-known",
+   "target": {
+    "unit": "kanji:k-校"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-生-estimate-known",
+   "target": {
+    "unit": "kanji:k-生"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-好-estimate-known",
+   "target": {
+    "unit": "kanji:k-好"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-何-estimate-known",
+   "target": {
+    "unit": "kanji:k-何"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-食-estimate-known",
+   "target": {
+    "unit": "kanji:k-食"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-飲-estimate-known",
+   "target": {
+    "unit": "kanji:k-飲"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-書-estimate-known",
+   "target": {
+    "unit": "kanji:k-書"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-聞-estimate-known",
+   "target": {
+    "unit": "kanji:k-聞"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-読-estimate-known",
+   "target": {
+    "unit": "kanji:k-読"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-行-estimate-known",
+   "target": {
+    "unit": "kanji:k-行"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-来-estimate-known",
+   "target": {
+    "unit": "kanji:k-来"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-見-estimate-known",
+   "target": {
+    "unit": "kanji:k-見"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-作-estimate-known",
+   "target": {
+    "unit": "kanji:k-作"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-買-estimate-known",
+   "target": {
+    "unit": "kanji:k-買"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-歌-estimate-known",
+   "target": {
+    "unit": "kanji:k-歌"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-入-estimate-known",
+   "target": {
+    "unit": "kanji:k-入"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-出-estimate-known",
+   "target": {
+    "unit": "kanji:k-出"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-休-estimate-known",
+   "target": {
+    "unit": "kanji:k-休"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-肉-estimate-known",
+   "target": {
+    "unit": "kanji:k-肉"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-魚-estimate-known",
+   "target": {
+    "unit": "kanji:k-魚"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-鳥-estimate-known",
+   "target": {
+    "unit": "kanji:k-鳥"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-酒-estimate-known",
+   "target": {
+    "unit": "kanji:k-酒"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-卵-estimate-known",
+   "target": {
+    "unit": "kanji:k-卵"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-円-estimate-known",
+   "target": {
+    "unit": "kanji:k-円"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-年-estimate-known",
+   "target": {
+    "unit": "kanji:k-年"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-先-estimate-known",
+   "target": {
+    "unit": "kanji:k-先"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-分-estimate-known",
+   "target": {
+    "unit": "kanji:k-分"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-持-estimate-known",
+   "target": {
+    "unit": "kanji:k-持"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-待-estimate-known",
+   "target": {
+    "unit": "kanji:k-待"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-石-estimate-known",
+   "target": {
+    "unit": "kanji:k-石"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-話-estimate-known",
+   "target": {
+    "unit": "kanji:k-話"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-言-estimate-known",
+   "target": {
+    "unit": "kanji:k-言"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-語-estimate-known",
+   "target": {
+    "unit": "kanji:k-語"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-字-estimate-known",
+   "target": {
+    "unit": "kanji:k-字"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-気-estimate-known",
+   "target": {
+    "unit": "kanji:k-気"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-楽-estimate-known",
+   "target": {
+    "unit": "kanji:k-楽"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-開-estimate-known",
+   "target": {
+    "unit": "kanji:k-開"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-閉-estimate-known",
+   "target": {
+    "unit": "kanji:k-閉"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-門-estimate-known",
+   "target": {
+    "unit": "kanji:k-門"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-問-estimate-known",
+   "target": {
+    "unit": "kanji:k-問"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-新-estimate-known",
+   "target": {
+    "unit": "kanji:k-新"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-後-estimate-known",
+   "target": {
+    "unit": "kanji:k-後"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-京-estimate-known",
+   "target": {
+    "unit": "kanji:k-京"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-都-estimate-known",
+   "target": {
+    "unit": "kanji:k-都"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-日本語-にほんご-estimate-known",
+   "target": {
+    "unit": "word:v-日本語-にほんご"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-本-ほん-estimate-known",
+   "target": {
+    "unit": "word:v-本-ほん"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-友達-ともだち-estimate-known",
+   "target": {
+    "unit": "word:v-友達-ともだち"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-先生-せんせい-estimate-known",
+   "target": {
+    "unit": "word:v-先生-せんせい"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-学校-がっこう-estimate-known",
+   "target": {
+    "unit": "word:v-学校-がっこう"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-休み-やすみ-estimate-known",
+   "target": {
+    "unit": "word:v-休み-やすみ"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-高い-たかい-estimate-known",
+   "target": {
+    "unit": "word:v-高い-たかい"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-大きい-おおきい-estimate-known",
+   "target": {
+    "unit": "word:v-大きい-おおきい"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-小さい-ちいさい-estimate-known",
+   "target": {
+    "unit": "word:v-小さい-ちいさい"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-楽しい-たのしい-estimate-known",
+   "target": {
+    "unit": "word:v-楽しい-たのしい"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-好き-すき-estimate-known",
+   "target": {
+    "unit": "word:v-好き-すき"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-食べる-たべる-estimate-known",
+   "target": {
+    "unit": "word:v-食べる-たべる"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-書く-かく-estimate-known",
+   "target": {
+    "unit": "word:v-書く-かく"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-聞く-きく-estimate-known",
+   "target": {
+    "unit": "word:v-聞く-きく"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-作る-つくる-estimate-known",
+   "target": {
+    "unit": "word:v-作る-つくる"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-歌う-うたう-estimate-known",
+   "target": {
+    "unit": "word:v-歌う-うたう"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-行く-いく-estimate-known",
+   "target": {
+    "unit": "word:v-行く-いく"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-来る-くる-estimate-known",
+   "target": {
+    "unit": "word:v-来る-くる"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-飲む-のむ-estimate-known",
+   "target": {
+    "unit": "word:v-飲む-のむ"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-見る-みる-estimate-known",
+   "target": {
+    "unit": "word:v-見る-みる"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-読む-よむ-estimate-known",
+   "target": {
+    "unit": "word:v-読む-よむ"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-話す-はなす-estimate-known",
+   "target": {
+    "unit": "word:v-話す-はなす"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-言う-いう-estimate-known",
+   "target": {
+    "unit": "word:v-言う-いう"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-買う-かう-estimate-known",
+   "target": {
+    "unit": "word:v-買う-かう"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-待つ-まつ-estimate-known",
+   "target": {
+    "unit": "word:v-待つ-まつ"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-少し-すこし-estimate-known",
+   "target": {
+    "unit": "word:v-少し-すこし"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-分かる-わかる-estimate-known",
+   "target": {
+    "unit": "word:v-分かる-わかる"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-大丈夫-だいじょうぶ-estimate-known",
+   "target": {
+    "unit": "word:v-大丈夫-だいじょうぶ"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-水-みず-estimate-known",
+   "target": {
+    "unit": "word:v-水-みず"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-肉-にく-estimate-known",
+   "target": {
+    "unit": "word:v-肉-にく"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-魚-さかな-estimate-known",
+   "target": {
+    "unit": "word:v-魚-さかな"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-お酒-おさけ-estimate-known",
+   "target": {
+    "unit": "word:v-お酒-おさけ"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-ビール-ビール-estimate-known",
+   "target": {
+    "unit": "word:v-ビール-ビール"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-エビ-エビ-estimate-known",
+   "target": {
+    "unit": "word:v-エビ-エビ"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-卵-たまご-estimate-known",
+   "target": {
+    "unit": "word:v-卵-たまご"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-寿司-すし-estimate-known",
+   "target": {
+    "unit": "word:v-寿司-すし"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-焼肉-やきにく-estimate-known",
+   "target": {
+    "unit": "word:v-焼肉-やきにく"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-京都-きょうと-estimate-known",
+   "target": {
+    "unit": "word:v-京都-きょうと"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-秋田-あきた-estimate-known",
+   "target": {
+    "unit": "word:v-秋田-あきた"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-新聞-しんぶん-estimate-known",
+   "target": {
+    "unit": "word:v-新聞-しんぶん"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-山-やま-estimate-known",
+   "target": {
+    "unit": "word:v-山-やま"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-月-つき-estimate-known",
+   "target": {
+    "unit": "word:v-月-つき"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-持つ-もつ-estimate-known",
+   "target": {
+    "unit": "word:v-持つ-もつ"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-喋る-しゃべる-estimate-known",
+   "target": {
+    "unit": "word:v-喋る-しゃべる"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-帰る-かえる-estimate-known",
+   "target": {
+    "unit": "word:v-帰る-かえる"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-会う-あう-estimate-known",
+   "target": {
+    "unit": "word:v-会う-あう"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-寝る-ねる-estimate-known",
+   "target": {
+    "unit": "word:v-寝る-ねる"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-起きる-おきる-estimate-known",
+   "target": {
+    "unit": "word:v-起きる-おきる"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-働く-はたらく-estimate-known",
+   "target": {
+    "unit": "word:v-働く-はたらく"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-休む-やすむ-estimate-known",
+   "target": {
+    "unit": "word:v-休む-やすむ"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-遊ぶ-あそぶ-estimate-known",
+   "target": {
+    "unit": "word:v-遊ぶ-あそぶ"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-歩く-あるく-estimate-known",
+   "target": {
+    "unit": "word:v-歩く-あるく"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-走る-はしる-estimate-known",
+   "target": {
+    "unit": "word:v-走る-はしる"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-座る-すわる-estimate-known",
+   "target": {
+    "unit": "word:v-座る-すわる"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-立つ-たつ-estimate-known",
+   "target": {
+    "unit": "word:v-立つ-たつ"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-使う-つかう-estimate-known",
+   "target": {
+    "unit": "word:v-使う-つかう"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-入る-はいる-estimate-known",
+   "target": {
+    "unit": "word:v-入る-はいる"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-出る-でる-estimate-known",
+   "target": {
+    "unit": "word:v-出る-でる"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-教える-おしえる-estimate-known",
+   "target": {
+    "unit": "word:v-教える-おしえる"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-習う-ならう-estimate-known",
+   "target": {
+    "unit": "word:v-習う-ならう"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-住む-すむ-estimate-known",
+   "target": {
+    "unit": "word:v-住む-すむ"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-思う-おもう-estimate-known",
+   "target": {
+    "unit": "word:v-思う-おもう"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-する-する-estimate-known",
+   "target": {
+    "unit": "word:v-する-する"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-ある-ある-estimate-known",
+   "target": {
+    "unit": "word:v-ある-ある"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-いる-いる-estimate-known",
+   "target": {
+    "unit": "word:v-いる-いる"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-開く-あく-estimate-known",
+   "target": {
+    "unit": "word:v-開く-あく"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-開ける-あける-estimate-known",
+   "target": {
+    "unit": "word:v-開ける-あける"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-開く-ひらく-estimate-known",
+   "target": {
+    "unit": "word:v-開く-ひらく"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-閉まる-しまる-estimate-known",
+   "target": {
+    "unit": "word:v-閉まる-しまる"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-閉める-しめる-estimate-known",
+   "target": {
+    "unit": "word:v-閉める-しめる"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-閉じる-とじる-estimate-known",
+   "target": {
+    "unit": "word:v-閉じる-とじる"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-今日-きょう-estimate-known",
+   "target": {
+    "unit": "word:v-今日-きょう"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-昨日-きのう-estimate-known",
+   "target": {
+    "unit": "word:v-昨日-きのう"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-明日-あした-estimate-known",
+   "target": {
+    "unit": "word:v-明日-あした"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-先月-せんげつ-estimate-known",
+   "target": {
+    "unit": "word:v-先月-せんげつ"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-時間-じかん-estimate-known",
+   "target": {
+    "unit": "word:v-時間-じかん"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-勉強-べんきょう-estimate-known",
+   "target": {
+    "unit": "word:v-勉強-べんきょう"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-漢字-かんじ-estimate-known",
+   "target": {
+    "unit": "word:v-漢字-かんじ"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-一番-いちばん-estimate-known",
+   "target": {
+    "unit": "word:v-一番-いちばん"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-横-よこ-estimate-known",
+   "target": {
+    "unit": "word:v-横-よこ"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-隣-となり-estimate-known",
+   "target": {
+    "unit": "word:v-隣-となり"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-後で-あとで-estimate-known",
+   "target": {
+    "unit": "word:v-後で-あとで"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-簡単-かんたん-estimate-known",
+   "target": {
+    "unit": "word:v-簡単-かんたん"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-おいしい-おいしい-estimate-known",
+   "target": {
+    "unit": "word:v-おいしい-おいしい"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-安い-やすい-estimate-known",
+   "target": {
+    "unit": "word:v-安い-やすい"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-新しい-あたらしい-estimate-known",
+   "target": {
+    "unit": "word:v-新しい-あたらしい"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-古い-ふるい-estimate-known",
+   "target": {
+    "unit": "word:v-古い-ふるい"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-暑い-あつい-estimate-known",
+   "target": {
+    "unit": "word:v-暑い-あつい"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-寒い-さむい-estimate-known",
+   "target": {
+    "unit": "word:v-寒い-さむい"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-忙しい-いそがしい-estimate-known",
+   "target": {
+    "unit": "word:v-忙しい-いそがしい"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-たくさん-たくさん-estimate-known",
+   "target": {
+    "unit": "word:v-たくさん-たくさん"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-野菜-やさい-estimate-known",
+   "target": {
+    "unit": "word:v-野菜-やさい"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-米-こめ-estimate-known",
+   "target": {
+    "unit": "word:v-米-こめ"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-ご飯-ごはん-estimate-known",
+   "target": {
+    "unit": "word:v-ご飯-ごはん"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-麺-めん-estimate-known",
+   "target": {
+    "unit": "word:v-麺-めん"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-お茶-おちゃ-estimate-known",
+   "target": {
+    "unit": "word:v-お茶-おちゃ"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-生-なま-estimate-known",
+   "target": {
+    "unit": "word:v-生-なま"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-辛い-からい-estimate-known",
+   "target": {
+    "unit": "word:v-辛い-からい"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-甘い-あまい-estimate-known",
+   "target": {
+    "unit": "word:v-甘い-あまい"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-塩-しお-estimate-known",
+   "target": {
+    "unit": "word:v-塩-しお"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-味-あじ-estimate-known",
+   "target": {
+    "unit": "word:v-味-あじ"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-油-あぶら-estimate-known",
+   "target": {
+    "unit": "word:v-油-あぶら"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-豆-まめ-estimate-known",
+   "target": {
+    "unit": "word:v-豆-まめ"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-定食-ていしょく-estimate-known",
+   "target": {
+    "unit": "word:v-定食-ていしょく"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-注文-ちゅうもん-estimate-known",
+   "target": {
+    "unit": "word:v-注文-ちゅうもん"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-限定-げんてい-estimate-known",
+   "target": {
+    "unit": "word:v-限定-げんてい"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-焼き魚-やきざかな-estimate-known",
+   "target": {
+    "unit": "word:v-焼き魚-やきざかな"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-唐揚げ-からあげ-estimate-known",
+   "target": {
+    "unit": "word:v-唐揚げ-からあげ"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-牛丼-ぎゅうどん-estimate-known",
+   "target": {
+    "unit": "word:v-牛丼-ぎゅうどん"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-大盛り-おおもり-estimate-known",
+   "target": {
+    "unit": "word:v-大盛り-おおもり"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-名物-めいぶつ-estimate-known",
+   "target": {
+    "unit": "word:v-名物-めいぶつ"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-word-v-洋食-ようしょく-estimate-known",
+   "target": {
+    "unit": "word:v-洋食-ようしょく"
+   },
+   "value": "known",
+   "confidence": "probably",
+   "source": "estimate",
+   "at": "2026-11-24T00:00:00.000Z"
+  },
+  {
+   "id": "rating-kanji-k-一-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-一",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-七-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-七",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-万-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-万",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-三-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-三",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-上-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-上",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-下-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-下",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-九-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-九",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-二-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-二",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-五-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-五",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-人-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-人",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-今-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-今",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-何-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-何",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-作-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-作",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-入-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-入",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-八-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-八",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-六-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-六",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-出-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-出",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-前-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-前",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-北-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-北",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-十-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-十",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-千-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-千",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-友-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-友",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-口-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-口",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-右-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-右",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-四-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-四",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-外-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-外",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-好-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-好",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-子-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-子",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-山-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-山",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-川-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-川",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-左-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-左",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-手-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-手",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-時-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-時",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-月-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-月",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-来-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-来",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-東-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-東",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-森-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-森",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-歌-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-歌",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-火-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-火",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-生-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-生",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-百-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-百",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-目-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-目",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-聞-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-聞",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-行-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-行",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-西-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-西",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-見-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-見",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-読-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-読",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-買-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-買",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-間-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-間",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-雨-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-雨",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-kanji-k-飲-meaning-learner-known",
+   "target": {
+    "unit": "kanji:k-飲",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "familiar sense only"
+  },
+  {
+   "id": "rating-word-v-寝る-ねる-reading-meaning-learner-known",
+   "target": {
+    "unit": "word:v-寝る-ねる",
+    "from": "reading",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "reported dimension only"
+  },
+  {
+   "id": "rating-word-v-寝る-ねる-writing-learner-partly",
+   "target": {
+    "unit": "word:v-寝る-ねる",
+    "from": "writing"
+   },
+   "value": "partly",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "Exact failing direction not independently assessed."
+  },
+  {
+   "id": "rating-word-v-待つ-まつ-reading-meaning-learner-known",
+   "target": {
+    "unit": "word:v-待つ-まつ",
+    "from": "reading",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "reported dimension only"
+  },
+  {
+   "id": "rating-word-v-来る-くる-reading-meaning-learner-known",
+   "target": {
+    "unit": "word:v-来る-くる",
+    "from": "reading",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "reported dimension only"
+  },
+  {
+   "id": "rating-word-v-行く-いく-reading-meaning-learner-known",
+   "target": {
+    "unit": "word:v-行く-いく",
+    "from": "reading",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "reported dimension only"
+  },
+  {
+   "id": "rating-word-v-見る-みる-reading-meaning-learner-known",
+   "target": {
+    "unit": "word:v-見る-みる",
+    "from": "reading",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "reported dimension only"
+  },
+  {
+   "id": "rating-word-v-言う-いう-reading-meaning-learner-known",
+   "target": {
+    "unit": "word:v-言う-いう",
+    "from": "reading",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "reported dimension only"
+  },
+  {
+   "id": "rating-word-v-話す-はなす-reading-meaning-learner-known",
+   "target": {
+    "unit": "word:v-話す-はなす",
+    "from": "reading",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "reported dimension only"
+  },
+  {
+   "id": "rating-word-v-読む-よむ-reading-meaning-learner-known",
+   "target": {
+    "unit": "word:v-読む-よむ",
+    "from": "reading",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "reported dimension only"
+  },
+  {
+   "id": "rating-word-v-買う-かう-reading-meaning-learner-known",
+   "target": {
+    "unit": "word:v-買う-かう",
+    "from": "reading",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "reported dimension only"
+  },
+  {
+   "id": "rating-word-v-飲む-のむ-reading-meaning-learner-known",
+   "target": {
+    "unit": "word:v-飲む-のむ",
+    "from": "reading",
+    "to": "meaning"
+   },
+   "value": "known",
+   "confidence": "sure",
+   "source": "learner",
+   "at": "2026-11-24T00:00:00.000Z",
+   "note": "reported dimension only"
+  }
+ ],
+ "tags": [],
+ "imports": [],
+ "meta": {}
+}

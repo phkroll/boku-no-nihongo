@@ -25,6 +25,22 @@ async function share(text) {
   return true;
 }
 
+// Published with the app (data/ in the repo). Content first: knowledge refers to its entries.
+// data/knowledge.json may be missing (later only content is published) — then it's skipped.
+const PUBLISHED = ['data/content.json', 'data/knowledge.json'];
+
+async function loadPublished(d) {
+  const total = { added: 0, updated: 0, skipped: 0 };
+  for (const file of PUBLISHED) {
+    const res = await fetch(file, { cache: 'no-cache' });
+    if (res.status === 404) continue;
+    if (!res.ok) throw new Error(`Could not load ${file} (${res.status})`);
+    const s = mergeImport(d, parseBackup(await res.text()), { file });
+    for (const k of Object.keys(total)) total[k] += s[k];
+  }
+  return total;
+}
+
 const fileButton = (label, onfile) => h('label', { class: 'button-like' }, label,
   h('input', { type: 'file', accept: 'application/json,.json', class: 'hidden', onchange: async (ev) => {
     const [file] = ev.target.files;
@@ -53,6 +69,17 @@ export function render(root, ctx) {
     try {
       const incoming = parseBackup(await file.text());
       const s = mergeImport(d, incoming, { file: file.name });
+      await ctx.save();
+      info.textContent = `Added ${s.added}, completed ${s.updated}, already there ${s.skipped}.`;
+    } catch (e) {
+      error.show(e);
+    }
+  };
+
+  const addPublished = async () => {
+    error.clear();
+    try {
+      const s = await loadPublished(d);
       await ctx.save();
       info.textContent = `Added ${s.added}, completed ${s.updated}, already there ${s.skipped}.`;
     } catch (e) {
@@ -98,6 +125,7 @@ export function render(root, ctx) {
         h('p', { class: 'muted' }, `Data lives only on this device. Last export: ${d.meta?.lastExport?.slice(0, 10) ?? 'never'}.`),
         h('div', { class: 'stack' },
           button('Export backup', exportNow, 'primary'),
+          button('Load published data', addPublished, 'wide'),
           fileButton('Add data from file… (merge)', addData),
           fileButton('Restore backup… (replace all)', restore))),
       h('p', { class: 'muted small' }, `Version ${BUILT} · ${BUILD.slice(0, 7)}`),

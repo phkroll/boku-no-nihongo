@@ -12,7 +12,7 @@ Nothing gets committed or pushed that could be legally problematic. Before every
 
 | Area | Never in the repo |
 |---|---|
-| **Personal data** | learning data, seed/import files, exports, backups (→ `out/`); test fixtures are synthetic |
+| **Personal data** | raw seed files, exports, backups (→ `out/`); test fixtures are synthetic. Published learning data lives only in `data/` (below) |
 | **Privacy** | names or emails other than the author's commit identity; machine paths (`/Users/…`); secrets, tokens, `.env` |
 | **Employer** | references to the employer, its projects, customers or internal tools; the company Claude licence is mentioned only once the employer has agreed (pending) |
 | **Third-party content** | copied code, dictionary data (e.g. KANJIDIC/JMdict: CC BY-SA, needs credit + share-alike), fonts, images, audio — unless the licence allows it and source + licence are listed under "Credits" in `README.md` |
@@ -20,6 +20,7 @@ Nothing gets committed or pushed that could be legally problematic. Before every
 
 - **Enforced on push:** `.githooks/pre-push` blocks pushes with files from `out/`, backups, env/key files, machine paths, foreign email addresses and the words in `.git/info/publish-blocklist` (local, never pushed). Per clone, once: `git config core.hooksPath .githooks` and create the blocklist
 - The hook can't judge licences or copied content: before pushing new content or a dependency, check it against the table above
+- **Published learning data** (decision by user): `data/content.json` (kanji, words, grammar, sentences, relations, tags) and `data/knowledge.json` (ratings, mix-ups, notes) — both public for now; later only content: then delete `data/knowledge.json`, nothing else changes. Write both with `npm run publish-data -- <app json>`
 - AI-generated code is fine; `Co-Authored-By: Claude` trailers stay
 - Already committed something problematic: don't push; clean the history only with the user's yes, after a backup bundle in `out/`
 - Never add a remote, push or publish without the user's explicit go

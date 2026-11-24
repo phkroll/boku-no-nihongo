@@ -20,12 +20,16 @@ Open questions and limitations for the next review: `docs/grooming.md`.
 **Backups:** the data lives only in this app on this device. Export regularly (reminder after 14 days).
 Safari and the Home Screen app keep separate data — use the installed app.
 
-## Load the seed (once)
+## Load data
 
-```sh
-node scripts/convert-seed.mjs out/japanese-learning-linked-seed.json out/seed-import.json
-```
-Then in the app: Settings → **Add data from file…** → `out/seed-import.json` (AirDrop/iCloud Drive to the phone). Importing twice adds nothing.
+**Published data** (in this repo, `data/`): Settings → **Load published data**. Importing twice adds nothing.
+- `data/content.json`: kanji, words, grammar, sentences, relations
+- `data/knowledge.json`: what I know, mix-ups, notes (personal; delete the file to stop publishing it)
+
+Update the published data from the phone: Settings → Export backup → copy the file to the Mac (e.g. `out/`) →
+`npm run publish-data -- out/<backup>.json` → commit and push.
+
+The original seed: `npm run convert-seed` → `out/seed-import.json`, then `npm run publish-data -- out/seed-import.json`.
 
 ## Develop
 

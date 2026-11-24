@@ -207,3 +207,26 @@ test('rate: a form question needs a form', async () => {
   await tick();
   assert.deepEqual(d.ratings.at(-1).target.form, ['past']);
 });
+
+test('settings: load published data — content first, knowledge only if present', async () => {
+  const { splitData } = await import('../js/model/split.js');
+  const source = sampleData().d;
+  const { content } = splitData(source);
+  const requested = [];
+  globalThis.fetch = async (url) => {
+    requested.push(url);
+    if (url === 'data/content.json') return { ok: true, status: 200, text: async () => JSON.stringify(content) };
+    return { ok: false, status: 404, text: async () => '' };
+  };
+  const d = ensureStarter(emptyData());
+  const root = page();
+  screens.settings.render(root, makeCtx(d), {});
+  clickText(root, 'Load published data');
+  await tick();
+  await tick();
+  assert.deepEqual(requested, ['data/content.json', 'data/knowledge.json']);
+  assert.equal(d.kanji.length, source.kanji.length);
+  assert.equal(d.ratings.length, 0);
+  assert.match(text(root), /Added/);
+  delete globalThis.fetch;
+});

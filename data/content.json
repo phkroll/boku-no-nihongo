@@ -1,0 +1,8895 @@
+{
+ "version": 2,
+ "kanji": [
+  {
+   "id": "k-一",
+   "char": "一",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-一-unknown-いち",
+     "kana": "いち",
+     "type": "unknown"
+    },
+    {
+     "id": "k-一-unknown-ひと",
+     "kana": "ひと",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-一-m1",
+     "gloss": "One"
+    }
+   ]
+  },
+  {
+   "id": "k-二",
+   "char": "二",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-二-unknown-に",
+     "kana": "に",
+     "type": "unknown"
+    },
+    {
+     "id": "k-二-unknown-ふた",
+     "kana": "ふた",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-二-m1",
+     "gloss": "Two"
+    }
+   ]
+  },
+  {
+   "id": "k-三",
+   "char": "三",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-三-unknown-さん",
+     "kana": "さん",
+     "type": "unknown"
+    },
+    {
+     "id": "k-三-unknown-み",
+     "kana": "み",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-三-m1",
+     "gloss": "Three"
+    }
+   ]
+  },
+  {
+   "id": "k-四",
+   "char": "四",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-四-unknown-し",
+     "kana": "し",
+     "type": "unknown"
+    },
+    {
+     "id": "k-四-unknown-よん",
+     "kana": "よん",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-四-m1",
+     "gloss": "Four"
+    }
+   ]
+  },
+  {
+   "id": "k-五",
+   "char": "五",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-五-unknown-ご",
+     "kana": "ご",
+     "type": "unknown"
+    },
+    {
+     "id": "k-五-unknown-いつ",
+     "kana": "いつ",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-五-m1",
+     "gloss": "Five"
+    }
+   ]
+  },
+  {
+   "id": "k-六",
+   "char": "六",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-六-unknown-ろく",
+     "kana": "ろく",
+     "type": "unknown"
+    },
+    {
+     "id": "k-六-unknown-む",
+     "kana": "む",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-六-m1",
+     "gloss": "Six"
+    }
+   ]
+  },
+  {
+   "id": "k-七",
+   "char": "七",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-七-unknown-しち",
+     "kana": "しち",
+     "type": "unknown"
+    },
+    {
+     "id": "k-七-unknown-なな",
+     "kana": "なな",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-七-m1",
+     "gloss": "Seven"
+    }
+   ]
+  },
+  {
+   "id": "k-八",
+   "char": "八",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-八-unknown-はち",
+     "kana": "はち",
+     "type": "unknown"
+    },
+    {
+     "id": "k-八-unknown-や",
+     "kana": "や",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-八-m1",
+     "gloss": "Eight"
+    }
+   ]
+  },
+  {
+   "id": "k-九",
+   "char": "九",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-九-unknown-きゅう",
+     "kana": "きゅう",
+     "type": "unknown"
+    },
+    {
+     "id": "k-九-unknown-く",
+     "kana": "く",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-九-m1",
+     "gloss": "Nine"
+    }
+   ]
+  },
+  {
+   "id": "k-十",
+   "char": "十",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-十-unknown-じゅう",
+     "kana": "じゅう",
+     "type": "unknown"
+    },
+    {
+     "id": "k-十-unknown-とお",
+     "kana": "とお",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-十-m1",
+     "gloss": "Ten"
+    }
+   ]
+  },
+  {
+   "id": "k-百",
+   "char": "百",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-百-unknown-ひゃく",
+     "kana": "ひゃく",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-百-m1",
+     "gloss": "Hundred"
+    }
+   ]
+  },
+  {
+   "id": "k-千",
+   "char": "千",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-千-unknown-せん",
+     "kana": "せん",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-千-m1",
+     "gloss": "Thousand"
+    }
+   ]
+  },
+  {
+   "id": "k-万",
+   "char": "万",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-万-unknown-まん",
+     "kana": "まん",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-万-m1",
+     "gloss": "Ten thousand"
+    }
+   ]
+  },
+  {
+   "id": "k-日",
+   "char": "日",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-日-kun-ひ",
+     "kana": "ひ",
+     "type": "kun"
+    },
+    {
+     "id": "k-日-on-にち",
+     "kana": "にち",
+     "type": "on"
+    },
+    {
+     "id": "k-日-on-じつ",
+     "kana": "じつ",
+     "type": "on"
+    },
+    {
+     "id": "k-日-kun-か",
+     "kana": "か",
+     "type": "kun"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-日-m1",
+     "gloss": "Day, sun",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "k-月",
+   "char": "月",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-月-kun-つき",
+     "kana": "つき",
+     "type": "kun"
+    },
+    {
+     "id": "k-月-on-げつ",
+     "kana": "げつ",
+     "type": "on"
+    },
+    {
+     "id": "k-月-on-がつ",
+     "kana": "がつ",
+     "type": "on"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-月-m1",
+     "gloss": "Moon, month",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "k-本",
+   "char": "本",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-本-on-ほん",
+     "kana": "ほん",
+     "type": "on"
+    },
+    {
+     "id": "k-本-kun-もと",
+     "kana": "もと",
+     "type": "kun"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-本-m1",
+     "gloss": "Book, origin",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "k-木",
+   "char": "木",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-木-kun-き",
+     "kana": "き",
+     "type": "kun"
+    },
+    {
+     "id": "k-木-on-もく",
+     "kana": "もく",
+     "type": "on"
+    },
+    {
+     "id": "k-木-on-ぼく",
+     "kana": "ぼく",
+     "type": "on"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-木-m1",
+     "gloss": "Tree"
+    }
+   ]
+  },
+  {
+   "id": "k-水",
+   "char": "水",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-水-kun-みず",
+     "kana": "みず",
+     "type": "kun"
+    },
+    {
+     "id": "k-水-on-すい",
+     "kana": "すい",
+     "type": "on"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-水-m1",
+     "gloss": "Water"
+    }
+   ]
+  },
+  {
+   "id": "k-火",
+   "char": "火",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-火-kun-ひ",
+     "kana": "ひ",
+     "type": "kun"
+    },
+    {
+     "id": "k-火-on-か",
+     "kana": "か",
+     "type": "on"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-火-m1",
+     "gloss": "Fire"
+    }
+   ]
+  },
+  {
+   "id": "k-山",
+   "char": "山",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-山-kun-やま",
+     "kana": "やま",
+     "type": "kun"
+    },
+    {
+     "id": "k-山-on-さん",
+     "kana": "さん",
+     "type": "on"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-山-m1",
+     "gloss": "Mountain"
+    }
+   ]
+  },
+  {
+   "id": "k-川",
+   "char": "川",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-川-unknown-かわ",
+     "kana": "かわ",
+     "type": "unknown"
+    },
+    {
+     "id": "k-川-unknown-せん",
+     "kana": "せん",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-川-m1",
+     "gloss": "River"
+    }
+   ]
+  },
+  {
+   "id": "k-森",
+   "char": "森",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-森-unknown-もり",
+     "kana": "もり",
+     "type": "unknown"
+    },
+    {
+     "id": "k-森-unknown-しん",
+     "kana": "しん",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-森-m1",
+     "gloss": "Forest"
+    }
+   ]
+  },
+  {
+   "id": "k-雨",
+   "char": "雨",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-雨-unknown-あめ",
+     "kana": "あめ",
+     "type": "unknown"
+    },
+    {
+     "id": "k-雨-unknown-う",
+     "kana": "う",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-雨-m1",
+     "gloss": "Rain"
+    }
+   ]
+  },
+  {
+   "id": "k-人",
+   "char": "人",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-人-kun-ひと",
+     "kana": "ひと",
+     "type": "kun"
+    },
+    {
+     "id": "k-人-on-じん",
+     "kana": "じん",
+     "type": "on"
+    },
+    {
+     "id": "k-人-on-にん",
+     "kana": "にん",
+     "type": "on"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-人-m1",
+     "gloss": "Person"
+    }
+   ]
+  },
+  {
+   "id": "k-子",
+   "char": "子",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-子-unknown-こ",
+     "kana": "こ",
+     "type": "unknown"
+    },
+    {
+     "id": "k-子-unknown-し",
+     "kana": "し",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-子-m1",
+     "gloss": "Child"
+    }
+   ]
+  },
+  {
+   "id": "k-友",
+   "char": "友",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-友-unknown-とも",
+     "kana": "とも",
+     "type": "unknown"
+    },
+    {
+     "id": "k-友-unknown-ゆう",
+     "kana": "ゆう",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-友-m1",
+     "gloss": "Friend"
+    }
+   ]
+  },
+  {
+   "id": "k-口",
+   "char": "口",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-口-unknown-くち",
+     "kana": "くち",
+     "type": "unknown"
+    },
+    {
+     "id": "k-口-unknown-こう",
+     "kana": "こう",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-口-m1",
+     "gloss": "Mouth"
+    }
+   ]
+  },
+  {
+   "id": "k-目",
+   "char": "目",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-目-unknown-め",
+     "kana": "め",
+     "type": "unknown"
+    },
+    {
+     "id": "k-目-unknown-もく",
+     "kana": "もく",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-目-m1",
+     "gloss": "Eye"
+    }
+   ]
+  },
+  {
+   "id": "k-手",
+   "char": "手",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-手-unknown-て",
+     "kana": "て",
+     "type": "unknown"
+    },
+    {
+     "id": "k-手-unknown-しゅ",
+     "kana": "しゅ",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-手-m1",
+     "gloss": "Hand"
+    }
+   ]
+  },
+  {
+   "id": "k-大",
+   "char": "大",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-大-unknown-おお",
+     "kana": "おお",
+     "type": "unknown"
+    },
+    {
+     "id": "k-大-unknown-だい",
+     "kana": "だい",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-大-m1",
+     "gloss": "Big"
+    }
+   ]
+  },
+  {
+   "id": "k-小",
+   "char": "小",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-小-unknown-ちい",
+     "kana": "ちい",
+     "type": "unknown"
+    },
+    {
+     "id": "k-小-unknown-しょう",
+     "kana": "しょう",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-小-m1",
+     "gloss": "Small"
+    }
+   ]
+  },
+  {
+   "id": "k-中",
+   "char": "中",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-中-unknown-なか",
+     "kana": "なか",
+     "type": "unknown"
+    },
+    {
+     "id": "k-中-unknown-ちゅう",
+     "kana": "ちゅう",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-中-m1",
+     "gloss": "Inside, middle",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "k-高",
+   "char": "高",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-高-unknown-たか",
+     "kana": "たか",
+     "type": "unknown"
+    },
+    {
+     "id": "k-高-unknown-こう",
+     "kana": "こう",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-高-m1",
+     "gloss": "High, expensive",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "k-上",
+   "char": "上",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-上-unknown-うえ",
+     "kana": "うえ",
+     "type": "unknown"
+    },
+    {
+     "id": "k-上-unknown-じょう",
+     "kana": "じょう",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-上-m1",
+     "gloss": "Up"
+    }
+   ]
+  },
+  {
+   "id": "k-下",
+   "char": "下",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-下-unknown-した",
+     "kana": "した",
+     "type": "unknown"
+    },
+    {
+     "id": "k-下-unknown-か",
+     "kana": "か",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-下-m1",
+     "gloss": "Down"
+    }
+   ]
+  },
+  {
+   "id": "k-左",
+   "char": "左",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-左-unknown-ひだり",
+     "kana": "ひだり",
+     "type": "unknown"
+    },
+    {
+     "id": "k-左-unknown-さ",
+     "kana": "さ",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-左-m1",
+     "gloss": "Left"
+    }
+   ]
+  },
+  {
+   "id": "k-右",
+   "char": "右",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-右-unknown-みぎ",
+     "kana": "みぎ",
+     "type": "unknown"
+    },
+    {
+     "id": "k-右-unknown-う",
+     "kana": "う",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-右-m1",
+     "gloss": "Right"
+    }
+   ]
+  },
+  {
+   "id": "k-前",
+   "char": "前",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-前-unknown-まえ",
+     "kana": "まえ",
+     "type": "unknown"
+    },
+    {
+     "id": "k-前-unknown-ぜん",
+     "kana": "ぜん",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-前-m1",
+     "gloss": "Before, front",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "k-外",
+   "char": "外",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-外-unknown-そと",
+     "kana": "そと",
+     "type": "unknown"
+    },
+    {
+     "id": "k-外-unknown-がい",
+     "kana": "がい",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-外-m1",
+     "gloss": "Outside"
+    }
+   ]
+  },
+  {
+   "id": "k-東",
+   "char": "東",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-東-unknown-ひがし",
+     "kana": "ひがし",
+     "type": "unknown"
+    },
+    {
+     "id": "k-東-unknown-とう",
+     "kana": "とう",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-東-m1",
+     "gloss": "East"
+    }
+   ]
+  },
+  {
+   "id": "k-西",
+   "char": "西",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-西-unknown-にし",
+     "kana": "にし",
+     "type": "unknown"
+    },
+    {
+     "id": "k-西-unknown-せい",
+     "kana": "せい",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-西-m1",
+     "gloss": "West"
+    }
+   ]
+  },
+  {
+   "id": "k-北",
+   "char": "北",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-北-unknown-きた",
+     "kana": "きた",
+     "type": "unknown"
+    },
+    {
+     "id": "k-北-unknown-ほく",
+     "kana": "ほく",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-北-m1",
+     "gloss": "North"
+    }
+   ]
+  },
+  {
+   "id": "k-今",
+   "char": "今",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-今-unknown-いま",
+     "kana": "いま",
+     "type": "unknown"
+    },
+    {
+     "id": "k-今-unknown-こん",
+     "kana": "こん",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-今-m1",
+     "gloss": "Now"
+    }
+   ]
+  },
+  {
+   "id": "k-時",
+   "char": "時",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-時-kun-とき",
+     "kana": "とき",
+     "type": "kun"
+    },
+    {
+     "id": "k-時-on-じ",
+     "kana": "じ",
+     "type": "on"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-時-m1",
+     "gloss": "Time"
+    }
+   ]
+  },
+  {
+   "id": "k-間",
+   "char": "間",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-間-kun-あいだ",
+     "kana": "あいだ",
+     "type": "kun"
+    },
+    {
+     "id": "k-間-on-かん",
+     "kana": "かん",
+     "type": "on"
+    },
+    {
+     "id": "k-間-on-けん",
+     "kana": "けん",
+     "type": "on"
+    },
+    {
+     "id": "k-間-kun-ま",
+     "kana": "ま",
+     "type": "kun"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-間-m1",
+     "gloss": "Between"
+    }
+   ]
+  },
+  {
+   "id": "k-学",
+   "char": "学",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-学-kun-まな",
+     "kana": "まな",
+     "type": "kun"
+    },
+    {
+     "id": "k-学-on-がく",
+     "kana": "がく",
+     "type": "on"
+    },
+    {
+     "id": "k-学-kun-まなぶ",
+     "kana": "まなぶ",
+     "type": "kun"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-学-m1",
+     "gloss": "Study"
+    }
+   ]
+  },
+  {
+   "id": "k-校",
+   "char": "校",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-校-on-こう",
+     "kana": "こう",
+     "type": "on"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-校-m1",
+     "gloss": "School"
+    }
+   ]
+  },
+  {
+   "id": "k-生",
+   "char": "生",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-生-kun-なま",
+     "kana": "なま",
+     "type": "kun"
+    },
+    {
+     "id": "k-生-on-せい",
+     "kana": "せい",
+     "type": "on"
+    },
+    {
+     "id": "k-生-kun-い",
+     "kana": "い",
+     "type": "kun"
+    },
+    {
+     "id": "k-生-on-しょう",
+     "kana": "しょう",
+     "type": "on"
+    },
+    {
+     "id": "k-生-kun-いきる",
+     "kana": "いきる",
+     "type": "kun"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-生-m1",
+     "gloss": "Raw, life",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "k-好",
+   "char": "好",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-好-unknown-す",
+     "kana": "す",
+     "type": "unknown"
+    },
+    {
+     "id": "k-好-unknown-こう",
+     "kana": "こう",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-好-m1",
+     "gloss": "Like"
+    }
+   ]
+  },
+  {
+   "id": "k-何",
+   "char": "何",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-何-unknown-なに",
+     "kana": "なに",
+     "type": "unknown"
+    },
+    {
+     "id": "k-何-unknown-なん",
+     "kana": "なん",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-何-m1",
+     "gloss": "What"
+    }
+   ]
+  },
+  {
+   "id": "k-食",
+   "char": "食",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-食-unknown-た",
+     "kana": "た",
+     "type": "unknown"
+    },
+    {
+     "id": "k-食-unknown-しょく",
+     "kana": "しょく",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-食-m1",
+     "gloss": "Eat, food",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "k-飲",
+   "char": "飲",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-飲-unknown-の",
+     "kana": "の",
+     "type": "unknown"
+    },
+    {
+     "id": "k-飲-unknown-いん",
+     "kana": "いん",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-飲-m1",
+     "gloss": "Drink"
+    }
+   ]
+  },
+  {
+   "id": "k-書",
+   "char": "書",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-書-unknown-か",
+     "kana": "か",
+     "type": "unknown"
+    },
+    {
+     "id": "k-書-unknown-しょ",
+     "kana": "しょ",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-書-m1",
+     "gloss": "Write"
+    }
+   ]
+  },
+  {
+   "id": "k-聞",
+   "char": "聞",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-聞-kun-き",
+     "kana": "き",
+     "type": "kun"
+    },
+    {
+     "id": "k-聞-on-ぶん",
+     "kana": "ぶん",
+     "type": "on"
+    },
+    {
+     "id": "k-聞-on-もん",
+     "kana": "もん",
+     "type": "on"
+    },
+    {
+     "id": "k-聞-kun-きく",
+     "kana": "きく",
+     "type": "kun"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-聞-m1",
+     "gloss": "Hear, listen",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "k-読",
+   "char": "読",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-読-unknown-よ",
+     "kana": "よ",
+     "type": "unknown"
+    },
+    {
+     "id": "k-読-unknown-どく",
+     "kana": "どく",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-読-m1",
+     "gloss": "Read"
+    }
+   ]
+  },
+  {
+   "id": "k-行",
+   "char": "行",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-行-unknown-い",
+     "kana": "い",
+     "type": "unknown"
+    },
+    {
+     "id": "k-行-unknown-こう",
+     "kana": "こう",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-行-m1",
+     "gloss": "Go"
+    }
+   ]
+  },
+  {
+   "id": "k-来",
+   "char": "来",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-来-unknown-く",
+     "kana": "く",
+     "type": "unknown"
+    },
+    {
+     "id": "k-来-unknown-らい",
+     "kana": "らい",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-来-m1",
+     "gloss": "Come"
+    }
+   ]
+  },
+  {
+   "id": "k-見",
+   "char": "見",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-見-unknown-み",
+     "kana": "み",
+     "type": "unknown"
+    },
+    {
+     "id": "k-見-unknown-けん",
+     "kana": "けん",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-見-m1",
+     "gloss": "See"
+    }
+   ]
+  },
+  {
+   "id": "k-作",
+   "char": "作",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-作-unknown-つく",
+     "kana": "つく",
+     "type": "unknown"
+    },
+    {
+     "id": "k-作-unknown-さく",
+     "kana": "さく",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-作-m1",
+     "gloss": "Make"
+    }
+   ]
+  },
+  {
+   "id": "k-買",
+   "char": "買",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-買-unknown-か",
+     "kana": "か",
+     "type": "unknown"
+    },
+    {
+     "id": "k-買-unknown-ばい",
+     "kana": "ばい",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-買-m1",
+     "gloss": "Buy"
+    }
+   ]
+  },
+  {
+   "id": "k-歌",
+   "char": "歌",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-歌-unknown-うた",
+     "kana": "うた",
+     "type": "unknown"
+    },
+    {
+     "id": "k-歌-unknown-か",
+     "kana": "か",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-歌-m1",
+     "gloss": "Song, sing",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "k-入",
+   "char": "入",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-入-unknown-はい",
+     "kana": "はい",
+     "type": "unknown"
+    },
+    {
+     "id": "k-入-unknown-い",
+     "kana": "い",
+     "type": "unknown"
+    },
+    {
+     "id": "k-入-unknown-にゅう",
+     "kana": "にゅう",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-入-m1",
+     "gloss": "Enter"
+    }
+   ]
+  },
+  {
+   "id": "k-出",
+   "char": "出",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-出-unknown-で",
+     "kana": "で",
+     "type": "unknown"
+    },
+    {
+     "id": "k-出-unknown-だ",
+     "kana": "だ",
+     "type": "unknown"
+    },
+    {
+     "id": "k-出-unknown-しゅつ",
+     "kana": "しゅつ",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-出-m1",
+     "gloss": "Exit"
+    }
+   ]
+  },
+  {
+   "id": "k-休",
+   "char": "休",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-休-unknown-やす",
+     "kana": "やす",
+     "type": "unknown"
+    },
+    {
+     "id": "k-休-unknown-きゅう",
+     "kana": "きゅう",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-休-m1",
+     "gloss": "Rest"
+    }
+   ]
+  },
+  {
+   "id": "k-肉",
+   "char": "肉",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-肉-unknown-にく",
+     "kana": "にく",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-肉-m1",
+     "gloss": "Meat"
+    }
+   ]
+  },
+  {
+   "id": "k-魚",
+   "char": "魚",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-魚-unknown-さかな",
+     "kana": "さかな",
+     "type": "unknown"
+    },
+    {
+     "id": "k-魚-unknown-ぎょ",
+     "kana": "ぎょ",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-魚-m1",
+     "gloss": "Fish"
+    }
+   ]
+  },
+  {
+   "id": "k-鳥",
+   "char": "鳥",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-鳥-unknown-とり",
+     "kana": "とり",
+     "type": "unknown"
+    },
+    {
+     "id": "k-鳥-unknown-ちょう",
+     "kana": "ちょう",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-鳥-m1",
+     "gloss": "Bird"
+    }
+   ]
+  },
+  {
+   "id": "k-酒",
+   "char": "酒",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-酒-unknown-さけ",
+     "kana": "さけ",
+     "type": "unknown"
+    },
+    {
+     "id": "k-酒-unknown-しゅ",
+     "kana": "しゅ",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-酒-m1",
+     "gloss": "Alcohol"
+    }
+   ]
+  },
+  {
+   "id": "k-卵",
+   "char": "卵",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-卵-unknown-たまご",
+     "kana": "たまご",
+     "type": "unknown"
+    },
+    {
+     "id": "k-卵-unknown-らん",
+     "kana": "らん",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-卵-m1",
+     "gloss": "Egg"
+    }
+   ]
+  },
+  {
+   "id": "k-円",
+   "char": "円",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-円-unknown-えん",
+     "kana": "えん",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-円-m1",
+     "gloss": "Yen, circle",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "k-年",
+   "char": "年",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-年-unknown-とし",
+     "kana": "とし",
+     "type": "unknown"
+    },
+    {
+     "id": "k-年-unknown-ねん",
+     "kana": "ねん",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-年-m1",
+     "gloss": "Year"
+    }
+   ]
+  },
+  {
+   "id": "k-先",
+   "char": "先",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-先-kun-さき",
+     "kana": "さき",
+     "type": "kun"
+    },
+    {
+     "id": "k-先-on-せん",
+     "kana": "せん",
+     "type": "on"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-先-m1",
+     "gloss": "Ahead"
+    }
+   ]
+  },
+  {
+   "id": "k-分",
+   "char": "分",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-分-on-ふん",
+     "kana": "ふん",
+     "type": "on"
+    },
+    {
+     "id": "k-分-on-ぶん",
+     "kana": "ぶん",
+     "type": "on"
+    },
+    {
+     "id": "k-分-kun-わ",
+     "kana": "わ",
+     "type": "kun"
+    },
+    {
+     "id": "k-分-on-ぷん",
+     "kana": "ぷん",
+     "type": "on"
+    },
+    {
+     "id": "k-分-kun-わかる",
+     "kana": "わかる",
+     "type": "kun"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-分-m1",
+     "gloss": "Minute, part, understand",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "k-持",
+   "char": "持",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-持-kun-も",
+     "kana": "も",
+     "type": "kun"
+    },
+    {
+     "id": "k-持-on-じ",
+     "kana": "じ",
+     "type": "on"
+    },
+    {
+     "id": "k-持-kun-もつ",
+     "kana": "もつ",
+     "type": "kun"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-持-m1",
+     "gloss": "Hold"
+    }
+   ]
+  },
+  {
+   "id": "k-待",
+   "char": "待",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-待-kun-ま",
+     "kana": "ま",
+     "type": "kun"
+    },
+    {
+     "id": "k-待-on-たい",
+     "kana": "たい",
+     "type": "on"
+    },
+    {
+     "id": "k-待-kun-まつ",
+     "kana": "まつ",
+     "type": "kun"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-待-m1",
+     "gloss": "Wait"
+    }
+   ]
+  },
+  {
+   "id": "k-石",
+   "char": "石",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-石-unknown-いし",
+     "kana": "いし",
+     "type": "unknown"
+    },
+    {
+     "id": "k-石-unknown-せき",
+     "kana": "せき",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-石-m1",
+     "gloss": "Stone"
+    }
+   ]
+  },
+  {
+   "id": "k-話",
+   "char": "話",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-話-unknown-はな",
+     "kana": "はな",
+     "type": "unknown"
+    },
+    {
+     "id": "k-話-unknown-はなし",
+     "kana": "はなし",
+     "type": "unknown"
+    },
+    {
+     "id": "k-話-unknown-わ",
+     "kana": "わ",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-話-m1",
+     "gloss": "Speak"
+    }
+   ]
+  },
+  {
+   "id": "k-言",
+   "char": "言",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-言-unknown-い",
+     "kana": "い",
+     "type": "unknown"
+    },
+    {
+     "id": "k-言-unknown-げん",
+     "kana": "げん",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-言-m1",
+     "gloss": "Say"
+    }
+   ]
+  },
+  {
+   "id": "k-語",
+   "char": "語",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-語-unknown-ご",
+     "kana": "ご",
+     "type": "unknown"
+    },
+    {
+     "id": "k-語-unknown-かた",
+     "kana": "かた",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-語-m1",
+     "gloss": "Language"
+    }
+   ]
+  },
+  {
+   "id": "k-字",
+   "char": "字",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-字-unknown-じ",
+     "kana": "じ",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-字-m1",
+     "gloss": "Character"
+    }
+   ]
+  },
+  {
+   "id": "k-気",
+   "char": "気",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-気-unknown-き",
+     "kana": "き",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-気-m1",
+     "gloss": "Spirit, feeling",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "k-楽",
+   "char": "楽",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-楽-unknown-たの",
+     "kana": "たの",
+     "type": "unknown"
+    },
+    {
+     "id": "k-楽-unknown-らく",
+     "kana": "らく",
+     "type": "unknown"
+    },
+    {
+     "id": "k-楽-unknown-がく",
+     "kana": "がく",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-楽-m1",
+     "gloss": "Fun, comfort, music",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "k-開",
+   "char": "開",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-開-kun-あ",
+     "kana": "あ",
+     "type": "kun"
+    },
+    {
+     "id": "k-開-kun-ひら",
+     "kana": "ひら",
+     "type": "kun"
+    },
+    {
+     "id": "k-開-on-かい",
+     "kana": "かい",
+     "type": "on"
+    },
+    {
+     "id": "k-開-kun-あく",
+     "kana": "あく",
+     "type": "kun"
+    },
+    {
+     "id": "k-開-kun-あける",
+     "kana": "あける",
+     "type": "kun"
+    },
+    {
+     "id": "k-開-kun-ひらく",
+     "kana": "ひらく",
+     "type": "kun"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-開-m1",
+     "gloss": "Open"
+    }
+   ]
+  },
+  {
+   "id": "k-閉",
+   "char": "閉",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-閉-kun-し",
+     "kana": "し",
+     "type": "kun"
+    },
+    {
+     "id": "k-閉-kun-と",
+     "kana": "と",
+     "type": "kun"
+    },
+    {
+     "id": "k-閉-on-へい",
+     "kana": "へい",
+     "type": "on"
+    },
+    {
+     "id": "k-閉-kun-しまる",
+     "kana": "しまる",
+     "type": "kun"
+    },
+    {
+     "id": "k-閉-kun-しめる",
+     "kana": "しめる",
+     "type": "kun"
+    },
+    {
+     "id": "k-閉-kun-とじる",
+     "kana": "とじる",
+     "type": "kun"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-閉-m1",
+     "gloss": "Close"
+    }
+   ]
+  },
+  {
+   "id": "k-門",
+   "char": "門",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-門-unknown-もん",
+     "kana": "もん",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-門-m1",
+     "gloss": "Gate"
+    }
+   ]
+  },
+  {
+   "id": "k-問",
+   "char": "問",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-問-unknown-と",
+     "kana": "と",
+     "type": "unknown"
+    },
+    {
+     "id": "k-問-unknown-もん",
+     "kana": "もん",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-問-m1",
+     "gloss": "Question"
+    }
+   ]
+  },
+  {
+   "id": "k-新",
+   "char": "新",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-新-kun-あたら",
+     "kana": "あたら",
+     "type": "kun"
+    },
+    {
+     "id": "k-新-on-しん",
+     "kana": "しん",
+     "type": "on"
+    },
+    {
+     "id": "k-新-kun-あたらしい",
+     "kana": "あたらしい",
+     "type": "kun"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-新-m1",
+     "gloss": "New"
+    }
+   ]
+  },
+  {
+   "id": "k-後",
+   "char": "後",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-後-unknown-あと",
+     "kana": "あと",
+     "type": "unknown"
+    },
+    {
+     "id": "k-後-unknown-うし",
+     "kana": "うし",
+     "type": "unknown"
+    },
+    {
+     "id": "k-後-unknown-ご",
+     "kana": "ご",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-後-m1",
+     "gloss": "After, behind",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "k-京",
+   "char": "京",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-京-unknown-きょう",
+     "kana": "きょう",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-京-m1",
+     "gloss": "Capital"
+    }
+   ]
+  },
+  {
+   "id": "k-都",
+   "char": "都",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-都-unknown-と",
+     "kana": "と",
+     "type": "unknown"
+    },
+    {
+     "id": "k-都-unknown-みやこ",
+     "kana": "みやこ",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-都-m1",
+     "gloss": "Capital, metropolis",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "k-南",
+   "char": "南",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-南-unknown-みなみ",
+     "kana": "みなみ",
+     "type": "unknown"
+    },
+    {
+     "id": "k-南-unknown-なん",
+     "kana": "なん",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-南-m1",
+     "gloss": "South"
+    }
+   ]
+  },
+  {
+   "id": "k-男",
+   "char": "男",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-男-unknown-おとこ",
+     "kana": "おとこ",
+     "type": "unknown"
+    },
+    {
+     "id": "k-男-unknown-だん",
+     "kana": "だん",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-男-m1",
+     "gloss": "Man"
+    }
+   ]
+  },
+  {
+   "id": "k-女",
+   "char": "女",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-女-unknown-おんな",
+     "kana": "おんな",
+     "type": "unknown"
+    },
+    {
+     "id": "k-女-unknown-じょ",
+     "kana": "じょ",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-女-m1",
+     "gloss": "Woman"
+    }
+   ]
+  },
+  {
+   "id": "k-耳",
+   "char": "耳",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-耳-unknown-みみ",
+     "kana": "みみ",
+     "type": "unknown"
+    },
+    {
+     "id": "k-耳-unknown-じ",
+     "kana": "じ",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-耳-m1",
+     "gloss": "Ear"
+    }
+   ]
+  },
+  {
+   "id": "k-足",
+   "char": "足",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-足-unknown-あし",
+     "kana": "あし",
+     "type": "unknown"
+    },
+    {
+     "id": "k-足-unknown-そく",
+     "kana": "そく",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-足-m1",
+     "gloss": "Foot"
+    }
+   ]
+  },
+  {
+   "id": "k-力",
+   "char": "力",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-力-unknown-ちから",
+     "kana": "ちから",
+     "type": "unknown"
+    },
+    {
+     "id": "k-力-unknown-りょく",
+     "kana": "りょく",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-力-m1",
+     "gloss": "Power"
+    }
+   ]
+  },
+  {
+   "id": "k-土",
+   "char": "土",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-土-kun-つち",
+     "kana": "つち",
+     "type": "kun"
+    },
+    {
+     "id": "k-土-on-ど",
+     "kana": "ど",
+     "type": "on"
+    },
+    {
+     "id": "k-土-on-と",
+     "kana": "と",
+     "type": "on"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-土-m1",
+     "gloss": "Earth"
+    }
+   ]
+  },
+  {
+   "id": "k-金",
+   "char": "金",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-金-kun-かね",
+     "kana": "かね",
+     "type": "kun"
+    },
+    {
+     "id": "k-金-on-きん",
+     "kana": "きん",
+     "type": "on"
+    },
+    {
+     "id": "k-金-on-こん",
+     "kana": "こん",
+     "type": "on"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-金-m1",
+     "gloss": "Money, gold",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "k-田",
+   "char": "田",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-田-unknown-た",
+     "kana": "た",
+     "type": "unknown"
+    },
+    {
+     "id": "k-田-unknown-でん",
+     "kana": "でん",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-田-m1",
+     "gloss": "Rice field"
+    }
+   ]
+  },
+  {
+   "id": "k-林",
+   "char": "林",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-林-unknown-はやし",
+     "kana": "はやし",
+     "type": "unknown"
+    },
+    {
+     "id": "k-林-unknown-りん",
+     "kana": "りん",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-林-m1",
+     "gloss": "Woods"
+    }
+   ]
+  },
+  {
+   "id": "k-空",
+   "char": "空",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-空-unknown-そら",
+     "kana": "そら",
+     "type": "unknown"
+    },
+    {
+     "id": "k-空-unknown-くう",
+     "kana": "くう",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-空-m1",
+     "gloss": "Sky, empty",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "k-白",
+   "char": "白",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-白-unknown-しろ",
+     "kana": "しろ",
+     "type": "unknown"
+    },
+    {
+     "id": "k-白-unknown-はく",
+     "kana": "はく",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-白-m1",
+     "gloss": "White"
+    }
+   ]
+  },
+  {
+   "id": "k-黒",
+   "char": "黒",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-黒-unknown-くろ",
+     "kana": "くろ",
+     "type": "unknown"
+    },
+    {
+     "id": "k-黒-unknown-こく",
+     "kana": "こく",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-黒-m1",
+     "gloss": "Black"
+    }
+   ]
+  },
+  {
+   "id": "k-赤",
+   "char": "赤",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-赤-unknown-あか",
+     "kana": "あか",
+     "type": "unknown"
+    },
+    {
+     "id": "k-赤-unknown-せき",
+     "kana": "せき",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-赤-m1",
+     "gloss": "Red"
+    }
+   ]
+  },
+  {
+   "id": "k-青",
+   "char": "青",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-青-unknown-あお",
+     "kana": "あお",
+     "type": "unknown"
+    },
+    {
+     "id": "k-青-unknown-せい",
+     "kana": "せい",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-青-m1",
+     "gloss": "Blue"
+    }
+   ]
+  },
+  {
+   "id": "k-王",
+   "char": "王",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-王-unknown-おう",
+     "kana": "おう",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-王-m1",
+     "gloss": "King"
+    }
+   ]
+  },
+  {
+   "id": "k-玉",
+   "char": "玉",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-玉-unknown-たま",
+     "kana": "たま",
+     "type": "unknown"
+    },
+    {
+     "id": "k-玉-unknown-ぎょく",
+     "kana": "ぎょく",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-玉-m1",
+     "gloss": "Ball, jewel",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "k-寝",
+   "char": "寝",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-寝-kun-ね",
+     "kana": "ね",
+     "type": "kun"
+    },
+    {
+     "id": "k-寝-on-しん",
+     "kana": "しん",
+     "type": "on"
+    },
+    {
+     "id": "k-寝-kun-ねる",
+     "kana": "ねる",
+     "type": "kun"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-寝-m1",
+     "gloss": "Sleep"
+    }
+   ]
+  },
+  {
+   "id": "k-寺",
+   "char": "寺",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-寺-unknown-てら",
+     "kana": "てら",
+     "type": "unknown"
+    },
+    {
+     "id": "k-寺-unknown-じ",
+     "kana": "じ",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-寺-m1",
+     "gloss": "Temple"
+    }
+   ]
+  },
+  {
+   "id": "k-酉",
+   "char": "酉",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-酉-unknown-とり",
+     "kana": "とり",
+     "type": "unknown"
+    },
+    {
+     "id": "k-酉-unknown-ゆう",
+     "kana": "ゆう",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-酉-m1",
+     "gloss": "Rooster zodiac"
+    }
+   ]
+  },
+  {
+   "id": "k-士",
+   "char": "士",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-士-unknown-し",
+     "kana": "し",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-士-m1",
+     "gloss": "Warrior, professional",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "k-主",
+   "char": "主",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-主-unknown-ぬし",
+     "kana": "ぬし",
+     "type": "unknown"
+    },
+    {
+     "id": "k-主-unknown-しゅ",
+     "kana": "しゅ",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-主-m1",
+     "gloss": "Master, main",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "k-天",
+   "char": "天",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-天-unknown-てん",
+     "kana": "てん",
+     "type": "unknown"
+    },
+    {
+     "id": "k-天-unknown-あめ",
+     "kana": "あめ",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-天-m1",
+     "gloss": "Heaven"
+    }
+   ]
+  },
+  {
+   "id": "k-橋",
+   "char": "橋",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-橋-unknown-はし",
+     "kana": "はし",
+     "type": "unknown"
+    },
+    {
+     "id": "k-橋-unknown-きょう",
+     "kana": "きょう",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-橋-m1",
+     "gloss": "Bridge"
+    }
+   ]
+  },
+  {
+   "id": "k-箸",
+   "char": "箸",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-箸-unknown-はし",
+     "kana": "はし",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-箸-m1",
+     "gloss": "Chopsticks"
+    }
+   ]
+  },
+  {
+   "id": "k-飴",
+   "char": "飴",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-飴-unknown-あめ",
+     "kana": "あめ",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-飴-m1",
+     "gloss": "Candy"
+    }
+   ]
+  },
+  {
+   "id": "k-花",
+   "char": "花",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-花-unknown-はな",
+     "kana": "はな",
+     "type": "unknown"
+    },
+    {
+     "id": "k-花-unknown-か",
+     "kana": "か",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-花-m1",
+     "gloss": "Flower"
+    }
+   ]
+  },
+  {
+   "id": "k-鼻",
+   "char": "鼻",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-鼻-unknown-はな",
+     "kana": "はな",
+     "type": "unknown"
+    },
+    {
+     "id": "k-鼻-unknown-び",
+     "kana": "び",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-鼻-m1",
+     "gloss": "Nose"
+    }
+   ]
+  },
+  {
+   "id": "k-紙",
+   "char": "紙",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-紙-unknown-かみ",
+     "kana": "かみ",
+     "type": "unknown"
+    },
+    {
+     "id": "k-紙-unknown-し",
+     "kana": "し",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-紙-m1",
+     "gloss": "Paper"
+    }
+   ]
+  },
+  {
+   "id": "k-神",
+   "char": "神",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-神-unknown-かみ",
+     "kana": "かみ",
+     "type": "unknown"
+    },
+    {
+     "id": "k-神-unknown-しん",
+     "kana": "しん",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-神-m1",
+     "gloss": "God"
+    }
+   ]
+  },
+  {
+   "id": "k-熱",
+   "char": "熱",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-熱-unknown-ねつ",
+     "kana": "ねつ",
+     "type": "unknown"
+    },
+    {
+     "id": "k-熱-unknown-あつ",
+     "kana": "あつ",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-熱-m1",
+     "gloss": "Heat"
+    }
+   ]
+  },
+  {
+   "id": "k-合",
+   "char": "合",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-合-unknown-あ",
+     "kana": "あ",
+     "type": "unknown"
+    },
+    {
+     "id": "k-合-unknown-ごう",
+     "kana": "ごう",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-合-m1",
+     "gloss": "Fit"
+    }
+   ]
+  },
+  {
+   "id": "k-始",
+   "char": "始",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-始-unknown-はじ",
+     "kana": "はじ",
+     "type": "unknown"
+    },
+    {
+     "id": "k-始-unknown-し",
+     "kana": "し",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-始-m1",
+     "gloss": "Begin"
+    }
+   ]
+  },
+  {
+   "id": "k-止",
+   "char": "止",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-止-unknown-と",
+     "kana": "と",
+     "type": "unknown"
+    },
+    {
+     "id": "k-止-unknown-し",
+     "kana": "し",
+     "type": "unknown"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "k-止-m1",
+     "gloss": "Stop"
+    }
+   ]
+  },
+  {
+   "id": "k-達",
+   "char": "達",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-少",
+   "char": "少",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-丈",
+   "char": "丈",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-夫",
+   "char": "夫",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-寿",
+   "char": "寿",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-司",
+   "char": "司",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-焼",
+   "char": "焼",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-秋",
+   "char": "秋",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-喋",
+   "char": "喋",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-帰",
+   "char": "帰",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-会",
+   "char": "会",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-起",
+   "char": "起",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-働",
+   "char": "働",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-遊",
+   "char": "遊",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-歩",
+   "char": "歩",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-走",
+   "char": "走",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-座",
+   "char": "座",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-立",
+   "char": "立",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-使",
+   "char": "使",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-教",
+   "char": "教",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-習",
+   "char": "習",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-住",
+   "char": "住",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-思",
+   "char": "思",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-昨",
+   "char": "昨",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-明",
+   "char": "明",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-勉",
+   "char": "勉",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-強",
+   "char": "強",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-漢",
+   "char": "漢",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-番",
+   "char": "番",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-横",
+   "char": "横",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-隣",
+   "char": "隣",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-簡",
+   "char": "簡",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-単",
+   "char": "単",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-安",
+   "char": "安",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-古",
+   "char": "古",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-暑",
+   "char": "暑",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-寒",
+   "char": "寒",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-忙",
+   "char": "忙",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-野",
+   "char": "野",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-菜",
+   "char": "菜",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-米",
+   "char": "米",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-飯",
+   "char": "飯",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-麺",
+   "char": "麺",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-茶",
+   "char": "茶",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-辛",
+   "char": "辛",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-甘",
+   "char": "甘",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-塩",
+   "char": "塩",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-味",
+   "char": "味",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-油",
+   "char": "油",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-豆",
+   "char": "豆",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-定",
+   "char": "定",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-注",
+   "char": "注",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-文",
+   "char": "文",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-限",
+   "char": "限",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-唐",
+   "char": "唐",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-揚",
+   "char": "揚",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-牛",
+   "char": "牛",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-丼",
+   "char": "丼",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-盛",
+   "char": "盛",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-名",
+   "char": "名",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-物",
+   "char": "物",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-洋",
+   "char": "洋",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-電",
+   "char": "電",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-車",
+   "char": "車",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-駅",
+   "char": "駅",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-自",
+   "char": "自",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-転",
+   "char": "転",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-社",
+   "char": "社",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-仕",
+   "char": "仕",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-事",
+   "char": "事",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-家",
+   "char": "家",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-部",
+   "char": "部",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-屋",
+   "char": "屋",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-店",
+   "char": "店",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-道",
+   "char": "道",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-族",
+   "char": "族",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-朝",
+   "char": "朝",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-昼",
+   "char": "昼",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-夜",
+   "char": "夜",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-毎",
+   "char": "毎",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-難",
+   "char": "難",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-近",
+   "char": "近",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-遠",
+   "char": "遠",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-国",
+   "char": "国",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-供",
+   "char": "供",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-曜",
+   "char": "曜",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-多",
+   "char": "多",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-感",
+   "char": "感",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-謝",
+   "char": "謝",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "k-早",
+   "char": "早",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  }
+ ],
+ "words": [
+  {
+   "id": "v-日本語-にほんご",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "にほんご",
+   "writings": [
+    {
+     "text": "日本語"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-日本語-にほんご-m1",
+     "gloss": "Japanese language"
+    }
+   ]
+  },
+  {
+   "id": "v-本-ほん",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "ほん",
+   "writings": [
+    {
+     "text": "本"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-本-ほん-m1",
+     "gloss": "Book"
+    }
+   ]
+  },
+  {
+   "id": "v-友達-ともだち",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "ともだち",
+   "writings": [
+    {
+     "text": "友達"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-友達-ともだち-m1",
+     "gloss": "Friend"
+    }
+   ]
+  },
+  {
+   "id": "v-先生-せんせい",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "せんせい",
+   "writings": [
+    {
+     "text": "先生"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-先生-せんせい-m1",
+     "gloss": "Teacher"
+    }
+   ]
+  },
+  {
+   "id": "v-学校-がっこう",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "がっこう",
+   "writings": [
+    {
+     "text": "学校"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-学校-がっこう-m1",
+     "gloss": "School"
+    }
+   ]
+  },
+  {
+   "id": "v-休み-やすみ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "やすみ",
+   "writings": [
+    {
+     "text": "休み"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-休み-やすみ-m1",
+     "gloss": "Holiday"
+    }
+   ]
+  },
+  {
+   "id": "v-高い-たかい",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "たかい",
+   "writings": [
+    {
+     "text": "高い"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-高い-たかい-m1",
+     "gloss": "Expensive, high",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "v-大きい-おおきい",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "おおきい",
+   "writings": [
+    {
+     "text": "大きい"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-大きい-おおきい-m1",
+     "gloss": "Big"
+    }
+   ]
+  },
+  {
+   "id": "v-小さい-ちいさい",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "ちいさい",
+   "writings": [
+    {
+     "text": "小さい"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-小さい-ちいさい-m1",
+     "gloss": "Small"
+    }
+   ]
+  },
+  {
+   "id": "v-楽しい-たのしい",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "たのしい",
+   "writings": [
+    {
+     "text": "楽しい"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-楽しい-たのしい-m1",
+     "gloss": "Fun"
+    }
+   ]
+  },
+  {
+   "id": "v-好き-すき",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "すき",
+   "writings": [
+    {
+     "text": "好き"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-好き-すき-m1",
+     "gloss": "Like"
+    }
+   ]
+  },
+  {
+   "id": "v-食べる-たべる",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "たべる",
+   "writings": [
+    {
+     "text": "食べる"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-食べる-たべる-m1",
+     "gloss": "Eat"
+    }
+   ]
+  },
+  {
+   "id": "v-書く-かく",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "かく",
+   "writings": [
+    {
+     "text": "書く"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-書く-かく-m1",
+     "gloss": "Write"
+    }
+   ]
+  },
+  {
+   "id": "v-聞く-きく",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "きく",
+   "writings": [
+    {
+     "text": "聞く"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-聞く-きく-m1",
+     "gloss": "Listen, ask",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "v-作る-つくる",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "つくる",
+   "writings": [
+    {
+     "text": "作る"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-作る-つくる-m1",
+     "gloss": "Make"
+    }
+   ]
+  },
+  {
+   "id": "v-歌う-うたう",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "うたう",
+   "writings": [
+    {
+     "text": "歌う"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-歌う-うたう-m1",
+     "gloss": "Sing"
+    }
+   ]
+  },
+  {
+   "id": "v-行く-いく",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "いく",
+   "writings": [
+    {
+     "text": "行く"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-行く-いく-m1",
+     "gloss": "Go"
+    }
+   ]
+  },
+  {
+   "id": "v-来る-くる",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "くる",
+   "writings": [
+    {
+     "text": "来る"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-来る-くる-m1",
+     "gloss": "Come"
+    }
+   ]
+  },
+  {
+   "id": "v-飲む-のむ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "のむ",
+   "writings": [
+    {
+     "text": "飲む"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-飲む-のむ-m1",
+     "gloss": "Drink"
+    }
+   ]
+  },
+  {
+   "id": "v-見る-みる",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "みる",
+   "writings": [
+    {
+     "text": "見る"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-見る-みる-m1",
+     "gloss": "See"
+    }
+   ]
+  },
+  {
+   "id": "v-読む-よむ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "よむ",
+   "writings": [
+    {
+     "text": "読む"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-読む-よむ-m1",
+     "gloss": "Read"
+    }
+   ]
+  },
+  {
+   "id": "v-話す-はなす",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "はなす",
+   "writings": [
+    {
+     "text": "話す"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-話す-はなす-m1",
+     "gloss": "Speak"
+    }
+   ]
+  },
+  {
+   "id": "v-言う-いう",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "いう",
+   "writings": [
+    {
+     "text": "言う"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-言う-いう-m1",
+     "gloss": "Say"
+    }
+   ]
+  },
+  {
+   "id": "v-買う-かう",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "かう",
+   "writings": [
+    {
+     "text": "買う"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-買う-かう-m1",
+     "gloss": "Buy"
+    }
+   ]
+  },
+  {
+   "id": "v-待つ-まつ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "まつ",
+   "writings": [
+    {
+     "text": "待つ"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-待つ-まつ-m1",
+     "gloss": "Wait"
+    }
+   ]
+  },
+  {
+   "id": "v-少し-すこし",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "すこし",
+   "writings": [
+    {
+     "text": "少し"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-少し-すこし-m1",
+     "gloss": "A little"
+    }
+   ]
+  },
+  {
+   "id": "v-分かる-わかる",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "わかる",
+   "writings": [
+    {
+     "text": "分かる"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-分かる-わかる-m1",
+     "gloss": "Understand"
+    }
+   ]
+  },
+  {
+   "id": "v-大丈夫-だいじょうぶ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "だいじょうぶ",
+   "writings": [
+    {
+     "text": "大丈夫"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-大丈夫-だいじょうぶ-m1",
+     "gloss": "All right"
+    }
+   ]
+  },
+  {
+   "id": "v-水-みず",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "みず",
+   "writings": [
+    {
+     "text": "水"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-水-みず-m1",
+     "gloss": "Water"
+    }
+   ]
+  },
+  {
+   "id": "v-肉-にく",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "にく",
+   "writings": [
+    {
+     "text": "肉"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-肉-にく-m1",
+     "gloss": "Meat"
+    }
+   ]
+  },
+  {
+   "id": "v-魚-さかな",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "さかな",
+   "writings": [
+    {
+     "text": "魚"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-魚-さかな-m1",
+     "gloss": "Fish"
+    }
+   ]
+  },
+  {
+   "id": "v-お酒-おさけ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "おさけ",
+   "writings": [
+    {
+     "text": "お酒"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-お酒-おさけ-m1",
+     "gloss": "Alcohol"
+    }
+   ]
+  },
+  {
+   "id": "v-ビール-ビール",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "ビール",
+   "usuallyWritten": "katakana",
+   "meanings": [
+    {
+     "id": "v-ビール-ビール-m1",
+     "gloss": "Beer"
+    }
+   ]
+  },
+  {
+   "id": "v-エビ-エビ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "エビ",
+   "usuallyWritten": "katakana",
+   "meanings": [
+    {
+     "id": "v-エビ-エビ-m1",
+     "gloss": "Shrimp"
+    }
+   ]
+  },
+  {
+   "id": "v-卵-たまご",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "たまご",
+   "writings": [
+    {
+     "text": "卵"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-卵-たまご-m1",
+     "gloss": "Egg"
+    }
+   ]
+  },
+  {
+   "id": "v-寿司-すし",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "すし",
+   "writings": [
+    {
+     "text": "寿司"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-寿司-すし-m1",
+     "gloss": "Sushi"
+    }
+   ]
+  },
+  {
+   "id": "v-焼肉-やきにく",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "やきにく",
+   "writings": [
+    {
+     "text": "焼肉"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-焼肉-やきにく-m1",
+     "gloss": "Grilled meat"
+    }
+   ]
+  },
+  {
+   "id": "v-京都-きょうと",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "きょうと",
+   "writings": [
+    {
+     "text": "京都"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-京都-きょうと-m1",
+     "gloss": "Kyoto"
+    }
+   ]
+  },
+  {
+   "id": "v-秋田-あきた",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "あきた",
+   "writings": [
+    {
+     "text": "秋田"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-秋田-あきた-m1",
+     "gloss": "Akita"
+    }
+   ]
+  },
+  {
+   "id": "v-新聞-しんぶん",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "しんぶん",
+   "writings": [
+    {
+     "text": "新聞"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-新聞-しんぶん-m1",
+     "gloss": "Newspaper"
+    }
+   ]
+  },
+  {
+   "id": "v-山-やま",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "やま",
+   "writings": [
+    {
+     "text": "山"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-山-やま-m1",
+     "gloss": "Mountain"
+    }
+   ]
+  },
+  {
+   "id": "v-月-つき",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "つき",
+   "writings": [
+    {
+     "text": "月"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-月-つき-m1",
+     "gloss": "Moon"
+    }
+   ]
+  },
+  {
+   "id": "v-持つ-もつ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "もつ",
+   "writings": [
+    {
+     "text": "持つ"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-持つ-もつ-m1",
+     "gloss": "Hold, carry",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "v-喋る-しゃべる",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "しゃべる",
+   "writings": [
+    {
+     "text": "喋る"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-喋る-しゃべる-m1",
+     "gloss": "Talk, chat",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "v-帰る-かえる",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "かえる",
+   "writings": [
+    {
+     "text": "帰る"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-帰る-かえる-m1",
+     "gloss": "Return"
+    }
+   ],
+   "verbGroup": "u"
+  },
+  {
+   "id": "v-会う-あう",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "あう",
+   "writings": [
+    {
+     "text": "会う"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-会う-あう-m1",
+     "gloss": "Meet"
+    }
+   ]
+  },
+  {
+   "id": "v-寝る-ねる",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "ねる",
+   "writings": [
+    {
+     "text": "寝る"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-寝る-ねる-m1",
+     "gloss": "Sleep"
+    }
+   ],
+   "verbGroup": "ru",
+   "forms": [
+    {
+     "form": [
+      "negative"
+     ],
+     "writing": "寝ない",
+     "reading": "ねない"
+    },
+    {
+     "form": [
+      "past"
+     ],
+     "writing": "寝た",
+     "reading": "ねた"
+    },
+    {
+     "form": [
+      "negative",
+      "past"
+     ],
+     "writing": "寝なかった",
+     "reading": "ねなかった"
+    },
+    {
+     "form": [
+      "polite"
+     ],
+     "writing": "寝ます",
+     "reading": "ねます"
+    },
+    {
+     "form": [
+      "polite",
+      "negative"
+     ],
+     "writing": "寝ません",
+     "reading": "ねません"
+    },
+    {
+     "form": [
+      "polite",
+      "past"
+     ],
+     "writing": "寝ました",
+     "reading": "ねました"
+    },
+    {
+     "form": [
+      "polite",
+      "negative",
+      "past"
+     ],
+     "writing": "寝ませんでした",
+     "reading": "ねませんでした"
+    }
+   ]
+  },
+  {
+   "id": "v-起きる-おきる",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "おきる",
+   "writings": [
+    {
+     "text": "起きる"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-起きる-おきる-m1",
+     "gloss": "Wake up"
+    }
+   ]
+  },
+  {
+   "id": "v-働く-はたらく",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "はたらく",
+   "writings": [
+    {
+     "text": "働く"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-働く-はたらく-m1",
+     "gloss": "Work"
+    }
+   ]
+  },
+  {
+   "id": "v-休む-やすむ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "やすむ",
+   "writings": [
+    {
+     "text": "休む"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-休む-やすむ-m1",
+     "gloss": "Rest"
+    }
+   ]
+  },
+  {
+   "id": "v-遊ぶ-あそぶ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "あそぶ",
+   "writings": [
+    {
+     "text": "遊ぶ"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-遊ぶ-あそぶ-m1",
+     "gloss": "Play"
+    }
+   ]
+  },
+  {
+   "id": "v-歩く-あるく",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "あるく",
+   "writings": [
+    {
+     "text": "歩く"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-歩く-あるく-m1",
+     "gloss": "Walk"
+    }
+   ]
+  },
+  {
+   "id": "v-走る-はしる",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "はしる",
+   "writings": [
+    {
+     "text": "走る"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-走る-はしる-m1",
+     "gloss": "Run"
+    }
+   ]
+  },
+  {
+   "id": "v-座る-すわる",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "すわる",
+   "writings": [
+    {
+     "text": "座る"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-座る-すわる-m1",
+     "gloss": "Sit"
+    }
+   ]
+  },
+  {
+   "id": "v-立つ-たつ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "たつ",
+   "writings": [
+    {
+     "text": "立つ"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-立つ-たつ-m1",
+     "gloss": "Stand"
+    }
+   ]
+  },
+  {
+   "id": "v-使う-つかう",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "つかう",
+   "writings": [
+    {
+     "text": "使う"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-使う-つかう-m1",
+     "gloss": "Use"
+    }
+   ]
+  },
+  {
+   "id": "v-入る-はいる",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "はいる",
+   "writings": [
+    {
+     "text": "入る"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-入る-はいる-m1",
+     "gloss": "Enter"
+    }
+   ]
+  },
+  {
+   "id": "v-出る-でる",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "でる",
+   "writings": [
+    {
+     "text": "出る"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-出る-でる-m1",
+     "gloss": "Leave"
+    }
+   ]
+  },
+  {
+   "id": "v-教える-おしえる",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "おしえる",
+   "writings": [
+    {
+     "text": "教える"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-教える-おしえる-m1",
+     "gloss": "Teach, tell",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "v-習う-ならう",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "ならう",
+   "writings": [
+    {
+     "text": "習う"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-習う-ならう-m1",
+     "gloss": "Learn"
+    }
+   ]
+  },
+  {
+   "id": "v-住む-すむ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "すむ",
+   "writings": [
+    {
+     "text": "住む"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-住む-すむ-m1",
+     "gloss": "Reside"
+    }
+   ]
+  },
+  {
+   "id": "v-思う-おもう",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "おもう",
+   "writings": [
+    {
+     "text": "思う"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-思う-おもう-m1",
+     "gloss": "Think"
+    }
+   ]
+  },
+  {
+   "id": "v-する-する",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "する",
+   "usuallyWritten": "kana",
+   "meanings": [
+    {
+     "id": "v-する-する-m1",
+     "gloss": "Do"
+    }
+   ]
+  },
+  {
+   "id": "v-ある-ある",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "ある",
+   "usuallyWritten": "kana",
+   "meanings": [
+    {
+     "id": "v-ある-ある-m1",
+     "gloss": "Exist (inanimate)"
+    }
+   ]
+  },
+  {
+   "id": "v-いる-いる",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "いる",
+   "usuallyWritten": "kana",
+   "meanings": [
+    {
+     "id": "v-いる-いる-m1",
+     "gloss": "Exist (animate)"
+    }
+   ]
+  },
+  {
+   "id": "v-開く-あく",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "あく",
+   "writings": [
+    {
+     "text": "開く"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-開く-あく-m1",
+     "gloss": "Something opens"
+    }
+   ]
+  },
+  {
+   "id": "v-開ける-あける",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "あける",
+   "writings": [
+    {
+     "text": "開ける"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-開ける-あける-m1",
+     "gloss": "Open something"
+    }
+   ]
+  },
+  {
+   "id": "v-開く-ひらく",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "ひらく",
+   "writings": [
+    {
+     "text": "開く"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-開く-ひらく-m1",
+     "gloss": "Open, unfold",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "v-閉まる-しまる",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "しまる",
+   "writings": [
+    {
+     "text": "閉まる"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-閉まる-しまる-m1",
+     "gloss": "Something closes"
+    }
+   ]
+  },
+  {
+   "id": "v-閉める-しめる",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "しめる",
+   "writings": [
+    {
+     "text": "閉める"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-閉める-しめる-m1",
+     "gloss": "Close something"
+    }
+   ]
+  },
+  {
+   "id": "v-閉じる-とじる",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "とじる",
+   "writings": [
+    {
+     "text": "閉じる"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-閉じる-とじる-m1",
+     "gloss": "Close a book, eyes",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "v-今日-きょう",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "きょう",
+   "writings": [
+    {
+     "text": "今日"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-今日-きょう-m1",
+     "gloss": "Today"
+    }
+   ]
+  },
+  {
+   "id": "v-昨日-きのう",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "きのう",
+   "writings": [
+    {
+     "text": "昨日"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-昨日-きのう-m1",
+     "gloss": "Yesterday"
+    }
+   ]
+  },
+  {
+   "id": "v-明日-あした",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "あした",
+   "writings": [
+    {
+     "text": "明日"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-明日-あした-m1",
+     "gloss": "Tomorrow"
+    }
+   ]
+  },
+  {
+   "id": "v-先月-せんげつ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "せんげつ",
+   "writings": [
+    {
+     "text": "先月"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-先月-せんげつ-m1",
+     "gloss": "Last month"
+    }
+   ]
+  },
+  {
+   "id": "v-時間-じかん",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "じかん",
+   "writings": [
+    {
+     "text": "時間"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-時間-じかん-m1",
+     "gloss": "Time"
+    }
+   ]
+  },
+  {
+   "id": "v-勉強-べんきょう",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "べんきょう",
+   "writings": [
+    {
+     "text": "勉強"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-勉強-べんきょう-m1",
+     "gloss": "Study"
+    }
+   ]
+  },
+  {
+   "id": "v-漢字-かんじ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "かんじ",
+   "writings": [
+    {
+     "text": "漢字"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-漢字-かんじ-m1",
+     "gloss": "Kanji"
+    }
+   ]
+  },
+  {
+   "id": "v-一番-いちばん",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "いちばん",
+   "writings": [
+    {
+     "text": "一番"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-一番-いちばん-m1",
+     "gloss": "Number one, most",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "v-横-よこ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "よこ",
+   "writings": [
+    {
+     "text": "横"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-横-よこ-m1",
+     "gloss": "Beside"
+    }
+   ]
+  },
+  {
+   "id": "v-隣-となり",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "となり",
+   "writings": [
+    {
+     "text": "隣"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-隣-となり-m1",
+     "gloss": "Next to"
+    }
+   ]
+  },
+  {
+   "id": "v-後で-あとで",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "あとで",
+   "writings": [
+    {
+     "text": "後で"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-後で-あとで-m1",
+     "gloss": "Later"
+    }
+   ]
+  },
+  {
+   "id": "v-簡単-かんたん",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "かんたん",
+   "writings": [
+    {
+     "text": "簡単"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-簡単-かんたん-m1",
+     "gloss": "Easy"
+    }
+   ]
+  },
+  {
+   "id": "v-おいしい-おいしい",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "おいしい",
+   "usuallyWritten": "kana",
+   "meanings": [
+    {
+     "id": "v-おいしい-おいしい-m1",
+     "gloss": "Delicious"
+    }
+   ]
+  },
+  {
+   "id": "v-安い-やすい",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "やすい",
+   "writings": [
+    {
+     "text": "安い"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-安い-やすい-m1",
+     "gloss": "Cheap"
+    }
+   ]
+  },
+  {
+   "id": "v-新しい-あたらしい",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "あたらしい",
+   "writings": [
+    {
+     "text": "新しい"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-新しい-あたらしい-m1",
+     "gloss": "New"
+    }
+   ]
+  },
+  {
+   "id": "v-古い-ふるい",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "ふるい",
+   "writings": [
+    {
+     "text": "古い"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-古い-ふるい-m1",
+     "gloss": "Old"
+    }
+   ]
+  },
+  {
+   "id": "v-暑い-あつい",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "あつい",
+   "writings": [
+    {
+     "text": "暑い"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-暑い-あつい-m1",
+     "gloss": "Hot weather"
+    }
+   ]
+  },
+  {
+   "id": "v-寒い-さむい",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "さむい",
+   "writings": [
+    {
+     "text": "寒い"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-寒い-さむい-m1",
+     "gloss": "Cold weather"
+    }
+   ]
+  },
+  {
+   "id": "v-忙しい-いそがしい",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "いそがしい",
+   "writings": [
+    {
+     "text": "忙しい"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-忙しい-いそがしい-m1",
+     "gloss": "Busy"
+    }
+   ]
+  },
+  {
+   "id": "v-たくさん-たくさん",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "たくさん",
+   "usuallyWritten": "kana",
+   "meanings": [
+    {
+     "id": "v-たくさん-たくさん-m1",
+     "gloss": "A lot"
+    }
+   ]
+  },
+  {
+   "id": "v-野菜-やさい",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "やさい",
+   "writings": [
+    {
+     "text": "野菜"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-野菜-やさい-m1",
+     "gloss": "Vegetables"
+    }
+   ]
+  },
+  {
+   "id": "v-米-こめ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "こめ",
+   "writings": [
+    {
+     "text": "米"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-米-こめ-m1",
+     "gloss": "Uncooked rice"
+    }
+   ]
+  },
+  {
+   "id": "v-ご飯-ごはん",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "ごはん",
+   "writings": [
+    {
+     "text": "ご飯"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-ご飯-ごはん-m1",
+     "gloss": "Cooked rice, meal",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "v-麺-めん",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "めん",
+   "writings": [
+    {
+     "text": "麺"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-麺-めん-m1",
+     "gloss": "Noodles"
+    }
+   ]
+  },
+  {
+   "id": "v-お茶-おちゃ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "おちゃ",
+   "writings": [
+    {
+     "text": "お茶"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-お茶-おちゃ-m1",
+     "gloss": "Tea"
+    }
+   ]
+  },
+  {
+   "id": "v-生-なま",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "なま",
+   "writings": [
+    {
+     "text": "生"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-生-なま-m1",
+     "gloss": "Raw"
+    }
+   ]
+  },
+  {
+   "id": "v-辛い-からい",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "からい",
+   "writings": [
+    {
+     "text": "辛い"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-辛い-からい-m1",
+     "gloss": "Spicy"
+    }
+   ]
+  },
+  {
+   "id": "v-甘い-あまい",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "あまい",
+   "writings": [
+    {
+     "text": "甘い"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-甘い-あまい-m1",
+     "gloss": "Sweet"
+    }
+   ]
+  },
+  {
+   "id": "v-塩-しお",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "しお",
+   "writings": [
+    {
+     "text": "塩"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-塩-しお-m1",
+     "gloss": "Salt"
+    }
+   ]
+  },
+  {
+   "id": "v-味-あじ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "あじ",
+   "writings": [
+    {
+     "text": "味"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-味-あじ-m1",
+     "gloss": "Taste"
+    }
+   ]
+  },
+  {
+   "id": "v-油-あぶら",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "あぶら",
+   "writings": [
+    {
+     "text": "油"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-油-あぶら-m1",
+     "gloss": "Oil"
+    }
+   ]
+  },
+  {
+   "id": "v-豆-まめ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "まめ",
+   "writings": [
+    {
+     "text": "豆"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-豆-まめ-m1",
+     "gloss": "Beans"
+    }
+   ]
+  },
+  {
+   "id": "v-定食-ていしょく",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "ていしょく",
+   "writings": [
+    {
+     "text": "定食"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-定食-ていしょく-m1",
+     "gloss": "Set meal"
+    }
+   ]
+  },
+  {
+   "id": "v-注文-ちゅうもん",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "ちゅうもん",
+   "writings": [
+    {
+     "text": "注文"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-注文-ちゅうもん-m1",
+     "gloss": "Order"
+    }
+   ]
+  },
+  {
+   "id": "v-限定-げんてい",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "げんてい",
+   "writings": [
+    {
+     "text": "限定"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-限定-げんてい-m1",
+     "gloss": "Limited"
+    }
+   ]
+  },
+  {
+   "id": "v-焼き魚-やきざかな",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "やきざかな",
+   "writings": [
+    {
+     "text": "焼き魚"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-焼き魚-やきざかな-m1",
+     "gloss": "Grilled fish"
+    }
+   ]
+  },
+  {
+   "id": "v-唐揚げ-からあげ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "からあげ",
+   "writings": [
+    {
+     "text": "唐揚げ"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-唐揚げ-からあげ-m1",
+     "gloss": "Fried chicken"
+    }
+   ]
+  },
+  {
+   "id": "v-牛丼-ぎゅうどん",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "ぎゅうどん",
+   "writings": [
+    {
+     "text": "牛丼"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-牛丼-ぎゅうどん-m1",
+     "gloss": "Beef rice bowl"
+    }
+   ]
+  },
+  {
+   "id": "v-大盛り-おおもり",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "おおもり",
+   "writings": [
+    {
+     "text": "大盛り"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-大盛り-おおもり-m1",
+     "gloss": "Large portion"
+    }
+   ]
+  },
+  {
+   "id": "v-名物-めいぶつ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "めいぶつ",
+   "writings": [
+    {
+     "text": "名物"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-名物-めいぶつ-m1",
+     "gloss": "Local speciality"
+    }
+   ]
+  },
+  {
+   "id": "v-洋食-ようしょく",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "ようしょく",
+   "writings": [
+    {
+     "text": "洋食"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-洋食-ようしょく-m1",
+     "gloss": "Western-style food"
+    }
+   ]
+  },
+  {
+   "id": "v-電車-でんしゃ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "でんしゃ",
+   "writings": [
+    {
+     "text": "電車"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-電車-でんしゃ-m1",
+     "gloss": "Train"
+    }
+   ]
+  },
+  {
+   "id": "v-駅-えき",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "えき",
+   "writings": [
+    {
+     "text": "駅"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-駅-えき-m1",
+     "gloss": "Station"
+    }
+   ]
+  },
+  {
+   "id": "v-車-くるま",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "くるま",
+   "writings": [
+    {
+     "text": "車"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-車-くるま-m1",
+     "gloss": "Car"
+    }
+   ]
+  },
+  {
+   "id": "v-自転車-じてんしゃ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "じてんしゃ",
+   "writings": [
+    {
+     "text": "自転車"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-自転車-じてんしゃ-m1",
+     "gloss": "Bicycle"
+    }
+   ]
+  },
+  {
+   "id": "v-電話-でんわ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "でんわ",
+   "writings": [
+    {
+     "text": "電話"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-電話-でんわ-m1",
+     "gloss": "Telephone"
+    }
+   ]
+  },
+  {
+   "id": "v-会社-かいしゃ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "かいしゃ",
+   "writings": [
+    {
+     "text": "会社"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-会社-かいしゃ-m1",
+     "gloss": "Company"
+    }
+   ]
+  },
+  {
+   "id": "v-仕事-しごと",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "しごと",
+   "writings": [
+    {
+     "text": "仕事"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-仕事-しごと-m1",
+     "gloss": "Work"
+    }
+   ]
+  },
+  {
+   "id": "v-家-いえ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "いえ",
+   "writings": [
+    {
+     "text": "家"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-家-いえ-m1",
+     "gloss": "House"
+    }
+   ]
+  },
+  {
+   "id": "v-部屋-へや",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "へや",
+   "writings": [
+    {
+     "text": "部屋"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-部屋-へや-m1",
+     "gloss": "Room"
+    }
+   ]
+  },
+  {
+   "id": "v-店-みせ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "みせ",
+   "writings": [
+    {
+     "text": "店"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-店-みせ-m1",
+     "gloss": "Shop"
+    }
+   ]
+  },
+  {
+   "id": "v-道-みち",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "みち",
+   "writings": [
+    {
+     "text": "道"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-道-みち-m1",
+     "gloss": "Road"
+    }
+   ]
+  },
+  {
+   "id": "v-名前-なまえ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "なまえ",
+   "writings": [
+    {
+     "text": "名前"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-名前-なまえ-m1",
+     "gloss": "Name"
+    }
+   ]
+  },
+  {
+   "id": "v-家族-かぞく",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "かぞく",
+   "writings": [
+    {
+     "text": "家族"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-家族-かぞく-m1",
+     "gloss": "Family"
+    }
+   ]
+  },
+  {
+   "id": "v-お金-おかね",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "おかね",
+   "writings": [
+    {
+     "text": "お金"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-お金-おかね-m1",
+     "gloss": "Money"
+    }
+   ]
+  },
+  {
+   "id": "v-天気-てんき",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "てんき",
+   "writings": [
+    {
+     "text": "天気"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-天気-てんき-m1",
+     "gloss": "Weather"
+    }
+   ]
+  },
+  {
+   "id": "v-朝-あさ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "あさ",
+   "writings": [
+    {
+     "text": "朝"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-朝-あさ-m1",
+     "gloss": "Morning"
+    }
+   ]
+  },
+  {
+   "id": "v-昼-ひる",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "ひる",
+   "writings": [
+    {
+     "text": "昼"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-昼-ひる-m1",
+     "gloss": "Noon"
+    }
+   ]
+  },
+  {
+   "id": "v-夜-よる",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "よる",
+   "writings": [
+    {
+     "text": "夜"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-夜-よる-m1",
+     "gloss": "Night"
+    }
+   ]
+  },
+  {
+   "id": "v-毎日-まいにち",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "まいにち",
+   "writings": [
+    {
+     "text": "毎日"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-毎日-まいにち-m1",
+     "gloss": "Every day"
+    }
+   ]
+  },
+  {
+   "id": "v-時々-ときどき",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "ときどき",
+   "writings": [
+    {
+     "text": "時々"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-時々-ときどき-m1",
+     "gloss": "Sometimes"
+    }
+   ]
+  },
+  {
+   "id": "v-難しい-むずかしい",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "むずかしい",
+   "writings": [
+    {
+     "text": "難しい"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-難しい-むずかしい-m1",
+     "gloss": "Difficult"
+    }
+   ]
+  },
+  {
+   "id": "v-近い-ちかい",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "ちかい",
+   "writings": [
+    {
+     "text": "近い"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-近い-ちかい-m1",
+     "gloss": "Near"
+    }
+   ]
+  },
+  {
+   "id": "v-遠い-とおい",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "とおい",
+   "writings": [
+    {
+     "text": "遠い"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-遠い-とおい-m1",
+     "gloss": "Far"
+    }
+   ]
+  },
+  {
+   "id": "v-日本-にほん",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "にほん",
+   "writings": [
+    {
+     "text": "日本"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-日本-にほん-m1",
+     "gloss": "Japan"
+    }
+   ]
+  },
+  {
+   "id": "v-日本人-にほんじん",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "にほんじん",
+   "writings": [
+    {
+     "text": "日本人"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-日本人-にほんじん-m1",
+     "gloss": "Japanese person"
+    }
+   ]
+  },
+  {
+   "id": "v-外国-がいこく",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "がいこく",
+   "writings": [
+    {
+     "text": "外国"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-外国-がいこく-m1",
+     "gloss": "Foreign country"
+    }
+   ]
+  },
+  {
+   "id": "v-外国人-がいこくじん",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "がいこくじん",
+   "writings": [
+    {
+     "text": "外国人"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-外国人-がいこくじん-m1",
+     "gloss": "Foreigner"
+    }
+   ]
+  },
+  {
+   "id": "v-大人-おとな",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "おとな",
+   "writings": [
+    {
+     "text": "大人"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-大人-おとな-m1",
+     "gloss": "Adult"
+    }
+   ]
+  },
+  {
+   "id": "v-子供-こども",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "こども",
+   "writings": [
+    {
+     "text": "子供"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-子供-こども-m1",
+     "gloss": "Child"
+    }
+   ]
+  },
+  {
+   "id": "v-入口-いりぐち",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "いりぐち",
+   "writings": [
+    {
+     "text": "入口"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-入口-いりぐち-m1",
+     "gloss": "Entrance"
+    }
+   ]
+  },
+  {
+   "id": "v-出口-でぐち",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "でぐち",
+   "writings": [
+    {
+     "text": "出口"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-出口-でぐち-m1",
+     "gloss": "Exit"
+    }
+   ]
+  },
+  {
+   "id": "v-人口-じんこう",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "じんこう",
+   "writings": [
+    {
+     "text": "人口"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-人口-じんこう-m1",
+     "gloss": "Population"
+    }
+   ]
+  },
+  {
+   "id": "v-火山-かざん",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "かざん",
+   "writings": [
+    {
+     "text": "火山"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-火山-かざん-m1",
+     "gloss": "Volcano"
+    }
+   ]
+  },
+  {
+   "id": "v-火曜日-かようび",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "かようび",
+   "writings": [
+    {
+     "text": "火曜日"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-火曜日-かようび-m1",
+     "gloss": "Tuesday"
+    }
+   ]
+  },
+  {
+   "id": "v-水曜日-すいようび",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "すいようび",
+   "writings": [
+    {
+     "text": "水曜日"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-水曜日-すいようび-m1",
+     "gloss": "Wednesday"
+    }
+   ]
+  },
+  {
+   "id": "v-木曜日-もくようび",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "もくようび",
+   "writings": [
+    {
+     "text": "木曜日"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-木曜日-もくようび-m1",
+     "gloss": "Thursday"
+    }
+   ]
+  },
+  {
+   "id": "v-金曜日-きんようび",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "きんようび",
+   "writings": [
+    {
+     "text": "金曜日"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-金曜日-きんようび-m1",
+     "gloss": "Friday"
+    }
+   ]
+  },
+  {
+   "id": "v-土曜日-どようび",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "どようび",
+   "writings": [
+    {
+     "text": "土曜日"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-土曜日-どようび-m1",
+     "gloss": "Saturday"
+    }
+   ]
+  },
+  {
+   "id": "v-日曜日-にちようび",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "にちようび",
+   "writings": [
+    {
+     "text": "日曜日"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-日曜日-にちようび-m1",
+     "gloss": "Sunday"
+    }
+   ]
+  },
+  {
+   "id": "v-月曜日-げつようび",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "げつようび",
+   "writings": [
+    {
+     "text": "月曜日"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-月曜日-げつようび-m1",
+     "gloss": "Monday"
+    }
+   ]
+  },
+  {
+   "id": "v-食べ物-たべもの",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "たべもの",
+   "writings": [
+    {
+     "text": "食べ物"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-食べ物-たべもの-m1",
+     "gloss": "Food"
+    }
+   ]
+  },
+  {
+   "id": "v-飲み物-のみもの",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "のみもの",
+   "writings": [
+    {
+     "text": "飲み物"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-飲み物-のみもの-m1",
+     "gloss": "Drinks"
+    }
+   ]
+  },
+  {
+   "id": "v-本屋-ほんや",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "ほんや",
+   "writings": [
+    {
+     "text": "本屋"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-本屋-ほんや-m1",
+     "gloss": "Bookshop"
+    }
+   ]
+  },
+  {
+   "id": "v-休日-きゅうじつ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "きゅうじつ",
+   "writings": [
+    {
+     "text": "休日"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-休日-きゅうじつ-m1",
+     "gloss": "Day off"
+    }
+   ]
+  },
+  {
+   "id": "v-開ける-ひらける",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "ひらける",
+   "writings": [
+    {
+     "text": "開ける"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-開ける-ひらける-m1",
+     "gloss": "Open up, become expansive",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "v-友人-ゆうじん",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "ゆうじん",
+   "writings": [
+    {
+     "text": "友人"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-友人-ゆうじん-m1",
+     "gloss": "Friend"
+    }
+   ]
+  },
+  {
+   "id": "v-食う-くう",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "くう",
+   "writings": [
+    {
+     "text": "食う"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-食う-くう-m1",
+     "gloss": "Eat (casual)"
+    }
+   ]
+  },
+  {
+   "id": "v-うち-うち",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "うち",
+   "usuallyWritten": "kana",
+   "meanings": [
+    {
+     "id": "v-うち-うち-m1",
+     "gloss": "Home"
+    }
+   ]
+  },
+  {
+   "id": "v-とても-とても",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "とても",
+   "usuallyWritten": "kana",
+   "meanings": [
+    {
+     "id": "v-とても-とても-m1",
+     "gloss": "Very"
+    }
+   ]
+  },
+  {
+   "id": "v-すごく-すごく",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "すごく",
+   "usuallyWritten": "kana",
+   "meanings": [
+    {
+     "id": "v-すごく-すごく-m1",
+     "gloss": "Very"
+    }
+   ]
+  },
+  {
+   "id": "v-多く-おおく",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "おおく",
+   "writings": [
+    {
+     "text": "多く"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-多く-おおく-m1",
+     "gloss": "Many"
+    }
+   ]
+  },
+  {
+   "id": "v-ありがとう-ありがとう",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "ありがとう",
+   "usuallyWritten": "kana",
+   "meanings": [
+    {
+     "id": "v-ありがとう-ありがとう-m1",
+     "gloss": "Thank you"
+    }
+   ]
+  },
+  {
+   "id": "v-感謝する-かんしゃする",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "かんしゃする",
+   "writings": [
+    {
+     "text": "感謝する"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-感謝する-かんしゃする-m1",
+     "gloss": "Express gratitude"
+    }
+   ]
+  },
+  {
+   "id": "v-木-き",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "き",
+   "writings": [
+    {
+     "text": "木"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-木-き-m1",
+     "gloss": "Tree"
+    }
+   ]
+  },
+  {
+   "id": "v-気-き",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "き",
+   "writings": [
+    {
+     "text": "気"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-気-き-m1",
+     "gloss": "Spirit, feeling",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "v-橋-はし",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "はし",
+   "writings": [
+    {
+     "text": "橋"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-橋-はし-m1",
+     "gloss": "Bridge"
+    }
+   ]
+  },
+  {
+   "id": "v-箸-はし",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "はし",
+   "writings": [
+    {
+     "text": "箸"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-箸-はし-m1",
+     "gloss": "Chopsticks"
+    }
+   ]
+  },
+  {
+   "id": "v-雨-あめ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "あめ",
+   "writings": [
+    {
+     "text": "雨"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-雨-あめ-m1",
+     "gloss": "Rain"
+    }
+   ]
+  },
+  {
+   "id": "v-飴-あめ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "あめ",
+   "writings": [
+    {
+     "text": "飴"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-飴-あめ-m1",
+     "gloss": "Candy"
+    }
+   ]
+  },
+  {
+   "id": "v-花-はな",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "はな",
+   "writings": [
+    {
+     "text": "花"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-花-はな-m1",
+     "gloss": "Flower"
+    }
+   ]
+  },
+  {
+   "id": "v-鼻-はな",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "はな",
+   "writings": [
+    {
+     "text": "鼻"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-鼻-はな-m1",
+     "gloss": "Nose"
+    }
+   ]
+  },
+  {
+   "id": "v-紙-かみ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "かみ",
+   "writings": [
+    {
+     "text": "紙"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-紙-かみ-m1",
+     "gloss": "Paper"
+    }
+   ]
+  },
+  {
+   "id": "v-神-かみ",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "かみ",
+   "writings": [
+    {
+     "text": "神"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-神-かみ-m1",
+     "gloss": "God"
+    }
+   ]
+  },
+  {
+   "id": "v-熱い-あつい",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "あつい",
+   "writings": [
+    {
+     "text": "熱い"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-熱い-あつい-m1",
+     "gloss": "Hot object"
+    }
+   ]
+  },
+  {
+   "id": "v-合う-あう",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "あう",
+   "writings": [
+    {
+     "text": "合う"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-合う-あう-m1",
+     "gloss": "Fit, match",
+     "unsplit": true
+    }
+   ]
+  },
+  {
+   "id": "v-始まる-はじまる",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "はじまる",
+   "writings": [
+    {
+     "text": "始まる"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-始まる-はじまる-m1",
+     "gloss": "Begin"
+    }
+   ]
+  },
+  {
+   "id": "v-始める-はじめる",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "はじめる",
+   "writings": [
+    {
+     "text": "始める"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-始める-はじめる-m1",
+     "gloss": "Start something"
+    }
+   ]
+  },
+  {
+   "id": "v-入れる-いれる",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "いれる",
+   "writings": [
+    {
+     "text": "入れる"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-入れる-いれる-m1",
+     "gloss": "Put in"
+    }
+   ]
+  },
+  {
+   "id": "v-出す-だす",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "だす",
+   "writings": [
+    {
+     "text": "出す"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-出す-だす-m1",
+     "gloss": "Take out"
+    }
+   ]
+  },
+  {
+   "id": "v-止まる-とまる",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "とまる",
+   "writings": [
+    {
+     "text": "止まる"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-止まる-とまる-m1",
+     "gloss": "Stop"
+    }
+   ]
+  },
+  {
+   "id": "v-止める-とめる",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "とめる",
+   "writings": [
+    {
+     "text": "止める"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-止める-とめる-m1",
+     "gloss": "Stop something"
+    }
+   ]
+  },
+  {
+   "id": "v-分-ふん",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "ふん",
+   "writings": [
+    {
+     "text": "分"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-分-ふん-m1",
+     "gloss": "Minute"
+    }
+   ]
+  },
+  {
+   "id": "v-万-まん",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "まん",
+   "writings": [
+    {
+     "text": "万"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-万-まん-m1",
+     "gloss": "Ten thousand"
+    }
+   ]
+  },
+  {
+   "id": "v-早く-はやく",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "はやく",
+   "writings": [
+    {
+     "text": "早く"
+    }
+   ],
+   "meanings": [
+    {
+     "id": "v-早く-はやく-m1",
+     "gloss": "Early"
+    }
+   ]
+  },
+  {
+   "id": "v-は-は",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "は",
+   "usuallyWritten": "kana",
+   "meanings": [
+    {
+     "id": "v-は-は-m1",
+     "gloss": "Topic particle"
+    }
+   ]
+  }
+ ],
+ "grammar": [],
+ "sentences": [
+  {
+   "id": "sentence-1",
+   "text": "昨日は早く寝ました。",
+   "origin": {
+    "kind": "learner",
+    "detail": "linked-seed-1"
+   },
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "reading": "きのうは はやく ねました。",
+   "translation": "I went to bed early yesterday.",
+   "uses": [
+    {
+     "wordId": "v-昨日-きのう"
+    },
+    {
+     "wordId": "v-寝る-ねる",
+     "form": [
+      "polite",
+      "past"
+     ]
+    },
+    {
+     "wordId": "v-早く-はやく"
+    },
+    {
+     "wordId": "v-は-は"
+    }
+   ]
+  }
+ ],
+ "notes": [],
+ "relations": [
+  {
+   "id": "group-1",
+   "type": "looks-similar",
+   "members": [
+    "kanji:k-門",
+    "kanji:k-聞",
+    "kanji:k-間",
+    "kanji:k-問",
+    "kanji:k-開",
+    "kanji:k-閉"
+   ],
+   "origin": {
+    "kind": "suggested",
+    "detail": "seed candidate"
+   },
+   "status": "proposed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-2",
+   "type": "looks-similar",
+   "members": [
+    "kanji:k-木",
+    "kanji:k-本",
+    "kanji:k-林",
+    "kanji:k-森"
+   ],
+   "origin": {
+    "kind": "suggested",
+    "detail": "seed candidate"
+   },
+   "status": "proposed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-3",
+   "type": "looks-similar",
+   "members": [
+    "kanji:k-日",
+    "kanji:k-目",
+    "kanji:k-白",
+    "kanji:k-百"
+   ],
+   "origin": {
+    "kind": "suggested",
+    "detail": "seed candidate"
+   },
+   "status": "proposed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-4",
+   "type": "looks-similar",
+   "members": [
+    "kanji:k-人",
+    "kanji:k-入",
+    "kanji:k-大",
+    "kanji:k-天"
+   ],
+   "origin": {
+    "kind": "suggested",
+    "detail": "seed candidate"
+   },
+   "status": "proposed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-5",
+   "type": "looks-similar",
+   "members": [
+    "kanji:k-土",
+    "kanji:k-士"
+   ],
+   "origin": {
+    "kind": "suggested",
+    "detail": "seed candidate"
+   },
+   "status": "proposed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-6",
+   "type": "looks-similar",
+   "members": [
+    "kanji:k-王",
+    "kanji:k-玉",
+    "kanji:k-主"
+   ],
+   "origin": {
+    "kind": "suggested",
+    "detail": "seed candidate"
+   },
+   "status": "proposed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-7",
+   "type": "looks-similar",
+   "members": [
+    "kanji:k-口",
+    "kanji:k-日",
+    "kanji:k-田",
+    "kanji:k-中"
+   ],
+   "origin": {
+    "kind": "suggested",
+    "detail": "seed candidate"
+   },
+   "status": "proposed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-8",
+   "type": "looks-similar",
+   "members": [
+    "kanji:k-寺",
+    "kanji:k-時",
+    "kanji:k-持",
+    "kanji:k-待"
+   ],
+   "origin": {
+    "kind": "suggested",
+    "detail": "seed candidate"
+   },
+   "status": "proposed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-9",
+   "type": "looks-similar",
+   "members": [
+    "kanji:k-右",
+    "kanji:k-石"
+   ],
+   "origin": {
+    "kind": "suggested",
+    "detail": "seed candidate"
+   },
+   "status": "proposed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-10",
+   "type": "looks-similar",
+   "members": [
+    "kanji:k-年",
+    "kanji:k-先",
+    "kanji:k-生"
+   ],
+   "origin": {
+    "kind": "suggested",
+    "detail": "seed candidate"
+   },
+   "status": "proposed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-11",
+   "type": "looks-similar",
+   "members": [
+    "kanji:k-万",
+    "kanji:k-分"
+   ],
+   "origin": {
+    "kind": "suggested",
+    "detail": "seed candidate"
+   },
+   "status": "proposed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-22",
+   "type": "similar-meaning",
+   "members": [
+    "word:v-話す-はなす",
+    "word:v-言う-いう",
+    "word:v-喋る-しゃべる"
+   ],
+   "origin": {
+    "kind": "learner",
+    "detail": "seed"
+   },
+   "status": "confirmed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-23",
+   "type": "similar-meaning",
+   "members": [
+    "word:v-友達-ともだち",
+    "word:v-友人-ゆうじん"
+   ],
+   "origin": {
+    "kind": "learner",
+    "detail": "seed"
+   },
+   "status": "confirmed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-24",
+   "type": "similar-meaning",
+   "members": [
+    "word:v-食べる-たべる",
+    "word:v-食う-くう"
+   ],
+   "origin": {
+    "kind": "learner",
+    "detail": "seed"
+   },
+   "status": "confirmed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-25",
+   "type": "similar-meaning",
+   "members": [
+    "word:v-家-いえ",
+    "word:v-うち-うち"
+   ],
+   "origin": {
+    "kind": "learner",
+    "detail": "seed"
+   },
+   "status": "confirmed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-26",
+   "type": "similar-meaning",
+   "members": [
+    "word:v-とても-とても",
+    "word:v-すごく-すごく"
+   ],
+   "origin": {
+    "kind": "learner",
+    "detail": "seed"
+   },
+   "status": "confirmed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-27",
+   "type": "similar-meaning",
+   "members": [
+    "word:v-たくさん-たくさん",
+    "word:v-多く-おおく"
+   ],
+   "origin": {
+    "kind": "learner",
+    "detail": "seed"
+   },
+   "status": "confirmed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-28",
+   "type": "similar-meaning",
+   "members": [
+    "word:v-ありがとう-ありがとう",
+    "word:v-感謝する-かんしゃする"
+   ],
+   "origin": {
+    "kind": "learner",
+    "detail": "seed"
+   },
+   "status": "confirmed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z"
+  },
+  {
+   "id": "group-36",
+   "type": "transitivity-pair",
+   "members": [
+    "word:v-閉まる-しまる",
+    "word:v-閉める-しめる"
+   ],
+   "origin": {
+    "kind": "learner",
+    "detail": "seed"
+   },
+   "status": "confirmed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "direction": [
+    "word:v-閉まる-しまる",
+    "word:v-閉める-しめる"
+   ]
+  },
+  {
+   "id": "group-37",
+   "type": "transitivity-pair",
+   "members": [
+    "word:v-始まる-はじまる",
+    "word:v-始める-はじめる"
+   ],
+   "origin": {
+    "kind": "learner",
+    "detail": "seed"
+   },
+   "status": "confirmed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "direction": [
+    "word:v-始まる-はじまる",
+    "word:v-始める-はじめる"
+   ]
+  },
+  {
+   "id": "group-38",
+   "type": "transitivity-pair",
+   "members": [
+    "word:v-入る-はいる",
+    "word:v-入れる-いれる"
+   ],
+   "origin": {
+    "kind": "learner",
+    "detail": "seed"
+   },
+   "status": "confirmed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "direction": [
+    "word:v-入る-はいる",
+    "word:v-入れる-いれる"
+   ]
+  },
+  {
+   "id": "group-39",
+   "type": "transitivity-pair",
+   "members": [
+    "word:v-出る-でる",
+    "word:v-出す-だす"
+   ],
+   "origin": {
+    "kind": "learner",
+    "detail": "seed"
+   },
+   "status": "confirmed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "direction": [
+    "word:v-出る-でる",
+    "word:v-出す-だす"
+   ]
+  },
+  {
+   "id": "group-40",
+   "type": "transitivity-pair",
+   "members": [
+    "word:v-止まる-とまる",
+    "word:v-止める-とめる"
+   ],
+   "origin": {
+    "kind": "learner",
+    "detail": "seed"
+   },
+   "status": "confirmed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "direction": [
+    "word:v-止まる-とまる",
+    "word:v-止める-とめる"
+   ]
+  },
+  {
+   "id": "group-43",
+   "type": "transitivity-pair",
+   "members": [
+    "word:v-開く-あく",
+    "word:v-開ける-あける"
+   ],
+   "origin": {
+    "kind": "learner",
+    "detail": "seed"
+   },
+   "status": "confirmed",
+   "created": "2026-11-24T19:52:45.382Z",
+   "updated": "2026-11-24T19:52:45.382Z",
+   "direction": [
+    "word:v-開く-あく",
+    "word:v-開ける-あける"
+   ]
+  }
+ ],
+ "ratings": [],
+ "tags": [],
+ "imports": [],
+ "meta": {}
+}

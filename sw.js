@@ -1,7 +1,7 @@
 // Offline-first: the app always runs from one complete, consistent copy of its files.
 // A new version is downloaded in full in the background (bypassing the browser cache);
 // only if every file arrives does it replace the old copy — any error keeps the old one.
-const BUILD = '746c7894643b';
+const BUILD = '1948f34362ad';
 const CACHE = `bnn-${BUILD}`;
 const FILES = [
   './',
@@ -16,6 +16,7 @@ const FILES = [
   'js/model/ratings.js',
   'js/model/relations.js',
   'js/model/search.js',
+  'js/model/split.js',
   'js/model/starter.js',
   'js/model/units.js',
   'js/store.js',
