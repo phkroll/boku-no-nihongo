@@ -1,6 +1,8 @@
 # Boku no Nihongo: design (v2, learning units)
 
 ## Intent
+- **The app is a tool for discovering requirements:** collect → use daily → discover gaps → refine data, understanding, app → repeat (decision by user)
+- This design is a **working hypothesis**; open questions, assumptions and limitations live in `docs/grooming.md` and grow through usage
 - Personal Japanese learning app; now: **collect, edit, link learning data, record own knowledge**
 - Later: practice with hints, generated questions, evidence, spaced repetition → the model carries it, nothing built for it yet
 - v1 prototype replaced; v1 data discarded (decision by user)
@@ -37,11 +39,13 @@
 | Unit | Fields | Example |
 |---|---|---|
 | **Kanji** | `char` (unique), `readings[] { id, kana, type: on\|kun\|name\|unknown }` (kun okurigana `あ.く`), `meanings[]` | 月: つき kun · げつ, がつ on · moon · month |
-| **Word** | `reading` (kana as written, katakana for loanwords; required), `writings[] { text, common: bool }` (`"n/a"` = no kanji writing), `usuallyWritten: kanji\|kana\|katakana`, `meanings[]`, `wordClass`, `verbGroup`, `suru: bool`, `wholeWordReading: bool`, `kanjiUses[]`, `irregularForms[] { form, text }` | 寝る · ねる · kanji · sleep · verb · ru |
+| **Word** | `reading` (kana as written, katakana for loanwords), `writings[] { text, common: bool }` (`"n/a"` = no kanji writing), `usuallyWritten: kanji\|kana\|katakana`, `meanings[]`, `wordClass`, `verbGroup`, `suru: bool`, `wholeWordReading: bool`, `kanjiUses[]`, `irregularForms[] { form, text }` | 寝る · ねる · kanji · sleep · verb · ru |
 | **Grammar point** | `title`, `pattern`, `meaning`, `explanation`, `appliesTo`, `formKey?` (when it is a form step) | 〜て · te-form · formKey `te` |
 | **Sentence** | `text`, `reading`, `translation`, `uses[] { wordId \| text, form[] }`, `grammarIds[]` | 昨日は早く寝ました → 寝る `[polite, past]` |
 | **Tag** | `name` (unique, case-insensitive); priorities like "should know" are tags | |
 
+- **Quick capture:** only the core of what you met is required: kanji `char` · word `writing` **or** `reading` (heard a word → kana only; saw a word → writing only) · grammar `title` · sentence `text` · note `text`
+- **Note** (5th unit): `text`, `refs[]` (any units/relations), `open: bool` — questions, assumptions, discoveries the app can't model yet; "Open" list shows everything still open
 - **One word = one reading:** 開く(あく) / 開く(ひらく) are two words
 - **Meaning:** `{ id, gloss, usage?, unsplit?: true }`; import never splits; "Moon, month" → one meaning `unsplit`, split in the app
 - **`wordClass`:** noun, verb, i-adjective, na-adjective, adverb, pronoun, particle, conjunction, counter, expression, proper-noun, other, unknown
@@ -96,8 +100,12 @@
 - A unit (after confirm showing counts) → also its relation memberships (relation removed when < 2 members), its ratings, its sentence `uses` (become text)
 - Ratings are never edited; they go only with their target
 
+## Data durability
+- `version` in data; migration steps run on load and on import of older files; fields the app doesn't know are kept, never dropped
+- Settings and list header show days since last export
+
 ## Screens
-- Bottom tabs: Words · Kanji · Grammar · Sentences; Settings in the top bar
+- Bottom tabs: Words · Kanji · Grammar · Sentences · Notes; Settings in the top bar; every unit detail: "Add note / question"
 - List: search (writing, reading, glosses; kana-insensitive), tag filter, `+`
 - Detail: fields, meanings, ratings (simple panel: pick target parts, value, confidence), relations (stored + calculated), "Add relation"
 - Forms: plain fields; kanji uses prefilled from writing with reading suggestions; "split meaning"
