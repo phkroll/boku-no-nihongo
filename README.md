@@ -18,7 +18,7 @@ Needs Node 24, no dependencies.
 
 ```sh
 npm test          # data logic and structure checks
-npm run serve     # http://localhost:8080
+npm run serve     # http://localhost:8765
 ```
 
 After adding a file under `js/` or `icons/`, add it to `FILES` in `sw.js` (a test checks this).
