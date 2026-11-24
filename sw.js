@@ -1,5 +1,6 @@
 // Offline support: network first (always fresh when online), cache as fallback.
-const CACHE = 'bnn-v1';
+const CACHE = 'bnn-v2';
+const NETWORK_TIMEOUT = 2500;
 const FILES = [
   './',
   'index.html',
@@ -33,15 +34,22 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const { request } = event;
   if (request.method !== 'GET' || new URL(request.url).origin !== self.location.origin) return;
-  event.respondWith(
-    fetch(request)
-      .then((response) => {
-        if (response.ok) {
-          const copy = response.clone();
-          caches.open(CACHE).then((c) => c.put(request, copy));
-        }
-        return response;
-      })
-      .catch(() => caches.match(request, { ignoreSearch: true })),
-  );
+  event.respondWith(respond(request));
 });
+
+// Network first, but a hanging network (weak signal) falls back to the cache after a timeout.
+function respond(request, timeout = NETWORK_TIMEOUT) {
+  const network = fetch(request).then((response) => {
+    if (response.ok) {
+      const copy = response.clone();
+      caches.open(CACHE).then((c) => c.put(request, copy));
+    }
+    return response;
+  });
+  const cached = () => caches.match(request, { ignoreSearch: true });
+  // Network failed (offline): use the cache right away.
+  const fallback = network.catch(() => cached().then((hit) => hit ?? Promise.reject(new Error('offline'))));
+  // Network too slow: use the cache if there is a copy, else keep waiting.
+  const slow = new Promise((resolve) => setTimeout(resolve, timeout)).then(cached).then((hit) => hit ?? fallback);
+  return Promise.race([fallback, slow]);
+}

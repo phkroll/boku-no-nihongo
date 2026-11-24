@@ -25,6 +25,7 @@ function run(mode, action) {
           resolve(req.result);
         };
         tx.onerror = () => reject(tx.error);
+        tx.onabort = () => reject(tx.error ?? new Error('Saving was aborted'));
       }),
   );
 }
@@ -35,6 +36,18 @@ export async function loadData() {
 
 export function saveData(data) {
   return run('readwrite', (s) => s.put(structuredClone(data), KEY));
+}
+
+// Wraps a save so a failure is shown to the user instead of vanishing.
+export function guardedSave(save, notify) {
+  return async () => {
+    try {
+      await save();
+    } catch (e) {
+      notify(`Your last change was not saved (${e.message}). Export a backup in Settings to be safe.`);
+      throw e;
+    }
+  };
 }
 
 export async function requestPersist() {

@@ -20,6 +20,11 @@ function append(el, children) {
   }
 }
 
+// Enter that confirms a Japanese (IME) conversion must not count as "submit".
+export function isSubmitEnter(ev) {
+  return ev.key === 'Enter' && !ev.isComposing && ev.keyCode !== 229;
+}
+
 export function clear(el) {
   el.replaceChildren();
 }

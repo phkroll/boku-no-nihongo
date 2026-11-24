@@ -1,4 +1,4 @@
-import { loadData, saveData, requestPersist } from './store.js';
+import { loadData, saveData, requestPersist, guardedSave } from './store.js';
 import { clear } from './ui/dom.js';
 import * as list from './ui/list.js';
 import * as form from './ui/form.js';
@@ -18,7 +18,7 @@ const root = document.getElementById('app');
 
 const ctx = {
   data: null,
-  save: () => saveData(ctx.data),
+  save: guardedSave(() => saveData(ctx.data), (message) => alert(message)),
   go(hash, { replace = false } = {}) {
     if (replace) {
       history.replaceState(null, '', hash);

@@ -1,5 +1,5 @@
 import { KINDS, WORD_TYPES, addEntry, updateEntry, getEntry, addTag } from '../model.js';
-import { h, clear, topBar, link, KIND_LABELS } from './dom.js';
+import { h, clear, topBar, link, KIND_LABELS, isSubmitEnter } from './dom.js';
 
 const TEXT_LABELS = { word: 'Word', kanji: 'Kanji', sentence: 'Sentence', grammar: 'Pattern' };
 
@@ -48,7 +48,7 @@ export function render(root, ctx, params) {
         error.textContent = e.message;
       }
     };
-    newTag.addEventListener('keydown', (ev) => { if (ev.key === 'Enter') { ev.preventDefault(); addNew(); } });
+    newTag.addEventListener('keydown', (ev) => { if (isSubmitEnter(ev)) { ev.preventDefault(); addNew(); } });
     return h('div', { class: 'field' }, h('span', {}, 'Tags'),
       h('div', { class: 'chips' },
         ctx.data.tags.map((t) => h('button', {
