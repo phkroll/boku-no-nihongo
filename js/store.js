@@ -1,5 +1,6 @@
 // Persistence: the whole Data object lives in one IndexedDB record.
-import { emptyData } from './model.js';
+import { migrate } from './model/migrate.js';
+import { ensureStarter } from './model/starter.js';
 
 const DB_NAME = 'boku-no-nihongo';
 const STORE = 'kv';
@@ -31,7 +32,7 @@ function run(mode, action) {
 }
 
 export async function loadData() {
-  return (await run('readonly', (s) => s.get(KEY))) ?? emptyData();
+  return ensureStarter(migrate(await run('readonly', (s) => s.get(KEY))));
 }
 
 export function saveData(data) {
