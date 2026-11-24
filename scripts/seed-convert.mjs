@@ -21,7 +21,10 @@ const isKana = (s) => /^[぀-ヿ]+$/.test(s);
 const looksCombined = (g) => /[,;、]/.test(g);
 const prefix = (id) => id.slice(0, id.indexOf(':'));
 
-export function convertSeed(seed, { now = new Date().toISOString() } = {}) {
+// Ratings get a fixed date and ids derived from their target, so converting again and merging adds nothing.
+const RATED_AT = '2026-11-24T00:00:00.000Z';
+
+export function convertSeed(seed, { now = new Date().toISOString(), ratedAt = RATED_AT } = {}) {
   const nodes = new Map(seed.nodes.map((n) => [n.id, n]));
   const edges = seed.relationships;
   const edgeById = new Map(edges.map((e) => [e.id, e]));
@@ -141,7 +144,8 @@ export function convertSeed(seed, { now = new Date().toISOString() } = {}) {
 
   // Ratings: rough familiarity → estimate on the whole unit; learner reports → as precise as the seed says.
   const rating = (target, value, confidence, source, note) => {
-    const r = { id: `rating-${out.ratings.length + 1}`, target, value, confidence, source, at: now };
+    const key = [target.unit, target.from, target.to, source, value].filter(Boolean).join('-');
+    const r = { id: safeId(`rating-${key}`), target, value, confidence, source, at: ratedAt };
     if (note) r.note = note;
     out.ratings.push(r);
   };

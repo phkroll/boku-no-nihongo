@@ -8,6 +8,7 @@ import * as F from './fields.js';
 
 function emptyDraft(kind, about) {
   const draft = {};
+  if (kind === 'word') draft.writings = [{ text: '' }];
   if (kind === 'note') {
     draft.open = true;
     if (about) draft.refs = [about];
@@ -38,7 +39,12 @@ export function render(root, ctx, params) {
   const before = existing ? structuredClone(existing) : undefined;
   const draft = existing ? structuredClone(existing) : emptyDraft(kind, params.about);
   const error = errorLine();
-  const form = h('form', { class: 'form', onsubmit: (ev) => { ev.preventDefault(); save(); } });
+  // Enter in a single-line field never saves the whole form (tags, IME confirmations); Save does.
+  const form = h('form', {
+    class: 'form',
+    onsubmit: (ev) => { ev.preventDefault(); save(); },
+    onkeydown: (ev) => { if (ev.key === 'Enter' && ev.target?.tagName === 'INPUT') ev.preventDefault(); },
+  });
 
   const editor = (f) => {
     const set = (v) => { draft[f.key] = v; };

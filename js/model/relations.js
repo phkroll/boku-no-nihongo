@@ -1,6 +1,6 @@
 // Relations between units (2+ members, or 1 member + UNKNOWN partner), and keeping
 // references consistent when units, relations or readings go away.
-import { RELATION_TYPES, UNKNOWN, makeRef, newId, nowIso, parseRef, unitLabel } from './data.js';
+import { RELATION_TYPES, UNKNOWN, getUnit, makeRef, newId, nowIso, parseRef, unitLabel } from './data.js';
 
 const realMembers = (r) => r.members.filter((m) => m !== UNKNOWN);
 const memberKey = (members) => [...members].sort().join('|');
@@ -64,6 +64,7 @@ export function removeUnitReferences(data, ref) {
       s.uses = (s.uses ?? []).map((u) => (u.wordId === id ? { text: label, ...(u.form ? { form: u.form } : {}) } : u));
     }
   }
+  if (kind === 'kanji') for (const r of getUnit(data, ref)?.readings ?? []) clearReadingUses(data, r.id);
   if (kind === 'grammar') for (const s of data.sentences) if (s.grammarIds) s.grammarIds = s.grammarIds.filter((g) => g !== id);
   for (const n of data.notes) if (n.refs) n.refs = n.refs.filter((x) => x !== ref);
 }

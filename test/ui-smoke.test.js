@@ -107,3 +107,34 @@ test('confirming a suggested relation', async () => {
   await new Promise((r) => setImmediate(r));
   assert.equal(d.relations.find((r) => r.type === 'looks-similar').status, 'confirmed');
 });
+
+test('quick capture: a word seen, writing only, without extra taps', async () => {
+  const { d } = sampleData();
+  const ctx = makeCtx(d);
+  const root = page();
+  screens.edit.render(root, ctx, { kind: 'word' });
+  const writing = fieldInput(root, 'Writing');
+  assert.ok(writing, 'writing input is there from the start');
+  writing.fire('input', { target: { value: '帰る' } });
+  root.all((n) => n.tagName === 'FORM')[0].fire('submit');
+  await new Promise((r) => setImmediate(r));
+  assert.ok(d.words.some((w) => w.writings?.[0]?.text === '帰る' && !w.reading));
+});
+
+test('Enter in a text field does not save the form; Enter in the tag field adds the tag', () => {
+  const { d } = sampleData();
+  const root = page();
+  screens.edit.render(root, makeCtx(d), { kind: 'kanji' });
+  const form = root.all((n) => n.tagName === 'FORM')[0];
+  let prevented = false;
+  const input = fieldInput(root, 'Kanji');
+  form.fire('keydown', { key: 'Enter', target: input, preventDefault: () => { prevented = true; } });
+  assert.equal(prevented, true);
+  const tagInput = root.all((n) => n.tagName === 'INPUT' && n.attrs.placeholder === 'new tag')[0];
+  tagInput.value = 'JLPT N4';
+  tagInput.fire('keydown', { key: 'Enter', isComposing: false, keyCode: 13 });
+  assert.ok(d.tags.some((t) => t.name === 'JLPT N4'));
+  tagInput.value = 'にほ';
+  tagInput.fire('keydown', { key: 'Enter', isComposing: true, keyCode: 229 });
+  assert.ok(!d.tags.some((t) => t.name === 'にほ'));
+});

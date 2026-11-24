@@ -1,4 +1,4 @@
-import { exportJson, parseBackup, mergeImport } from '../model/io.js';
+import { exportJson, parseBackup, parseRestore, markExported, mergeImport } from '../model/io.js';
 import { ensureStarter } from '../model/starter.js';
 import { h, topBar, link, section, button, errorLine } from './dom.js';
 
@@ -11,14 +11,16 @@ async function share(text) {
   if (navigator.canShare?.({ files: [file] })) {
     try {
       await navigator.share({ files: [file] });
+      return true;
     } catch (e) {
-      if (e.name !== 'AbortError') throw e;
+      if (e.name === 'AbortError') return false;
+      throw e;
     }
-    return;
   }
   const url = URL.createObjectURL(file);
   h('a', { href: url, download: file.name }).click();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
+  return true;
 }
 
 const fileButton = (label, onfile) => h('label', { class: 'button-like' }, label,
@@ -36,7 +38,8 @@ export function render(root, ctx) {
 
   const exportNow = async () => {
     try {
-      await share(exportJson(d));
+      if (!(await share(exportJson(d)))) return;
+      markExported(d);
       await ctx.save();
       redraw();
     } catch (e) {
@@ -57,8 +60,9 @@ export function render(root, ctx) {
 
   const restore = async (file) => {
     try {
-      const next = ensureStarter(parseBackup(await file.text()));
-      if (!confirm(`Replace everything (${d.words.length} words, ${d.kanji.length} kanji, ${d.ratings.length} ratings) with this backup?`)) return;
+      const next = ensureStarter(parseRestore(await file.text()));
+      const counts = (x) => `${x.words.length} words, ${x.kanji.length} kanji, ${x.ratings.length} ratings`;
+      if (!confirm(`Replace everything you have now (${counts(d)}) with this backup (${counts(next)})? Export first if unsure.`)) return;
       for (const k of Object.keys(d)) delete d[k];
       Object.assign(d, next);
       await ctx.save();

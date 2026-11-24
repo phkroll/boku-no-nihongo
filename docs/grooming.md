@@ -18,6 +18,15 @@ Open questions, assumptions and limitations found while building and using the a
 - Calculated "shared gloss" only works on split meanings
 - Data lives on one phone; backup = manual export
 
+## Known small issues (deferred)
+- A tag created during an edit you then cancel stays
+- Editing a relation's members keeps a direction / tell-apart ratings for a removed member; can duplicate another relation
+- Merging an older own backup brings back fields, meanings and units deleted since (no record of deletions)
+- A deleted starter grammar point comes back on next start
+- Bottom tab bar: double safe-area space on iPhone
+- Merging a v1 file adds nothing but still records an import
+- To check on the phone: file picker, prompt/confirm in the Home Screen app, tab bar with keyboard open, share sheet
+
 ## Open questions
 - How should knowledge of a whole group differ from knowledge of its pairs in practice?
 - Which meaning does an imprecise seed rating ("familiar sense only") refer to? Resolve while splitting meanings.

@@ -4,9 +4,13 @@ import { migrate } from './migrate.js';
 import { findRelation } from './relations.js';
 import { targetKey } from './ratings.js';
 
+// The file records its export date; the data only counts as backed up after markExported.
 export function exportJson(data, now = nowIso()) {
+  return JSON.stringify({ ...data, meta: { ...data.meta, lastExport: now } }, null, 2);
+}
+
+export function markExported(data, now = nowIso()) {
   data.meta = { ...data.meta, lastExport: now };
-  return JSON.stringify(data, null, 2);
 }
 
 export function parseBackup(text) {
@@ -18,6 +22,21 @@ export function parseBackup(text) {
   }
   if (!raw || typeof raw !== 'object' || Array.isArray(raw)) throw new Error('Not a Boku no Nihongo file');
   return migrate(raw);
+}
+
+// Restore replaces everything, so it refuses files that would leave an empty notebook.
+export function parseRestore(text) {
+  let raw;
+  try {
+    raw = JSON.parse(text);
+  } catch {
+    throw new Error('Not a Boku no Nihongo file');
+  }
+  if (raw?.version === 1) throw new Error('This backup is from an older app version and cannot be restored');
+  const data = parseBackup(text);
+  const own = KINDS.reduce((n, k) => n + data[COLLECTION[k]].filter((u) => u.origin?.kind !== 'reference').length, 0);
+  if (own === 0) throw new Error('This file has no entries; nothing restored');
+  return data;
 }
 
 const NATURAL_KEY = {
@@ -48,6 +67,7 @@ export function mergeImport(data, incomingRaw, { file = '', now = nowIso() } = {
   const partMap = new Map(); // incoming meaning/reading id → local id
   const tagMap = new Map();
   const fresh = []; // [kind, unit] added from this import
+  const copiedLists = []; // [kind, local unit, list names] taken over from the file
 
   for (const tag of incoming.tags) {
     const found = data.tags.find((t) => normalize(t.name) === normalize(tag.name));
@@ -72,15 +92,28 @@ export function mergeImport(data, incomingRaw, { file = '', now = nowIso() } = {
         continue;
       }
       unitMap.set(makeRef(kind, u.id), makeRef(kind, match.id));
-      summary[fillMissing(match, u, partMap, tagMap) ? 'updated' : 'skipped'] += 1;
+      const copied = [];
+      summary[fillMissing(match, u, partMap, tagMap, copied) ? 'updated' : 'skipped'] += 1;
+      if (copied.length) copiedLists.push([kind, match, copied]);
     }
   }
 
   const mapRef = (ref) => (ref === UNKNOWN ? UNKNOWN : unitMap.get(ref) ?? (getUnit(data, ref) ? ref : undefined));
   for (const [kind, u] of fresh) remapUnit(kind, u, { mapRef, partMap, tagMap });
+  for (const [kind, u, lists] of copiedLists) {
+    const part = Object.fromEntries(lists.map((k) => [k, u[k]]));
+    remapUnit(kind, part, { mapRef, partMap, tagMap });
+    Object.assign(u, part);
+  }
 
   const relationMap = new Map();
   for (const r of incoming.relations) {
+    const sameId = data.relations.find((x) => x.id === r.id);
+    if (sameId) {
+      relationMap.set(makeRef('relation', r.id), makeRef('relation', sameId.id));
+      if (!sameId.notes && r.notes) sameId.notes = r.notes;
+      continue;
+    }
     const members = r.members.map(mapRef).filter(Boolean);
     const real = members.filter((m) => m !== UNKNOWN);
     if (real.length < 2 && !(real.length === 1 && members.includes(UNKNOWN))) continue;
@@ -118,7 +151,7 @@ export function mergeImport(data, incomingRaw, { file = '', now = nowIso() } = {
 }
 
 // Fills fields the local unit lacks and combines lists. Returns whether anything changed.
-function fillMissing(local, incoming, partMap, tagMap) {
+function fillMissing(local, incoming, partMap, tagMap, copied) {
   let changed = false;
   for (const [k, v] of Object.entries(incoming)) {
     if (OWN.has(k) || k in local) continue;
@@ -141,6 +174,7 @@ function fillMissing(local, incoming, partMap, tagMap) {
   for (const list of TAKE_IF_MISSING) {
     if (incoming[list]?.length && !local[list]?.length) {
       local[list] = clone(incoming[list]);
+      copied.push(list);
       changed = true;
     }
   }

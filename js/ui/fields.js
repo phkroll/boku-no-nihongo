@@ -1,6 +1,6 @@
 // Editors for the structured fields of a unit. Each takes the draft and a redraw callback.
 import { FORM_KEYS, NA, READING_TYPES, makeRef, newId, normalize } from '../model/data.js';
-import { h, button, chips, jp, select } from './dom.js';
+import { h, button, chips, jp, select, isSubmitEnter } from './dom.js';
 import { refLink } from './describe.js';
 import { picker } from './picker.js';
 
@@ -109,7 +109,7 @@ export function tagsEditor(ctx, draft, redraw) {
     if (!ids.includes(tag.id)) draft.tagIds = [...ids, tag.id];
     redraw();
   };
-  const newTag = h('input', { placeholder: 'new tag', autocomplete: 'off' });
+  const newTag = h('input', { placeholder: 'new tag', autocomplete: 'off', onkeydown: (ev) => { if (isSubmitEnter(ev)) add(newTag.value); } });
   return h('div', { class: 'stack' },
     chips(ctx.data.tags.map((t) => [t.id, t.name]), (id) => ids.includes(id), (id) => {
       draft.tagIds = ids.includes(id) ? ids.filter((x) => x !== id) : [...ids, id];

@@ -27,7 +27,6 @@ test('round trip via export and parseBackup', () => {
   const back = parseBackup(exportJson(d, T));
   assert.equal(back.meta.lastExport, T);
   assert.deepEqual(back.words, d.words);
-  assert.equal(d.meta.lastExport, T);
 });
 
 test('parseBackup rejects garbage', () => {

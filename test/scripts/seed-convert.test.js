@@ -154,3 +154,11 @@ test('every record has origin and the output merges into empty data', () => {
   assert.equal(target.words.length, 2);
   assert.equal(mergeImport(target, d, { file: 'seed', now: T }).added, 0);
 });
+
+test('converting again later and merging adds nothing', () => {
+  const target = emptyData();
+  mergeImport(target, convertSeed(SEED, { now: T }), { file: 'a', now: T });
+  const again = mergeImport(target, convertSeed(SEED, { now: '2027-01-01T00:00:00.000Z' }), { file: 'b', now: T });
+  assert.equal(again.added, 0);
+  assert.equal(new Set(target.ratings.map((r) => r.id)).size, target.ratings.length);
+});
