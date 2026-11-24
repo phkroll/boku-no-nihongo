@@ -1,0 +1,13 @@
+{
+  "name": "Boku no Nihongo",
+  "short_name": "日本語",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f5f2",
+  "theme_color": "#f7f5f2",
+  "icons": [
+    { "src": "icons/icon-180.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

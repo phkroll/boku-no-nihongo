@@ -4,8 +4,10 @@ import * as list from './ui/list.js';
 import * as form from './ui/form.js';
 import * as detail from './ui/detail.js';
 import * as linkPicker from './ui/link-picker.js';
+import * as settings from './ui/settings.js';
 
 const ROUTES = [
+  [/^#\/settings$/, settings, () => ({})],
   [/^#\/new$/, form, () => ({})],
   [/^#\/entry\/([^/]+)\/edit$/, form, (m) => ({ id: m[1] })],
   [/^#\/entry\/([^/]+)\/link$/, linkPicker, (m) => ({ id: m[1] })],
@@ -43,6 +45,7 @@ function draw(screen, params) {
 }
 
 async function start() {
+  navigator.serviceWorker?.register('sw.js');
   requestPersist();
   ctx.data = await loadData();
   window.addEventListener('hashchange', show);
