@@ -16,7 +16,7 @@ const TYPES = {
   '.svg': 'image/svg+xml',
 };
 
-createServer(async (req, res) => {
+const server = createServer(async (req, res) => {
   const path = decodeURIComponent(new URL(req.url, 'http://x').pathname);
   const file = normalize(join(ROOT, path.endsWith('/') ? `${path}index.html` : path));
   if (!file.startsWith(ROOT.endsWith(sep) ? ROOT : ROOT + sep)) {
@@ -30,4 +30,14 @@ createServer(async (req, res) => {
   } catch {
     res.writeHead(404).end('Not found');
   }
-}).listen(PORT, '127.0.0.1', () => console.log(`http://localhost:${PORT}`));
+});
+
+// If the port is taken, try the next ones.
+let port = PORT;
+server.on('error', (err) => {
+  if (err.code !== 'EADDRINUSE' || port >= PORT + 20) throw err;
+  port += 1;
+  server.listen(port, '127.0.0.1');
+});
+server.on('listening', () => console.log(`http://localhost:${port}`));
+server.listen(port, '127.0.0.1');
