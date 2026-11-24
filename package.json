@@ -1,0 +1,9 @@
+{
+  "name": "boku-no-nihongo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test \"test/**/*.test.js\"",
+    "serve": "node scripts/serve.mjs"
+  }
+}
