@@ -1,105 +1,110 @@
 # Boku no Nihongo: design (v2, learning units)
 
 ## Intent
-- Personal Japanese learning app; today: **collect, edit, link learning data, record own knowledge**
-- Later: practice with multi-stage hints, generated questions, evidence, spaced repetition → model must carry that, nothing built for it yet
-- v1 prototype (one generic entry, untyped links) replaced; v1 data discarded, no migration (decision by user)
+- Personal Japanese learning app; now: **collect, edit, link learning data, record own knowledge**
+- Later: practice with hints, generated questions, evidence, spaced repetition → the model carries it, nothing built for it yet
+- v1 prototype replaced; v1 data discarded (decision by user)
+- Seed files in `out/` (gitignored) test the model; they don't define it (decision by user)
 
 ## Goals / non-goals / anti-goals
-| Goals now | Not now (model must allow) | Anti-goals |
+| Now | Later (model allows) | Anti-goals |
 |---|---|---|
-| words, kanji, grammar points, sentences as separate unit types | flashcards, hints, generated exercises | hand-maintained flashcards |
-| on/kun readings; which kanji reading a word uses | practice evidence, progress assessment | storing anything that can be calculated |
-| typed relations, objective vs personal | learning algorithm, spaced repetition | speculative abstractions |
-| self-rated knowledge per direction, history kept | conjugation engine | a server holding data |
-| import of base data (merge) | bundled dictionaries | |
+| words, kanji, grammar points, sentences; meanings as separate items | practice, hints, generated exercises | hand-maintained flashcards |
+| readings by type; reading used per word | evidence from practice, progress calculation | storing what can be calculated |
+| relations of 2+ members, status, origin | conjugation engine | semantic guesses on import |
+| ratings with partial targets, confidence, source | spaced repetition, learning algorithm | generic graph architecture |
+| import with import record, nothing lost | | a server holding data |
 
 ## Constraints
-- Stays a Home Screen web app: plain HTML/CSS/JS modules, no dependencies, no build, offline, data in IndexedDB on the phone, JSON backup, GitHub Pages (approach A, decision by user)
-- UI text English; Japanese content as typed
-- Phone-first forms; no practice screens
+- Home Screen web app, plain JS modules, no dependencies, no build, offline, IndexedDB on the phone, JSON backup, GitHub Pages (approach A, decision by user)
+- UI English; Japanese content as typed
 
 ## Approaches
 | | Approach | Chosen |
 |---|---|---|
 | A | rebuild inside current web app, model v2 | ✅ user |
-| B | same + small UI library (Preact) | – breaks no-deps, pays off only with practice UI |
+| B | + small UI library (Preact) | – breaks no-deps; pays off only with practice UI |
 | C | native iOS now | – Xcode + 7-day signing vs. "simple for now" |
 
-## Domain model (data `version: 2`)
+## Basic rules
+- **Field states:** absent = **missing** (not entered) · `"unknown"` = looked at, not known · `"n/a"` or an intentional empty list = **not applicable**
+- **Every record:** `id, tagIds[], notes, origin, importId?, created, updated`
+- **`origin`:** `{ kind: 'learner' | 'reference' | 'suggested', detail? }`; suggested = unchecked (e.g. AI); shown marked until confirmed
+- **`Import`:** `{ id, file, at }`; set on every record an import created
+- **Refs:** `"<kind>:<id>"`; meanings `"<kind>:<id>#<meaningId>"`
 
-Units are referenced as `"<kind>:<id>"` (`word:…`, `kanji:…`, `grammar:…`, `sentence:…`). All units: `id, tagIds[], notes, source, created, updated`.
-
-| Unit | Own fields | Rules |
+## Units
+| Unit | Fields | Example |
 |---|---|---|
-| **Word** | `writing` (may be empty), `altWritings[]`, `reading` (kana, required), `usuallyKana` bool, `senses[]` = `{ glosses: string[], usage }` (≥1 gloss), `wordClass`, `verbGroup`, `kanjiUses[]`, `specialReading` bool | **one word = one reading**: 開く(あく) and 開く(ひらく) are two words (decision in discussion) |
-| **Kanji** | `char` (one character, unique), `readings[]` = `{ kana, type: 'on'\|'kun' }`, `meanings: string[]` | kun okurigana with dot: `あ.く` |
-| **Grammar point** | `title`, `pattern`, `meaning`, `explanation`, `appliesTo` (free text) | e.g. 〜た · casual past · all verbs |
-| **Sentence** | `text`, `reading`, `translation`, `uses[]` = `{ wordId, form }`, `grammarIds[]` | form free text (e.g. "casual past") |
+| **Kanji** | `char` (unique), `readings[] { id, kana, type: on\|kun\|name\|unknown }` (kun okurigana `あ.く`), `meanings[]` | 月: つき kun · げつ, がつ on · moon · month |
+| **Word** | `reading` (kana as written, katakana for loanwords; required), `writings[] { text, common: bool }` (`"n/a"` = no kanji writing), `usuallyWritten: kanji\|kana\|katakana`, `meanings[]`, `wordClass`, `verbGroup`, `suru: bool`, `wholeWordReading: bool`, `kanjiUses[]`, `irregularForms[] { form, text }` | 寝る · ねる · kanji · sleep · verb · ru |
+| **Grammar point** | `title`, `pattern`, `meaning`, `explanation`, `appliesTo`, `formKey?` (when it is a form step) | 〜て · te-form · formKey `te` |
+| **Sentence** | `text`, `reading`, `translation`, `uses[] { wordId \| text, form[] }`, `grammarIds[]` | 昨日は早く寝ました → 寝る `[polite, past]` |
+| **Tag** | `name` (unique, case-insensitive); priorities like "should know" are tags | |
 
-- `wordClass`: noun, verb, i-adjective, na-adjective, adverb, pronoun, particle, conjunction, counter, expression, other
-- `verbGroup` (only when verb): `ru`, `u`, `irregular`; always entered, never guessed (帰る is `u`)
-- `kanjiUses[]` = `{ char, reading, base }` per kanji in `writing`, in order; `reading` = kana as used; `base` = the kanji's reading before a sound change, empty if none (学校: reading がっ, base がく) (my call); `specialReading` = whole-word reading, no per-kanji split (今日 きょう) → `kanjiUses` readings empty
-- Irregular forms (行く→行った): `notes` for now; conjugation comes later
-- **Tag**: `id, name` (unique case-insensitive)
+- **One word = one reading:** 開く(あく) / 開く(ひらく) are two words
+- **Meaning:** `{ id, gloss, usage?, unsplit?: true }`; import never splits; "Moon, month" → one meaning `unsplit`, split in the app
+- **`wordClass`:** noun, verb, i-adjective, na-adjective, adverb, pronoun, particle, conjunction, counter, expression, proper-noun, other, unknown
+- **`verbGroup`:** ru, u, irregular, unknown, n/a (non-verbs); always entered, never guessed (帰る = u)
+- **`kanjiUses[]`:** `{ char, readingId?, reading, base? }` per kanji, in order; `base` = before sound change (学校: がっ, base がく); `wholeWordReading` → per-kanji readings n/a (今日 きょう)
+- **Forms:** chain of form keys from grammar points: `[potential, negative, past]`; starter set ships with origin `reference`: polite, negative, past, te, potential, passive, causative, causative-passive, volitional, imperative, conditional-ba, conditional-tara, desire-tai, progressive-teiru
+- Out of scope: counter sound changes (一本 いっぽん)
 
-### Relations
-`Relation { id, type, a: ref, b: ref, note, created }`; personal types are directed (a → b), others undirected.
+## Relations
+`Relation { type, members[] (2+, or 1 + partner "unknown"), direction?: [from, to], status, origin }`
+- **status:** suspected · confirmed · rejected (meaningful for `confuses`; others default confirmed)
+- A group doesn't claim every pair is equally similar
 
-| Type | Kind | Between | Example |
-|---|---|---|---|
-| `looks-similar` | objective | kanji ↔ kanji | 聞 ⇄ 間, 門 ⇄ 開 |
-| `similar-meaning` | objective, note = usage difference | word ↔ word, grammar ↔ grammar | 友達 / 友人 |
-| `transitivity-pair` | objective | word ↔ word | 開く / 開ける |
-| `politeness-variant` | objective | word ↔ word | 食べる → 召し上がる |
-| `related` | objective, free | any ↔ any | |
-| `confuses` | **personal, directed** | any → same kind | 聞 → 間, ので → から |
+| Type | Kind | Example |
+|---|---|---|
+| `looks-similar` | objective | 門 聞 間 問 開 閉 |
+| `similar-meaning` | objective, usage in `notes` | 話す 言う 喋る · 友達 友人 |
+| `transitivity-pair` | objective, direction intransitive → transitive | 開く → 開ける |
+| `politeness-variant` | objective | 食べる → 召し上がる |
+| `related` | objective, free | |
+| `confuses` | **personal**, direction optional | 聞 ⇄ 間 confirmed · 右 石 suspected · 西 + unknown |
 
-Calculated, never stored (shown as "automatic"):
-| Relation | Rule |
-|---|---|
-| kanji in word | char of a Kanji appears in word `writing` / `altWritings` |
-| same writing | equal `writing` (or alt writing), different word |
-| same reading | equal `reading` (hiragana/katakana treated equal) |
-| shared gloss | a normalized gloss equal (NFKC, lowercase, trim, leading "to " ignored) |
-| word/grammar in sentence | from sentence `uses` / `grammarIds` |
-| kanji reading used | from `kanjiUses`: word ↔ kanji + reading (`base` if set, else `reading`; on/kun looked up from the kanji when it exists) |
+**Calculated, never stored:** kanji in word · same writing · same reading (hiragana = katakana) · shared gloss (split meanings only) · word/grammar in sentence · kanji reading used
 
-### Knowledge (personal)
-`Rating { id, target, value, at }`; **append-only history**, current state = latest rating per target; no rating = **not assessed** (never stored as unknown).
-- `target`: `{ ref, direction }` or `{ pair: { type, a, b }, aspect }` — pair key works for entered **and** automatic relations (橋/箸 same reading is ratable) (my call)
-- `value`: `unknown`, `unsure`, `known`, `none` (= reset to not assessed)
-- Later practice answers become evidence next to ratings; ratings stay as "self-assessed"
+## Ratings (personal knowledge)
+`Rating { target, value, confidence, source, note?, at }`; **append-only**, current = latest per target; no rating = **not assessed**
+- **value:** unknown · partly · known · `cleared` (back to not assessed)
+- **confidence:** sure · probably
+- **source:** learner · estimate · practice (later)
+- **target:** `{ unit, from?, to?, meaningId?, readingId?, form?, members? }`; omitted part = unspecified (imprecise knowledge without extra directions)
+- **facets** for `from`/`to`: writing · reading · meaning · class · kanji-reading · form
 
-| Unit | `direction` / `aspect` |
-|---|---|
-| Word | `writing>reading`, `writing>meaning`, `reading>meaning`, `meaning>reading`, `meaning>writing`, `reading>class` (writing directions hidden when `writing` empty or `usuallyKana`) |
-| Kanji | `kanji>meaning`, `kanji>on`, `kanji>kun`, `meaning>kanji` |
-| Grammar | `pattern>meaning`, `use` |
-| Sentence | `text>reading`, `text>meaning`, `meaning>text` (my call) |
-| Relation (entered or automatic) | `aware` (knows they're related), `distinguish` (can tell them apart) |
+| Scenario | target | value / confidence / source |
+|---|---|---|
+| seed: 開 probably known | `{ kanji:開 }` | known / probably / estimate |
+| 寝る writing hard, unclear what | `{ word:寝る, from: writing }` | partly / sure / learner |
+| 本: book yes, origin no | `{ kanji:本, to: meaning, meaningId: book }` · `…origin` | known · unknown |
+| 生 in 先生 read せい | `{ word:先生, to: kanji-reading, readingId: せい }` | known |
+| 寝る casual past | `{ word:寝る, form: [past] }` | known |
+| te-form in general | `{ grammar:te }` | known |
+| 門 family | `{ relation:門-group }` | known |
+| tell 聞 from 間 | `{ relation:門-group, members: [聞, 間] }` (order = direction) | unknown |
 
-## Deleting (my call)
-- Deleting a unit (after confirm showing counts) also deletes its relations and ratings and removes it from sentence `uses`/`grammarIds`
-- Deleting an entered relation deletes the ratings of its pair key only if no automatic relation of that pair remains
-- Append-only means ratings are never edited, not that they outlive their unit
+- Confusion **status** (suspected/confirmed) and **progress** (ratings on telling apart) are independent; "resolved" = calculated from ratings, history kept
+
+## Deleting
+- A unit (after confirm showing counts) → also its relation memberships (relation removed when < 2 members), its ratings, its sentence `uses` (become text)
+- Ratings are never edited; they go only with their target
 
 ## Screens
-- Bottom tabs: Words · Kanji · Grammar · Sentences; Settings from the top bar
-- List per tab: search (writing, reading, glosses/meanings; kana-insensitive), tag filter, `+`
-- Detail: fields, knowledge grid (tap cycles not assessed → unknown → unsure → known), relations (entered + automatic, tappable), "Add relation" (type → picker over all units)
-- Word form: `kanjiUses` prefilled from `writing` chars, readings suggested from existing Kanji, editable
-- Sentence form: pick words (+ form) and grammar points from existing units
-- Settings: export backup · restore backup (replace all) · **add data (merge import)** · tags
+- Bottom tabs: Words · Kanji · Grammar · Sentences; Settings in the top bar
+- List: search (writing, reading, glosses; kana-insensitive), tag filter, `+`
+- Detail: fields, meanings, ratings (simple panel: pick target parts, value, confidence), relations (stored + calculated), "Add relation"
+- Forms: plain fields; kanji uses prefilled from writing with reading suggestions; "split meaning"
+- Settings: export backup · restore (replace all) · add data (merge import) · tags
+- Suggested relations shown marked with "confirm / reject"
 
 ## Import (merge)
-- Same JSON format as backup; may be partial (any unit arrays only)
-- Match: same `id`, else natural key (kanji `char`; word `writing`+`reading`; grammar `title`; sentence `text`); no match → added
-- On match (my call): text fields → incoming non-empty overwrites; list fields **combined**, duplicates skipped: kanji `readings` by `kana`+`type`, `meanings`/`altWritings` by normalized text, `senses` appended unless all its glosses already exist, `tagIds` union, `kanjiUses`/`uses`/`grammarIds` → incoming non-empty replaces
-- Relations, ratings, tags appended, duplicates skipped; refs to missing units dropped
-- User's own sources → converted to this format by Claude in chat; no per-source import UI
+- App JSON format; partial files allowed; every import creates an `Import` record
+- Match: same `id`, else natural key (kanji `char`; word first writing + `reading`; grammar `title`; sentence `text`); else added
+- On match: scalar fields → incoming fills missing only, never overwrites learner data; lists combined without duplicates (readings by `kana`+`type`, meanings by gloss, tags by name)
+- Ratings appended (no duplicates); relations combined by type + members
+- Seed `linked-seed-1` → converted once by a tested script into this format; seed groups → relations; `candidate` → origin suggested; `initial_familiarity` → rating on whole unit, source estimate; gloss text → unsplit meaning; calculated relations skipped
 
 ## Left to the builder
-- Layout, icons, wording, empty states, sort order
-- Storage layout (single record still fine at this size)
-- How the relation picker searches and groups units
+- Layout, wording, empty states, sort order, storage layout, how the rating panel and relation picker work in detail
