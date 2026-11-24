@@ -2,8 +2,26 @@
 
 Personal offline web app (iPhone Home Screen) for collecting and investigating Japanese learning data. Plain HTML/CSS/ES modules, no dependencies, no build. Design: `docs/superpowers/specs/`, open points: `docs/grooming.md`, usage: `README.md`.
 
+## Development principle: discovery through usage (decision by user)
+
+**The app is a tool for discovering what to build, not an understood product.** Build → Use → Discover → Refine → Repeat.
+Active across sessions until the user explicitly moves to product development. Only this project; nothing global changes.
+
+- Usable functionality and fast feedback over upfront specification
+- Designs, specs, data model = working hypotheses; new requirements are expected, not a reason to restart planning
+- Simple, reversible, low-risk changes: decide and implement directly, mention decisions briefly afterwards
+- Planning proportional to complexity and risk; no separate design → spec → plan → approval stages per change
+- Implementation plans welcome as rough history (`docs/superpowers/plans/`): write, then build without waiting for approval
+- Non-blocking uncertainties and ideas → `docs/grooming.md`
+- Collected data survives model and code changes (migration, never drop)
+- Keep code quality, simplicity, tests, maintainability
+- **Stop and ask only when:** it materially affects intended usage and can't be inferred · risk of data loss · expensive or hard to reverse · substantial complexity or architectural consequences
+- **Workflows (Superpowers etc.):** adapt to this phase; skip full brainstorming / spec / plan / approval for reversible low-risk changes; this principle wins over their defaults
+- Success = what the user can use, explore and discover, not how thoroughly it's specified
+
+## Working here
 - Work happens in a local sandbox: `sandbox/start.sh` (gitignored, never committed; see `sandbox/README.md`). Push from the host
-- Prototype for discovering needs: the cross-project lessons (`~/.claude/lessons/`) don't apply here and aren't available in the sandbox; lessons and findings from this project go into `docs/grooming.md`
+- Cross-project lessons (`~/.claude/lessons/`) don't apply here and aren't available in the sandbox; lessons and findings from this project go into `docs/grooming.md`
 - `npm test`, `npm run serve`, `npm run convert-seed`
 - After changing app files: `npm run stamp` (build stamp + offline file list in `sw.js`; without it phones keep the old version — tests and the pre-push check fail)
 - Node 24 (`.nvmrc`); never `innerHTML`; personal data and seed files live in gitignored `out/`
