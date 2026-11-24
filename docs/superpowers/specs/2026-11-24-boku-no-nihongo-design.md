@@ -52,7 +52,8 @@
 
 ## Relations
 `Relation { type, members[] (2+, or 1 + partner "unknown"), direction?: [from, to], status, origin }`
-- **status:** suspected · confirmed · rejected (meaningful for `confuses`; others default confirmed)
+- **status** (all types): proposed · confirmed · rejected; learner-made → confirmed; `suggested` origin → proposed (for `confuses`: "suspected")
+- Confirm / reject change `status` only; `origin` keeps who proposed it; rejected relations stay (hidden by default) so a re-import doesn't bring them back
 - A group doesn't claim every pair is equally similar
 
 | Type | Kind | Example |
@@ -87,7 +88,11 @@
 
 - Confusion **status** (suspected/confirmed) and **progress** (ratings on telling apart) are independent; "resolved" = calculated from ratings, history kept
 
-## Deleting
+## Splitting and deleting parts
+- **Split meaning:** old meaning stays, hidden, with `splitInto[]`; its ratings stay valid as imprecise knowledge about the word
+- **Delete a meaning or reading:** its ratings go with it; `kanjiUses.readingId` cleared, reading text kept
+
+## Deleting units
 - A unit (after confirm showing counts) → also its relation memberships (relation removed when < 2 members), its ratings, its sentence `uses` (become text)
 - Ratings are never edited; they go only with their target
 
@@ -104,7 +109,19 @@
 - Match: same `id`, else natural key (kanji `char`; word first writing + `reading`; grammar `title`; sentence `text`); else added
 - On match: scalar fields → incoming fills missing only, never overwrites learner data; lists combined without duplicates (readings by `kana`+`type`, meanings by gloss, tags by name)
 - Ratings appended (no duplicates); relations combined by type + members
-- Seed `linked-seed-1` → converted once by a tested script into this format; seed groups → relations; `candidate` → origin suggested; `initial_familiarity` → rating on whole unit, source estimate; gloss text → unsplit meaning; calculated relations skipped
+- Seed `linked-seed-1` → converted once by a tested script into this format:
+
+| Seed | Becomes |
+|---|---|
+| kanji, words (+ writing, kana, sense, grammar class, forms) | units; ichidan/godan → ru/u; `unclassified` → `unknown`; gloss text → one `unsplit` meaning |
+| relationship groups + pairwise edges | relations (pairs already in a group dropped); `candidate` → origin suggested, status proposed |
+| `initial_familiarity` | rating on the whole unit: known/sure or known/probably, source estimate; `not_assessed` → none |
+| `personal_knowledge` known on kanji gloss | `{ kanji, to: meaning }` (no meaningId, gloss unsplit), known/sure/learner, note = seed scope ("familiar sense only") |
+| `personal_knowledge` known on recall kana → sense | `{ word, from: reading, to: meaning }` known/sure/learner |
+| `recognition_difficulty` 寝る | `{ word:寝る, from: writing }` partly/sure/learner, note = seed scope |
+| `confused` | relation status confirmed only; no rating invented |
+| same_reading, same_writing, contains/uses kanji, recall edges | skipped (calculated or structure) |
+| sentence | sentence with `uses` + `form` chain |
 
 ## Left to the builder
 - Layout, wording, empty states, sort order, storage layout, how the rating panel and relation picker work in detail
