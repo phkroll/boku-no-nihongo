@@ -16,6 +16,7 @@ const screens = {
   rate: await import('../js/ui/rate.js'),
   review: await import('../js/ui/review.js'),
   settings: await import('../js/ui/settings.js'),
+  report: await import('../js/ui/report.js'),
 };
 
 function sampleData() {
@@ -229,4 +230,26 @@ test('settings: load published data — content first, knowledge only if present
   assert.equal(d.ratings.length, 0);
   assert.match(text(root), /Added/);
   delete globalThis.fetch;
+});
+
+test('import report lists contradictions, possible duplicates and things to check', async () => {
+  const { mergeImport } = await import('../js/model/io.js');
+  const { d } = sampleData();
+  const inc = emptyData();
+  addUnit(inc, 'word', { writings: [{ text: '寝る' }], reading: 'ねる', verbGroup: 'u' });
+  addMeaning(addUnit(inc, 'kanji', { char: '月' }), { gloss: 'moon' });
+  addUnit(d, 'word', { writings: [{ text: '橋' }], reading: 'はし' });
+  addUnit(d, 'word', { writings: [{ text: '箸' }], reading: 'はし' });
+  addUnit(inc, 'word', { reading: 'はし' });
+  mergeImport(d, inc, { file: 'set-3.json' });
+  const rec = d.imports.at(-1);
+  const root = page();
+  screens.report.render(root, makeCtx(d), { id: rec.id });
+  const t = text(root);
+  assert.match(t, /set-3\.json/);
+  assert.match(t, /verb group/);
+  assert.match(t, /ru/);
+  assert.match(t, /Possible duplicates/);
+  assert.match(t, /similar meanings/);
+  assert.deepEqual(strayTexts(root), []);
 });

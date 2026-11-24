@@ -1,6 +1,6 @@
 import { exportJson, parseBackup, parseRestore, markExported, mergeImport } from '../model/io.js';
 import { ensureStarter } from '../model/starter.js';
-import { h, topBar, section, button, errorLine, fill } from './dom.js';
+import { h, topBar, section, button, errorLine, fill, clear } from './dom.js';
 import { backLink } from './nav.js';
 import { BUILD, BUILT } from '../version.js';
 
@@ -30,13 +30,14 @@ async function share(text) {
 const PUBLISHED = ['data/content.json', 'data/knowledge.json'];
 
 async function loadPublished(d) {
-  const total = { added: 0, updated: 0, skipped: 0 };
+  const total = { added: 0, updated: 0, skipped: 0, conflicts: [], duplicates: [], checks: [] };
   for (const file of PUBLISHED) {
     const res = await fetch(file, { cache: 'no-cache' });
     if (res.status === 404) continue;
     if (!res.ok) throw new Error(`Could not load ${file} (${res.status})`);
     const s = mergeImport(d, parseBackup(await res.text()), { file });
-    for (const k of Object.keys(total)) total[k] += s[k];
+    for (const k of ['added', 'updated', 'skipped']) total[k] += s[k];
+    for (const k of ['conflicts', 'duplicates', 'checks']) total[k].push(...s[k]);
   }
   return total;
 }
@@ -51,6 +52,13 @@ const fileButton = (label, onfile) => h('label', { class: 'button-like' }, label
 export function render(root, ctx) {
   const error = errorLine();
   const info = h('p', { class: 'ok', role: 'status' });
+  const showResult = (s) => {
+    const open = s.conflicts.length + s.duplicates.length + s.checks.length;
+    clear(info);
+    fill(info, `Added ${s.added}, completed ${s.updated}, already there ${s.skipped}.`,
+      open ? h('a', { href: `#/import/${encodeURIComponent(d.imports.at(-1).id)}`, class: 'block' },
+        `${s.conflicts.length} contradictions · ${s.duplicates.length} possible duplicates · ${s.checks.length} to check — show report`) : '');
+  };
   const d = ctx.data;
   const redraw = () => ctx.go('#/settings', { replace: true });
 
@@ -70,7 +78,7 @@ export function render(root, ctx) {
       const incoming = parseBackup(await file.text());
       const s = mergeImport(d, incoming, { file: file.name });
       await ctx.save();
-      info.textContent = `Added ${s.added}, completed ${s.updated}, already there ${s.skipped}.`;
+      showResult(s);
     } catch (e) {
       error.show(e);
     }
@@ -81,7 +89,7 @@ export function render(root, ctx) {
     try {
       const s = await loadPublished(d);
       await ctx.save();
-      info.textContent = `Added ${s.added}, completed ${s.updated}, already there ${s.skipped}.`;
+      showResult(s);
     } catch (e) {
       error.show(e);
     }
@@ -129,7 +137,10 @@ export function render(root, ctx) {
           fileButton('Add data from file… (merge)', addData),
           fileButton('Restore backup… (replace all)', restore))),
       h('p', { class: 'muted small' }, `Version ${BUILT} · ${BUILD.slice(0, 7)}`),
-      section('Imports', d.imports.length === 0 ? h('p', { class: 'muted' }, 'None yet.') : d.imports.map((i) => h('div', { class: 'kv' }, h('span', {}, i.file), h('span', { class: 'muted' }, i.at.slice(0, 10))))),
+      section('Imports', d.imports.length === 0 ? h('p', { class: 'muted' }, 'None yet.') : [...d.imports].reverse().map((i) => {
+        const n = (i.report?.conflicts.length ?? 0) + (i.report?.duplicates.length ?? 0) + (i.report?.checks.length ?? 0);
+        return h('a', { href: `#/import/${encodeURIComponent(i.id)}`, class: 'kv' }, h('span', {}, i.file, n > 0 && h('span', { class: 'badge warn' }, `${n} open`)), h('span', { class: 'muted' }, i.at.slice(0, 10)));
+      })),
       section('Tags', d.tags.length === 0 && h('p', { class: 'muted' }, 'No tags yet.'),
         [...d.tags].sort((a, b) => a.name.localeCompare(b.name)).map((t) => h('div', { class: 'kv' }, h('span', {}, t.name),
           h('span', { class: 'inline' }, button('Rename', () => renameTag(t), 'small'), button('Delete', () => deleteTag(t), 'small danger'))))),

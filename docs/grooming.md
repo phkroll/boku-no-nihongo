@@ -23,7 +23,8 @@ Open questions, assumptions and limitations found while building and using the a
 ## Known small issues (deferred)
 - A tag created during an edit you then cancel stays
 - Editing a relation's members keeps a direction / tell-apart ratings for a removed member; can duplicate another relation
-- Merging an older own backup brings back fields, meanings and units deleted since (no record of deletions)
+- Imports never delete: a link or entry removed in a newer set stays; merging an older own backup brings back what was deleted since
+- Import only reports (contradictions, possible duplicates, overlapping groups, similar meanings); resolving them is manual
 - A deleted starter grammar point comes back on next start
 - Bottom tab bar: double safe-area space on iPhone
 - Merging a v1 file adds nothing but still records an import

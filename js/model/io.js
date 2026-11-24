@@ -1,5 +1,5 @@
 // Export, restore (replace everything) and merge import (add to what's there).
-import { COLLECTION, KINDS, UNKNOWN, firstWriting, getUnit, makeRef, newId, normalize, nowIso, parseRef } from './data.js';
+import { COLLECTION, KINDS, UNKNOWN, getUnit, makeRef, newId, normalize, nowIso, parseRef } from './data.js';
 import { migrate } from './migrate.js';
 import { findRelation } from './relations.js';
 import { targetKey } from './ratings.js';
@@ -39,35 +39,66 @@ export function parseRestore(text) {
   return data;
 }
 
-const NATURAL_KEY = {
-  kanji: (u) => u.char,
-  word: (u) => `${normalize(firstWriting(u))}|${normalize(u.reading)}`,
-  grammar: (u) => (u.formKey ? `form:${u.formKey}` : normalize(u.title)),
-  sentence: (u) => normalize(u.text),
-  note: (u) => normalize(u.text),
+// ---- Merge import -------------------------------------------------------------------------
+// Imported data never overwrites: it fills empty fields and adds missing parts. Contradictions,
+// possible duplicates and things to check are reported (and kept with the import record).
+
+const isGenerated = (id) => /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-/.test(String(id));
+const writingSet = (w) => new Set((Array.isArray(w.writings) ? w.writings : []).map((x) => normalize(x.text)).filter(Boolean));
+const glossKey = (g) => normalize(g).replace(/^to /, '').replace(/[.!?。]$/, '');
+const splitGloss = (g) => String(g).split(/[,;、]/).map(glossKey).filter(Boolean);
+const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+
+// How an incoming word relates to a local one: 'strong' (shares a writing, readings don't contradict),
+// 'candidate' (same reading, one side has no writing), or 'no'.
+function wordFit(local, incoming) {
+  const wl = writingSet(local);
+  const wi = writingSet(incoming);
+  const rl = normalize(local.reading);
+  const ri = normalize(incoming.reading);
+  const shared = [...wi].some((t) => wl.has(t));
+  if (shared && (rl === ri || !rl || !ri)) return 'strong';
+  if (ri && rl === ri && (wi.size === 0 || wl.size === 0)) return 'candidate';
+  return 'no';
+}
+
+const SAME_CONTENT = {
+  kanji: (a, b) => a.char === b.char,
+  word: (a, b) => wordFit(a, b) !== 'no',
+  grammar: (a, b) => (a.formKey && a.formKey === b.formKey) || normalize(a.title) === normalize(b.title),
+  sentence: (a, b) => normalize(a.text) === normalize(b.text),
+  note: (a, b) => normalize(a.text) === normalize(b.text),
 };
 
-// Lists combined on a match: list name → key of one item.
-const LIST_KEYS = {
-  readings: (r) => `${r.kana}|${r.type}`,
-  meanings: (m) => normalize(m.gloss),
-  writings: (w) => normalize(w.text),
-};
-// Reference lists: taken over only when the existing unit has none.
+// → { match } or { candidates } (several possible matches) or {}.
+function findMatch(kind, local, u) {
+  const byId = local.find((x) => x.id === u.id);
+  if (byId && (SAME_CONTENT[kind](byId, u) || isGenerated(u.id))) return { match: byId };
+  if (kind === 'word') {
+    const fits = local.filter((x) => wordFit(x, u) !== 'no');
+    if (fits.length === 1) return { match: fits[0] };
+    return fits.length > 1 ? { candidates: fits } : {};
+  }
+  const found = local.find((x) => x !== byId && SAME_CONTENT[kind](x, u));
+  return found ? { match: found } : {};
+}
+
+// Reference lists: taken over only when the existing unit has none; a different list is reported.
 const TAKE_IF_MISSING = ['kanjiUses', 'uses', 'grammarIds', 'refs'];
-const OWN = new Set(['id', 'created', 'updated', 'origin', 'importId', 'tagIds', ...Object.keys(LIST_KEYS), ...TAKE_IF_MISSING]);
+const LISTS = ['readings', 'meanings', 'writings'];
+const NOT_COMPARED = new Set(['id', 'created', 'updated', 'origin', 'importId', 'tagIds', ...LISTS, ...TAKE_IF_MISSING]);
 
 const clone = (v) => structuredClone(v);
 
 export function mergeImport(data, incomingRaw, { file = '', now = nowIso() } = {}) {
   const incoming = migrate(clone(incomingRaw));
   const record = { id: newId(), file, at: now };
-  const summary = { added: 0, updated: 0, skipped: 0 };
+  const report = { added: 0, updated: 0, skipped: 0, conflicts: [], duplicates: [], checks: [] };
   const unitMap = new Map(); // incoming ref → local ref
   const partMap = new Map(); // incoming meaning/reading id → local id
   const tagMap = new Map();
   const fresh = []; // [kind, unit] added from this import
-  const copiedLists = []; // [kind, local unit, list names] taken over from the file
+  const lists = []; // [kind, local unit, list name, incoming list, taken over?]
 
   for (const tag of incoming.tags) {
     const found = data.tags.find((t) => normalize(t.name) === normalize(tag.name));
@@ -75,35 +106,43 @@ export function mergeImport(data, incomingRaw, { file = '', now = nowIso() } = {
     else {
       data.tags.push({ ...tag });
       tagMap.set(tag.id, tag.id);
-      summary.added += 1;
+      report.added += 1;
     }
   }
 
   for (const kind of KINDS) {
     const local = data[COLLECTION[kind]];
     for (const u of incoming[COLLECTION[kind]]) {
-      const match = local.find((x) => x.id === u.id) ?? local.find((x) => NATURAL_KEY[kind](x) === NATURAL_KEY[kind](u));
+      const { match, candidates } = findMatch(kind, local, u);
       if (!match) {
-        const added = { ...u, importId: record.id };
+        const id = local.some((x) => x.id === u.id) ? newId() : u.id;
+        const added = { ...u, id, importId: record.id };
         local.push(added);
         fresh.push([kind, added]);
-        unitMap.set(makeRef(kind, u.id), makeRef(kind, u.id));
-        summary.added += 1;
+        unitMap.set(makeRef(kind, u.id), makeRef(kind, id));
+        if (candidates) report.duplicates.push({ ref: makeRef(kind, id), candidates: candidates.map((c) => makeRef(kind, c.id)) });
+        report.added += 1;
         continue;
       }
-      unitMap.set(makeRef(kind, u.id), makeRef(kind, match.id));
-      const copied = [];
-      summary[fillMissing(match, u, partMap, tagMap, copied) ? 'updated' : 'skipped'] += 1;
-      if (copied.length) copiedLists.push([kind, match, copied]);
+      const ref = makeRef(kind, match.id);
+      unitMap.set(makeRef(kind, u.id), ref);
+      const changed = fillMissing(match, u, { ref, partMap, tagMap, report });
+      for (const list of TAKE_IF_MISSING) {
+        if (!u[list]?.length) continue;
+        const take = !match[list]?.length;
+        if (take) match[list] = clone(u[list]);
+        lists.push([kind, match, list, clone(u[list]), take]);
+      }
+      report[changed || lists.some((l) => l[1] === match && l[4]) ? 'updated' : 'skipped'] += 1;
     }
   }
 
   const mapRef = (ref) => (ref === UNKNOWN ? UNKNOWN : unitMap.get(ref) ?? (getUnit(data, ref) ? ref : undefined));
   for (const [kind, u] of fresh) remapUnit(kind, u, { mapRef, partMap, tagMap });
-  for (const [kind, u, lists] of copiedLists) {
-    const part = Object.fromEntries(lists.map((k) => [k, u[k]]));
-    remapUnit(kind, part, { mapRef, partMap, tagMap });
-    Object.assign(u, part);
+  for (const [kind, u, list, theirs, taken] of lists) {
+    const part = remapUnit(kind, { [list]: theirs }, { mapRef, partMap, tagMap });
+    if (taken) u[list] = part[list];
+    else if (!same(u[list], part[list])) report.conflicts.push({ ref: makeRef(kind, u.id), field: list, mine: u[list], theirs: part[list] });
   }
 
   const relationMap = new Map();
@@ -123,11 +162,13 @@ export function mergeImport(data, incomingRaw, { file = '', now = nowIso() } = {
       if (!existing.notes && r.notes) existing.notes = r.notes;
       continue;
     }
+    const overlapping = data.relations.filter((x) => x.type === r.type && x.members.filter((m) => m !== UNKNOWN && real.includes(m)).length >= 2);
     const added = { ...r, members, importId: record.id };
     if (r.direction) added.direction = r.direction.map(mapRef).filter(Boolean);
     data.relations.push(added);
     relationMap.set(makeRef('relation', r.id), makeRef('relation', r.id));
-    summary.added += 1;
+    for (const o of overlapping) report.checks.push({ refs: [makeRef('relation', r.id), makeRef('relation', o.id)], reason: 'groups overlap' });
+    report.added += 1;
   }
 
   const seen = new Set(data.ratings.map((r) => `${targetKey(r.target)}@${r.at}=${r.value}`));
@@ -143,45 +184,93 @@ export function mergeImport(data, incomingRaw, { file = '', now = nowIso() } = {
     if (seen.has(key)) continue;
     seen.add(key);
     data.ratings.push({ ...r, target: t, importId: record.id });
-    summary.added += 1;
+    report.added += 1;
   }
 
+  record.report = { conflicts: report.conflicts, duplicates: report.duplicates, checks: report.checks };
   data.imports.push(record);
-  return summary;
+  return report;
 }
 
-// Fills fields the local unit lacks and combines lists. Returns whether anything changed.
-function fillMissing(local, incoming, partMap, tagMap, copied) {
+// Fills fields the local unit lacks, combines readings / meanings / writings, reports contradictions.
+function fillMissing(local, incoming, { ref, partMap, tagMap, report }) {
   let changed = false;
   for (const [k, v] of Object.entries(incoming)) {
-    if (OWN.has(k) || k in local) continue;
-    local[k] = clone(v);
-    changed = true;
-  }
-  for (const [list, keyOf] of Object.entries(LIST_KEYS)) {
-    if (!Array.isArray(incoming[list])) continue;
-    if (!Array.isArray(local[list])) local[list] = [];
-    for (const item of incoming[list]) {
-      const same = local[list].find((x) => keyOf(x) === keyOf(item));
-      if (same) {
-        if (item.id && same.id) partMap.set(item.id, same.id);
-        continue;
-      }
-      local[list].push(clone(item));
+    if (NOT_COMPARED.has(k)) continue;
+    if (!(k in local)) {
+      local[k] = clone(v);
       changed = true;
+    } else if (!same(local[k], v)) {
+      report.conflicts.push({ ref, field: k, mine: local[k], theirs: v });
     }
   }
-  for (const list of TAKE_IF_MISSING) {
-    if (incoming[list]?.length && !local[list]?.length) {
-      local[list] = clone(incoming[list]);
-      copied.push(list);
-      changed = true;
-    }
-  }
+  changed = mergeReadings(local, incoming, partMap) || changed;
+  changed = mergeMeanings(local, incoming, { ref, partMap, report }) || changed;
+  changed = mergeWritings(local, incoming, { ref, report }) || changed;
   const tags = (incoming.tagIds ?? []).map((t) => tagMap.get(t)).filter(Boolean);
   const merged = [...new Set([...(local.tagIds ?? []), ...tags])];
   if (merged.length !== (local.tagIds ?? []).length) {
     local.tagIds = merged;
+    changed = true;
+  }
+  return changed;
+}
+
+// Same kana with one type "unknown" is the same reading; the known type wins.
+function mergeReadings(local, incoming, partMap) {
+  if (!Array.isArray(incoming.readings)) return false;
+  let changed = false;
+  local.readings ??= [];
+  for (const r of incoming.readings) {
+    const same = local.readings.find((x) => x.kana === r.kana && (x.type === r.type || x.type === UNKNOWN || r.type === UNKNOWN));
+    if (same) {
+      if (same.type === UNKNOWN && r.type !== UNKNOWN) {
+        same.type = r.type;
+        changed = true;
+      }
+      if (r.id && same.id) partMap.set(r.id, same.id);
+      continue;
+    }
+    local.readings.push(clone(r));
+    changed = true;
+  }
+  return changed;
+}
+
+// Identical glosses are the same meaning; similar ones ("to sleep" / "sleep", "Moon, month" / "moon") are added and reported.
+function mergeMeanings(local, incoming, { ref, partMap, report }) {
+  if (!Array.isArray(incoming.meanings)) return false;
+  let changed = false;
+  local.meanings ??= [];
+  for (const m of incoming.meanings) {
+    const same = local.meanings.find((x) => normalize(x.gloss) === normalize(m.gloss));
+    if (same) {
+      if (m.id && same.id) partMap.set(m.id, same.id);
+      continue;
+    }
+    const similar = local.meanings.find((x) => !x.hidden && (glossKey(x.gloss) === glossKey(m.gloss)
+      || splitGloss(x.gloss).includes(glossKey(m.gloss)) || splitGloss(m.gloss).includes(glossKey(x.gloss))));
+    local.meanings.push(clone(m));
+    if (similar) report.checks.push({ refs: [ref], reason: `similar meanings “${similar.gloss}” and “${m.gloss}”` });
+    changed = true;
+  }
+  return changed;
+}
+
+function mergeWritings(local, incoming, { ref, report }) {
+  if (incoming.writings === undefined) return false;
+  if (!Array.isArray(local.writings) || !Array.isArray(incoming.writings)) {
+    if (local.writings === undefined) {
+      local.writings = clone(incoming.writings);
+      return true;
+    }
+    if (!same(local.writings, incoming.writings)) report.conflicts.push({ ref, field: 'writings', mine: local.writings, theirs: incoming.writings });
+    return false;
+  }
+  let changed = false;
+  for (const w of incoming.writings) {
+    if (local.writings.some((x) => normalize(x.text) === normalize(w.text))) continue;
+    local.writings.push(clone(w));
     changed = true;
   }
   return changed;
@@ -197,12 +286,15 @@ function remapUnit(kind, u, { mapRef, partMap, tagMap }) {
     for (const use of u.kanjiUses ?? []) if (use.readingId) use.readingId = partMap.get(use.readingId) ?? use.readingId;
   }
   if (kind === 'sentence') {
-    u.uses = (u.uses ?? []).map((use) => {
-      if (!use.wordId) return use;
-      const id = idOf('word', use.wordId);
-      return id ? { ...use, wordId: id } : { text: use.text ?? '?', ...(use.form ? { form: use.form } : {}) };
-    });
+    if (u.uses) {
+      u.uses = u.uses.map((use) => {
+        if (!use.wordId) return use;
+        const id = idOf('word', use.wordId);
+        return id ? { ...use, wordId: id } : { text: use.text ?? '?', ...(use.form ? { form: use.form } : {}) };
+      });
+    }
     if (u.grammarIds) u.grammarIds = u.grammarIds.map((g) => idOf('grammar', g)).filter(Boolean);
   }
   if (kind === 'note' && u.refs) u.refs = u.refs.map(mapRef).filter(Boolean);
+  return u;
 }

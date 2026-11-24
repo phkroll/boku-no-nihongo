@@ -36,7 +36,7 @@ test('parseBackup rejects garbage', () => {
 test('merge into empty data adds everything with an import record', () => {
   const d = emptyData();
   const summary = mergeImport(d, sampleIncoming(), { file: 'seed.json', now: T });
-  assert.deepEqual(summary, { added: 6, updated: 0, skipped: 0 });
+  assert.deepEqual([summary.added, summary.updated, summary.skipped], [6, 0, 0]);
   assert.equal(d.imports.length, 1);
   assert.equal(d.words[0].importId, d.imports[0].id);
   assert.equal(d.tags[0].name, 'JLPT N5');

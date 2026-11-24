@@ -8,10 +8,12 @@ import * as relation from './ui/relation.js';
 import * as rate from './ui/rate.js';
 import * as review from './ui/review.js';
 import * as settings from './ui/settings.js';
+import * as report from './ui/report.js';
 import { createNav } from './ui/nav.js';
 
 const ROUTES = [
   [/^#\/settings$/, settings, () => ({})],
+  [/^#\/import\/([^/]+)$/, report, (m) => ({ id: decodeURIComponent(m[1]) })],
   [/^#\/review$/, review, () => ({ tab: 'note' })],
   [/^#\/k\/(\w+)\/new$/, edit, (m, q) => ({ kind: m[1], tab: m[1], about: q.get('about') })],
   [/^#\/k\/(\w+)$/, list, (m) => ({ kind: m[1], tab: m[1] })],
