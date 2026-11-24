@@ -1,0 +1,63 @@
+#!/bin/sh
+# Blocks a push that would publish private data, machine details or blocked words (see AGENTS.md).
+# Checks every commit not yet on the remote: file names, added lines, commit messages and identities.
+# Blocked words (employer, customers, …) live in .git/info/publish-blocklist, one per line, never pushed.
+# Licence questions can't be checked here; ask Claude "check before push" when adding content.
+
+zero=0000000000000000000000000000000000000000
+blocklist="$(git rev-parse --git-path info/publish-blocklist)"
+me="$(git config user.email)"
+
+allowed_email() {
+  case "$1" in
+    "$me" | noreply@anthropic.com | git@github.com | *@users.noreply.github.com) return 0 ;;
+    *@example.com | *@example.org | *@example.net) return 0 ;; # reserved for examples (RFC 2606)
+  esac
+  return 1
+}
+
+check_commit() {
+  c=$1
+  short=$(git rev-parse --short "$c")
+  git diff-tree --no-commit-id --name-only -r --root "$c" | while read -r f; do
+    case "$f" in
+      out/* | *.bundle | .env | .env.* | */.env | *.pem | *.key | *id_rsa*) echo "$short: file must not be published: $f" ;;
+    esac
+  done
+  text="$(git show --format= --no-color --unified=0 "$c" | grep '^+' | grep -v '^+++' | sed 's/^+//')
+$(git log -1 --format='%an <%ae>%n%cn <%ce>%n%B' "$c")"
+  printf '%s\n' "$text" | grep -E -o '/(Users|home)/[A-Za-z0-9._-]+' | sort -u | while read -r p; do
+    echo "$short: machine path: $p"
+  done
+  printf '%s\n' "$text" | grep -E -o '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}' | sort -u | while read -r e; do
+    allowed_email "$e" || echo "$short: email address: $e"
+  done
+  if [ -f "$blocklist" ]; then
+    grep -v '^[[:space:]]*#' "$blocklist" | grep -v '^[[:space:]]*$' | while read -r w; do
+      printf '%s\n' "$text" | grep -q -i -F -- "$w" && echo "$short: blocked word: $w"
+    done
+  fi
+}
+
+findings=""
+while read -r local_ref local_sha remote_ref remote_sha; do
+  [ "$local_sha" = "$zero" ] && continue
+  if [ "$remote_sha" = "$zero" ]; then
+    commits=$(git rev-list "$local_sha" --not --remotes)
+  else
+    commits=$(git rev-list "$remote_sha..$local_sha")
+  fi
+  for c in $commits; do
+    findings="$findings$(check_commit "$c")
+"
+  done
+done
+
+findings=$(printf '%s' "$findings" | grep -v '^$')
+if [ -n "$findings" ]; then
+  echo "pre-push: blocked — this would publish something that must stay private (see AGENTS.md):" >&2
+  printf '%s\n' "$findings" | sed 's/^/  /' >&2
+  echo "Fix those commits first. Only if you are sure it's fine: git push --no-verify" >&2
+  exit 1
+fi
+exit 0

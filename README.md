@@ -40,6 +40,13 @@ npm run convert-seed  # out/japanese-learning-linked-seed.json → out/seed-impo
 After adding a file under `js/` or `icons/`, add it to `FILES` in `sw.js` (a test checks this).
 Icons: `node scripts/make-icons.mjs`.
 
+## Before the first push (once per clone)
+
+```sh
+git config core.hooksPath .githooks   # turns on the pre-push check
+```
+Put words that must never be published (employer, customers, …) into `.git/info/publish-blocklist`, one per line. That file stays local. See "Publishing rules" in `AGENTS.md`.
+
 ## Put it on the iPhone (once)
 
 The phone needs an https address to install the app. GitHub Pages serves the files for free; your entries never go there.
