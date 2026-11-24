@@ -64,5 +64,5 @@ The phone needs an https address to install the app. GitHub Pages serves the fil
 
 ## Update
 
-Push to `main`. The app checks for a new version each time it opens (online) and reloads once by itself; Settings shows the running version.
-When changing app files, bump `APP_VERSION` in `js/version.js` and `CACHE` in `sw.js` to the same number (a test checks they match).
+Push to `main`. When the app opens online it downloads the complete new version in the background and reloads once; offline or on a server error it keeps running the version it has. Settings shows the running version.
+After changing app files: `npm run stamp` (writes the build stamp and the offline file list). `npm test` and the pre-push check fail when it was forgotten.

@@ -1,7 +1,8 @@
-// Offline support: network first (always fresh when online), cache as fallback.
-// GitHub Pages lets browsers keep files for 10 minutes; 'no-cache' revalidates every request instead.
-const CACHE = 'bnn-v6';
-const NETWORK_TIMEOUT = 2500;
+// Offline-first: the app always runs from one complete, consistent copy of its files.
+// A new version is downloaded in full in the background (bypassing the browser cache);
+// only if every file arrives does it replace the old copy — any error keeps the old one.
+const BUILD = '746c7894643b';
+const CACHE = `bnn-${BUILD}`;
 const FILES = [
   './',
   'index.html',
@@ -37,8 +38,12 @@ const FILES = [
   'icons/icon-512.png',
 ];
 
+function precache() {
+  return caches.open(CACHE).then((c) => c.addAll(FILES.map((f) => new Request(f, { cache: 'reload' }))));
+}
+
 self.addEventListener('install', (event) => {
-  event.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting()));
+  event.waitUntil(precache().then(() => self.skipWaiting()));
 });
 
 self.addEventListener('activate', (event) => {
@@ -49,25 +54,12 @@ self.addEventListener('activate', (event) => {
   );
 });
 
+function respond(request) {
+  return caches.match(request, { ignoreSearch: true }).then((hit) => hit || fetch(request));
+}
+
 self.addEventListener('fetch', (event) => {
   const { request } = event;
   if (request.method !== 'GET' || new URL(request.url).origin !== self.location.origin) return;
   event.respondWith(respond(request));
 });
-
-// Network first, but a hanging network (weak signal) falls back to the cache after a timeout.
-function respond(request, timeout = NETWORK_TIMEOUT) {
-  const network = fetch(request, { cache: 'no-cache' }).then((response) => {
-    if (response.ok) {
-      const copy = response.clone();
-      caches.open(CACHE).then((c) => c.put(request, copy));
-    }
-    return response;
-  });
-  const cached = () => caches.match(request, { ignoreSearch: true });
-  // Network failed (offline): use the cache right away.
-  const fallback = network.catch(() => cached().then((hit) => hit ?? Promise.reject(new Error('offline'))));
-  // Network too slow: use the cache if there is a copy, else keep waiting.
-  const slow = new Promise((resolve) => setTimeout(resolve, timeout)).then(cached).then((hit) => hit ?? fallback);
-  return Promise.race([fallback, slow]);
-}

@@ -53,9 +53,15 @@ while read -r local_ref local_sha remote_ref remote_sha; do
   done
 done
 
+# The offline app only updates on phones when the build stamp is current.
+if [ -f scripts/stamp.mjs ] && ! node scripts/stamp.mjs --check >/dev/null 2>&1; then
+  findings="$findings
+stale build stamp: run npm run stamp and commit, otherwise phones keep the old version"
+fi
+
 findings=$(printf '%s' "$findings" | grep -v '^$')
 if [ -n "$findings" ]; then
-  echo "pre-push: blocked — this would publish something that must stay private (see AGENTS.md):" >&2
+  echo "pre-push: blocked (see AGENTS.md):" >&2
   printf '%s\n' "$findings" | sed 's/^/  /' >&2
   echo "Fix those commits first. Only if you are sure it's fine: git push --no-verify" >&2
   exit 1

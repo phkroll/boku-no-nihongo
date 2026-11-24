@@ -3,6 +3,7 @@
 Personal offline web app (iPhone Home Screen) for collecting and investigating Japanese learning data. Plain HTML/CSS/ES modules, no dependencies, no build. Design: `docs/superpowers/specs/`, open points: `docs/grooming.md`, usage: `README.md`.
 
 - `npm test`, `npm run serve`, `npm run convert-seed`
+- After changing app files: `npm run stamp` (build stamp + offline file list in `sw.js`; without it phones keep the old version — tests and the pre-push check fail)
 - Node 24 (`.nvmrc`); never `innerHTML`; personal data and seed files live in gitignored `out/`
 
 ## Publishing rules (the repo is public on GitHub)
