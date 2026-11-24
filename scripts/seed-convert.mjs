@@ -71,6 +71,7 @@ export function convertSeed(seed, { now = new Date().toISOString(), ratedAt = RA
     const cls = from(n.id, 'has_grammar_class').map((e) => nodes.get(e.to)?.label)[0];
     if (cls === 'ichidan') w.verbGroup = 'ru';
     if (cls === 'godan') w.verbGroup = 'u';
+    if (w.verbGroup) w.wordClass = 'verb';
     const forms = from(n.id, 'has_form')
       .map((e) => nodes.get(e.to))
       .map((f) => ({ form: formChain(f), writing: from(f.id, 'has_writing').map((e) => text(e.to))[0], reading: from(f.id, 'has_reading').map((e) => text(e.to))[0] }))

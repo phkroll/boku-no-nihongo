@@ -4520,7 +4520,8 @@
      "id": "v-日本語-にほんご-m1",
      "gloss": "Japanese language"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-本-ほん",
@@ -4541,7 +4542,8 @@
      "id": "v-本-ほん-m1",
      "gloss": "Book"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-友達-ともだち",
@@ -4562,7 +4564,8 @@
      "id": "v-友達-ともだち-m1",
      "gloss": "Friend"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-先生-せんせい",
@@ -4583,7 +4586,8 @@
      "id": "v-先生-せんせい-m1",
      "gloss": "Teacher"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-学校-がっこう",
@@ -4604,7 +4608,8 @@
      "id": "v-学校-がっこう-m1",
      "gloss": "School"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-休み-やすみ",
@@ -4625,7 +4630,8 @@
      "id": "v-休み-やすみ-m1",
      "gloss": "Holiday"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-高い-たかい",
@@ -4647,7 +4653,8 @@
      "gloss": "Expensive, high",
      "unsplit": true
     }
-   ]
+   ],
+   "wordClass": "i-adjective"
   },
   {
    "id": "v-大きい-おおきい",
@@ -4668,7 +4675,8 @@
      "id": "v-大きい-おおきい-m1",
      "gloss": "Big"
     }
-   ]
+   ],
+   "wordClass": "i-adjective"
   },
   {
    "id": "v-小さい-ちいさい",
@@ -4689,7 +4697,8 @@
      "id": "v-小さい-ちいさい-m1",
      "gloss": "Small"
     }
-   ]
+   ],
+   "wordClass": "i-adjective"
   },
   {
    "id": "v-楽しい-たのしい",
@@ -4710,7 +4719,8 @@
      "id": "v-楽しい-たのしい-m1",
      "gloss": "Fun"
     }
-   ]
+   ],
+   "wordClass": "i-adjective"
   },
   {
    "id": "v-好き-すき",
@@ -4731,7 +4741,8 @@
      "id": "v-好き-すき-m1",
      "gloss": "Like"
     }
-   ]
+   ],
+   "wordClass": "na-adjective"
   },
   {
    "id": "v-食べる-たべる",
@@ -4752,7 +4763,9 @@
      "id": "v-食べる-たべる-m1",
      "gloss": "Eat"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "ru"
   },
   {
    "id": "v-書く-かく",
@@ -4773,7 +4786,9 @@
      "id": "v-書く-かく-m1",
      "gloss": "Write"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-聞く-きく",
@@ -4795,7 +4810,9 @@
      "gloss": "Listen, ask",
      "unsplit": true
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-作る-つくる",
@@ -4816,7 +4833,9 @@
      "id": "v-作る-つくる-m1",
      "gloss": "Make"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-歌う-うたう",
@@ -4837,7 +4856,9 @@
      "id": "v-歌う-うたう-m1",
      "gloss": "Sing"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-行く-いく",
@@ -4858,7 +4879,9 @@
      "id": "v-行く-いく-m1",
      "gloss": "Go"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-来る-くる",
@@ -4879,7 +4902,9 @@
      "id": "v-来る-くる-m1",
      "gloss": "Come"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "irregular"
   },
   {
    "id": "v-飲む-のむ",
@@ -4900,7 +4925,9 @@
      "id": "v-飲む-のむ-m1",
      "gloss": "Drink"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-見る-みる",
@@ -4921,7 +4948,9 @@
      "id": "v-見る-みる-m1",
      "gloss": "See"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "ru"
   },
   {
    "id": "v-読む-よむ",
@@ -4942,7 +4971,9 @@
      "id": "v-読む-よむ-m1",
      "gloss": "Read"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-話す-はなす",
@@ -4963,7 +4994,9 @@
      "id": "v-話す-はなす-m1",
      "gloss": "Speak"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-言う-いう",
@@ -4984,7 +5017,9 @@
      "id": "v-言う-いう-m1",
      "gloss": "Say"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-買う-かう",
@@ -5005,7 +5040,9 @@
      "id": "v-買う-かう-m1",
      "gloss": "Buy"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-待つ-まつ",
@@ -5026,7 +5063,9 @@
      "id": "v-待つ-まつ-m1",
      "gloss": "Wait"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-少し-すこし",
@@ -5047,7 +5086,8 @@
      "id": "v-少し-すこし-m1",
      "gloss": "A little"
     }
-   ]
+   ],
+   "wordClass": "adverb"
   },
   {
    "id": "v-分かる-わかる",
@@ -5068,7 +5108,9 @@
      "id": "v-分かる-わかる-m1",
      "gloss": "Understand"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-大丈夫-だいじょうぶ",
@@ -5089,7 +5131,8 @@
      "id": "v-大丈夫-だいじょうぶ-m1",
      "gloss": "All right"
     }
-   ]
+   ],
+   "wordClass": "na-adjective"
   },
   {
    "id": "v-水-みず",
@@ -5110,7 +5153,8 @@
      "id": "v-水-みず-m1",
      "gloss": "Water"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-肉-にく",
@@ -5131,7 +5175,8 @@
      "id": "v-肉-にく-m1",
      "gloss": "Meat"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-魚-さかな",
@@ -5152,7 +5197,8 @@
      "id": "v-魚-さかな-m1",
      "gloss": "Fish"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-お酒-おさけ",
@@ -5173,7 +5219,8 @@
      "id": "v-お酒-おさけ-m1",
      "gloss": "Alcohol"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-ビール-ビール",
@@ -5190,7 +5237,8 @@
      "id": "v-ビール-ビール-m1",
      "gloss": "Beer"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-エビ-エビ",
@@ -5207,7 +5255,8 @@
      "id": "v-エビ-エビ-m1",
      "gloss": "Shrimp"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-卵-たまご",
@@ -5228,7 +5277,8 @@
      "id": "v-卵-たまご-m1",
      "gloss": "Egg"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-寿司-すし",
@@ -5249,7 +5299,8 @@
      "id": "v-寿司-すし-m1",
      "gloss": "Sushi"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-焼肉-やきにく",
@@ -5270,7 +5321,8 @@
      "id": "v-焼肉-やきにく-m1",
      "gloss": "Grilled meat"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-京都-きょうと",
@@ -5291,7 +5343,8 @@
      "id": "v-京都-きょうと-m1",
      "gloss": "Kyoto"
     }
-   ]
+   ],
+   "wordClass": "proper-noun"
   },
   {
    "id": "v-秋田-あきた",
@@ -5312,7 +5365,8 @@
      "id": "v-秋田-あきた-m1",
      "gloss": "Akita"
     }
-   ]
+   ],
+   "wordClass": "proper-noun"
   },
   {
    "id": "v-新聞-しんぶん",
@@ -5333,7 +5387,8 @@
      "id": "v-新聞-しんぶん-m1",
      "gloss": "Newspaper"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-山-やま",
@@ -5354,7 +5409,8 @@
      "id": "v-山-やま-m1",
      "gloss": "Mountain"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-月-つき",
@@ -5375,7 +5431,8 @@
      "id": "v-月-つき-m1",
      "gloss": "Moon"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-持つ-もつ",
@@ -5397,7 +5454,9 @@
      "gloss": "Hold, carry",
      "unsplit": true
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-喋る-しゃべる",
@@ -5419,7 +5478,9 @@
      "gloss": "Talk, chat",
      "unsplit": true
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-帰る-かえる",
@@ -5441,7 +5502,8 @@
      "gloss": "Return"
     }
    ],
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "wordClass": "verb"
   },
   {
    "id": "v-会う-あう",
@@ -5462,7 +5524,9 @@
      "id": "v-会う-あう-m1",
      "gloss": "Meet"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-寝る-ねる",
@@ -5540,7 +5604,8 @@
      "writing": "寝ませんでした",
      "reading": "ねませんでした"
     }
-   ]
+   ],
+   "wordClass": "verb"
   },
   {
    "id": "v-起きる-おきる",
@@ -5561,7 +5626,9 @@
      "id": "v-起きる-おきる-m1",
      "gloss": "Wake up"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "ru"
   },
   {
    "id": "v-働く-はたらく",
@@ -5582,7 +5649,9 @@
      "id": "v-働く-はたらく-m1",
      "gloss": "Work"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-休む-やすむ",
@@ -5603,7 +5672,9 @@
      "id": "v-休む-やすむ-m1",
      "gloss": "Rest"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-遊ぶ-あそぶ",
@@ -5624,7 +5695,9 @@
      "id": "v-遊ぶ-あそぶ-m1",
      "gloss": "Play"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-歩く-あるく",
@@ -5645,7 +5718,9 @@
      "id": "v-歩く-あるく-m1",
      "gloss": "Walk"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-走る-はしる",
@@ -5666,7 +5741,9 @@
      "id": "v-走る-はしる-m1",
      "gloss": "Run"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-座る-すわる",
@@ -5687,7 +5764,9 @@
      "id": "v-座る-すわる-m1",
      "gloss": "Sit"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-立つ-たつ",
@@ -5708,7 +5787,9 @@
      "id": "v-立つ-たつ-m1",
      "gloss": "Stand"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-使う-つかう",
@@ -5729,7 +5810,9 @@
      "id": "v-使う-つかう-m1",
      "gloss": "Use"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-入る-はいる",
@@ -5750,7 +5833,9 @@
      "id": "v-入る-はいる-m1",
      "gloss": "Enter"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-出る-でる",
@@ -5771,7 +5856,9 @@
      "id": "v-出る-でる-m1",
      "gloss": "Leave"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "ru"
   },
   {
    "id": "v-教える-おしえる",
@@ -5793,7 +5880,9 @@
      "gloss": "Teach, tell",
      "unsplit": true
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "ru"
   },
   {
    "id": "v-習う-ならう",
@@ -5814,7 +5903,9 @@
      "id": "v-習う-ならう-m1",
      "gloss": "Learn"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-住む-すむ",
@@ -5835,7 +5926,9 @@
      "id": "v-住む-すむ-m1",
      "gloss": "Reside"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-思う-おもう",
@@ -5856,7 +5949,9 @@
      "id": "v-思う-おもう-m1",
      "gloss": "Think"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-する-する",
@@ -5873,7 +5968,9 @@
      "id": "v-する-する-m1",
      "gloss": "Do"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "irregular"
   },
   {
    "id": "v-ある-ある",
@@ -5890,7 +5987,9 @@
      "id": "v-ある-ある-m1",
      "gloss": "Exist (inanimate)"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-いる-いる",
@@ -5907,7 +6006,9 @@
      "id": "v-いる-いる-m1",
      "gloss": "Exist (animate)"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "ru"
   },
   {
    "id": "v-開く-あく",
@@ -5928,7 +6029,9 @@
      "id": "v-開く-あく-m1",
      "gloss": "Something opens"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-開ける-あける",
@@ -5949,7 +6052,9 @@
      "id": "v-開ける-あける-m1",
      "gloss": "Open something"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "ru"
   },
   {
    "id": "v-開く-ひらく",
@@ -5971,7 +6076,9 @@
      "gloss": "Open, unfold",
      "unsplit": true
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-閉まる-しまる",
@@ -5992,7 +6099,9 @@
      "id": "v-閉まる-しまる-m1",
      "gloss": "Something closes"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-閉める-しめる",
@@ -6013,7 +6122,9 @@
      "id": "v-閉める-しめる-m1",
      "gloss": "Close something"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "ru"
   },
   {
    "id": "v-閉じる-とじる",
@@ -6035,7 +6146,9 @@
      "gloss": "Close a book, eyes",
      "unsplit": true
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "ru"
   },
   {
    "id": "v-今日-きょう",
@@ -6056,7 +6169,8 @@
      "id": "v-今日-きょう-m1",
      "gloss": "Today"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-昨日-きのう",
@@ -6077,7 +6191,8 @@
      "id": "v-昨日-きのう-m1",
      "gloss": "Yesterday"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-明日-あした",
@@ -6098,7 +6213,8 @@
      "id": "v-明日-あした-m1",
      "gloss": "Tomorrow"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-先月-せんげつ",
@@ -6119,7 +6235,8 @@
      "id": "v-先月-せんげつ-m1",
      "gloss": "Last month"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-時間-じかん",
@@ -6140,7 +6257,8 @@
      "id": "v-時間-じかん-m1",
      "gloss": "Time"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-勉強-べんきょう",
@@ -6161,7 +6279,9 @@
      "id": "v-勉強-べんきょう-m1",
      "gloss": "Study"
     }
-   ]
+   ],
+   "wordClass": "noun",
+   "suru": true
   },
   {
    "id": "v-漢字-かんじ",
@@ -6182,7 +6302,8 @@
      "id": "v-漢字-かんじ-m1",
      "gloss": "Kanji"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-一番-いちばん",
@@ -6204,7 +6325,8 @@
      "gloss": "Number one, most",
      "unsplit": true
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-横-よこ",
@@ -6225,7 +6347,8 @@
      "id": "v-横-よこ-m1",
      "gloss": "Beside"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-隣-となり",
@@ -6246,7 +6369,8 @@
      "id": "v-隣-となり-m1",
      "gloss": "Next to"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-後で-あとで",
@@ -6267,7 +6391,8 @@
      "id": "v-後で-あとで-m1",
      "gloss": "Later"
     }
-   ]
+   ],
+   "wordClass": "adverb"
   },
   {
    "id": "v-簡単-かんたん",
@@ -6288,7 +6413,8 @@
      "id": "v-簡単-かんたん-m1",
      "gloss": "Easy"
     }
-   ]
+   ],
+   "wordClass": "na-adjective"
   },
   {
    "id": "v-おいしい-おいしい",
@@ -6305,7 +6431,8 @@
      "id": "v-おいしい-おいしい-m1",
      "gloss": "Delicious"
     }
-   ]
+   ],
+   "wordClass": "i-adjective"
   },
   {
    "id": "v-安い-やすい",
@@ -6326,7 +6453,8 @@
      "id": "v-安い-やすい-m1",
      "gloss": "Cheap"
     }
-   ]
+   ],
+   "wordClass": "i-adjective"
   },
   {
    "id": "v-新しい-あたらしい",
@@ -6347,7 +6475,8 @@
      "id": "v-新しい-あたらしい-m1",
      "gloss": "New"
     }
-   ]
+   ],
+   "wordClass": "i-adjective"
   },
   {
    "id": "v-古い-ふるい",
@@ -6368,7 +6497,8 @@
      "id": "v-古い-ふるい-m1",
      "gloss": "Old"
     }
-   ]
+   ],
+   "wordClass": "i-adjective"
   },
   {
    "id": "v-暑い-あつい",
@@ -6389,7 +6519,8 @@
      "id": "v-暑い-あつい-m1",
      "gloss": "Hot weather"
     }
-   ]
+   ],
+   "wordClass": "i-adjective"
   },
   {
    "id": "v-寒い-さむい",
@@ -6410,7 +6541,8 @@
      "id": "v-寒い-さむい-m1",
      "gloss": "Cold weather"
     }
-   ]
+   ],
+   "wordClass": "i-adjective"
   },
   {
    "id": "v-忙しい-いそがしい",
@@ -6431,7 +6563,8 @@
      "id": "v-忙しい-いそがしい-m1",
      "gloss": "Busy"
     }
-   ]
+   ],
+   "wordClass": "i-adjective"
   },
   {
    "id": "v-たくさん-たくさん",
@@ -6448,7 +6581,8 @@
      "id": "v-たくさん-たくさん-m1",
      "gloss": "A lot"
     }
-   ]
+   ],
+   "wordClass": "adverb"
   },
   {
    "id": "v-野菜-やさい",
@@ -6469,7 +6603,8 @@
      "id": "v-野菜-やさい-m1",
      "gloss": "Vegetables"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-米-こめ",
@@ -6490,7 +6625,8 @@
      "id": "v-米-こめ-m1",
      "gloss": "Uncooked rice"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-ご飯-ごはん",
@@ -6512,7 +6648,8 @@
      "gloss": "Cooked rice, meal",
      "unsplit": true
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-麺-めん",
@@ -6533,7 +6670,8 @@
      "id": "v-麺-めん-m1",
      "gloss": "Noodles"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-お茶-おちゃ",
@@ -6554,7 +6692,8 @@
      "id": "v-お茶-おちゃ-m1",
      "gloss": "Tea"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-生-なま",
@@ -6575,7 +6714,8 @@
      "id": "v-生-なま-m1",
      "gloss": "Raw"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-辛い-からい",
@@ -6596,7 +6736,8 @@
      "id": "v-辛い-からい-m1",
      "gloss": "Spicy"
     }
-   ]
+   ],
+   "wordClass": "i-adjective"
   },
   {
    "id": "v-甘い-あまい",
@@ -6617,7 +6758,8 @@
      "id": "v-甘い-あまい-m1",
      "gloss": "Sweet"
     }
-   ]
+   ],
+   "wordClass": "i-adjective"
   },
   {
    "id": "v-塩-しお",
@@ -6638,7 +6780,8 @@
      "id": "v-塩-しお-m1",
      "gloss": "Salt"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-味-あじ",
@@ -6659,7 +6802,8 @@
      "id": "v-味-あじ-m1",
      "gloss": "Taste"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-油-あぶら",
@@ -6680,7 +6824,8 @@
      "id": "v-油-あぶら-m1",
      "gloss": "Oil"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-豆-まめ",
@@ -6701,7 +6846,8 @@
      "id": "v-豆-まめ-m1",
      "gloss": "Beans"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-定食-ていしょく",
@@ -6722,7 +6868,8 @@
      "id": "v-定食-ていしょく-m1",
      "gloss": "Set meal"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-注文-ちゅうもん",
@@ -6743,7 +6890,9 @@
      "id": "v-注文-ちゅうもん-m1",
      "gloss": "Order"
     }
-   ]
+   ],
+   "wordClass": "noun",
+   "suru": true
   },
   {
    "id": "v-限定-げんてい",
@@ -6764,7 +6913,9 @@
      "id": "v-限定-げんてい-m1",
      "gloss": "Limited"
     }
-   ]
+   ],
+   "wordClass": "noun",
+   "suru": true
   },
   {
    "id": "v-焼き魚-やきざかな",
@@ -6785,7 +6936,8 @@
      "id": "v-焼き魚-やきざかな-m1",
      "gloss": "Grilled fish"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-唐揚げ-からあげ",
@@ -6806,7 +6958,8 @@
      "id": "v-唐揚げ-からあげ-m1",
      "gloss": "Fried chicken"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-牛丼-ぎゅうどん",
@@ -6827,7 +6980,8 @@
      "id": "v-牛丼-ぎゅうどん-m1",
      "gloss": "Beef rice bowl"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-大盛り-おおもり",
@@ -6848,7 +7002,8 @@
      "id": "v-大盛り-おおもり-m1",
      "gloss": "Large portion"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-名物-めいぶつ",
@@ -6869,7 +7024,8 @@
      "id": "v-名物-めいぶつ-m1",
      "gloss": "Local speciality"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-洋食-ようしょく",
@@ -6890,7 +7046,8 @@
      "id": "v-洋食-ようしょく-m1",
      "gloss": "Western-style food"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-電車-でんしゃ",
@@ -6911,7 +7068,8 @@
      "id": "v-電車-でんしゃ-m1",
      "gloss": "Train"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-駅-えき",
@@ -6932,7 +7090,8 @@
      "id": "v-駅-えき-m1",
      "gloss": "Station"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-車-くるま",
@@ -6953,7 +7112,8 @@
      "id": "v-車-くるま-m1",
      "gloss": "Car"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-自転車-じてんしゃ",
@@ -6974,7 +7134,8 @@
      "id": "v-自転車-じてんしゃ-m1",
      "gloss": "Bicycle"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-電話-でんわ",
@@ -6995,7 +7156,9 @@
      "id": "v-電話-でんわ-m1",
      "gloss": "Telephone"
     }
-   ]
+   ],
+   "wordClass": "noun",
+   "suru": true
   },
   {
    "id": "v-会社-かいしゃ",
@@ -7016,7 +7179,8 @@
      "id": "v-会社-かいしゃ-m1",
      "gloss": "Company"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-仕事-しごと",
@@ -7037,7 +7201,8 @@
      "id": "v-仕事-しごと-m1",
      "gloss": "Work"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-家-いえ",
@@ -7058,7 +7223,8 @@
      "id": "v-家-いえ-m1",
      "gloss": "House"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-部屋-へや",
@@ -7079,7 +7245,8 @@
      "id": "v-部屋-へや-m1",
      "gloss": "Room"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-店-みせ",
@@ -7100,7 +7267,8 @@
      "id": "v-店-みせ-m1",
      "gloss": "Shop"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-道-みち",
@@ -7121,7 +7289,8 @@
      "id": "v-道-みち-m1",
      "gloss": "Road"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-名前-なまえ",
@@ -7142,7 +7311,8 @@
      "id": "v-名前-なまえ-m1",
      "gloss": "Name"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-家族-かぞく",
@@ -7163,7 +7333,8 @@
      "id": "v-家族-かぞく-m1",
      "gloss": "Family"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-お金-おかね",
@@ -7184,7 +7355,8 @@
      "id": "v-お金-おかね-m1",
      "gloss": "Money"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-天気-てんき",
@@ -7205,7 +7377,8 @@
      "id": "v-天気-てんき-m1",
      "gloss": "Weather"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-朝-あさ",
@@ -7226,7 +7399,8 @@
      "id": "v-朝-あさ-m1",
      "gloss": "Morning"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-昼-ひる",
@@ -7247,7 +7421,8 @@
      "id": "v-昼-ひる-m1",
      "gloss": "Noon"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-夜-よる",
@@ -7268,7 +7443,8 @@
      "id": "v-夜-よる-m1",
      "gloss": "Night"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-毎日-まいにち",
@@ -7289,7 +7465,8 @@
      "id": "v-毎日-まいにち-m1",
      "gloss": "Every day"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-時々-ときどき",
@@ -7310,7 +7487,8 @@
      "id": "v-時々-ときどき-m1",
      "gloss": "Sometimes"
     }
-   ]
+   ],
+   "wordClass": "adverb"
   },
   {
    "id": "v-難しい-むずかしい",
@@ -7331,7 +7509,8 @@
      "id": "v-難しい-むずかしい-m1",
      "gloss": "Difficult"
     }
-   ]
+   ],
+   "wordClass": "i-adjective"
   },
   {
    "id": "v-近い-ちかい",
@@ -7352,7 +7531,8 @@
      "id": "v-近い-ちかい-m1",
      "gloss": "Near"
     }
-   ]
+   ],
+   "wordClass": "i-adjective"
   },
   {
    "id": "v-遠い-とおい",
@@ -7373,7 +7553,8 @@
      "id": "v-遠い-とおい-m1",
      "gloss": "Far"
     }
-   ]
+   ],
+   "wordClass": "i-adjective"
   },
   {
    "id": "v-日本-にほん",
@@ -7394,7 +7575,8 @@
      "id": "v-日本-にほん-m1",
      "gloss": "Japan"
     }
-   ]
+   ],
+   "wordClass": "proper-noun"
   },
   {
    "id": "v-日本人-にほんじん",
@@ -7415,7 +7597,8 @@
      "id": "v-日本人-にほんじん-m1",
      "gloss": "Japanese person"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-外国-がいこく",
@@ -7436,7 +7619,8 @@
      "id": "v-外国-がいこく-m1",
      "gloss": "Foreign country"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-外国人-がいこくじん",
@@ -7457,7 +7641,8 @@
      "id": "v-外国人-がいこくじん-m1",
      "gloss": "Foreigner"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-大人-おとな",
@@ -7478,7 +7663,8 @@
      "id": "v-大人-おとな-m1",
      "gloss": "Adult"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-子供-こども",
@@ -7499,7 +7685,8 @@
      "id": "v-子供-こども-m1",
      "gloss": "Child"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-入口-いりぐち",
@@ -7520,7 +7707,8 @@
      "id": "v-入口-いりぐち-m1",
      "gloss": "Entrance"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-出口-でぐち",
@@ -7541,7 +7729,8 @@
      "id": "v-出口-でぐち-m1",
      "gloss": "Exit"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-人口-じんこう",
@@ -7562,7 +7751,8 @@
      "id": "v-人口-じんこう-m1",
      "gloss": "Population"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-火山-かざん",
@@ -7583,7 +7773,8 @@
      "id": "v-火山-かざん-m1",
      "gloss": "Volcano"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-火曜日-かようび",
@@ -7604,7 +7795,8 @@
      "id": "v-火曜日-かようび-m1",
      "gloss": "Tuesday"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-水曜日-すいようび",
@@ -7625,7 +7817,8 @@
      "id": "v-水曜日-すいようび-m1",
      "gloss": "Wednesday"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-木曜日-もくようび",
@@ -7646,7 +7839,8 @@
      "id": "v-木曜日-もくようび-m1",
      "gloss": "Thursday"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-金曜日-きんようび",
@@ -7667,7 +7861,8 @@
      "id": "v-金曜日-きんようび-m1",
      "gloss": "Friday"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-土曜日-どようび",
@@ -7688,7 +7883,8 @@
      "id": "v-土曜日-どようび-m1",
      "gloss": "Saturday"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-日曜日-にちようび",
@@ -7709,7 +7905,8 @@
      "id": "v-日曜日-にちようび-m1",
      "gloss": "Sunday"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-月曜日-げつようび",
@@ -7730,7 +7927,8 @@
      "id": "v-月曜日-げつようび-m1",
      "gloss": "Monday"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-食べ物-たべもの",
@@ -7751,7 +7949,8 @@
      "id": "v-食べ物-たべもの-m1",
      "gloss": "Food"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-飲み物-のみもの",
@@ -7772,7 +7971,8 @@
      "id": "v-飲み物-のみもの-m1",
      "gloss": "Drinks"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-本屋-ほんや",
@@ -7793,7 +7993,8 @@
      "id": "v-本屋-ほんや-m1",
      "gloss": "Bookshop"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-休日-きゅうじつ",
@@ -7814,7 +8015,8 @@
      "id": "v-休日-きゅうじつ-m1",
      "gloss": "Day off"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-開ける-ひらける",
@@ -7836,7 +8038,9 @@
      "gloss": "Open up, become expansive",
      "unsplit": true
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "ru"
   },
   {
    "id": "v-友人-ゆうじん",
@@ -7857,7 +8061,8 @@
      "id": "v-友人-ゆうじん-m1",
      "gloss": "Friend"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-食う-くう",
@@ -7878,7 +8083,9 @@
      "id": "v-食う-くう-m1",
      "gloss": "Eat (casual)"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-うち-うち",
@@ -7895,7 +8102,8 @@
      "id": "v-うち-うち-m1",
      "gloss": "Home"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-とても-とても",
@@ -7912,7 +8120,8 @@
      "id": "v-とても-とても-m1",
      "gloss": "Very"
     }
-   ]
+   ],
+   "wordClass": "adverb"
   },
   {
    "id": "v-すごく-すごく",
@@ -7929,7 +8138,8 @@
      "id": "v-すごく-すごく-m1",
      "gloss": "Very"
     }
-   ]
+   ],
+   "wordClass": "adverb"
   },
   {
    "id": "v-多く-おおく",
@@ -7950,7 +8160,8 @@
      "id": "v-多く-おおく-m1",
      "gloss": "Many"
     }
-   ]
+   ],
+   "wordClass": "adverb"
   },
   {
    "id": "v-ありがとう-ありがとう",
@@ -7967,7 +8178,8 @@
      "id": "v-ありがとう-ありがとう-m1",
      "gloss": "Thank you"
     }
-   ]
+   ],
+   "wordClass": "expression"
   },
   {
    "id": "v-感謝する-かんしゃする",
@@ -7988,7 +8200,9 @@
      "id": "v-感謝する-かんしゃする-m1",
      "gloss": "Express gratitude"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "irregular"
   },
   {
    "id": "v-木-き",
@@ -8009,7 +8223,8 @@
      "id": "v-木-き-m1",
      "gloss": "Tree"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-気-き",
@@ -8031,7 +8246,8 @@
      "gloss": "Spirit, feeling",
      "unsplit": true
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-橋-はし",
@@ -8052,7 +8268,8 @@
      "id": "v-橋-はし-m1",
      "gloss": "Bridge"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-箸-はし",
@@ -8073,7 +8290,8 @@
      "id": "v-箸-はし-m1",
      "gloss": "Chopsticks"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-雨-あめ",
@@ -8094,7 +8312,8 @@
      "id": "v-雨-あめ-m1",
      "gloss": "Rain"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-飴-あめ",
@@ -8115,7 +8334,8 @@
      "id": "v-飴-あめ-m1",
      "gloss": "Candy"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-花-はな",
@@ -8136,7 +8356,8 @@
      "id": "v-花-はな-m1",
      "gloss": "Flower"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-鼻-はな",
@@ -8157,7 +8378,8 @@
      "id": "v-鼻-はな-m1",
      "gloss": "Nose"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-紙-かみ",
@@ -8178,7 +8400,8 @@
      "id": "v-紙-かみ-m1",
      "gloss": "Paper"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-神-かみ",
@@ -8199,7 +8422,8 @@
      "id": "v-神-かみ-m1",
      "gloss": "God"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-熱い-あつい",
@@ -8220,7 +8444,8 @@
      "id": "v-熱い-あつい-m1",
      "gloss": "Hot object"
     }
-   ]
+   ],
+   "wordClass": "i-adjective"
   },
   {
    "id": "v-合う-あう",
@@ -8242,7 +8467,9 @@
      "gloss": "Fit, match",
      "unsplit": true
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-始まる-はじまる",
@@ -8263,7 +8490,9 @@
      "id": "v-始まる-はじまる-m1",
      "gloss": "Begin"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-始める-はじめる",
@@ -8284,7 +8513,9 @@
      "id": "v-始める-はじめる-m1",
      "gloss": "Start something"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "ru"
   },
   {
    "id": "v-入れる-いれる",
@@ -8305,7 +8536,9 @@
      "id": "v-入れる-いれる-m1",
      "gloss": "Put in"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "ru"
   },
   {
    "id": "v-出す-だす",
@@ -8326,7 +8559,9 @@
      "id": "v-出す-だす-m1",
      "gloss": "Take out"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-止まる-とまる",
@@ -8347,7 +8582,9 @@
      "id": "v-止まる-とまる-m1",
      "gloss": "Stop"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "u"
   },
   {
    "id": "v-止める-とめる",
@@ -8368,7 +8605,9 @@
      "id": "v-止める-とめる-m1",
      "gloss": "Stop something"
     }
-   ]
+   ],
+   "wordClass": "verb",
+   "verbGroup": "ru"
   },
   {
    "id": "v-分-ふん",
@@ -8389,7 +8628,8 @@
      "id": "v-分-ふん-m1",
      "gloss": "Minute"
     }
-   ]
+   ],
+   "wordClass": "counter"
   },
   {
    "id": "v-万-まん",
@@ -8410,7 +8650,8 @@
      "id": "v-万-まん-m1",
      "gloss": "Ten thousand"
     }
-   ]
+   ],
+   "wordClass": "noun"
   },
   {
    "id": "v-早く-はやく",
@@ -8431,7 +8672,8 @@
      "id": "v-早く-はやく-m1",
      "gloss": "Early"
     }
-   ]
+   ],
+   "wordClass": "adverb"
   },
   {
    "id": "v-は-は",
@@ -8448,7 +8690,8 @@
      "id": "v-は-は-m1",
      "gloss": "Topic particle"
     }
-   ]
+   ],
+   "wordClass": "particle"
   }
  ],
  "grammar": [],

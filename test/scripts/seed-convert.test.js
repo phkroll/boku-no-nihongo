@@ -97,6 +97,7 @@ test('word with writing, reading, meaning, verbGroup, example form', () => {
   assert.deepEqual(w.writings, [{ text: '寝る' }]);
   assert.deepEqual(w.meanings.map((m) => [m.gloss, m.unsplit]), [['Sleep', undefined]]);
   assert.equal(w.verbGroup, 'ru');
+  assert.equal(w.wordClass, 'verb');
   assert.deepEqual(w.forms, [{ form: ['polite', 'past'], writing: '寝ました', reading: 'ねました' }]);
 });
 
