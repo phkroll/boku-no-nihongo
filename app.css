@@ -26,7 +26,7 @@
 html, body { margin: 0; background: var(--bg); color: var(--text); }
 body {
   font: 17px/1.4 -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Helvetica Neue", sans-serif;
-  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) 0 env(safe-area-inset-left); /* bottom inset: tab bar */
   -webkit-text-size-adjust: 100%;
 }
 main { max-width: 640px; margin: 0 auto; padding-bottom: 32px; }

@@ -91,6 +91,7 @@ const NOT_COMPARED = new Set(['id', 'created', 'updated', 'origin', 'importId', 
 const clone = (v) => structuredClone(v);
 
 export function mergeImport(data, incomingRaw, { file = '', now = nowIso() } = {}) {
+  if (incomingRaw?.version === 1) throw new Error('This file is from an older app version and cannot be added');
   const incoming = migrate(clone(incomingRaw));
   const record = { id: newId(), file, at: now };
   const report = { added: 0, updated: 0, skipped: 0, conflicts: [], duplicates: [], checks: [] };

@@ -23,11 +23,6 @@ Open questions, assumptions and limitations found while building and using the a
 - Import only reports contradictions, possible duplicates, overlapping groups, similar meanings (by design); resolving them is manual
 
 ## Known small issues (deferred)
-- A tag created during an edit you then cancel stays
-- Editing a relation's members keeps a direction / tell-apart ratings for a removed member; can duplicate another relation
-- A deleted starter grammar point comes back on next start
-- Bottom tab bar: double safe-area space on iPhone
-- Merging a v1 file adds nothing but still records an import
 - To check on the phone: file picker, prompt/confirm in the Home Screen app, tab bar with keyboard open, share sheet
 
 ## Open questions

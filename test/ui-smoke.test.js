@@ -134,10 +134,10 @@ test('Enter in a text field does not save the form; Enter in the tag field adds 
   const tagInput = root.all((n) => n.tagName === 'INPUT' && n.attrs.placeholder === 'new tag')[0];
   tagInput.value = 'JLPT N4';
   tagInput.fire('keydown', { key: 'Enter', isComposing: false, keyCode: 13 });
-  assert.ok(d.tags.some((t) => t.name === 'JLPT N4'));
+  assert.match(text(root), /JLPT N4/);
   tagInput.value = 'にほ';
   tagInput.fire('keydown', { key: 'Enter', isComposing: true, keyCode: 229 });
-  assert.ok(!d.tags.some((t) => t.name === 'にほ'));
+  assert.doesNotMatch(text(root), /にほ/);
 });
 
 test('no screen shows stray false / null / undefined', () => {
@@ -252,4 +252,28 @@ test('import report lists contradictions, possible duplicates and things to chec
   assert.match(t, /Possible duplicates/);
   assert.match(t, /similar meanings/);
   assert.deepEqual(strayTexts(root), []);
+});
+
+test('a tag created in an edit exists only once the edit is saved', async () => {
+  const { d } = sampleData();
+  const before = d.tags.length;
+  const addTag = (root, name) => {
+    const input = root.all((n) => n.tagName === 'INPUT' && n.attrs.placeholder === 'new tag')[0];
+    input.value = name;
+    input.fire('keydown', { key: 'Enter', isComposing: false, keyCode: 13 });
+  };
+  const cancelled = page();
+  screens.edit.render(cancelled, makeCtx(d), { kind: 'kanji' });
+  addTag(cancelled, 'Never saved');
+  assert.equal(d.tags.length, before);
+  const root = page();
+  screens.edit.render(root, makeCtx(d), { kind: 'kanji' });
+  fieldInput(root, 'Kanji').fire('input', { target: { value: '鳥' } });
+  addTag(root, 'Animals');
+  root.all((n) => n.tagName === 'FORM')[0].fire('submit');
+  await tick();
+  const tag = d.tags.find((t) => t.name === 'Animals');
+  assert.ok(tag);
+  assert.deepEqual(d.kanji.find((k) => k.char === '鳥').tagIds, [tag.id]);
+  assert.ok(!d.tags.some((t) => t.name === 'Never saved'));
 });

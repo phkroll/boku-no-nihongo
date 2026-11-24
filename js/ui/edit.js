@@ -80,7 +80,9 @@ export function render(root, ctx, params) {
   async function save() {
     error.clear();
     try {
-      const fields = tidy(draft);
+      const { newTags = [], ...rest } = draft;
+      const fields = tidy(rest);
+      const used = newTags.filter((t) => fields.tagIds?.includes(t.id));
       let saved;
       if (existing) {
         saved = updateUnit(ctx.data, ref, fields);
@@ -88,6 +90,7 @@ export function render(root, ctx, params) {
       } else {
         saved = addUnit(ctx.data, kind, fields);
       }
+      ctx.data.tags.push(...used);
       await ctx.save();
       if (existing) ctx.back(hrefOf(ref));
       else ctx.go(hrefOf(`${kind}:${saved.id}`), { replace: true });

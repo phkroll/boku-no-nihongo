@@ -96,22 +96,24 @@ export function refsEditor(ctx, draft, redraw) {
     picker(ctx, { exclude: refs, placeholder: 'Link to word, kanji, …', onPick: (ref) => { draft.refs = [...refs, ref]; redraw(); } }));
 }
 
+// New tags live in draft.newTags until the edit is saved (see edit.js), so Cancel leaves no stray tags.
 export function tagsEditor(ctx, draft, redraw) {
   const ids = draft.tagIds ?? [];
+  const known = () => [...ctx.data.tags, ...(draft.newTags ?? [])];
   const add = (name) => {
     const clean = name.trim();
     if (!clean) return;
-    let tag = ctx.data.tags.find((t) => normalize(t.name) === normalize(clean));
+    let tag = known().find((t) => normalize(t.name) === normalize(clean));
     if (!tag) {
       tag = { id: newId(), name: clean };
-      ctx.data.tags.push(tag);
+      draft.newTags = [...(draft.newTags ?? []), tag];
     }
     if (!ids.includes(tag.id)) draft.tagIds = [...ids, tag.id];
     redraw();
   };
   const newTag = h('input', { placeholder: 'new tag', autocomplete: 'off', onkeydown: (ev) => { if (isSubmitEnter(ev)) add(newTag.value); } });
   return h('div', { class: 'stack' },
-    chips(ctx.data.tags.map((t) => [t.id, t.name]), (id) => ids.includes(id), (id) => {
+    chips(known().map((t) => [t.id, t.name]), (id) => ids.includes(id), (id) => {
       draft.tagIds = ids.includes(id) ? ids.filter((x) => x !== id) : [...ids, id];
       redraw();
     }),
