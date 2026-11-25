@@ -5,6 +5,9 @@ import { addUnit } from '../../js/model/units.js';
 import { addRelation, updateRelation } from '../../js/model/relations.js';
 import { addRating } from '../../js/model/ratings.js';
 import { ensureStarter } from '../../js/model/starter.js';
+import { EXTRA_GRAMMAR } from '../../js/model/grammar-content.js';
+
+const STARTER = FORM_KEYS.length + EXTRA_GRAMMAR.length;
 import { mergeImport } from '../../js/model/io.js';
 
 function kanji(d, ...chars) {
@@ -44,7 +47,7 @@ test('a deleted starter grammar point stays deleted', () => {
   const d = ensureStarter(emptyData());
   d.grammar = d.grammar.filter((g) => g.formKey !== 'imperative');
   ensureStarter(d);
-  assert.equal(d.grammar.length, FORM_KEYS.length - 1);
+  assert.equal(d.grammar.length, STARTER - 1);
   assert.ok(!d.grammar.some((g) => g.formKey === 'imperative'));
 });
 
@@ -52,10 +55,10 @@ test('existing data without a starter record: missing forms added once, then del
   const d = emptyData();
   d.grammar.push({ id: 'g1', title: 'Past', formKey: 'past' });
   ensureStarter(d);
-  assert.equal(d.grammar.length, FORM_KEYS.length);
+  assert.equal(d.grammar.length, STARTER);
   d.grammar = d.grammar.filter((g) => g.formKey !== 'te');
   ensureStarter(d);
-  assert.equal(d.grammar.length, FORM_KEYS.length - 1);
+  assert.equal(d.grammar.length, STARTER - 1);
 });
 
 test('merging a v1 file is refused and records no import', () => {

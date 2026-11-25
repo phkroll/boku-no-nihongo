@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { FORM_KEYS } from '../../js/model/data.js';
 import { migrate } from '../../js/model/migrate.js';
 import { ensureStarter } from '../../js/model/starter.js';
+import { EXTRA_GRAMMAR } from '../../js/model/grammar-content.js';
 
 test('nothing stored gives empty data', () => {
   assert.equal(migrate(undefined).version, 2);
@@ -32,7 +33,32 @@ test('starter forms added once, existing untouched', () => {
   d.grammar.push({ id: 'g1', title: 'My past', formKey: 'past', notes: 'mine' });
   ensureStarter(d);
   ensureStarter(d);
-  assert.equal(d.grammar.length, FORM_KEYS.length);
+  assert.equal(d.grammar.length, FORM_KEYS.length + EXTRA_GRAMMAR.length);
   assert.equal(d.grammar.find((g) => g.formKey === 'past').notes, 'mine');
   assert.deepEqual(d.grammar.find((g) => g.formKey === 'te').origin, { kind: 'reference' });
+});
+
+test('starter content fills empty fields of reference points once; own points and edits untouched', () => {
+  const d = migrate(undefined);
+  d.grammar.push(
+    { id: 'g1', title: 'My past', formKey: 'past', origin: { kind: 'learner' } },
+    { id: 'g2', title: 'Te', formKey: 'te', origin: { kind: 'reference' }, meaning: 'mine' },
+  );
+  d.meta.starterAdded = FORM_KEYS.map(([k]) => k);
+  ensureStarter(d);
+  const te = d.grammar.find((g) => g.id === 'g2');
+  assert.equal(te.meaning, 'mine');
+  assert.match(te.pattern, /て/);
+  assert.equal(d.grammar.find((g) => g.id === 'g1').pattern, undefined);
+  assert.ok(d.grammar.some((g) => g.starterKey === 'reason-node' && g.explanation));
+  delete te.pattern; // cleared by the learner
+  ensureStarter(d);
+  assert.equal(te.pattern, undefined);
+});
+
+test('a deleted extra grammar point stays deleted', () => {
+  const d = ensureStarter(migrate(undefined));
+  d.grammar = d.grammar.filter((g) => g.starterKey !== 'reason-kara');
+  ensureStarter(d);
+  assert.ok(!d.grammar.some((g) => g.starterKey === 'reason-kara'));
 });
