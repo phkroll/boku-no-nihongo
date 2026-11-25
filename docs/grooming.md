@@ -44,3 +44,6 @@ Open questions, assumptions and limitations found while building and using the a
 - Grammar "requires" (ている ← て ← past): relation or derived from form chains?
 - Affixes (お〜, 〜さん, 〜屋) and counters ("counts what", 一本 いっぽん): own unit kind or word class + fields?
 - Tae Kim (NC licence): grammar points only in own words if published
+
+## Lessons (how we work)
+- Data flows: when the phone has nothing new, enrich the published data directly → push → "Load published data"; no export/import round-trip (2026-11-25)

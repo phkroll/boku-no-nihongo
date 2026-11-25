@@ -38,7 +38,7 @@ The original seed: `npm run convert-seed` → `out/seed-import.json`, then `npm 
    `JmdictFurigana.json` ([releases](https://github.com/Doublevil/JmdictFurigana/releases)) ·
    `kanjium-lookalikes.txt` (Kanjium `data/source_files/lookalikes.txt`) ·
    `jpn_indices.csv`, `jpn_sentences_detailed.tsv`, `jpn_transcriptions.tsv`, `eng_sentences.tsv` ([Tatoeba downloads](https://tatoeba.org/en/downloads), unpacked)
-2. Phone: Export backup → copy to `out/`
+2. Phone: Export backup → copy to `out/` (no new entries on the phone? use the published data instead: merge `data/content.json` + `data/knowledge.json`, publish, phone → Load published data)
 3. `npm run enrich -- out/<backup>.json` → `out/enrich-import.json` + `out/enrich-review.txt` (things to check by hand)
 4. Phone: Settings → Add data from file → `enrich-import.json`; confirm or reject the suggested lookalikes under Notes
 5. Export again → `npm run publish-data -- out/<backup>.json` → commit and push

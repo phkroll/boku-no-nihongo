@@ -14,12 +14,12 @@
     {
      "id": "k-一-unknown-いち",
      "kana": "いち",
-     "type": "unknown"
+     "type": "on"
     },
     {
      "id": "k-一-unknown-ひと",
      "kana": "ひと",
-     "type": "unknown"
+     "type": "kun"
     }
    ],
    "meanings": [
@@ -42,12 +42,12 @@
     {
      "id": "k-二-unknown-に",
      "kana": "に",
-     "type": "unknown"
+     "type": "on"
     },
     {
      "id": "k-二-unknown-ふた",
      "kana": "ふた",
-     "type": "unknown"
+     "type": "kun"
     }
    ],
    "meanings": [
@@ -70,12 +70,12 @@
     {
      "id": "k-三-unknown-さん",
      "kana": "さん",
-     "type": "unknown"
+     "type": "on"
     },
     {
      "id": "k-三-unknown-み",
      "kana": "み",
-     "type": "unknown"
+     "type": "kun"
     }
    ],
    "meanings": [
@@ -98,12 +98,12 @@
     {
      "id": "k-四-unknown-し",
      "kana": "し",
-     "type": "unknown"
+     "type": "on"
     },
     {
      "id": "k-四-unknown-よん",
      "kana": "よん",
-     "type": "unknown"
+     "type": "kun"
     }
    ],
    "meanings": [
@@ -126,12 +126,12 @@
     {
      "id": "k-五-unknown-ご",
      "kana": "ご",
-     "type": "unknown"
+     "type": "on"
     },
     {
      "id": "k-五-unknown-いつ",
      "kana": "いつ",
-     "type": "unknown"
+     "type": "kun"
     }
    ],
    "meanings": [
@@ -154,12 +154,12 @@
     {
      "id": "k-六-unknown-ろく",
      "kana": "ろく",
-     "type": "unknown"
+     "type": "on"
     },
     {
      "id": "k-六-unknown-む",
      "kana": "む",
-     "type": "unknown"
+     "type": "kun"
     }
    ],
    "meanings": [
@@ -182,12 +182,12 @@
     {
      "id": "k-七-unknown-しち",
      "kana": "しち",
-     "type": "unknown"
+     "type": "on"
     },
     {
      "id": "k-七-unknown-なな",
      "kana": "なな",
-     "type": "unknown"
+     "type": "kun"
     }
    ],
    "meanings": [
@@ -210,12 +210,12 @@
     {
      "id": "k-八-unknown-はち",
      "kana": "はち",
-     "type": "unknown"
+     "type": "on"
     },
     {
      "id": "k-八-unknown-や",
      "kana": "や",
-     "type": "unknown"
+     "type": "kun"
     }
    ],
    "meanings": [
@@ -238,12 +238,12 @@
     {
      "id": "k-九-unknown-きゅう",
      "kana": "きゅう",
-     "type": "unknown"
+     "type": "on"
     },
     {
      "id": "k-九-unknown-く",
      "kana": "く",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -266,12 +266,12 @@
     {
      "id": "k-十-unknown-じゅう",
      "kana": "じゅう",
-     "type": "unknown"
+     "type": "on"
     },
     {
      "id": "k-十-unknown-とお",
      "kana": "とお",
-     "type": "unknown"
+     "type": "kun"
     }
    ],
    "meanings": [
@@ -294,7 +294,7 @@
     {
      "id": "k-百-unknown-ひゃく",
      "kana": "ひゃく",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -317,7 +317,7 @@
     {
      "id": "k-千-unknown-せん",
      "kana": "せん",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -340,7 +340,7 @@
     {
      "id": "k-万-unknown-まん",
      "kana": "まん",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -582,12 +582,12 @@
     {
      "id": "k-川-unknown-かわ",
      "kana": "かわ",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-川-unknown-せん",
      "kana": "せん",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -610,12 +610,12 @@
     {
      "id": "k-森-unknown-もり",
      "kana": "もり",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-森-unknown-しん",
      "kana": "しん",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -638,12 +638,12 @@
     {
      "id": "k-雨-unknown-あめ",
      "kana": "あめ",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-雨-unknown-う",
      "kana": "う",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -699,12 +699,12 @@
     {
      "id": "k-子-unknown-こ",
      "kana": "こ",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-子-unknown-し",
      "kana": "し",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -727,12 +727,12 @@
     {
      "id": "k-友-unknown-とも",
      "kana": "とも",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-友-unknown-ゆう",
      "kana": "ゆう",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -755,12 +755,12 @@
     {
      "id": "k-口-unknown-くち",
      "kana": "くち",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-口-unknown-こう",
      "kana": "こう",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -783,12 +783,12 @@
     {
      "id": "k-目-unknown-め",
      "kana": "め",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-目-unknown-もく",
      "kana": "もく",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -811,12 +811,12 @@
     {
      "id": "k-手-unknown-て",
      "kana": "て",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-手-unknown-しゅ",
      "kana": "しゅ",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -839,12 +839,12 @@
     {
      "id": "k-大-unknown-おお",
      "kana": "おお",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-大-unknown-だい",
      "kana": "だい",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -867,12 +867,12 @@
     {
      "id": "k-小-unknown-ちい",
      "kana": "ちい",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-小-unknown-しょう",
      "kana": "しょう",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -895,12 +895,12 @@
     {
      "id": "k-中-unknown-なか",
      "kana": "なか",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-中-unknown-ちゅう",
      "kana": "ちゅう",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -924,12 +924,12 @@
     {
      "id": "k-高-unknown-たか",
      "kana": "たか",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-高-unknown-こう",
      "kana": "こう",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -953,12 +953,12 @@
     {
      "id": "k-上-unknown-うえ",
      "kana": "うえ",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-上-unknown-じょう",
      "kana": "じょう",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -981,12 +981,12 @@
     {
      "id": "k-下-unknown-した",
      "kana": "した",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-下-unknown-か",
      "kana": "か",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1009,12 +1009,12 @@
     {
      "id": "k-左-unknown-ひだり",
      "kana": "ひだり",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-左-unknown-さ",
      "kana": "さ",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1037,12 +1037,12 @@
     {
      "id": "k-右-unknown-みぎ",
      "kana": "みぎ",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-右-unknown-う",
      "kana": "う",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1065,12 +1065,12 @@
     {
      "id": "k-前-unknown-まえ",
      "kana": "まえ",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-前-unknown-ぜん",
      "kana": "ぜん",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1094,12 +1094,12 @@
     {
      "id": "k-外-unknown-そと",
      "kana": "そと",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-外-unknown-がい",
      "kana": "がい",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1122,12 +1122,12 @@
     {
      "id": "k-東-unknown-ひがし",
      "kana": "ひがし",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-東-unknown-とう",
      "kana": "とう",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1150,12 +1150,12 @@
     {
      "id": "k-西-unknown-にし",
      "kana": "にし",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-西-unknown-せい",
      "kana": "せい",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1178,12 +1178,12 @@
     {
      "id": "k-北-unknown-きた",
      "kana": "きた",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-北-unknown-ほく",
      "kana": "ほく",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1206,12 +1206,12 @@
     {
      "id": "k-今-unknown-いま",
      "kana": "いま",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-今-unknown-こん",
      "kana": "こん",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1400,12 +1400,12 @@
     {
      "id": "k-好-unknown-す",
      "kana": "す",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-好-unknown-こう",
      "kana": "こう",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1428,12 +1428,12 @@
     {
      "id": "k-何-unknown-なに",
      "kana": "なに",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-何-unknown-なん",
      "kana": "なん",
-     "type": "unknown"
+     "type": "kun"
     }
    ],
    "meanings": [
@@ -1456,12 +1456,12 @@
     {
      "id": "k-食-unknown-た",
      "kana": "た",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-食-unknown-しょく",
      "kana": "しょく",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1485,12 +1485,12 @@
     {
      "id": "k-飲-unknown-の",
      "kana": "の",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-飲-unknown-いん",
      "kana": "いん",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1513,12 +1513,12 @@
     {
      "id": "k-書-unknown-か",
      "kana": "か",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-書-unknown-しょ",
      "kana": "しょ",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1580,12 +1580,12 @@
     {
      "id": "k-読-unknown-よ",
      "kana": "よ",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-読-unknown-どく",
      "kana": "どく",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1608,12 +1608,12 @@
     {
      "id": "k-行-unknown-い",
      "kana": "い",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-行-unknown-こう",
      "kana": "こう",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1636,12 +1636,12 @@
     {
      "id": "k-来-unknown-く",
      "kana": "く",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-来-unknown-らい",
      "kana": "らい",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1664,12 +1664,12 @@
     {
      "id": "k-見-unknown-み",
      "kana": "み",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-見-unknown-けん",
      "kana": "けん",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1692,12 +1692,12 @@
     {
      "id": "k-作-unknown-つく",
      "kana": "つく",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-作-unknown-さく",
      "kana": "さく",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1720,12 +1720,12 @@
     {
      "id": "k-買-unknown-か",
      "kana": "か",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-買-unknown-ばい",
      "kana": "ばい",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1748,12 +1748,12 @@
     {
      "id": "k-歌-unknown-うた",
      "kana": "うた",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-歌-unknown-か",
      "kana": "か",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1777,17 +1777,17 @@
     {
      "id": "k-入-unknown-はい",
      "kana": "はい",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-入-unknown-い",
      "kana": "い",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-入-unknown-にゅう",
      "kana": "にゅう",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1810,17 +1810,17 @@
     {
      "id": "k-出-unknown-で",
      "kana": "で",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-出-unknown-だ",
      "kana": "だ",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-出-unknown-しゅつ",
      "kana": "しゅつ",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1843,12 +1843,12 @@
     {
      "id": "k-休-unknown-やす",
      "kana": "やす",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-休-unknown-きゅう",
      "kana": "きゅう",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1871,7 +1871,7 @@
     {
      "id": "k-肉-unknown-にく",
      "kana": "にく",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1894,12 +1894,12 @@
     {
      "id": "k-魚-unknown-さかな",
      "kana": "さかな",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-魚-unknown-ぎょ",
      "kana": "ぎょ",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1922,12 +1922,12 @@
     {
      "id": "k-鳥-unknown-とり",
      "kana": "とり",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-鳥-unknown-ちょう",
      "kana": "ちょう",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1950,12 +1950,12 @@
     {
      "id": "k-酒-unknown-さけ",
      "kana": "さけ",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-酒-unknown-しゅ",
      "kana": "しゅ",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -1978,12 +1978,12 @@
     {
      "id": "k-卵-unknown-たまご",
      "kana": "たまご",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-卵-unknown-らん",
      "kana": "らん",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -2006,7 +2006,7 @@
     {
      "id": "k-円-unknown-えん",
      "kana": "えん",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -2030,12 +2030,12 @@
     {
      "id": "k-年-unknown-とし",
      "kana": "とし",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-年-unknown-ねん",
      "kana": "ねん",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -2196,12 +2196,12 @@
     {
      "id": "k-石-unknown-いし",
      "kana": "いし",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-石-unknown-せき",
      "kana": "せき",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -2224,17 +2224,17 @@
     {
      "id": "k-話-unknown-はな",
      "kana": "はな",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-話-unknown-はなし",
      "kana": "はなし",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-話-unknown-わ",
      "kana": "わ",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -2257,12 +2257,12 @@
     {
      "id": "k-言-unknown-い",
      "kana": "い",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-言-unknown-げん",
      "kana": "げん",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -2285,12 +2285,12 @@
     {
      "id": "k-語-unknown-ご",
      "kana": "ご",
-     "type": "unknown"
+     "type": "on"
     },
     {
      "id": "k-語-unknown-かた",
      "kana": "かた",
-     "type": "unknown"
+     "type": "kun"
     }
    ],
    "meanings": [
@@ -2313,7 +2313,7 @@
     {
      "id": "k-字-unknown-じ",
      "kana": "じ",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -2360,17 +2360,17 @@
     {
      "id": "k-楽-unknown-たの",
      "kana": "たの",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-楽-unknown-らく",
      "kana": "らく",
-     "type": "unknown"
+     "type": "on"
     },
     {
      "id": "k-楽-unknown-がく",
      "kana": "がく",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -2490,7 +2490,7 @@
     {
      "id": "k-門-unknown-もん",
      "kana": "もん",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -2513,12 +2513,12 @@
     {
      "id": "k-問-unknown-と",
      "kana": "と",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-問-unknown-もん",
      "kana": "もん",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -2574,17 +2574,17 @@
     {
      "id": "k-後-unknown-あと",
      "kana": "あと",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-後-unknown-うし",
      "kana": "うし",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-後-unknown-ご",
      "kana": "ご",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -2608,7 +2608,7 @@
     {
      "id": "k-京-unknown-きょう",
      "kana": "きょう",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -2631,12 +2631,12 @@
     {
      "id": "k-都-unknown-と",
      "kana": "と",
-     "type": "unknown"
+     "type": "on"
     },
     {
      "id": "k-都-unknown-みやこ",
      "kana": "みやこ",
-     "type": "unknown"
+     "type": "kun"
     }
    ],
    "meanings": [
@@ -2660,12 +2660,12 @@
     {
      "id": "k-南-unknown-みなみ",
      "kana": "みなみ",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-南-unknown-なん",
      "kana": "なん",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -2688,12 +2688,12 @@
     {
      "id": "k-男-unknown-おとこ",
      "kana": "おとこ",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-男-unknown-だん",
      "kana": "だん",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -2716,12 +2716,12 @@
     {
      "id": "k-女-unknown-おんな",
      "kana": "おんな",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-女-unknown-じょ",
      "kana": "じょ",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -2744,12 +2744,12 @@
     {
      "id": "k-耳-unknown-みみ",
      "kana": "みみ",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-耳-unknown-じ",
      "kana": "じ",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -2772,12 +2772,12 @@
     {
      "id": "k-足-unknown-あし",
      "kana": "あし",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-足-unknown-そく",
      "kana": "そく",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -2800,12 +2800,12 @@
     {
      "id": "k-力-unknown-ちから",
      "kana": "ちから",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-力-unknown-りょく",
      "kana": "りょく",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -2895,12 +2895,12 @@
     {
      "id": "k-田-unknown-た",
      "kana": "た",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-田-unknown-でん",
      "kana": "でん",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -2923,12 +2923,12 @@
     {
      "id": "k-林-unknown-はやし",
      "kana": "はやし",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-林-unknown-りん",
      "kana": "りん",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -2951,12 +2951,12 @@
     {
      "id": "k-空-unknown-そら",
      "kana": "そら",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-空-unknown-くう",
      "kana": "くう",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -2980,12 +2980,12 @@
     {
      "id": "k-白-unknown-しろ",
      "kana": "しろ",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-白-unknown-はく",
      "kana": "はく",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -3008,12 +3008,12 @@
     {
      "id": "k-黒-unknown-くろ",
      "kana": "くろ",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-黒-unknown-こく",
      "kana": "こく",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -3036,12 +3036,12 @@
     {
      "id": "k-赤-unknown-あか",
      "kana": "あか",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-赤-unknown-せき",
      "kana": "せき",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -3064,12 +3064,12 @@
     {
      "id": "k-青-unknown-あお",
      "kana": "あお",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-青-unknown-せい",
      "kana": "せい",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -3092,7 +3092,7 @@
     {
      "id": "k-王-unknown-おう",
      "kana": "おう",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -3115,12 +3115,12 @@
     {
      "id": "k-玉-unknown-たま",
      "kana": "たま",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-玉-unknown-ぎょく",
      "kana": "ぎょく",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -3177,12 +3177,12 @@
     {
      "id": "k-寺-unknown-てら",
      "kana": "てら",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-寺-unknown-じ",
      "kana": "じ",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -3205,12 +3205,12 @@
     {
      "id": "k-酉-unknown-とり",
      "kana": "とり",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-酉-unknown-ゆう",
      "kana": "ゆう",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -3233,7 +3233,7 @@
     {
      "id": "k-士-unknown-し",
      "kana": "し",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -3257,12 +3257,12 @@
     {
      "id": "k-主-unknown-ぬし",
      "kana": "ぬし",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-主-unknown-しゅ",
      "kana": "しゅ",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -3286,12 +3286,12 @@
     {
      "id": "k-天-unknown-てん",
      "kana": "てん",
-     "type": "unknown"
+     "type": "on"
     },
     {
      "id": "k-天-unknown-あめ",
      "kana": "あめ",
-     "type": "unknown"
+     "type": "kun"
     }
    ],
    "meanings": [
@@ -3314,12 +3314,12 @@
     {
      "id": "k-橋-unknown-はし",
      "kana": "はし",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-橋-unknown-きょう",
      "kana": "きょう",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -3342,7 +3342,7 @@
     {
      "id": "k-箸-unknown-はし",
      "kana": "はし",
-     "type": "unknown"
+     "type": "kun"
     }
    ],
    "meanings": [
@@ -3365,7 +3365,7 @@
     {
      "id": "k-飴-unknown-あめ",
      "kana": "あめ",
-     "type": "unknown"
+     "type": "kun"
     }
    ],
    "meanings": [
@@ -3388,12 +3388,12 @@
     {
      "id": "k-花-unknown-はな",
      "kana": "はな",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-花-unknown-か",
      "kana": "か",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -3416,12 +3416,12 @@
     {
      "id": "k-鼻-unknown-はな",
      "kana": "はな",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-鼻-unknown-び",
      "kana": "び",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -3444,12 +3444,12 @@
     {
      "id": "k-紙-unknown-かみ",
      "kana": "かみ",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-紙-unknown-し",
      "kana": "し",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -3472,12 +3472,12 @@
     {
      "id": "k-神-unknown-かみ",
      "kana": "かみ",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-神-unknown-しん",
      "kana": "しん",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -3500,12 +3500,12 @@
     {
      "id": "k-熱-unknown-ねつ",
      "kana": "ねつ",
-     "type": "unknown"
+     "type": "on"
     },
     {
      "id": "k-熱-unknown-あつ",
      "kana": "あつ",
-     "type": "unknown"
+     "type": "kun"
     }
    ],
    "meanings": [
@@ -3528,12 +3528,12 @@
     {
      "id": "k-合-unknown-あ",
      "kana": "あ",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-合-unknown-ごう",
      "kana": "ごう",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -3556,12 +3556,12 @@
     {
      "id": "k-始-unknown-はじ",
      "kana": "はじ",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-始-unknown-し",
      "kana": "し",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -3584,12 +3584,12 @@
     {
      "id": "k-止-unknown-と",
      "kana": "と",
-     "type": "unknown"
+     "type": "kun"
     },
     {
      "id": "k-止-unknown-し",
      "kana": "し",
-     "type": "unknown"
+     "type": "on"
     }
    ],
    "meanings": [
@@ -3607,7 +3607,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-達-kun-たち",
+     "kana": "たち",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-少",
@@ -3617,7 +3624,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-少-kun-すこ",
+     "kana": "すこ",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-丈",
@@ -3627,7 +3641,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-丈-on-じょう",
+     "kana": "じょう",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-夫",
@@ -3637,7 +3658,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-夫-on-ぶ",
+     "kana": "ぶ",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-寿",
@@ -3647,7 +3675,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-寿-on-す",
+     "kana": "す",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-司",
@@ -3657,7 +3692,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-司-on-し",
+     "kana": "し",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-焼",
@@ -3667,7 +3709,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-焼-kun-やき",
+     "kana": "やき",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-秋",
@@ -3677,7 +3726,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-秋-kun-あき",
+     "kana": "あき",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-喋",
@@ -3687,7 +3743,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-喋-kun-しゃべ",
+     "kana": "しゃべ",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-帰",
@@ -3697,7 +3760,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-帰-kun-かえ",
+     "kana": "かえ",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-会",
@@ -3707,7 +3777,19 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-会-kun-あ",
+     "kana": "あ",
+     "type": "kun"
+    },
+    {
+     "id": "k-会-on-かい",
+     "kana": "かい",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-起",
@@ -3717,7 +3799,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-起-kun-お",
+     "kana": "お",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-働",
@@ -3727,7 +3816,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-働-kun-はたら",
+     "kana": "はたら",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-遊",
@@ -3737,7 +3833,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-遊-kun-あそ",
+     "kana": "あそ",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-歩",
@@ -3747,7 +3850,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-歩-kun-ある",
+     "kana": "ある",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-走",
@@ -3757,7 +3867,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-走-kun-はし",
+     "kana": "はし",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-座",
@@ -3767,7 +3884,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-座-kun-すわ",
+     "kana": "すわ",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-立",
@@ -3777,7 +3901,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-立-kun-た",
+     "kana": "た",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-使",
@@ -3787,7 +3918,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-使-kun-つか",
+     "kana": "つか",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-教",
@@ -3797,7 +3935,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-教-kun-おし",
+     "kana": "おし",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-習",
@@ -3807,7 +3952,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-習-kun-なら",
+     "kana": "なら",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-住",
@@ -3817,7 +3969,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-住-kun-す",
+     "kana": "す",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-思",
@@ -3827,7 +3986,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-思-kun-おも",
+     "kana": "おも",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-昨",
@@ -3857,7 +4023,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-勉-on-べん",
+     "kana": "べん",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-強",
@@ -3867,7 +4040,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-強-on-きょう",
+     "kana": "きょう",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-漢",
@@ -3877,7 +4057,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-漢-on-かん",
+     "kana": "かん",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-番",
@@ -3887,7 +4074,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-番-on-ばん",
+     "kana": "ばん",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-横",
@@ -3897,7 +4091,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-横-kun-よこ",
+     "kana": "よこ",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-隣",
@@ -3907,7 +4108,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-隣-kun-となり",
+     "kana": "となり",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-簡",
@@ -3917,7 +4125,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-簡-on-かん",
+     "kana": "かん",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-単",
@@ -3927,7 +4142,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-単-on-たん",
+     "kana": "たん",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-安",
@@ -3937,7 +4159,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-安-kun-やす",
+     "kana": "やす",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-古",
@@ -3947,7 +4176,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-古-kun-ふる",
+     "kana": "ふる",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-暑",
@@ -3957,7 +4193,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-暑-kun-あつ",
+     "kana": "あつ",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-寒",
@@ -3967,7 +4210,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-寒-kun-さむ",
+     "kana": "さむ",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-忙",
@@ -3977,7 +4227,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-忙-kun-いそが",
+     "kana": "いそが",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-野",
@@ -3987,7 +4244,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-野-on-や",
+     "kana": "や",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-菜",
@@ -3997,7 +4261,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-菜-on-さい",
+     "kana": "さい",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-米",
@@ -4007,7 +4278,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-米-kun-こめ",
+     "kana": "こめ",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-飯",
@@ -4017,7 +4295,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-飯-on-はん",
+     "kana": "はん",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-麺",
@@ -4027,7 +4312,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-麺-on-めん",
+     "kana": "めん",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-茶",
@@ -4037,7 +4329,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-茶-on-ちゃ",
+     "kana": "ちゃ",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-辛",
@@ -4047,7 +4346,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-辛-kun-から",
+     "kana": "から",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-甘",
@@ -4057,7 +4363,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-甘-kun-あま",
+     "kana": "あま",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-塩",
@@ -4067,7 +4380,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-塩-kun-しお",
+     "kana": "しお",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-味",
@@ -4077,7 +4397,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-味-kun-あじ",
+     "kana": "あじ",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-油",
@@ -4087,7 +4414,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-油-kun-あぶら",
+     "kana": "あぶら",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-豆",
@@ -4097,7 +4431,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-豆-kun-まめ",
+     "kana": "まめ",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-定",
@@ -4107,7 +4448,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-定-on-てい",
+     "kana": "てい",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-注",
@@ -4117,7 +4465,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-注-on-ちゅう",
+     "kana": "ちゅう",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-文",
@@ -4127,7 +4482,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-文-on-もん",
+     "kana": "もん",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-限",
@@ -4137,7 +4499,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-限-on-げん",
+     "kana": "げん",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-唐",
@@ -4147,7 +4516,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-唐-kun-から",
+     "kana": "から",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-揚",
@@ -4157,7 +4533,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-揚-kun-あ",
+     "kana": "あ",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-牛",
@@ -4167,7 +4550,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-牛-on-ぎゅう",
+     "kana": "ぎゅう",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-丼",
@@ -4177,7 +4567,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-丼-on-とん",
+     "kana": "とん",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-盛",
@@ -4187,7 +4584,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-盛-kun-も",
+     "kana": "も",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-名",
@@ -4197,7 +4601,19 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-名-on-めい",
+     "kana": "めい",
+     "type": "on"
+    },
+    {
+     "id": "k-名-kun-な",
+     "kana": "な",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-物",
@@ -4207,7 +4623,19 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-物-on-ぶつ",
+     "kana": "ぶつ",
+     "type": "on"
+    },
+    {
+     "id": "k-物-kun-もの",
+     "kana": "もの",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-洋",
@@ -4217,7 +4645,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-洋-on-よう",
+     "kana": "よう",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-電",
@@ -4227,7 +4662,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-電-on-でん",
+     "kana": "でん",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-車",
@@ -4237,7 +4679,19 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-車-on-しゃ",
+     "kana": "しゃ",
+     "type": "on"
+    },
+    {
+     "id": "k-車-kun-くるま",
+     "kana": "くるま",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-駅",
@@ -4247,7 +4701,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-駅-on-えき",
+     "kana": "えき",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-自",
@@ -4257,7 +4718,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-自-on-じ",
+     "kana": "じ",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-転",
@@ -4267,7 +4735,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-転-on-てん",
+     "kana": "てん",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-社",
@@ -4277,7 +4752,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-社-on-しゃ",
+     "kana": "しゃ",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-仕",
@@ -4287,7 +4769,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-仕-on-し",
+     "kana": "し",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-事",
@@ -4297,7 +4786,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-事-kun-こと",
+     "kana": "こと",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-家",
@@ -4307,7 +4803,19 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-家-kun-いえ",
+     "kana": "いえ",
+     "type": "kun"
+    },
+    {
+     "id": "k-家-on-か",
+     "kana": "か",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-部",
@@ -4327,7 +4835,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-屋-kun-や",
+     "kana": "や",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-店",
@@ -4337,7 +4852,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-店-kun-みせ",
+     "kana": "みせ",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-道",
@@ -4347,7 +4869,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-道-kun-みち",
+     "kana": "みち",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-族",
@@ -4357,7 +4886,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-族-on-ぞく",
+     "kana": "ぞく",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-朝",
@@ -4367,7 +4903,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-朝-kun-あさ",
+     "kana": "あさ",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-昼",
@@ -4377,7 +4920,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-昼-kun-ひる",
+     "kana": "ひる",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-夜",
@@ -4387,7 +4937,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-夜-kun-よる",
+     "kana": "よる",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-毎",
@@ -4397,7 +4954,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-毎-on-まい",
+     "kana": "まい",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-難",
@@ -4407,7 +4971,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-難-kun-むずか",
+     "kana": "むずか",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-近",
@@ -4417,7 +4988,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-近-kun-ちか",
+     "kana": "ちか",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-遠",
@@ -4427,7 +5005,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-遠-kun-とお",
+     "kana": "とお",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-国",
@@ -4437,7 +5022,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-国-on-こく",
+     "kana": "こく",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-供",
@@ -4447,7 +5039,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-供-kun-ども",
+     "kana": "ども",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-曜",
@@ -4457,7 +5056,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-曜-on-よう",
+     "kana": "よう",
+     "type": "on"
+    }
+   ]
   },
   {
    "id": "k-多",
@@ -4467,7 +5073,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-多-kun-おお",
+     "kana": "おお",
+     "type": "kun"
+    }
+   ]
   },
   {
    "id": "k-感",
@@ -4497,7 +5110,14 @@
     "detail": "linked-seed-1"
    },
    "created": "2026-11-24T19:52:45.382Z",
-   "updated": "2026-11-24T19:52:45.382Z"
+   "updated": "2026-11-24T19:52:45.382Z",
+   "readings": [
+    {
+     "id": "k-早-kun-はや",
+     "kana": "はや",
+     "type": "kun"
+    }
+   ]
   }
  ],
  "words": [
@@ -4543,7 +5163,14 @@
      "gloss": "Book"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "本",
+     "reading": "ほん",
+     "readingId": "k-本-on-ほん"
+    }
+   ]
   },
   {
    "id": "v-友達-ともだち",
@@ -4565,7 +5192,20 @@
      "gloss": "Friend"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "友",
+     "reading": "とも",
+     "readingId": "k-友-unknown-とも"
+    },
+    {
+     "char": "達",
+     "reading": "だち",
+     "readingId": "k-達-kun-たち",
+     "base": "たち"
+    }
+   ]
   },
   {
    "id": "v-先生-せんせい",
@@ -4587,7 +5227,19 @@
      "gloss": "Teacher"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "先",
+     "reading": "せん",
+     "readingId": "k-先-on-せん"
+    },
+    {
+     "char": "生",
+     "reading": "せい",
+     "readingId": "k-生-on-せい"
+    }
+   ]
   },
   {
    "id": "v-学校-がっこう",
@@ -4609,7 +5261,20 @@
      "gloss": "School"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "学",
+     "reading": "がっ",
+     "readingId": "k-学-on-がく",
+     "base": "がく"
+    },
+    {
+     "char": "校",
+     "reading": "こう",
+     "readingId": "k-校-on-こう"
+    }
+   ]
   },
   {
    "id": "v-休み-やすみ",
@@ -4631,7 +5296,14 @@
      "gloss": "Holiday"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "休",
+     "reading": "やす",
+     "readingId": "k-休-unknown-やす"
+    }
+   ]
   },
   {
    "id": "v-高い-たかい",
@@ -4654,7 +5326,14 @@
      "unsplit": true
     }
    ],
-   "wordClass": "i-adjective"
+   "wordClass": "i-adjective",
+   "kanjiUses": [
+    {
+     "char": "高",
+     "reading": "たか",
+     "readingId": "k-高-unknown-たか"
+    }
+   ]
   },
   {
    "id": "v-大きい-おおきい",
@@ -4676,7 +5355,14 @@
      "gloss": "Big"
     }
    ],
-   "wordClass": "i-adjective"
+   "wordClass": "i-adjective",
+   "kanjiUses": [
+    {
+     "char": "大",
+     "reading": "おお",
+     "readingId": "k-大-unknown-おお"
+    }
+   ]
   },
   {
    "id": "v-小さい-ちいさい",
@@ -4698,7 +5384,14 @@
      "gloss": "Small"
     }
    ],
-   "wordClass": "i-adjective"
+   "wordClass": "i-adjective",
+   "kanjiUses": [
+    {
+     "char": "小",
+     "reading": "ちい",
+     "readingId": "k-小-unknown-ちい"
+    }
+   ]
   },
   {
    "id": "v-楽しい-たのしい",
@@ -4720,7 +5413,14 @@
      "gloss": "Fun"
     }
    ],
-   "wordClass": "i-adjective"
+   "wordClass": "i-adjective",
+   "kanjiUses": [
+    {
+     "char": "楽",
+     "reading": "たの",
+     "readingId": "k-楽-unknown-たの"
+    }
+   ]
   },
   {
    "id": "v-好き-すき",
@@ -4742,7 +5442,14 @@
      "gloss": "Like"
     }
    ],
-   "wordClass": "na-adjective"
+   "wordClass": "na-adjective",
+   "kanjiUses": [
+    {
+     "char": "好",
+     "reading": "す",
+     "readingId": "k-好-unknown-す"
+    }
+   ]
   },
   {
    "id": "v-食べる-たべる",
@@ -4765,7 +5472,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "ru"
+   "verbGroup": "ru",
+   "kanjiUses": [
+    {
+     "char": "食",
+     "reading": "た",
+     "readingId": "k-食-unknown-た"
+    }
+   ]
   },
   {
    "id": "v-書く-かく",
@@ -4788,7 +5502,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "書",
+     "reading": "か",
+     "readingId": "k-書-unknown-か"
+    }
+   ]
   },
   {
    "id": "v-聞く-きく",
@@ -4812,7 +5533,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "聞",
+     "reading": "き",
+     "readingId": "k-聞-kun-き"
+    }
+   ]
   },
   {
    "id": "v-作る-つくる",
@@ -4835,7 +5563,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "作",
+     "reading": "つく",
+     "readingId": "k-作-unknown-つく"
+    }
+   ]
   },
   {
    "id": "v-歌う-うたう",
@@ -4858,7 +5593,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "歌",
+     "reading": "うた",
+     "readingId": "k-歌-unknown-うた"
+    }
+   ]
   },
   {
    "id": "v-行く-いく",
@@ -4881,7 +5623,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "行",
+     "reading": "い",
+     "readingId": "k-行-unknown-い"
+    }
+   ]
   },
   {
    "id": "v-来る-くる",
@@ -4904,7 +5653,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "irregular"
+   "verbGroup": "irregular",
+   "kanjiUses": [
+    {
+     "char": "来",
+     "reading": "く",
+     "readingId": "k-来-unknown-く"
+    }
+   ]
   },
   {
    "id": "v-飲む-のむ",
@@ -4927,7 +5683,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "飲",
+     "reading": "の",
+     "readingId": "k-飲-unknown-の"
+    }
+   ]
   },
   {
    "id": "v-見る-みる",
@@ -4950,7 +5713,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "ru"
+   "verbGroup": "ru",
+   "kanjiUses": [
+    {
+     "char": "見",
+     "reading": "み",
+     "readingId": "k-見-unknown-み"
+    }
+   ]
   },
   {
    "id": "v-読む-よむ",
@@ -4973,7 +5743,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "読",
+     "reading": "よ",
+     "readingId": "k-読-unknown-よ"
+    }
+   ]
   },
   {
    "id": "v-話す-はなす",
@@ -4996,7 +5773,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "話",
+     "reading": "はな",
+     "readingId": "k-話-unknown-はな"
+    }
+   ]
   },
   {
    "id": "v-言う-いう",
@@ -5019,7 +5803,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "言",
+     "reading": "い",
+     "readingId": "k-言-unknown-い"
+    }
+   ]
   },
   {
    "id": "v-買う-かう",
@@ -5042,7 +5833,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "買",
+     "reading": "か",
+     "readingId": "k-買-unknown-か"
+    }
+   ]
   },
   {
    "id": "v-待つ-まつ",
@@ -5065,7 +5863,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "待",
+     "reading": "ま",
+     "readingId": "k-待-kun-ま"
+    }
+   ]
   },
   {
    "id": "v-少し-すこし",
@@ -5085,6 +5890,13 @@
     {
      "id": "v-少し-すこし-m1",
      "gloss": "A little"
+    }
+   ],
+   "kanjiUses": [
+    {
+     "char": "少",
+     "reading": "すこ",
+     "readingId": "k-少-kun-すこ"
     }
    ]
   },
@@ -5109,7 +5921,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "分",
+     "reading": "わ",
+     "readingId": "k-分-kun-わ"
+    }
+   ]
   },
   {
    "id": "v-大丈夫-だいじょうぶ",
@@ -5131,7 +5950,24 @@
      "gloss": "All right"
     }
    ],
-   "wordClass": "na-adjective"
+   "wordClass": "na-adjective",
+   "kanjiUses": [
+    {
+     "char": "大",
+     "reading": "だい",
+     "readingId": "k-大-unknown-だい"
+    },
+    {
+     "char": "丈",
+     "reading": "じょう",
+     "readingId": "k-丈-on-じょう"
+    },
+    {
+     "char": "夫",
+     "reading": "ぶ",
+     "readingId": "k-夫-on-ぶ"
+    }
+   ]
   },
   {
    "id": "v-水-みず",
@@ -5153,7 +5989,14 @@
      "gloss": "Water"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "水",
+     "reading": "みず",
+     "readingId": "k-水-kun-みず"
+    }
+   ]
   },
   {
    "id": "v-肉-にく",
@@ -5175,7 +6018,14 @@
      "gloss": "Meat"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "肉",
+     "reading": "にく",
+     "readingId": "k-肉-unknown-にく"
+    }
+   ]
   },
   {
    "id": "v-魚-さかな",
@@ -5197,7 +6047,14 @@
      "gloss": "Fish"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "魚",
+     "reading": "さかな",
+     "readingId": "k-魚-unknown-さかな"
+    }
+   ]
   },
   {
    "id": "v-お酒-おさけ",
@@ -5219,7 +6076,14 @@
      "gloss": "Alcohol"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "酒",
+     "reading": "さけ",
+     "readingId": "k-酒-unknown-さけ"
+    }
+   ]
   },
   {
    "id": "v-ビール-ビール",
@@ -5277,7 +6141,14 @@
      "gloss": "Egg"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "卵",
+     "reading": "たまご",
+     "readingId": "k-卵-unknown-たまご"
+    }
+   ]
   },
   {
    "id": "v-寿司-すし",
@@ -5299,7 +6170,19 @@
      "gloss": "Sushi"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "寿",
+     "reading": "す",
+     "readingId": "k-寿-on-す"
+    },
+    {
+     "char": "司",
+     "reading": "し",
+     "readingId": "k-司-on-し"
+    }
+   ]
   },
   {
    "id": "v-焼肉-やきにく",
@@ -5321,7 +6204,19 @@
      "gloss": "Grilled meat"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "焼",
+     "reading": "やき",
+     "readingId": "k-焼-kun-やき"
+    },
+    {
+     "char": "肉",
+     "reading": "にく",
+     "readingId": "k-肉-unknown-にく"
+    }
+   ]
   },
   {
    "id": "v-京都-きょうと",
@@ -5343,7 +6238,19 @@
      "gloss": "Kyoto"
     }
    ],
-   "wordClass": "proper-noun"
+   "wordClass": "proper-noun",
+   "kanjiUses": [
+    {
+     "char": "京",
+     "reading": "きょう",
+     "readingId": "k-京-unknown-きょう"
+    },
+    {
+     "char": "都",
+     "reading": "と",
+     "readingId": "k-都-unknown-と"
+    }
+   ]
   },
   {
    "id": "v-秋田-あきた",
@@ -5365,7 +6272,19 @@
      "gloss": "Akita"
     }
    ],
-   "wordClass": "proper-noun"
+   "wordClass": "proper-noun",
+   "kanjiUses": [
+    {
+     "char": "秋",
+     "reading": "あき",
+     "readingId": "k-秋-kun-あき"
+    },
+    {
+     "char": "田",
+     "reading": "た",
+     "readingId": "k-田-unknown-た"
+    }
+   ]
   },
   {
    "id": "v-新聞-しんぶん",
@@ -5387,7 +6306,19 @@
      "gloss": "Newspaper"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "新",
+     "reading": "しん",
+     "readingId": "k-新-on-しん"
+    },
+    {
+     "char": "聞",
+     "reading": "ぶん",
+     "readingId": "k-聞-on-ぶん"
+    }
+   ]
   },
   {
    "id": "v-山-やま",
@@ -5409,7 +6340,14 @@
      "gloss": "Mountain"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "山",
+     "reading": "やま",
+     "readingId": "k-山-kun-やま"
+    }
+   ]
   },
   {
    "id": "v-月-つき",
@@ -5431,7 +6369,14 @@
      "gloss": "Moon"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "月",
+     "reading": "つき",
+     "readingId": "k-月-kun-つき"
+    }
+   ]
   },
   {
    "id": "v-持つ-もつ",
@@ -5455,7 +6400,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "持",
+     "reading": "も",
+     "readingId": "k-持-kun-も"
+    }
+   ]
   },
   {
    "id": "v-喋る-しゃべる",
@@ -5479,7 +6431,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "喋",
+     "reading": "しゃべ",
+     "readingId": "k-喋-kun-しゃべ"
+    }
+   ]
   },
   {
    "id": "v-帰る-かえる",
@@ -5502,7 +6461,14 @@
     }
    ],
    "verbGroup": "u",
-   "wordClass": "verb"
+   "wordClass": "verb",
+   "kanjiUses": [
+    {
+     "char": "帰",
+     "reading": "かえ",
+     "readingId": "k-帰-kun-かえ"
+    }
+   ]
   },
   {
    "id": "v-会う-あう",
@@ -5525,7 +6491,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "会",
+     "reading": "あ",
+     "readingId": "k-会-kun-あ"
+    }
+   ]
   },
   {
    "id": "v-寝る-ねる",
@@ -5604,7 +6577,14 @@
      "reading": "ねませんでした"
     }
    ],
-   "wordClass": "verb"
+   "wordClass": "verb",
+   "kanjiUses": [
+    {
+     "char": "寝",
+     "reading": "ね",
+     "readingId": "k-寝-kun-ね"
+    }
+   ]
   },
   {
    "id": "v-起きる-おきる",
@@ -5627,7 +6607,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "ru"
+   "verbGroup": "ru",
+   "kanjiUses": [
+    {
+     "char": "起",
+     "reading": "お",
+     "readingId": "k-起-kun-お"
+    }
+   ]
   },
   {
    "id": "v-働く-はたらく",
@@ -5650,7 +6637,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "働",
+     "reading": "はたら",
+     "readingId": "k-働-kun-はたら"
+    }
+   ]
   },
   {
    "id": "v-休む-やすむ",
@@ -5673,7 +6667,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "休",
+     "reading": "やす",
+     "readingId": "k-休-unknown-やす"
+    }
+   ]
   },
   {
    "id": "v-遊ぶ-あそぶ",
@@ -5696,7 +6697,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "遊",
+     "reading": "あそ",
+     "readingId": "k-遊-kun-あそ"
+    }
+   ]
   },
   {
    "id": "v-歩く-あるく",
@@ -5719,7 +6727,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "歩",
+     "reading": "ある",
+     "readingId": "k-歩-kun-ある"
+    }
+   ]
   },
   {
    "id": "v-走る-はしる",
@@ -5742,7 +6757,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "走",
+     "reading": "はし",
+     "readingId": "k-走-kun-はし"
+    }
+   ]
   },
   {
    "id": "v-座る-すわる",
@@ -5765,7 +6787,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "座",
+     "reading": "すわ",
+     "readingId": "k-座-kun-すわ"
+    }
+   ]
   },
   {
    "id": "v-立つ-たつ",
@@ -5788,7 +6817,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "立",
+     "reading": "た",
+     "readingId": "k-立-kun-た"
+    }
+   ]
   },
   {
    "id": "v-使う-つかう",
@@ -5811,7 +6847,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "使",
+     "reading": "つか",
+     "readingId": "k-使-kun-つか"
+    }
+   ]
   },
   {
    "id": "v-入る-はいる",
@@ -5834,7 +6877,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "入",
+     "reading": "はい",
+     "readingId": "k-入-unknown-はい"
+    }
+   ]
   },
   {
    "id": "v-出る-でる",
@@ -5857,7 +6907,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "ru"
+   "verbGroup": "ru",
+   "kanjiUses": [
+    {
+     "char": "出",
+     "reading": "で",
+     "readingId": "k-出-unknown-で"
+    }
+   ]
   },
   {
    "id": "v-教える-おしえる",
@@ -5881,7 +6938,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "ru"
+   "verbGroup": "ru",
+   "kanjiUses": [
+    {
+     "char": "教",
+     "reading": "おし",
+     "readingId": "k-教-kun-おし"
+    }
+   ]
   },
   {
    "id": "v-習う-ならう",
@@ -5904,7 +6968,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "習",
+     "reading": "なら",
+     "readingId": "k-習-kun-なら"
+    }
+   ]
   },
   {
    "id": "v-住む-すむ",
@@ -5927,7 +6998,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "住",
+     "reading": "す",
+     "readingId": "k-住-kun-す"
+    }
+   ]
   },
   {
    "id": "v-思う-おもう",
@@ -5950,7 +7028,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "思",
+     "reading": "おも",
+     "readingId": "k-思-kun-おも"
+    }
+   ]
   },
   {
    "id": "v-する-する",
@@ -6030,7 +7115,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "開",
+     "reading": "あ",
+     "readingId": "k-開-kun-あ"
+    }
+   ]
   },
   {
    "id": "v-開ける-あける",
@@ -6053,7 +7145,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "ru"
+   "verbGroup": "ru",
+   "kanjiUses": [
+    {
+     "char": "開",
+     "reading": "あ",
+     "readingId": "k-開-kun-あ"
+    }
+   ]
   },
   {
    "id": "v-開く-ひらく",
@@ -6077,7 +7176,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "開",
+     "reading": "ひら",
+     "readingId": "k-開-kun-ひら"
+    }
+   ]
   },
   {
    "id": "v-閉まる-しまる",
@@ -6100,7 +7206,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "閉",
+     "reading": "し",
+     "readingId": "k-閉-kun-し"
+    }
+   ]
   },
   {
    "id": "v-閉める-しめる",
@@ -6123,7 +7236,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "ru"
+   "verbGroup": "ru",
+   "kanjiUses": [
+    {
+     "char": "閉",
+     "reading": "し",
+     "readingId": "k-閉-kun-し"
+    }
+   ]
   },
   {
    "id": "v-閉じる-とじる",
@@ -6147,7 +7267,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "ru"
+   "verbGroup": "ru",
+   "kanjiUses": [
+    {
+     "char": "閉",
+     "reading": "と",
+     "readingId": "k-閉-kun-と"
+    }
+   ]
   },
   {
    "id": "v-今日-きょう",
@@ -6169,7 +7296,8 @@
      "gloss": "Today"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "wholeWordReading": true
   },
   {
    "id": "v-昨日-きのう",
@@ -6191,7 +7319,8 @@
      "gloss": "Yesterday"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "wholeWordReading": true
   },
   {
    "id": "v-明日-あした",
@@ -6213,7 +7342,8 @@
      "gloss": "Tomorrow"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "wholeWordReading": true
   },
   {
    "id": "v-先月-せんげつ",
@@ -6235,7 +7365,19 @@
      "gloss": "Last month"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "先",
+     "reading": "せん",
+     "readingId": "k-先-on-せん"
+    },
+    {
+     "char": "月",
+     "reading": "げつ",
+     "readingId": "k-月-on-げつ"
+    }
+   ]
   },
   {
    "id": "v-時間-じかん",
@@ -6257,7 +7399,19 @@
      "gloss": "Time"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "時",
+     "reading": "じ",
+     "readingId": "k-時-on-じ"
+    },
+    {
+     "char": "間",
+     "reading": "かん",
+     "readingId": "k-間-on-かん"
+    }
+   ]
   },
   {
    "id": "v-勉強-べんきょう",
@@ -6280,7 +7434,19 @@
     }
    ],
    "wordClass": "noun",
-   "suru": true
+   "suru": true,
+   "kanjiUses": [
+    {
+     "char": "勉",
+     "reading": "べん",
+     "readingId": "k-勉-on-べん"
+    },
+    {
+     "char": "強",
+     "reading": "きょう",
+     "readingId": "k-強-on-きょう"
+    }
+   ]
   },
   {
    "id": "v-漢字-かんじ",
@@ -6302,7 +7468,19 @@
      "gloss": "Kanji"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "漢",
+     "reading": "かん",
+     "readingId": "k-漢-on-かん"
+    },
+    {
+     "char": "字",
+     "reading": "じ",
+     "readingId": "k-字-unknown-じ"
+    }
+   ]
   },
   {
    "id": "v-一番-いちばん",
@@ -6323,6 +7501,18 @@
      "id": "v-一番-いちばん-m1",
      "gloss": "Number one, most",
      "unsplit": true
+    }
+   ],
+   "kanjiUses": [
+    {
+     "char": "一",
+     "reading": "いち",
+     "readingId": "k-一-unknown-いち"
+    },
+    {
+     "char": "番",
+     "reading": "ばん",
+     "readingId": "k-番-on-ばん"
     }
    ]
   },
@@ -6346,7 +7536,14 @@
      "gloss": "Beside"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "横",
+     "reading": "よこ",
+     "readingId": "k-横-kun-よこ"
+    }
+   ]
   },
   {
    "id": "v-隣-となり",
@@ -6368,7 +7565,14 @@
      "gloss": "Next to"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "隣",
+     "reading": "となり",
+     "readingId": "k-隣-kun-となり"
+    }
+   ]
   },
   {
    "id": "v-後で-あとで",
@@ -6388,6 +7592,13 @@
     {
      "id": "v-後で-あとで-m1",
      "gloss": "Later"
+    }
+   ],
+   "kanjiUses": [
+    {
+     "char": "後",
+     "reading": "あと",
+     "readingId": "k-後-unknown-あと"
     }
    ]
   },
@@ -6411,7 +7622,19 @@
      "gloss": "Easy"
     }
    ],
-   "wordClass": "na-adjective"
+   "wordClass": "na-adjective",
+   "kanjiUses": [
+    {
+     "char": "簡",
+     "reading": "かん",
+     "readingId": "k-簡-on-かん"
+    },
+    {
+     "char": "単",
+     "reading": "たん",
+     "readingId": "k-単-on-たん"
+    }
+   ]
   },
   {
    "id": "v-おいしい-おいしい",
@@ -6451,7 +7674,14 @@
      "gloss": "Cheap"
     }
    ],
-   "wordClass": "i-adjective"
+   "wordClass": "i-adjective",
+   "kanjiUses": [
+    {
+     "char": "安",
+     "reading": "やす",
+     "readingId": "k-安-kun-やす"
+    }
+   ]
   },
   {
    "id": "v-新しい-あたらしい",
@@ -6473,7 +7703,14 @@
      "gloss": "New"
     }
    ],
-   "wordClass": "i-adjective"
+   "wordClass": "i-adjective",
+   "kanjiUses": [
+    {
+     "char": "新",
+     "reading": "あたら",
+     "readingId": "k-新-kun-あたら"
+    }
+   ]
   },
   {
    "id": "v-古い-ふるい",
@@ -6495,7 +7732,14 @@
      "gloss": "Old"
     }
    ],
-   "wordClass": "i-adjective"
+   "wordClass": "i-adjective",
+   "kanjiUses": [
+    {
+     "char": "古",
+     "reading": "ふる",
+     "readingId": "k-古-kun-ふる"
+    }
+   ]
   },
   {
    "id": "v-暑い-あつい",
@@ -6517,7 +7761,14 @@
      "gloss": "Hot weather"
     }
    ],
-   "wordClass": "i-adjective"
+   "wordClass": "i-adjective",
+   "kanjiUses": [
+    {
+     "char": "暑",
+     "reading": "あつ",
+     "readingId": "k-暑-kun-あつ"
+    }
+   ]
   },
   {
    "id": "v-寒い-さむい",
@@ -6539,7 +7790,14 @@
      "gloss": "Cold weather"
     }
    ],
-   "wordClass": "i-adjective"
+   "wordClass": "i-adjective",
+   "kanjiUses": [
+    {
+     "char": "寒",
+     "reading": "さむ",
+     "readingId": "k-寒-kun-さむ"
+    }
+   ]
   },
   {
    "id": "v-忙しい-いそがしい",
@@ -6561,7 +7819,14 @@
      "gloss": "Busy"
     }
    ],
-   "wordClass": "i-adjective"
+   "wordClass": "i-adjective",
+   "kanjiUses": [
+    {
+     "char": "忙",
+     "reading": "いそが",
+     "readingId": "k-忙-kun-いそが"
+    }
+   ]
   },
   {
    "id": "v-たくさん-たくさん",
@@ -6600,7 +7865,19 @@
      "gloss": "Vegetables"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "野",
+     "reading": "や",
+     "readingId": "k-野-on-や"
+    },
+    {
+     "char": "菜",
+     "reading": "さい",
+     "readingId": "k-菜-on-さい"
+    }
+   ]
   },
   {
    "id": "v-米-こめ",
@@ -6622,7 +7899,14 @@
      "gloss": "Uncooked rice"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "米",
+     "reading": "こめ",
+     "readingId": "k-米-kun-こめ"
+    }
+   ]
   },
   {
    "id": "v-ご飯-ごはん",
@@ -6645,7 +7929,14 @@
      "unsplit": true
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "飯",
+     "reading": "はん",
+     "readingId": "k-飯-on-はん"
+    }
+   ]
   },
   {
    "id": "v-麺-めん",
@@ -6667,7 +7958,14 @@
      "gloss": "Noodles"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "麺",
+     "reading": "めん",
+     "readingId": "k-麺-on-めん"
+    }
+   ]
   },
   {
    "id": "v-お茶-おちゃ",
@@ -6689,7 +7987,14 @@
      "gloss": "Tea"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "茶",
+     "reading": "ちゃ",
+     "readingId": "k-茶-on-ちゃ"
+    }
+   ]
   },
   {
    "id": "v-生-なま",
@@ -6709,6 +8014,13 @@
     {
      "id": "v-生-なま-m1",
      "gloss": "Raw"
+    }
+   ],
+   "kanjiUses": [
+    {
+     "char": "生",
+     "reading": "なま",
+     "readingId": "k-生-kun-なま"
     }
    ]
   },
@@ -6732,7 +8044,14 @@
      "gloss": "Spicy"
     }
    ],
-   "wordClass": "i-adjective"
+   "wordClass": "i-adjective",
+   "kanjiUses": [
+    {
+     "char": "辛",
+     "reading": "から",
+     "readingId": "k-辛-kun-から"
+    }
+   ]
   },
   {
    "id": "v-甘い-あまい",
@@ -6754,7 +8073,14 @@
      "gloss": "Sweet"
     }
    ],
-   "wordClass": "i-adjective"
+   "wordClass": "i-adjective",
+   "kanjiUses": [
+    {
+     "char": "甘",
+     "reading": "あま",
+     "readingId": "k-甘-kun-あま"
+    }
+   ]
   },
   {
    "id": "v-塩-しお",
@@ -6776,7 +8102,14 @@
      "gloss": "Salt"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "塩",
+     "reading": "しお",
+     "readingId": "k-塩-kun-しお"
+    }
+   ]
   },
   {
    "id": "v-味-あじ",
@@ -6798,7 +8131,14 @@
      "gloss": "Taste"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "味",
+     "reading": "あじ",
+     "readingId": "k-味-kun-あじ"
+    }
+   ]
   },
   {
    "id": "v-油-あぶら",
@@ -6820,7 +8160,14 @@
      "gloss": "Oil"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "油",
+     "reading": "あぶら",
+     "readingId": "k-油-kun-あぶら"
+    }
+   ]
   },
   {
    "id": "v-豆-まめ",
@@ -6842,7 +8189,14 @@
      "gloss": "Beans"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "豆",
+     "reading": "まめ",
+     "readingId": "k-豆-kun-まめ"
+    }
+   ]
   },
   {
    "id": "v-定食-ていしょく",
@@ -6864,7 +8218,19 @@
      "gloss": "Set meal"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "定",
+     "reading": "てい",
+     "readingId": "k-定-on-てい"
+    },
+    {
+     "char": "食",
+     "reading": "しょく",
+     "readingId": "k-食-unknown-しょく"
+    }
+   ]
   },
   {
    "id": "v-注文-ちゅうもん",
@@ -6887,7 +8253,19 @@
     }
    ],
    "wordClass": "noun",
-   "suru": true
+   "suru": true,
+   "kanjiUses": [
+    {
+     "char": "注",
+     "reading": "ちゅう",
+     "readingId": "k-注-on-ちゅう"
+    },
+    {
+     "char": "文",
+     "reading": "もん",
+     "readingId": "k-文-on-もん"
+    }
+   ]
   },
   {
    "id": "v-限定-げんてい",
@@ -6910,7 +8288,19 @@
     }
    ],
    "wordClass": "noun",
-   "suru": true
+   "suru": true,
+   "kanjiUses": [
+    {
+     "char": "限",
+     "reading": "げん",
+     "readingId": "k-限-on-げん"
+    },
+    {
+     "char": "定",
+     "reading": "てい",
+     "readingId": "k-定-on-てい"
+    }
+   ]
   },
   {
    "id": "v-焼き魚-やきざかな",
@@ -6932,7 +8322,20 @@
      "gloss": "Grilled fish"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "焼",
+     "reading": "や",
+     "readingId": "k-焼-kun-やき"
+    },
+    {
+     "char": "魚",
+     "reading": "ざかな",
+     "readingId": "k-魚-unknown-さかな",
+     "base": "さかな"
+    }
+   ]
   },
   {
    "id": "v-唐揚げ-からあげ",
@@ -6954,7 +8357,19 @@
      "gloss": "Fried chicken"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "唐",
+     "reading": "から",
+     "readingId": "k-唐-kun-から"
+    },
+    {
+     "char": "揚",
+     "reading": "あ",
+     "readingId": "k-揚-kun-あ"
+    }
+   ]
   },
   {
    "id": "v-牛丼-ぎゅうどん",
@@ -6976,7 +8391,20 @@
      "gloss": "Beef rice bowl"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "牛",
+     "reading": "ぎゅう",
+     "readingId": "k-牛-on-ぎゅう"
+    },
+    {
+     "char": "丼",
+     "reading": "どん",
+     "readingId": "k-丼-on-とん",
+     "base": "とん"
+    }
+   ]
   },
   {
    "id": "v-大盛り-おおもり",
@@ -6998,7 +8426,19 @@
      "gloss": "Large portion"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "大",
+     "reading": "おお",
+     "readingId": "k-大-unknown-おお"
+    },
+    {
+     "char": "盛",
+     "reading": "も",
+     "readingId": "k-盛-kun-も"
+    }
+   ]
   },
   {
    "id": "v-名物-めいぶつ",
@@ -7020,7 +8460,19 @@
      "gloss": "Local speciality"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "名",
+     "reading": "めい",
+     "readingId": "k-名-on-めい"
+    },
+    {
+     "char": "物",
+     "reading": "ぶつ",
+     "readingId": "k-物-on-ぶつ"
+    }
+   ]
   },
   {
    "id": "v-洋食-ようしょく",
@@ -7042,7 +8494,19 @@
      "gloss": "Western-style food"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "洋",
+     "reading": "よう",
+     "readingId": "k-洋-on-よう"
+    },
+    {
+     "char": "食",
+     "reading": "しょく",
+     "readingId": "k-食-unknown-しょく"
+    }
+   ]
   },
   {
    "id": "v-電車-でんしゃ",
@@ -7064,7 +8528,19 @@
      "gloss": "Train"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "電",
+     "reading": "でん",
+     "readingId": "k-電-on-でん"
+    },
+    {
+     "char": "車",
+     "reading": "しゃ",
+     "readingId": "k-車-on-しゃ"
+    }
+   ]
   },
   {
    "id": "v-駅-えき",
@@ -7086,7 +8562,14 @@
      "gloss": "Station"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "駅",
+     "reading": "えき",
+     "readingId": "k-駅-on-えき"
+    }
+   ]
   },
   {
    "id": "v-車-くるま",
@@ -7108,7 +8591,14 @@
      "gloss": "Car"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "車",
+     "reading": "くるま",
+     "readingId": "k-車-kun-くるま"
+    }
+   ]
   },
   {
    "id": "v-自転車-じてんしゃ",
@@ -7130,7 +8620,24 @@
      "gloss": "Bicycle"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "自",
+     "reading": "じ",
+     "readingId": "k-自-on-じ"
+    },
+    {
+     "char": "転",
+     "reading": "てん",
+     "readingId": "k-転-on-てん"
+    },
+    {
+     "char": "車",
+     "reading": "しゃ",
+     "readingId": "k-車-on-しゃ"
+    }
+   ]
   },
   {
    "id": "v-電話-でんわ",
@@ -7153,7 +8660,19 @@
     }
    ],
    "wordClass": "noun",
-   "suru": true
+   "suru": true,
+   "kanjiUses": [
+    {
+     "char": "電",
+     "reading": "でん",
+     "readingId": "k-電-on-でん"
+    },
+    {
+     "char": "話",
+     "reading": "わ",
+     "readingId": "k-話-unknown-わ"
+    }
+   ]
   },
   {
    "id": "v-会社-かいしゃ",
@@ -7175,7 +8694,19 @@
      "gloss": "Company"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "会",
+     "reading": "かい",
+     "readingId": "k-会-on-かい"
+    },
+    {
+     "char": "社",
+     "reading": "しゃ",
+     "readingId": "k-社-on-しゃ"
+    }
+   ]
   },
   {
    "id": "v-仕事-しごと",
@@ -7197,7 +8728,20 @@
      "gloss": "Work"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "仕",
+     "reading": "し",
+     "readingId": "k-仕-on-し"
+    },
+    {
+     "char": "事",
+     "reading": "ごと",
+     "readingId": "k-事-kun-こと",
+     "base": "こと"
+    }
+   ]
   },
   {
    "id": "v-家-いえ",
@@ -7219,7 +8763,14 @@
      "gloss": "House"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "家",
+     "reading": "いえ",
+     "readingId": "k-家-kun-いえ"
+    }
+   ]
   },
   {
    "id": "v-部屋-へや",
@@ -7241,7 +8792,8 @@
      "gloss": "Room"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "wholeWordReading": true
   },
   {
    "id": "v-店-みせ",
@@ -7263,7 +8815,14 @@
      "gloss": "Shop"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "店",
+     "reading": "みせ",
+     "readingId": "k-店-kun-みせ"
+    }
+   ]
   },
   {
    "id": "v-道-みち",
@@ -7285,7 +8844,14 @@
      "gloss": "Road"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "道",
+     "reading": "みち",
+     "readingId": "k-道-kun-みち"
+    }
+   ]
   },
   {
    "id": "v-名前-なまえ",
@@ -7307,7 +8873,19 @@
      "gloss": "Name"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "名",
+     "reading": "な",
+     "readingId": "k-名-kun-な"
+    },
+    {
+     "char": "前",
+     "reading": "まえ",
+     "readingId": "k-前-unknown-まえ"
+    }
+   ]
   },
   {
    "id": "v-家族-かぞく",
@@ -7329,7 +8907,19 @@
      "gloss": "Family"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "家",
+     "reading": "か",
+     "readingId": "k-家-on-か"
+    },
+    {
+     "char": "族",
+     "reading": "ぞく",
+     "readingId": "k-族-on-ぞく"
+    }
+   ]
   },
   {
    "id": "v-お金-おかね",
@@ -7351,7 +8941,14 @@
      "gloss": "Money"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "金",
+     "reading": "かね",
+     "readingId": "k-金-kun-かね"
+    }
+   ]
   },
   {
    "id": "v-天気-てんき",
@@ -7373,7 +8970,19 @@
      "gloss": "Weather"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "天",
+     "reading": "てん",
+     "readingId": "k-天-unknown-てん"
+    },
+    {
+     "char": "気",
+     "reading": "き",
+     "readingId": "k-気-unknown-き"
+    }
+   ]
   },
   {
    "id": "v-朝-あさ",
@@ -7395,7 +9004,14 @@
      "gloss": "Morning"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "朝",
+     "reading": "あさ",
+     "readingId": "k-朝-kun-あさ"
+    }
+   ]
   },
   {
    "id": "v-昼-ひる",
@@ -7417,7 +9033,14 @@
      "gloss": "Noon"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "昼",
+     "reading": "ひる",
+     "readingId": "k-昼-kun-ひる"
+    }
+   ]
   },
   {
    "id": "v-夜-よる",
@@ -7439,7 +9062,14 @@
      "gloss": "Night"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "夜",
+     "reading": "よる",
+     "readingId": "k-夜-kun-よる"
+    }
+   ]
   },
   {
    "id": "v-毎日-まいにち",
@@ -7459,6 +9089,18 @@
     {
      "id": "v-毎日-まいにち-m1",
      "gloss": "Every day"
+    }
+   ],
+   "kanjiUses": [
+    {
+     "char": "毎",
+     "reading": "まい",
+     "readingId": "k-毎-on-まい"
+    },
+    {
+     "char": "日",
+     "reading": "にち",
+     "readingId": "k-日-on-にち"
     }
    ]
   },
@@ -7482,7 +9124,20 @@
      "gloss": "Sometimes"
     }
    ],
-   "wordClass": "adverb"
+   "wordClass": "adverb",
+   "kanjiUses": [
+    {
+     "char": "時",
+     "reading": "とき",
+     "readingId": "k-時-kun-とき"
+    },
+    {
+     "char": "時",
+     "reading": "どき",
+     "readingId": "k-時-kun-とき",
+     "base": "とき"
+    }
+   ]
   },
   {
    "id": "v-難しい-むずかしい",
@@ -7504,7 +9159,14 @@
      "gloss": "Difficult"
     }
    ],
-   "wordClass": "i-adjective"
+   "wordClass": "i-adjective",
+   "kanjiUses": [
+    {
+     "char": "難",
+     "reading": "むずか",
+     "readingId": "k-難-kun-むずか"
+    }
+   ]
   },
   {
    "id": "v-近い-ちかい",
@@ -7526,7 +9188,14 @@
      "gloss": "Near"
     }
    ],
-   "wordClass": "i-adjective"
+   "wordClass": "i-adjective",
+   "kanjiUses": [
+    {
+     "char": "近",
+     "reading": "ちか",
+     "readingId": "k-近-kun-ちか"
+    }
+   ]
   },
   {
    "id": "v-遠い-とおい",
@@ -7548,7 +9217,14 @@
      "gloss": "Far"
     }
    ],
-   "wordClass": "i-adjective"
+   "wordClass": "i-adjective",
+   "kanjiUses": [
+    {
+     "char": "遠",
+     "reading": "とお",
+     "readingId": "k-遠-kun-とお"
+    }
+   ]
   },
   {
    "id": "v-日本-にほん",
@@ -7570,7 +9246,8 @@
      "gloss": "Japan"
     }
    ],
-   "wordClass": "proper-noun"
+   "wordClass": "proper-noun",
+   "wholeWordReading": true
   },
   {
    "id": "v-日本人-にほんじん",
@@ -7614,7 +9291,19 @@
      "gloss": "Foreign country"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "外",
+     "reading": "がい",
+     "readingId": "k-外-unknown-がい"
+    },
+    {
+     "char": "国",
+     "reading": "こく",
+     "readingId": "k-国-on-こく"
+    }
+   ]
   },
   {
    "id": "v-外国人-がいこくじん",
@@ -7636,7 +9325,24 @@
      "gloss": "Foreigner"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "外",
+     "reading": "がい",
+     "readingId": "k-外-unknown-がい"
+    },
+    {
+     "char": "国",
+     "reading": "こく",
+     "readingId": "k-国-on-こく"
+    },
+    {
+     "char": "人",
+     "reading": "じん",
+     "readingId": "k-人-on-じん"
+    }
+   ]
   },
   {
    "id": "v-大人-おとな",
@@ -7658,7 +9364,8 @@
      "gloss": "Adult"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "wholeWordReading": true
   },
   {
    "id": "v-子供-こども",
@@ -7680,7 +9387,19 @@
      "gloss": "Child"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "子",
+     "reading": "こ",
+     "readingId": "k-子-unknown-こ"
+    },
+    {
+     "char": "供",
+     "reading": "ども",
+     "readingId": "k-供-kun-ども"
+    }
+   ]
   },
   {
    "id": "v-入口-いりぐち",
@@ -7702,7 +9421,19 @@
      "gloss": "Entrance"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "入",
+     "reading": "いり"
+    },
+    {
+     "char": "口",
+     "reading": "ぐち",
+     "readingId": "k-口-unknown-くち",
+     "base": "くち"
+    }
+   ]
   },
   {
    "id": "v-出口-でぐち",
@@ -7724,7 +9455,20 @@
      "gloss": "Exit"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "出",
+     "reading": "で",
+     "readingId": "k-出-unknown-で"
+    },
+    {
+     "char": "口",
+     "reading": "ぐち",
+     "readingId": "k-口-unknown-くち",
+     "base": "くち"
+    }
+   ]
   },
   {
    "id": "v-人口-じんこう",
@@ -7746,7 +9490,19 @@
      "gloss": "Population"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "人",
+     "reading": "じん",
+     "readingId": "k-人-on-じん"
+    },
+    {
+     "char": "口",
+     "reading": "こう",
+     "readingId": "k-口-unknown-こう"
+    }
+   ]
   },
   {
    "id": "v-火山-かざん",
@@ -7768,7 +9524,20 @@
      "gloss": "Volcano"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "火",
+     "reading": "か",
+     "readingId": "k-火-on-か"
+    },
+    {
+     "char": "山",
+     "reading": "ざん",
+     "readingId": "k-山-on-さん",
+     "base": "さん"
+    }
+   ]
   },
   {
    "id": "v-火曜日-かようび",
@@ -7790,7 +9559,25 @@
      "gloss": "Tuesday"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "火",
+     "reading": "か",
+     "readingId": "k-火-on-か"
+    },
+    {
+     "char": "曜",
+     "reading": "よう",
+     "readingId": "k-曜-on-よう"
+    },
+    {
+     "char": "日",
+     "reading": "び",
+     "readingId": "k-日-kun-ひ",
+     "base": "ひ"
+    }
+   ]
   },
   {
    "id": "v-水曜日-すいようび",
@@ -7812,7 +9599,25 @@
      "gloss": "Wednesday"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "水",
+     "reading": "すい",
+     "readingId": "k-水-on-すい"
+    },
+    {
+     "char": "曜",
+     "reading": "よう",
+     "readingId": "k-曜-on-よう"
+    },
+    {
+     "char": "日",
+     "reading": "び",
+     "readingId": "k-日-kun-ひ",
+     "base": "ひ"
+    }
+   ]
   },
   {
    "id": "v-木曜日-もくようび",
@@ -7834,7 +9639,25 @@
      "gloss": "Thursday"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "木",
+     "reading": "もく",
+     "readingId": "k-木-on-もく"
+    },
+    {
+     "char": "曜",
+     "reading": "よう",
+     "readingId": "k-曜-on-よう"
+    },
+    {
+     "char": "日",
+     "reading": "び",
+     "readingId": "k-日-kun-ひ",
+     "base": "ひ"
+    }
+   ]
   },
   {
    "id": "v-金曜日-きんようび",
@@ -7856,7 +9679,25 @@
      "gloss": "Friday"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "金",
+     "reading": "きん",
+     "readingId": "k-金-on-きん"
+    },
+    {
+     "char": "曜",
+     "reading": "よう",
+     "readingId": "k-曜-on-よう"
+    },
+    {
+     "char": "日",
+     "reading": "び",
+     "readingId": "k-日-kun-ひ",
+     "base": "ひ"
+    }
+   ]
   },
   {
    "id": "v-土曜日-どようび",
@@ -7878,7 +9719,25 @@
      "gloss": "Saturday"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "土",
+     "reading": "ど",
+     "readingId": "k-土-on-ど"
+    },
+    {
+     "char": "曜",
+     "reading": "よう",
+     "readingId": "k-曜-on-よう"
+    },
+    {
+     "char": "日",
+     "reading": "び",
+     "readingId": "k-日-kun-ひ",
+     "base": "ひ"
+    }
+   ]
   },
   {
    "id": "v-日曜日-にちようび",
@@ -7900,7 +9759,25 @@
      "gloss": "Sunday"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "日",
+     "reading": "にち",
+     "readingId": "k-日-on-にち"
+    },
+    {
+     "char": "曜",
+     "reading": "よう",
+     "readingId": "k-曜-on-よう"
+    },
+    {
+     "char": "日",
+     "reading": "び",
+     "readingId": "k-日-kun-ひ",
+     "base": "ひ"
+    }
+   ]
   },
   {
    "id": "v-月曜日-げつようび",
@@ -7922,7 +9799,25 @@
      "gloss": "Monday"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "月",
+     "reading": "げつ",
+     "readingId": "k-月-on-げつ"
+    },
+    {
+     "char": "曜",
+     "reading": "よう",
+     "readingId": "k-曜-on-よう"
+    },
+    {
+     "char": "日",
+     "reading": "び",
+     "readingId": "k-日-kun-ひ",
+     "base": "ひ"
+    }
+   ]
   },
   {
    "id": "v-食べ物-たべもの",
@@ -7944,7 +9839,19 @@
      "gloss": "Food"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "食",
+     "reading": "た",
+     "readingId": "k-食-unknown-た"
+    },
+    {
+     "char": "物",
+     "reading": "もの",
+     "readingId": "k-物-kun-もの"
+    }
+   ]
   },
   {
    "id": "v-飲み物-のみもの",
@@ -7966,7 +9873,19 @@
      "gloss": "Drinks"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "飲",
+     "reading": "の",
+     "readingId": "k-飲-unknown-の"
+    },
+    {
+     "char": "物",
+     "reading": "もの",
+     "readingId": "k-物-kun-もの"
+    }
+   ]
   },
   {
    "id": "v-本屋-ほんや",
@@ -7988,7 +9907,19 @@
      "gloss": "Bookshop"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "本",
+     "reading": "ほん",
+     "readingId": "k-本-on-ほん"
+    },
+    {
+     "char": "屋",
+     "reading": "や",
+     "readingId": "k-屋-kun-や"
+    }
+   ]
   },
   {
    "id": "v-休日-きゅうじつ",
@@ -8010,7 +9941,19 @@
      "gloss": "Day off"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "休",
+     "reading": "きゅう",
+     "readingId": "k-休-unknown-きゅう"
+    },
+    {
+     "char": "日",
+     "reading": "じつ",
+     "readingId": "k-日-on-じつ"
+    }
+   ]
   },
   {
    "id": "v-開ける-ひらける",
@@ -8034,7 +9977,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "ru"
+   "verbGroup": "ru",
+   "kanjiUses": [
+    {
+     "char": "開",
+     "reading": "ひら",
+     "readingId": "k-開-kun-ひら"
+    }
+   ]
   },
   {
    "id": "v-友人-ゆうじん",
@@ -8056,7 +10006,19 @@
      "gloss": "Friend"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "友",
+     "reading": "ゆう",
+     "readingId": "k-友-unknown-ゆう"
+    },
+    {
+     "char": "人",
+     "reading": "じん",
+     "readingId": "k-人-on-じん"
+    }
+   ]
   },
   {
    "id": "v-食う-くう",
@@ -8079,7 +10041,13 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "食",
+     "reading": "く"
+    }
+   ]
   },
   {
    "id": "v-うち-うち",
@@ -8154,6 +10122,13 @@
      "id": "v-多く-おおく-m1",
      "gloss": "Many"
     }
+   ],
+   "kanjiUses": [
+    {
+     "char": "多",
+     "reading": "おお",
+     "readingId": "k-多-kun-おお"
+    }
    ]
   },
   {
@@ -8217,7 +10192,14 @@
      "gloss": "Tree"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "木",
+     "reading": "き",
+     "readingId": "k-木-kun-き"
+    }
+   ]
   },
   {
    "id": "v-気-き",
@@ -8240,7 +10222,14 @@
      "unsplit": true
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "気",
+     "reading": "き",
+     "readingId": "k-気-unknown-き"
+    }
+   ]
   },
   {
    "id": "v-橋-はし",
@@ -8262,7 +10251,14 @@
      "gloss": "Bridge"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "橋",
+     "reading": "はし",
+     "readingId": "k-橋-unknown-はし"
+    }
+   ]
   },
   {
    "id": "v-箸-はし",
@@ -8284,7 +10280,14 @@
      "gloss": "Chopsticks"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "箸",
+     "reading": "はし",
+     "readingId": "k-箸-unknown-はし"
+    }
+   ]
   },
   {
    "id": "v-雨-あめ",
@@ -8306,7 +10309,14 @@
      "gloss": "Rain"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "雨",
+     "reading": "あめ",
+     "readingId": "k-雨-unknown-あめ"
+    }
+   ]
   },
   {
    "id": "v-飴-あめ",
@@ -8328,7 +10338,14 @@
      "gloss": "Candy"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "飴",
+     "reading": "あめ",
+     "readingId": "k-飴-unknown-あめ"
+    }
+   ]
   },
   {
    "id": "v-花-はな",
@@ -8350,7 +10367,14 @@
      "gloss": "Flower"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "花",
+     "reading": "はな",
+     "readingId": "k-花-unknown-はな"
+    }
+   ]
   },
   {
    "id": "v-鼻-はな",
@@ -8372,7 +10396,14 @@
      "gloss": "Nose"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "鼻",
+     "reading": "はな",
+     "readingId": "k-鼻-unknown-はな"
+    }
+   ]
   },
   {
    "id": "v-紙-かみ",
@@ -8394,7 +10425,14 @@
      "gloss": "Paper"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "紙",
+     "reading": "かみ",
+     "readingId": "k-紙-unknown-かみ"
+    }
+   ]
   },
   {
    "id": "v-神-かみ",
@@ -8416,7 +10454,14 @@
      "gloss": "God"
     }
    ],
-   "wordClass": "noun"
+   "wordClass": "noun",
+   "kanjiUses": [
+    {
+     "char": "神",
+     "reading": "かみ",
+     "readingId": "k-神-unknown-かみ"
+    }
+   ]
   },
   {
    "id": "v-熱い-あつい",
@@ -8438,7 +10483,14 @@
      "gloss": "Hot object"
     }
    ],
-   "wordClass": "i-adjective"
+   "wordClass": "i-adjective",
+   "kanjiUses": [
+    {
+     "char": "熱",
+     "reading": "あつ",
+     "readingId": "k-熱-unknown-あつ"
+    }
+   ]
   },
   {
    "id": "v-合う-あう",
@@ -8462,7 +10514,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "合",
+     "reading": "あ",
+     "readingId": "k-合-unknown-あ"
+    }
+   ]
   },
   {
    "id": "v-始まる-はじまる",
@@ -8485,7 +10544,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "始",
+     "reading": "はじ",
+     "readingId": "k-始-unknown-はじ"
+    }
+   ]
   },
   {
    "id": "v-始める-はじめる",
@@ -8508,7 +10574,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "ru"
+   "verbGroup": "ru",
+   "kanjiUses": [
+    {
+     "char": "始",
+     "reading": "はじ",
+     "readingId": "k-始-unknown-はじ"
+    }
+   ]
   },
   {
    "id": "v-入れる-いれる",
@@ -8531,7 +10604,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "ru"
+   "verbGroup": "ru",
+   "kanjiUses": [
+    {
+     "char": "入",
+     "reading": "い",
+     "readingId": "k-入-unknown-い"
+    }
+   ]
   },
   {
    "id": "v-出す-だす",
@@ -8554,7 +10634,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "出",
+     "reading": "だ",
+     "readingId": "k-出-unknown-だ"
+    }
+   ]
   },
   {
    "id": "v-止まる-とまる",
@@ -8577,7 +10664,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "u"
+   "verbGroup": "u",
+   "kanjiUses": [
+    {
+     "char": "止",
+     "reading": "と",
+     "readingId": "k-止-unknown-と"
+    }
+   ]
   },
   {
    "id": "v-止める-とめる",
@@ -8600,7 +10694,14 @@
     }
    ],
    "wordClass": "verb",
-   "verbGroup": "ru"
+   "verbGroup": "ru",
+   "kanjiUses": [
+    {
+     "char": "止",
+     "reading": "と",
+     "readingId": "k-止-unknown-と"
+    }
+   ]
   },
   {
    "id": "v-分-ふん",
@@ -8620,6 +10721,13 @@
     {
      "id": "v-分-ふん-m1",
      "gloss": "Minute"
+    }
+   ],
+   "kanjiUses": [
+    {
+     "char": "分",
+     "reading": "ふん",
+     "readingId": "k-分-on-ふん"
     }
    ]
   },
@@ -8641,6 +10749,13 @@
     {
      "id": "v-万-まん-m1",
      "gloss": "Ten thousand"
+    }
+   ],
+   "kanjiUses": [
+    {
+     "char": "万",
+     "reading": "まん",
+     "readingId": "k-万-unknown-まん"
     }
    ]
   },
@@ -8664,7 +10779,14 @@
      "gloss": "Early"
     }
    ],
-   "wordClass": "adverb"
+   "wordClass": "adverb",
+   "kanjiUses": [
+    {
+     "char": "早",
+     "reading": "はや",
+     "readingId": "k-早-kun-はや"
+    }
+   ]
   },
   {
    "id": "v-は-は",
@@ -8716,6 +10838,3165 @@
      "wordId": "v-は-は"
     }
    ]
+  },
+  {
+   "id": "tatoeba-189303",
+   "text": "映画を観に行かない？",
+   "translation": "Would you like to take in a movie?",
+   "uses": [
+    {
+     "wordId": "v-見る-みる"
+    },
+    {
+     "wordId": "v-行く-いく"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #189303"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "えいがをみにいかない？",
+   "notes": "Forms in this sentence: 見る → 観, 行く → 行かない"
+  },
+  {
+   "id": "tatoeba-189967",
+   "text": "飲み過ぎて部屋が回り始めた。",
+   "translation": "The room started to spin after I drank too much.",
+   "uses": [
+    {
+     "wordId": "v-飲む-のむ"
+    },
+    {
+     "wordId": "v-部屋-へや"
+    },
+    {
+     "wordId": "v-始める-はじめる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #189967"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "のみすぎてへやがまわりはじめた。",
+   "notes": "Forms in this sentence: 飲む → 飲み, 始める → 始めた"
+  },
+  {
+   "id": "tatoeba-226793",
+   "text": "お湯を全部使わないで。",
+   "translation": "Don't use all the hot water.",
+   "uses": [
+    {
+     "wordId": "v-使う-つかう"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #226793"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "おゆをぜんぶつかわないで。",
+   "notes": "Forms in this sentence: 使う → 使わないで"
+  },
+  {
+   "id": "tatoeba-230119",
+   "text": "アメリカ人にはよくあることだが彼はなまの魚を好かない。",
+   "translation": "As is often the case with Americans, he does not care for raw fish.",
+   "uses": [
+    {
+     "wordId": "v-生-なま"
+    },
+    {
+     "wordId": "v-魚-さかな"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #230119"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "アメリカじんにはよくあることだがかれはなまのさかなをすかない。",
+   "notes": "Forms in this sentence: 生 → なまの"
+  },
+  {
+   "id": "tatoeba-75838",
+   "text": "道は急斜面をジグザグにのぼっていた。",
+   "translation": "The path zigzagged up the steep slope.",
+   "uses": [
+    {
+     "wordId": "v-道-みち"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #75838"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "みちはきゅうしゃめんをジグザグにのぼっていた。"
+  },
+  {
+   "id": "tatoeba-228339",
+   "text": "ウイスキーを１本持っています。",
+   "translation": "I have a bottle of whiskey.",
+   "uses": [
+    {
+     "wordId": "v-本-ほん"
+    },
+    {
+     "wordId": "v-持つ-もつ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #228339"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "ウイスキーをいっぽんもっています。",
+   "notes": "Forms in this sentence: 持つ → 持っています"
+  },
+  {
+   "id": "tatoeba-76263",
+   "text": "漢字を書くときは点やはらいに気をつけて、なるべく早くていねいに書きましょう。",
+   "translation": "When drawing kanji be careful of dots and sweeps, write as carefully and quickly as possible.",
+   "uses": [
+    {
+     "wordId": "v-漢字-かんじ"
+    },
+    {
+     "wordId": "v-書く-かく"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #76263"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "かんじをかくときはてんやはらいにきをつけて、なるべくはやくていねいにかきましょう。"
+  },
+  {
+   "id": "tatoeba-76342",
+   "text": "飲む分だけ豆をローストして、ミルで挽くんです。",
+   "translation": "We roast just enough beans for the amount we're going to drink, and grind them in the coffee mill.",
+   "uses": [
+    {
+     "wordId": "v-飲む-のむ"
+    },
+    {
+     "wordId": "v-豆-まめ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #76342"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "のむぶんだけまめをローストして、ミルでひくんです。"
+  },
+  {
+   "id": "tatoeba-232988",
+   "text": "あなたの名前はリストからはずされた。",
+   "translation": "Your name was dropped from the list.",
+   "uses": [
+    {
+     "wordId": "v-名前-なまえ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #232988"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "あなたのなまえはリストからはずされた。"
+  },
+  {
+   "id": "tatoeba-77432",
+   "text": "恋人よ、我に帰れ。",
+   "translation": "Lover, come back to me.",
+   "uses": [
+    {
+     "wordId": "v-帰る-かえる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #77432"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "こいびとよ、われにかえれ。",
+   "notes": "Forms in this sentence: 帰る → 帰れ"
+  },
+  {
+   "id": "tatoeba-77640",
+   "text": "冷蔵庫の中にたくさんの食べ物が入っていますか。",
+   "translation": "Is there much food in the refrigerator?",
+   "uses": [
+    {
+     "wordId": "v-食べ物-たべもの"
+    },
+    {
+     "wordId": "v-入る-はいる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #77640"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "れいぞうこのなかにたくさんのたべものがはいっていますか。",
+   "notes": "Forms in this sentence: 入る → 入っています"
+  },
+  {
+   "id": "tatoeba-77679",
+   "text": "例外は作るべきではないと思います。",
+   "translation": "I insist that exceptions not be made.",
+   "uses": [
+    {
+     "wordId": "v-作る-つくる"
+    },
+    {
+     "wordId": "v-思う-おもう"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #77679"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "れいがいはつくるべきではないとおもいます。",
+   "notes": "Forms in this sentence: 思う → 思います"
+  },
+  {
+   "id": "tatoeba-110043",
+   "text": "彼は医者の卵だ。",
+   "translation": "He's a future doctor.",
+   "uses": [
+    {
+     "wordId": "v-卵-たまご"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #110043"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "かれはいしゃのたまごだ。"
+  },
+  {
+   "id": "tatoeba-217034",
+   "text": "ご飯とパンどちらがいいですか。",
+   "translation": "Which do you prefer, rice or bread?",
+   "uses": [
+    {
+     "wordId": "v-ご飯-ごはん"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #217034"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "ごはんとパンどちらがいいですか。"
+  },
+  {
+   "id": "tatoeba-121517",
+   "text": "梅雨に入った。",
+   "translation": "The rainy season has set in.",
+   "uses": [
+    {
+     "wordId": "v-入る-はいる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #121517"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "つゆにはいった。",
+   "notes": "Forms in this sentence: 入る → 入った"
+  },
+  {
+   "id": "tatoeba-80048",
+   "text": "木立の間に家が見える。",
+   "translation": "I see a house among the trees.",
+   "uses": [
+    {
+     "wordId": "v-家-いえ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #80048"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "こだちのあいだにいえがみえる。"
+  },
+  {
+   "id": "tatoeba-224418",
+   "text": "ここに車を停めるのは違法です。",
+   "translation": "It's illegal to park your car here.",
+   "uses": [
+    {
+     "wordId": "v-車-くるま"
+    },
+    {
+     "wordId": "v-止める-とめる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #224418"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "ここにくるまをとめるのはいほうです。",
+   "notes": "Forms in this sentence: 止める → 停める"
+  },
+  {
+   "id": "tatoeba-80186",
+   "text": "麺はふつう小麦粉から作られる。",
+   "translation": "Noodles are usually made from wheat.",
+   "uses": [
+    {
+     "wordId": "v-麺-めん"
+    },
+    {
+     "wordId": "v-作る-つくる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #80186"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "めんはふつうこむぎこからつくられる。",
+   "notes": "Forms in this sentence: 作る → 作られる"
+  },
+  {
+   "id": "tatoeba-193344",
+   "text": "もっと果物を食べるべきです。",
+   "translation": "You should eat more fruit.",
+   "uses": [
+    {
+     "wordId": "v-食べる-たべる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #193344"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "もっとくだものをたべるべきです。"
+  },
+  {
+   "id": "tatoeba-187052",
+   "text": "家の横はつたで覆われていた。",
+   "translation": "The side of the house was covered with ivy.",
+   "uses": [
+    {
+     "wordId": "v-家-いえ"
+    },
+    {
+     "wordId": "v-横-よこ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #187052"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "いえのよこはつたでおおわれていた。"
+  },
+  {
+   "id": "tatoeba-151577",
+   "text": "私達は経験によって多くを学ぶ。",
+   "translation": "We learn much by experience.",
+   "uses": [
+    {
+     "wordId": "v-多く-おおく"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #151577"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "わたしたちはけいけんによっておおくをまなぶ。"
+  },
+  {
+   "id": "tatoeba-116443",
+   "text": "彼の努力は会社の成長に貢献した。",
+   "translation": "His effort contributed to my company's growth.",
+   "uses": [
+    {
+     "wordId": "v-会社-かいしゃ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #116443"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "かれのどりょくはかいしゃのせいちょうにこうけんした。"
+  },
+  {
+   "id": "tatoeba-110418",
+   "text": "彼はよく会合を休む。",
+   "translation": "He often absents himself from meetings.",
+   "uses": [
+    {
+     "wordId": "v-休む-やすむ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #110418"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "かれはよくかいごうをやすむ。"
+  },
+  {
+   "id": "tatoeba-84930",
+   "text": "富士山は日本で一番高い山です。",
+   "translation": "Mt. Fuji is the highest mountain in Japan.",
+   "uses": [
+    {
+     "wordId": "v-日本-にほん"
+    },
+    {
+     "wordId": "v-一番-いちばん"
+    },
+    {
+     "wordId": "v-高い-たかい"
+    },
+    {
+     "wordId": "v-山-やま"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #84930"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "ふじさんはにほんでいちばんたかいやまです。"
+  },
+  {
+   "id": "tatoeba-84998",
+   "text": "夫はたまに御酒をたしなみます。",
+   "translation": "My husband enjoys his glass once in a while.",
+   "uses": [
+    {
+     "wordId": "v-お酒-おさけ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #84998"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "おっとはたまにみきをたしなみます。",
+   "notes": "Forms in this sentence: お酒 → 御酒"
+  },
+  {
+   "id": "tatoeba-104634",
+   "text": "彼は車を持っている。",
+   "translation": "He has a car.",
+   "uses": [
+    {
+     "wordId": "v-車-くるま"
+    },
+    {
+     "wordId": "v-持つ-もつ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #104634"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "かれはくるまをもっている。",
+   "notes": "Forms in this sentence: 持つ → 持っている"
+  },
+  {
+   "id": "tatoeba-192930",
+   "text": "ゆりは甘い香りがする。",
+   "translation": "Lilies smell sweet.",
+   "uses": [
+    {
+     "wordId": "v-甘い-あまい"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #192930"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "ゆりはあまいかおりがする。"
+  },
+  {
+   "id": "tatoeba-155680",
+   "text": "私は辛い食物はあまり好きではない。",
+   "translation": "I don't care too much for hot food.",
+   "uses": [
+    {
+     "wordId": "v-辛い-からい"
+    },
+    {
+     "wordId": "v-好き-すき"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #155680"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "わたしはからいしょくもつはあまりすきではない。"
+  },
+  {
+   "id": "tatoeba-108576",
+   "text": "彼は気が多いやつだ。",
+   "translation": "He's interested in many things.",
+   "uses": [
+    {
+     "wordId": "v-気-き"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #108576"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "かれはきがおおいやつだ。"
+  },
+  {
+   "id": "tatoeba-228498",
+   "text": "いや、大丈夫だ。",
+   "translation": "No, no, that's okay.",
+   "uses": [
+    {
+     "wordId": "v-大丈夫-だいじょうぶ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #228498"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "いや、だいじょうぶだ。"
+  },
+  {
+   "id": "tatoeba-195029",
+   "text": "ミルトンの作品を読んだことがありますか。",
+   "translation": "Have you ever read Milton's works?",
+   "uses": [
+    {
+     "wordId": "v-読む-よむ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #195029"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "ミルトンのさくひんをよんだことがありますか。",
+   "notes": "Forms in this sentence: 読む → 読んだ"
+  },
+  {
+   "id": "tatoeba-174137",
+   "text": "交通事故にあったんだ。",
+   "translation": "I was involved in a traffic accident.",
+   "uses": [
+    {
+     "wordId": "v-会う-あう"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #174137"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "こうつうじこにあったんだ。",
+   "notes": "Forms in this sentence: 会う → あったんだ"
+  },
+  {
+   "id": "tatoeba-168369",
+   "text": "市は月曜ごとに立つ。",
+   "translation": "The market is held every Monday.",
+   "uses": [
+    {
+     "wordId": "v-立つ-たつ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #168369"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "いちはげつようごとにたつ。"
+  },
+  {
+   "id": "tatoeba-101069",
+   "text": "彼は彼女の遠い親戚だ。",
+   "translation": "He is a distant relation of hers.",
+   "uses": [
+    {
+     "wordId": "v-遠い-とおい"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #101069"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "かれはかのじょのとおいしんせきだ。"
+  },
+  {
+   "id": "tatoeba-171537",
+   "text": "今日が天気ならいいのに。",
+   "translation": "I wish it were fine today.",
+   "uses": [
+    {
+     "wordId": "v-今日-きょう"
+    },
+    {
+     "wordId": "v-天気-てんき"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #171537"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "きょうがてんきならいいのに。"
+  },
+  {
+   "id": "tatoeba-107782",
+   "text": "彼は月に３０万円稼ぐ。",
+   "translation": "He earns 300,000 yen a month.",
+   "uses": [
+    {
+     "wordId": "v-月-つき"
+    },
+    {
+     "wordId": "v-万-まん"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #107782"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "かれはつきにまんえんかせぐ。"
+  },
+  {
+   "id": "tatoeba-228889",
+   "text": "いつだって読書の時間は見つけられる。",
+   "translation": "We can always find time for reading.",
+   "uses": [
+    {
+     "wordId": "v-時間-じかん"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #228889"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "いつだってどくしょのじかんはみつけられる。"
+  },
+  {
+   "id": "tatoeba-144698",
+   "text": "震えが背筋を走った。",
+   "translation": "A shiver ran down my spine.",
+   "uses": [
+    {
+     "wordId": "v-走る-はしる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #144698"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "ふるえがせすじをはしった。",
+   "notes": "Forms in this sentence: 走る → 走った"
+  },
+  {
+   "id": "tatoeba-115070",
+   "text": "彼は５時間以上もぶっ続けで働いた。",
+   "translation": "He worked more than five hours on end.",
+   "uses": [
+    {
+     "wordId": "v-時間-じかん"
+    },
+    {
+     "wordId": "v-働く-はたらく"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #115070"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "かれはじかんいじょうもぶっつづけではたらいた。",
+   "notes": "Forms in this sentence: 働く → 働いた"
+  },
+  {
+   "id": "tatoeba-148935",
+   "text": "車を買うために貯金をしている。",
+   "translation": "I'm saving money for a car.",
+   "uses": [
+    {
+     "wordId": "v-買う-かう"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #148935"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "くるまをかうためにちょきんをしている。"
+  },
+  {
+   "id": "tatoeba-119408",
+   "text": "彼が有名な人物だというのがわかります。",
+   "translation": "I understand that he's something of a famous personality.",
+   "uses": [
+    {
+     "wordId": "v-言う-いう"
+    },
+    {
+     "wordId": "v-分かる-わかる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #119408"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "かれがゆうめいなじんぶつだというのがわかります。",
+   "notes": "Forms in this sentence: 言う → いう, 分かる → わかります"
+  },
+  {
+   "id": "tatoeba-122419",
+   "text": "日本は中国の東方にある。",
+   "translation": "Japan is to the east of China.",
+   "uses": [
+    {
+     "wordId": "v-日本-にほん"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #122419"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "にっぽんはちゅうごくのとうほうにある。"
+  },
+  {
+   "id": "tatoeba-122664",
+   "text": "日本の天井は外国人には低すぎる。",
+   "translation": "In Japan the ceilings are quite low for foreigners.",
+   "uses": [
+    {
+     "wordId": "v-日本-にほん"
+    },
+    {
+     "wordId": "v-外国人-がいこくじん"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #122664"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "にっぽんのてんじょうはがいこくじんにはひくすぎる。"
+  },
+  {
+   "id": "tatoeba-122849",
+   "text": "日替わり定食にしませんか。",
+   "translation": "How about getting the special of the day?",
+   "uses": [
+    {
+     "wordId": "v-定食-ていしょく"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #122849"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "ひがわりていしょくにしませんか。"
+  },
+  {
+   "id": "tatoeba-207446",
+   "text": "その動物は肉を常食としている。",
+   "translation": "That animal feeds on flesh.",
+   "uses": [
+    {
+     "wordId": "v-肉-にく"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #207446"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "そのどうぶつはにくをじょうしょくとしている。"
+  },
+  {
+   "id": "tatoeba-228997",
+   "text": "いつから痛みだしましたか。",
+   "translation": "How long have you had this pain?",
+   "uses": [
+    {
+     "wordId": "v-出す-だす"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #228997"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "いつからいたみだしましたか。",
+   "notes": "Forms in this sentence: 出す → だしました"
+  },
+  {
+   "id": "tatoeba-124690",
+   "text": "電話は繰り返し鳴っていた。",
+   "translation": "The telephone rang repeatedly.",
+   "uses": [
+    {
+     "wordId": "v-電話-でんわ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #124690"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "でんわはくりかえしなっていた。"
+  },
+  {
+   "id": "tatoeba-141861",
+   "text": "先週、私達は舞踏会を開きました。",
+   "translation": "We gave a ball last week.",
+   "uses": [
+    {
+     "wordId": "v-開く-ひらく"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #141861"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "せんしゅう、わたしたちはぶとうかいをひらきました。",
+   "notes": "Forms in this sentence: 開く → 開きました"
+  },
+  {
+   "id": "tatoeba-127003",
+   "text": "地下鉄へ行く道を教えていただけませんか。",
+   "translation": "Could you tell me how to get to the subway station?",
+   "uses": [
+    {
+     "wordId": "v-行く-いく"
+    },
+    {
+     "wordId": "v-道-みち"
+    },
+    {
+     "wordId": "v-教える-おしえる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #127003"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "ちかてつへいくみちをおしえていただけませんか。",
+   "notes": "Forms in this sentence: 教える → 教えて"
+  },
+  {
+   "id": "tatoeba-137483",
+   "text": "大人だけこの映画が見える。",
+   "translation": "Only adults can see this film.",
+   "uses": [
+    {
+     "wordId": "v-大人-おとな"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #137483"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "おとなだけこのえいががみえる。"
+  },
+  {
+   "id": "tatoeba-139909",
+   "text": "息子は箱から飴を一つ取った。",
+   "translation": "My son took a candy from the box.",
+   "uses": [
+    {
+     "wordId": "v-飴-あめ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #139909"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "むすこははこからあめをひとつとった。"
+  },
+  {
+   "id": "tatoeba-173254",
+   "text": "高い山の頂上は空気が薄い。",
+   "translation": "The air is thin at the top of a high mountain.",
+   "uses": [
+    {
+     "wordId": "v-高い-たかい"
+    },
+    {
+     "wordId": "v-山-やま"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #173254"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "たかいやまのちょうじょうはくうきがうすい。"
+  },
+  {
+   "id": "tatoeba-141880",
+   "text": "先月は、ほとんど雨が降らなかった。",
+   "translation": "We had little rain last month.",
+   "uses": [
+    {
+     "wordId": "v-先月-せんげつ"
+    },
+    {
+     "wordId": "v-雨-あめ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #141880"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "せんげつは、ほとんどあめがふらなかった。"
+  },
+  {
+   "id": "tatoeba-142102",
+   "text": "切符の数は限定されていた。",
+   "translation": "The number of tickets was limited.",
+   "uses": [
+    {
+     "wordId": "v-限定-げんてい"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #142102"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "きっぷのかずはげんていされていた。"
+  },
+  {
+   "id": "tatoeba-142199",
+   "text": "赤ん坊は１日中寝ていた。",
+   "translation": "The baby was sleeping all day long.",
+   "uses": [
+    {
+     "wordId": "v-寝る-ねる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #142199"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "あかんぼうはにちちゅうねていた。",
+   "notes": "Forms in this sentence: 寝る → 寝ていた"
+  },
+  {
+   "id": "tatoeba-143025",
+   "text": "晴れだと思うよ。",
+   "translation": "I think it will be sunny.",
+   "uses": [
+    {
+     "wordId": "v-思う-おもう"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #143025"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "はれだとおもうよ。"
+  },
+  {
+   "id": "tatoeba-143532",
+   "text": "数人の学生がベンチに座り、昼食を食べていた。",
+   "translation": "Some students were sitting on the bench and having lunch.",
+   "uses": [
+    {
+     "wordId": "v-座る-すわる"
+    },
+    {
+     "wordId": "v-食べる-たべる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #143532"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "すうにんのがくせいがベンチにすわり、ちゅうしょくをたべていた。",
+   "notes": "Forms in this sentence: 座る → 座り, 食べる → 食べていた"
+  },
+  {
+   "id": "tatoeba-143709",
+   "text": "水を加えてペースト状になるまでかき回しなさい。",
+   "translation": "Add water and stir to a paste.",
+   "uses": [
+    {
+     "wordId": "v-水-みず"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #143709"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "みずをくわえてペーストじょうになるまでかきまわしなさい。"
+  },
+  {
+   "id": "tatoeba-144266",
+   "text": "人間は神ほど万能ではない。",
+   "translation": "Man is not as almighty as God.",
+   "uses": [
+    {
+     "wordId": "v-神-かみ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #144266"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "にんげんはかみほどばんのうではない。"
+  },
+  {
+   "id": "tatoeba-146385",
+   "text": "焼き魚は好きではありません、ましてや生魚は言うまでもありません。",
+   "translation": "I don't like grilled fish, let alone raw fish.",
+   "uses": [
+    {
+     "wordId": "v-焼き魚-やきざかな"
+    },
+    {
+     "wordId": "v-好き-すき"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #146385"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "やきざかなはすきではありません、ましてやなまざかなはいうまでもありません。"
+  },
+  {
+   "id": "tatoeba-146856",
+   "text": "少しテレビを見てもいいですか。",
+   "translation": "Do you mind if I watch TV for a while?",
+   "uses": [
+    {
+     "wordId": "v-少し-すこし"
+    },
+    {
+     "wordId": "v-見る-みる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #146856"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "すこしテレビをみてもいいですか。",
+   "notes": "Forms in this sentence: 見る → 見て"
+  },
+  {
+   "id": "tatoeba-230433",
+   "text": "あの木の枝に数羽の鳥がとまっている。",
+   "translation": "Some birds are sitting on the branch of that tree.",
+   "uses": [
+    {
+     "wordId": "v-木-き"
+    },
+    {
+     "wordId": "v-止まる-とまる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #230433"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "あのきのえだにすうわのとりがとまっている。",
+   "notes": "Forms in this sentence: 止まる → とまっている"
+  },
+  {
+   "id": "tatoeba-221667",
+   "text": "この事業は金を食う。",
+   "translation": "This job eats money.",
+   "uses": [
+    {
+     "wordId": "v-食う-くう"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #221667"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "このじぎょうはかねをくう。"
+  },
+  {
+   "id": "tatoeba-148966",
+   "text": "車を運転する時はいくら注意してもしすぎることはない。",
+   "translation": "You cannot be too careful when you drive a car.",
+   "uses": [
+    {
+     "wordId": "v-車-くるま"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #148966"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "くるまをうんてんするときはいくらちゅういしてもしすぎることはない。"
+  },
+  {
+   "id": "tatoeba-149053",
+   "text": "車の運転を習っています。",
+   "translation": "I've been learning to drive.",
+   "uses": [
+    {
+     "wordId": "v-習う-ならう"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #149053"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "くるまのうんてんをならっています。",
+   "notes": "Forms in this sentence: 習う → 習っています"
+  },
+  {
+   "id": "tatoeba-149400",
+   "text": "実を言うと、私は彼が好きでないのです。",
+   "translation": "To tell you the truth, I don't love him.",
+   "uses": [
+    {
+     "wordId": "v-好き-すき"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #149400"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "みをいうと、わたしはかれがすきでないのです。"
+  },
+  {
+   "id": "tatoeba-151205",
+   "text": "紙は木から作られる。",
+   "translation": "Paper is made from wood.",
+   "uses": [
+    {
+     "wordId": "v-紙-かみ"
+    },
+    {
+     "wordId": "v-木-き"
+    },
+    {
+     "wordId": "v-作る-つくる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #151205"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "かみはきからつくられる。",
+   "notes": "Forms in this sentence: 作る → 作られる"
+  },
+  {
+   "id": "tatoeba-151817",
+   "text": "私達はじっと押し黙っておはしを使って食事をした。",
+   "translation": "We ate with chopsticks in restrained silence.",
+   "uses": [
+    {
+     "wordId": "v-箸-はし"
+    },
+    {
+     "wordId": "v-使う-つかう"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #151817"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "わたしたちはじっとおしだまっておはしをつかってしょくじをした。",
+   "notes": "Forms in this sentence: 箸 → はし, 使う → 使って"
+  },
+  {
+   "id": "tatoeba-152435",
+   "text": "私は洋食はあまり好きではない。",
+   "translation": "I don't care for foreign food.",
+   "uses": [
+    {
+     "wordId": "v-洋食-ようしょく"
+    },
+    {
+     "wordId": "v-好き-すき"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #152435"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "わたしはようしょくはあまりすきではない。"
+  },
+  {
+   "id": "tatoeba-230415",
+   "text": "あの老人は食べ物に難しい。",
+   "translation": "That old man is a fussy eater.",
+   "uses": [
+    {
+     "wordId": "v-食べ物-たべもの"
+    },
+    {
+     "wordId": "v-難しい-むずかしい"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #230415"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "あのろうじんはたべものにむずかしい。"
+  },
+  {
+   "id": "tatoeba-154716",
+   "text": "私は日本語で苦労している。",
+   "translation": "I have difficulty in Japanese.",
+   "uses": [
+    {
+     "wordId": "v-日本語-にほんご"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #154716"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "わたしはにほんごでくろうしている。"
+  },
+  {
+   "id": "tatoeba-154894",
+   "text": "私は土曜日からここにいます。",
+   "translation": "I've been here since Saturday.",
+   "uses": [
+    {
+     "wordId": "v-土曜日-どようび"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #154894"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "わたしはどようびからここにいます。"
+  },
+  {
+   "id": "tatoeba-155091",
+   "text": "昼はホットドッグを食べたんだ。",
+   "translation": "I ate a hot dog for lunch.",
+   "uses": [
+    {
+     "wordId": "v-昼-ひる"
+    },
+    {
+     "wordId": "v-食べる-たべる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #155091"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "ひるはホットドッグをたべたんだ。",
+   "notes": "Forms in this sentence: 食べる → 食べた"
+  },
+  {
+   "id": "tatoeba-162507",
+   "text": "私の友人の１人が私に会いにきました。",
+   "translation": "A friend of mine came to see me.",
+   "uses": [
+    {
+     "wordId": "v-友人-ゆうじん"
+    },
+    {
+     "wordId": "v-会う-あう"
+    },
+    {
+     "wordId": "v-来る-くる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #162507"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "わたしのゆうじんのひとりがわたしにあいにきました。",
+   "notes": "Forms in this sentence: 会う → 会い, 来る → きました"
+  },
+  {
+   "id": "tatoeba-162716",
+   "text": "私の服は油で汚れていた。",
+   "translation": "My clothes were dirty with oil.",
+   "uses": [
+    {
+     "wordId": "v-油-あぶら"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #162716"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "わたしのふくはあぶらでよごれていた。"
+  },
+  {
+   "id": "tatoeba-236043",
+   "text": "１０時までに来ます。",
+   "translation": "I'll come by 10.",
+   "uses": [
+    {
+     "wordId": "v-来る-くる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #236043"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "じまでにきます。",
+   "notes": "Forms in this sentence: 来る → 来ます"
+  },
+  {
+   "id": "tatoeba-164025",
+   "text": "私の家におばけが出たのは本当だ。",
+   "translation": "It's true that a ghost appeared at my house.",
+   "uses": [
+    {
+     "wordId": "v-家-いえ"
+    },
+    {
+     "wordId": "v-出る-でる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #164025"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "わたしのいえにおばけがでたのはほんとうだ。",
+   "notes": "Forms in this sentence: 出る → 出た"
+  },
+  {
+   "id": "tatoeba-165351",
+   "text": "私たちは梅の花で有名な水戸公園を見に行った。",
+   "translation": "We visited Mito Park, which is famous for its plum blossoms.",
+   "uses": [
+    {
+     "wordId": "v-花-はな"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #165351"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "わたしたちはうめのはなでゆうめいなみとこうえんをみにいった。"
+  },
+  {
+   "id": "tatoeba-169839",
+   "text": "昨日彼がぶらっと立ち寄った。",
+   "translation": "He dropped in on me yesterday.",
+   "uses": [
+    {
+     "wordId": "v-昨日-きのう"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #169839"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "きのうかれがぶらっとたちよった。"
+  },
+  {
+   "id": "tatoeba-170206",
+   "text": "財布の中身をこの袋に空けなさい。",
+   "translation": "Empty the purse into this bag.",
+   "uses": [
+    {
+     "wordId": "v-開ける-あける"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #170206"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "さいふのなかみをこのふくろにあけなさい。",
+   "notes": "Forms in this sentence: 開ける → 空け"
+  },
+  {
+   "id": "tatoeba-172173",
+   "text": "今度の休みはどこへ行くの？",
+   "translation": "Where are you going on your vacation?",
+   "uses": [
+    {
+     "wordId": "v-休み-やすみ"
+    },
+    {
+     "wordId": "v-行く-いく"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #172173"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "こんどのやすみはどこへいくの？"
+  },
+  {
+   "id": "tatoeba-175256",
+   "text": "犬は人間の最も親しい友達である。",
+   "translation": "Dogs are man's closest friends.",
+   "uses": [
+    {
+     "wordId": "v-友達-ともだち"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #175256"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "いぬはにんげんのもっともしたしいともだちである。"
+  },
+  {
+   "id": "tatoeba-175596",
+   "text": "月曜日はいつも憂鬱だ。",
+   "translation": "I always feel blue on Mondays.",
+   "uses": [
+    {
+     "wordId": "v-月曜日-げつようび"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #175596"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "げつようびはいつもゆううつだ。"
+  },
+  {
+   "id": "tatoeba-226648",
+   "text": "お母さん、泳ぎに行ってもいい？",
+   "translation": "Can I go swimming, Mother?",
+   "uses": [
+    {
+     "wordId": "v-行く-いく"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #226648"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "おかあさん、およぎにいってもいい？",
+   "notes": "Forms in this sentence: 行く → 行って"
+  },
+  {
+   "id": "tatoeba-179621",
+   "text": "金曜日の銀行は遅じまいだ。",
+   "translation": "The bank shuts late on Fridays.",
+   "uses": [
+    {
+     "wordId": "v-金曜日-きんようび"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #179621"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "きんようびのぎんこうはおそじまいだ。"
+  },
+  {
+   "id": "tatoeba-233510",
+   "text": "あなたのためにデザートを注文した。",
+   "translation": "I've ordered you some dessert.",
+   "uses": [
+    {
+     "wordId": "v-注文-ちゅうもん"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #233510"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "あなたのためにデザートをちゅうもんした。"
+  },
+  {
+   "id": "tatoeba-183116",
+   "text": "紀元２０２０年までには、この市の人口は倍増しているだろう。",
+   "translation": "By the year 2020, the population of our city will have doubled.",
+   "uses": [
+    {
+     "wordId": "v-人口-じんこう"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #183116"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "きげんねんまでには、このしのじんこうはばいぞうしているだろう。"
+  },
+  {
+   "id": "tatoeba-184049",
+   "text": "寒いからコートを着るべきだ。",
+   "translation": "It's cold so you should wear a coat.",
+   "uses": [
+    {
+     "wordId": "v-寒い-さむい"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #184049"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "さむいからコートをきるべきだ。"
+  },
+  {
+   "id": "tatoeba-184483",
+   "text": "学校ではどんな科目を勉強しますか。",
+   "translation": "What subjects do you study at school?",
+   "uses": [
+    {
+     "wordId": "v-学校-がっこう"
+    },
+    {
+     "wordId": "v-勉強-べんきょう"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #184483"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "がっこうではどんなかもくをべんきょうしますか。"
+  },
+  {
+   "id": "tatoeba-186646",
+   "text": "火曜日に国会が開かれる。",
+   "translation": "The Diet will meet on Tuesday.",
+   "uses": [
+    {
+     "wordId": "v-火曜日-かようび"
+    },
+    {
+     "wordId": "v-開く-ひらく"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #186646"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "かようびにこっかいがひらかれる。",
+   "notes": "Forms in this sentence: 開く → 開かれる"
+  },
+  {
+   "id": "tatoeba-188051",
+   "text": "何か飲み物をいただけますか。",
+   "translation": "May I have something to drink?",
+   "uses": [
+    {
+     "wordId": "v-飲み物-のみもの"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #188051"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "なにかのみものをいただけますか。"
+  },
+  {
+   "id": "tatoeba-189149",
+   "text": "英語はカナダで話されている。",
+   "translation": "English is spoken in Canada.",
+   "uses": [
+    {
+     "wordId": "v-話す-はなす"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #189149"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "えいごはカナダではなされている。",
+   "notes": "Forms in this sentence: 話す → 話されている"
+  },
+  {
+   "id": "tatoeba-189587",
+   "text": "雨のために彼らは気力をそがれた。",
+   "translation": "The rain dampened their spirits.",
+   "uses": [
+    {
+     "wordId": "v-雨-あめ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #189587"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "あめのためにかれらはきりょくをそがれた。"
+  },
+  {
+   "id": "tatoeba-191816",
+   "text": "音楽が好きで、毎日聴いています。",
+   "translation": "I like music, and I listen to it every day.",
+   "uses": [
+    {
+     "wordId": "v-好き-すき"
+    },
+    {
+     "wordId": "v-毎日-まいにち"
+    },
+    {
+     "wordId": "v-聞く-きく"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #191816"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "おんがくがすきで、まいにちきいています。",
+   "notes": "Forms in this sentence: 聞く → 聴いています"
+  },
+  {
+   "id": "tatoeba-191715",
+   "text": "われわれの先生は真の意味で紳士です。",
+   "translation": "Our teacher is a gentleman in the true sense of the word.",
+   "uses": [
+    {
+     "wordId": "v-先生-せんせい"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #191715"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "われわれのせんせいはしんのいみでしんしです。"
+  },
+  {
+   "id": "tatoeba-192022",
+   "text": "わが国の主な農産物は米である。",
+   "translation": "The chief crop of our country is rice.",
+   "uses": [
+    {
+     "wordId": "v-米-こめ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #192022"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "わがくにのおもなのうさんぶつはこめである。"
+  },
+  {
+   "id": "tatoeba-193234",
+   "text": "もっと大きい声で言ってください。",
+   "translation": "Louder, please.",
+   "uses": [
+    {
+     "wordId": "v-大きい-おおきい"
+    },
+    {
+     "wordId": "v-言う-いう"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #193234"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "もっとおおきいこえでいってください。",
+   "notes": "Forms in this sentence: 言う → 言って"
+  },
+  {
+   "id": "tatoeba-195194",
+   "text": "マユコは部屋に入った。",
+   "translation": "Mayuko entered the room.",
+   "uses": [
+    {
+     "wordId": "v-部屋-へや"
+    },
+    {
+     "wordId": "v-入る-はいる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #195194"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "マユコはへやにはいった。",
+   "notes": "Forms in this sentence: 入る → 入った"
+  },
+  {
+   "id": "tatoeba-85518",
+   "text": "鼻が出ているよ。かみなさい。",
+   "translation": "Your nose is running. Blow it.",
+   "uses": [
+    {
+     "wordId": "v-鼻-はな"
+    },
+    {
+     "wordId": "v-出る-でる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #85518"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "はながでているよ。かみなさい。",
+   "notes": "Forms in this sentence: 出る → 出ている"
+  },
+  {
+   "id": "tatoeba-201657",
+   "text": "どうかドアを閉めてくれませんか。",
+   "translation": "Will you please shut the door?",
+   "uses": [
+    {
+     "wordId": "v-閉める-しめる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #201657"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "どうかドアをしめてくれませんか。",
+   "notes": "Forms in this sentence: 閉める → 閉めて"
+  },
+  {
+   "id": "tatoeba-234558",
+   "text": "あいにく店は閉まっていた。",
+   "translation": "Unfortunately, the store was closed.",
+   "uses": [
+    {
+     "wordId": "v-店-みせ"
+    },
+    {
+     "wordId": "v-閉まる-しまる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #234558"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "あいにくみせはしまっていた。",
+   "notes": "Forms in this sentence: 閉まる → 閉まっていた"
+  },
+  {
+   "id": "tatoeba-202171",
+   "text": "テニスをすることは私には簡単だ。",
+   "translation": "Playing tennis is easy for me.",
+   "uses": [
+    {
+     "wordId": "v-簡単-かんたん"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #202171"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "テニスをすることはわたしにはかんたんだ。"
+  },
+  {
+   "id": "tatoeba-202595",
+   "text": "つい彼が病気だということをしゃべってしまった。",
+   "translation": "I've just let slip that he is sick.",
+   "uses": [
+    {
+     "wordId": "v-言う-いう"
+    },
+    {
+     "wordId": "v-喋る-しゃべる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #202595"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "ついかれがびょうきだということをしゃべってしまった。",
+   "notes": "Forms in this sentence: 言う → いう, 喋る → しゃべって"
+  },
+  {
+   "id": "tatoeba-204003",
+   "text": "ダービー競馬の日は２週間後の水曜日だ。",
+   "translation": "Derby Day is Wednesday fortnight.",
+   "uses": [
+    {
+     "wordId": "v-水曜日-すいようび"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #204003"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "ダービーけいばのひはしゅうかんごのすいようびだ。"
+  },
+  {
+   "id": "tatoeba-237462",
+   "text": "留学生も入れるのかしら。",
+   "translation": "Can foreign students be in the club?",
+   "uses": [
+    {
+     "wordId": "v-入れる-いれる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #237462"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "りゅうがくせいもはいれるのかしら。"
+  },
+  {
+   "id": "tatoeba-233985",
+   "text": "あなたが早くよくなるように祈っています。",
+   "translation": "We are hoping for your quick recovery.",
+   "uses": [
+    {
+     "wordId": "v-早く-はやく"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #233985"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "あなたがはやくよくなるようにいのっています。"
+  },
+  {
+   "id": "tatoeba-206562",
+   "text": "その木には実がたわわになっていた。",
+   "translation": "The tree was heavy with fruit.",
+   "uses": [
+    {
+     "wordId": "v-木-き"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #206562"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "そのきにはみがたわわになっていた。"
+  },
+  {
+   "id": "tatoeba-225720",
+   "text": "ぐいと押すとドアは開いた。",
+   "translation": "The door yielded to a strong push.",
+   "uses": [
+    {
+     "wordId": "v-開く-あく"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #225720"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "ぐいとおすとドアはひらいた。",
+   "notes": "Forms in this sentence: 開く → 開いた"
+  },
+  {
+   "id": "tatoeba-207603",
+   "text": "その店は野菜を売っている。",
+   "translation": "The store deals in vegetables.",
+   "uses": [
+    {
+     "wordId": "v-店-みせ"
+    },
+    {
+     "wordId": "v-野菜-やさい"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #207603"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "そのみせはやさいをうっている。"
+  },
+  {
+   "id": "tatoeba-207608",
+   "text": "その店は日曜日は閉まっている。",
+   "translation": "The shop is closed on Sundays.",
+   "uses": [
+    {
+     "wordId": "v-店-みせ"
+    },
+    {
+     "wordId": "v-日曜日-にちようび"
+    },
+    {
+     "wordId": "v-閉まる-しまる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #207608"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "そのみせはにちようびはしまっている。",
+   "notes": "Forms in this sentence: 閉まる → 閉まっている"
+  },
+  {
+   "id": "tatoeba-209437",
+   "text": "その週刊誌は木曜日に出る。",
+   "translation": "The weekly appears on Thursday.",
+   "uses": [
+    {
+     "wordId": "v-木曜日-もくようび"
+    },
+    {
+     "wordId": "v-出る-でる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #209437"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "そのしゅうかんしはもくようびにでる。"
+  },
+  {
+   "id": "tatoeba-232046",
+   "text": "今日は何をしたいですか。",
+   "translation": "What would you like to do today?",
+   "uses": [
+    {
+     "wordId": "v-今日-きょう"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #232046"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "きょうはなにをしたいですか。"
+  },
+  {
+   "id": "tatoeba-210021",
+   "text": "その試合は何時に始まりますか。",
+   "translation": "What time does the game start?",
+   "uses": [
+    {
+     "wordId": "v-始まる-はじまる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #210021"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "そのしあいはなんじにはじまりますか。",
+   "notes": "Forms in this sentence: 始まる → 始まります"
+  },
+  {
+   "id": "tatoeba-211013",
+   "text": "その犬に毎日食べ物をやって下さい。",
+   "translation": "Please feed the dog every day.",
+   "uses": [
+    {
+     "wordId": "v-毎日-まいにち"
+    },
+    {
+     "wordId": "v-食べ物-たべもの"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #211013"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "そのいぬにまいにちたべものをやってください。"
+  },
+  {
+   "id": "tatoeba-211540",
+   "text": "その機械は今遊んでいる。",
+   "translation": "The machine is lying idle.",
+   "uses": [
+    {
+     "wordId": "v-遊ぶ-あそぶ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #211540"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "そのきかいはいまあそんでいる。",
+   "notes": "Forms in this sentence: 遊ぶ → 遊んでいる"
+  },
+  {
+   "id": "tatoeba-211564",
+   "text": "その机はメグには小さすぎる。",
+   "translation": "The desk is too small for Meg.",
+   "uses": [
+    {
+     "wordId": "v-小さい-ちいさい"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #211564"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "そのつくえはメグにはちいさすぎる。",
+   "notes": "Forms in this sentence: 小さい → 小さ"
+  },
+  {
+   "id": "tatoeba-211955",
+   "text": "その火山は溶岩を流し出した。",
+   "translation": "The volcano poured molten rock.",
+   "uses": [
+    {
+     "wordId": "v-火山-かざん"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #211955"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "そのかざんはようがんをながしだした。"
+  },
+  {
+   "id": "tatoeba-213862",
+   "text": "そうすればやがて運が開けるでしょう。",
+   "translation": "And soon your luck will turn for the better.",
+   "uses": [
+    {
+     "wordId": "v-開ける-ひらける"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #213862"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "そうすればやがてうんがあけるでしょう。"
+  },
+  {
+   "id": "tatoeba-215035",
+   "text": "スープは熱いうちに召し上がって下さい。",
+   "translation": "Eat your soup while it is hot.",
+   "uses": [
+    {
+     "wordId": "v-熱い-あつい"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #215035"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "スープはあついうちにめしあがってください。"
+  },
+  {
+   "id": "tatoeba-215403",
+   "text": "ジョンはステージで何を歌いましたか。",
+   "translation": "What did John sing on the stage?",
+   "uses": [
+    {
+     "wordId": "v-歌う-うたう"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #215403"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "ジョンはステージでなにをうたいましたか。",
+   "notes": "Forms in this sentence: 歌う → 歌いました"
+  },
+  {
+   "id": "tatoeba-215457",
+   "text": "ジョンのことが新聞に出ていた。",
+   "translation": "John was mentioned in the paper.",
+   "uses": [
+    {
+     "wordId": "v-新聞-しんぶん"
+    },
+    {
+     "wordId": "v-出る-でる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #215457"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "ジョンのことがしんぶんにでていた。",
+   "notes": "Forms in this sentence: 出る → 出ていた"
+  },
+  {
+   "id": "tatoeba-215623",
+   "text": "ジョーダンさんは彼の隣に座った。",
+   "translation": "Mr Jordan sat down beside him.",
+   "uses": [
+    {
+     "wordId": "v-隣-となり"
+    },
+    {
+     "wordId": "v-座る-すわる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #215623"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "ジョーダンさんはかれのとなりにすわった。",
+   "notes": "Forms in this sentence: 座る → 座った"
+  },
+  {
+   "id": "tatoeba-216089",
+   "text": "しばらく電話を切らずにお待ちください。",
+   "translation": "Please hold the line a moment.",
+   "uses": [
+    {
+     "wordId": "v-待つ-まつ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #216089"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "しばらくでんわをきらずにおまちください。",
+   "notes": "Forms in this sentence: 待つ → お待ち"
+  },
+  {
+   "id": "tatoeba-216490",
+   "text": "ジェーンはときどき学校まで走っていく。",
+   "translation": "Jane sometimes runs to school.",
+   "uses": [
+    {
+     "wordId": "v-時々-ときどき"
+    },
+    {
+     "wordId": "v-学校-がっこう"
+    },
+    {
+     "wordId": "v-走る-はしる"
+    },
+    {
+     "wordId": "v-行く-いく"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #216490"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "ジェーンはときどきがっこうまではしっていく。",
+   "notes": "Forms in this sentence: 時々 → ときどき, 走る → 走って, 行く → いく"
+  },
+  {
+   "id": "tatoeba-235316",
+   "text": "３時はお茶にしよう。",
+   "translation": "Let's have tea at 3:00.",
+   "uses": [
+    {
+     "wordId": "v-お茶-おちゃ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #235316"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "じはおちゃにしよう。"
+  },
+  {
+   "id": "tatoeba-218537",
+   "text": "これはバーゲン商品なので定価よりやすくなっているんじゃないですか。",
+   "translation": "Aren't you selling this at a discount price?",
+   "uses": [
+    {
+     "wordId": "v-安い-やすい"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #218537"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "これはバーゲンしょうひんなのでていかよりやすくなっているんじゃないですか。",
+   "notes": "Forms in this sentence: 安い → やすく"
+  },
+  {
+   "id": "tatoeba-219269",
+   "text": "この薬を飲まなければ行けませんか。",
+   "translation": "Must I take this medicine?",
+   "uses": [
+    {
+     "wordId": "v-飲む-のむ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #219269"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "このくすりをのまなければいけませんか。",
+   "notes": "Forms in this sentence: 飲む → 飲ま"
+  },
+  {
+   "id": "tatoeba-223559",
+   "text": "このチョッキは前が合わない。",
+   "translation": "This waistcoat won't meet at the front.",
+   "uses": [
+    {
+     "wordId": "v-合う-あう"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #223559"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "このチョッキはまえがあわない。",
+   "notes": "Forms in this sentence: 合う → 合わない"
+  },
+  {
+   "id": "tatoeba-220315",
+   "text": "この動物は日本語で何と言いますか。",
+   "translation": "What do you call this animal in Japanese?",
+   "uses": [
+    {
+     "wordId": "v-日本語-にほんご"
+    },
+    {
+     "wordId": "v-言う-いう"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #220315"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "このどうぶつはにほんごでなんといいますか。",
+   "notes": "Forms in this sentence: 言う → 言います"
+  },
+  {
+   "id": "tatoeba-220579",
+   "text": "この地方の名物料理がありますか。",
+   "translation": "Do you have any regional dishes?",
+   "uses": [
+    {
+     "wordId": "v-名物-めいぶつ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #220579"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "このちほうのめいぶつりょうりがありますか。"
+  },
+  {
+   "id": "tatoeba-222190",
+   "text": "この鶏の唐揚げをそのままにしておくのですか。",
+   "translation": "Are you going to let this fried chicken go begging?",
+   "uses": [
+    {
+     "wordId": "v-唐揚げ-からあげ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #222190"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "このにわとりのとうあげをそのままにしておくのですか。"
+  },
+  {
+   "id": "tatoeba-222600",
+   "text": "この学校はたくさんの生徒がいます。",
+   "translation": "This school has many students.",
+   "uses": [
+    {
+     "wordId": "v-学校-がっこう"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #222600"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "このがっこうはたくさんのせいとがいます。"
+  },
+  {
+   "id": "tatoeba-222850",
+   "text": "この夏最高の暑さだ。",
+   "translation": "It is the hottest this summer.",
+   "uses": [
+    {
+     "wordId": "v-暑い-あつい"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #222850"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "このなつさいこうのあつさだ。",
+   "notes": "Forms in this sentence: 暑い → 暑"
+  },
+  {
+   "id": "tatoeba-223406",
+   "text": "このネクタイにしましょう、一番よさそうだから。",
+   "translation": "I will take this tie, as it seems to be the best.",
+   "uses": [
+    {
+     "wordId": "v-一番-いちばん"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #223406"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "このネクタイにしましょう、いちばんよさそうだから。"
+  },
+  {
+   "id": "tatoeba-223564",
+   "text": "このチーズはピリッとした味がする。",
+   "translation": "This cheese has a sharp taste.",
+   "uses": [
+    {
+     "wordId": "v-味-あじ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #223564"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "このチーズはピリッとしたあじがする。"
+  },
+  {
+   "id": "tatoeba-223651",
+   "text": "このスープは塩が少し足りない。",
+   "translation": "This soup wants a bit of salt.",
+   "uses": [
+    {
+     "wordId": "v-塩-しお"
+    },
+    {
+     "wordId": "v-少し-すこし"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #223651"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "このスープはしおがすこしたりない。"
+  },
+  {
+   "id": "tatoeba-224509",
+   "text": "ここにあなたの名前をかいてくれませんか。",
+   "translation": "Would you please write your name here?",
+   "uses": [
+    {
+     "wordId": "v-名前-なまえ"
+    },
+    {
+     "wordId": "v-書く-かく"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #224509"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "ここにあなたのなまえをかいてくれませんか。",
+   "notes": "Forms in this sentence: 書く → かいて"
+  },
+  {
+   "id": "tatoeba-225005",
+   "text": "こうして私はいつも魚を料理する。",
+   "translation": "This is how I usually cook fish.",
+   "uses": [
+    {
+     "wordId": "v-魚-さかな"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #225005"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "こうしてわたしはいつもさかなをりょうりする。"
+  },
+  {
+   "id": "tatoeba-225128",
+   "text": "ケンは自転車を白く塗りました。",
+   "translation": "Ken painted his bicycle white.",
+   "uses": [
+    {
+     "wordId": "v-自転車-じてんしゃ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #225128"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "ケンはじてんしゃをしろくぬりました。"
+  },
+  {
+   "id": "tatoeba-225203",
+   "text": "ケンが使っている机はもう古い。",
+   "translation": "The desk that Ken uses is old.",
+   "uses": [
+    {
+     "wordId": "v-使う-つかう"
+    },
+    {
+     "wordId": "v-古い-ふるい"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #225203"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "ケンがつかっているつくえはもうふるい。",
+   "notes": "Forms in this sentence: 使う → 使っている"
+  },
+  {
+   "id": "tatoeba-225459",
+   "text": "クリスマスは特別な休日だ。",
+   "translation": "Christmas is a special holiday.",
+   "uses": [
+    {
+     "wordId": "v-休日-きゅうじつ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #225459"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "クリスマスはとくべつなきゅうじつだ。"
+  },
+  {
+   "id": "tatoeba-225480",
+   "text": "クリスマスが近くなってきた。",
+   "translation": "Christmas is fast approaching.",
+   "uses": [
+    {
+     "wordId": "v-近い-ちかい"
+    },
+    {
+     "wordId": "v-来る-くる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #225480"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "クリスマスがちかくなってきた。",
+   "notes": "Forms in this sentence: 近い → 近く, 来る → きた"
+  },
+  {
+   "id": "tatoeba-225536",
+   "text": "グランド・セントラル駅までやってください。",
+   "translation": "Grand Central Station, please.",
+   "uses": [
+    {
+     "wordId": "v-駅-えき"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #225536"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "グランド・セントラルえきまでやってください。"
+  },
+  {
+   "id": "tatoeba-226268",
+   "text": "かなり多くのアメリカ人が寿司を好む。",
+   "translation": "Quite a few Americans like sushi.",
+   "uses": [
+    {
+     "wordId": "v-多く-おおく"
+    },
+    {
+     "wordId": "v-寿司-すし"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #226268"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "かなりおおくのアメリカじんがすしをこのむ。"
+  },
+  {
+   "id": "tatoeba-235061",
+   "text": "６時ごろ起きた。",
+   "translation": "I got up at about six.",
+   "uses": [
+    {
+     "wordId": "v-起きる-おきる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #235061"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "ろくじごろおきた。",
+   "notes": "Forms in this sentence: 起きる → 起きた"
+  },
+  {
+   "id": "tatoeba-230537",
+   "text": "あの店はサービスが良い。",
+   "translation": "That store gives good service.",
+   "uses": [
+    {
+     "wordId": "v-店-みせ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #230537"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "あのみせはサービスがよい。"
+  },
+  {
+   "id": "tatoeba-231083",
+   "text": "あの橋は大変美しい。",
+   "translation": "That bridge is very beautiful.",
+   "uses": [
+    {
+     "wordId": "v-橋-はし"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #231083"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "あのはしはたいへんうつくしい。"
+  },
+  {
+   "id": "tatoeba-231522",
+   "text": "あなたは夜よく寝れませんか。",
+   "translation": "Don't you sleep well at night?",
+   "uses": [
+    {
+     "wordId": "v-夜-よる"
+    },
+    {
+     "wordId": "v-寝る-ねる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #231522"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "あなたはよるよくねれませんか。",
+   "notes": "Forms in this sentence: 寝る → 寝れません"
+  },
+  {
+   "id": "tatoeba-231584",
+   "text": "歩いて行きますか？それともバスで行きますか？",
+   "translation": "Will you go on foot or by bus?",
+   "uses": [
+    {
+     "wordId": "v-歩く-あるく"
+    },
+    {
+     "wordId": "v-行く-いく"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #231584"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "あるいていきますか？それともバスでいきますか？",
+   "notes": "Forms in this sentence: 歩く → 歩いて, 行く → 行きます"
+  },
+  {
+   "id": "tatoeba-231991",
+   "text": "あなたは始発電車に間にあいましたか。",
+   "translation": "Did you catch the first train?",
+   "uses": [
+    {
+     "wordId": "v-電車-でんしゃ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #231991"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "あなたはしはつでんしゃにまにあいましたか。"
+  },
+  {
+   "id": "tatoeba-232163",
+   "text": "あなたは外国の本を持っていますか。",
+   "translation": "Do you have any foreign books?",
+   "uses": [
+    {
+     "wordId": "v-外国-がいこく"
+    },
+    {
+     "wordId": "v-本-ほん"
+    },
+    {
+     "wordId": "v-持つ-もつ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #232163"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "あなたはがいこくのほんをもっていますか。",
+   "notes": "Forms in this sentence: 持つ → 持っています"
+  },
+  {
+   "id": "tatoeba-232218",
+   "text": "あなたは何回京都を訪れましたか。",
+   "translation": "How often did you visit Kyoto?",
+   "uses": [
+    {
+     "wordId": "v-京都-きょうと"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #232218"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "あなたはなんかいきょうとをおとずれましたか。"
+  },
+  {
+   "id": "tatoeba-232470",
+   "text": "あなたはどのくらいの間、神戸に住んでいますか。",
+   "translation": "How long have you lived in Kobe?",
+   "uses": [
+    {
+     "wordId": "v-住む-すむ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #232470"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "あなたはどのくらいのま、こうべにすんでいますか。",
+   "notes": "Forms in this sentence: 住む → 住んでいます"
+  },
+  {
+   "id": "tatoeba-232498",
+   "text": "どうやってそのお金を手に入れたんですか。",
+   "translation": "How did you come by the money?",
+   "uses": [
+    {
+     "wordId": "v-お金-おかね"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #232498"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "どうやってそのおかねをてにいれたんですか。"
+  },
+  {
+   "id": "tatoeba-233175",
+   "text": "あなたの新しい車は調子よく動いていますか。",
+   "translation": "Is your new car behaving well?",
+   "uses": [
+    {
+     "wordId": "v-新しい-あたらしい"
+    },
+    {
+     "wordId": "v-車-くるま"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #233175"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "あなたのあたらしいくるまはちょうしよくうごいていますか。"
+  },
+  {
+   "id": "tatoeba-233420",
+   "text": "あなたの家族はきっと親切でしょう。",
+   "translation": "Your family must be very nice.",
+   "uses": [
+    {
+     "wordId": "v-家族-かぞく"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #233420"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "あなたのかぞくはきっとしんせつでしょう。"
+  },
+  {
+   "id": "tatoeba-233758",
+   "text": "あなたには何人子供がいますか。",
+   "translation": "How many children do you have?",
+   "uses": [
+    {
+     "wordId": "v-子供-こども"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #233758"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "あなたにはなんにんこどもがいますか。"
+  },
+  {
+   "id": "tatoeba-233856",
+   "text": "あなたと一緒にいて楽しかった。",
+   "translation": "I really enjoyed your company.",
+   "uses": [
+    {
+     "wordId": "v-楽しい-たのしい"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #233856"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "あなたといっしょにいてたのしかった。",
+   "notes": "Forms in this sentence: 楽しい → 楽しかった"
+  },
+  {
+   "id": "tatoeba-233962",
+   "text": "あなたが日本人だと私は思っていた。",
+   "translation": "I thought you were Japanese.",
+   "uses": [
+    {
+     "wordId": "v-日本人-にほんじん"
+    },
+    {
+     "wordId": "v-思う-おもう"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #233962"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "あなたがにっぽんじんだとわたしはおもっていた。",
+   "notes": "Forms in this sentence: 思う → 思っていた"
+  },
+  {
+   "id": "tatoeba-234309",
+   "text": "あとで起こったことはなお悪かった。",
+   "translation": "What followed was still worse.",
+   "uses": [
+    {
+     "wordId": "v-後で-あとで"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #234309"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "あとでおこったことはなおわるかった。",
+   "notes": "Forms in this sentence: 後で → あとで"
+  },
+  {
+   "id": "tatoeba-234469",
+   "text": "あしたは一日中ひまです。",
+   "translation": "I'll be free all day tomorrow.",
+   "uses": [
+    {
+     "wordId": "v-明日-あした"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #234469"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "あしたはいちにちじゅうひまです。",
+   "notes": "Forms in this sentence: 明日 → あした"
+  },
+  {
+   "id": "tatoeba-234633",
+   "text": "あいつはのらりくらりの仕事にお忙しい事だ。",
+   "translation": "He is busy loafing on the job.",
+   "uses": [
+    {
+     "wordId": "v-仕事-しごと"
+    },
+    {
+     "wordId": "v-忙しい-いそがしい"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #234633"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "あいつはのらりくらりのしごとにおいそがしいことだ。"
+  },
+  {
+   "id": "tatoeba-234867",
+   "text": "B2出口から地上に出てください。",
+   "translation": "Go up to ground level at exit B2.",
+   "uses": [
+    {
+     "wordId": "v-出口-でぐち"
+    },
+    {
+     "wordId": "v-出る-でる"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #234867"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "びーでぐちからちじょうにでてください。",
+   "notes": "Forms in this sentence: 出る → 出て"
+  },
+  {
+   "id": "tatoeba-235070",
+   "text": "６月にしては寒い朝だ。",
+   "translation": "It is a cold morning for June.",
+   "uses": [
+    {
+     "wordId": "v-寒い-さむい"
+    },
+    {
+     "wordId": "v-朝-あさ"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #235070"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "ろくがつにしてはさむいあさだ。"
+  },
+  {
+   "id": "tatoeba-235238",
+   "text": "４０万ガロンの石油がパイプラインから溢れ出た。",
+   "translation": "400,000 gallons of oil have spilled out of the pipeline.",
+   "uses": [
+    {
+     "wordId": "v-万-まん"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #235238"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "まんガロンのせきゆがパイプラインからあふれでた。"
+  },
+  {
+   "id": "tatoeba-235814",
+   "text": "１階は本屋に貸してあった。",
+   "translation": "The downstairs was rented to a bookseller.",
+   "uses": [
+    {
+     "wordId": "v-本屋-ほんや"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #235814"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "かいはほんやにかしてあった。"
+  },
+  {
+   "id": "tatoeba-236056",
+   "text": "１０時４０分から１１時まで休み時間です。",
+   "translation": "We have a break from 10:40 to 11:00.",
+   "uses": [
+    {
+     "wordId": "v-分-ふん"
+    },
+    {
+     "wordId": "v-休み-やすみ"
+    },
+    {
+     "wordId": "v-時間-じかん"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #236056"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "じふんからじまでやすみじかんです。"
+  },
+  {
+   "id": "tatoeba-237276",
+   "text": "「あなたは仕事が気に入っていると思います」「いやそれどころか、嫌いです」",
+   "translation": "\"I think you like your job.\" \"On the contrary, I hate it.\"",
+   "uses": [
+    {
+     "wordId": "v-仕事-しごと"
+    },
+    {
+     "wordId": "v-思う-おもう"
+    }
+   ],
+   "origin": {
+    "kind": "reference",
+    "detail": "Tatoeba #237276"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z",
+   "reading": "「あなたはしごとがきにいっているとおもいます」「いやそれどころか、きらいです」",
+   "notes": "Forms in this sentence: 思う → 思います"
   }
  ],
  "notes": [],
@@ -9120,6 +14401,171 @@
     "word:v-開く-あく",
     "word:v-開ける-あける"
    ]
+  },
+  {
+   "id": "kanjium-今-会",
+   "type": "looks-similar",
+   "members": [
+    "kanji:k-今",
+    "kanji:k-会"
+   ],
+   "status": "proposed",
+   "origin": {
+    "kind": "suggested",
+    "detail": "Kanjium lookalikes"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z"
+  },
+  {
+   "id": "kanjium-会-合",
+   "type": "looks-similar",
+   "members": [
+    "kanji:k-会",
+    "kanji:k-合"
+   ],
+   "status": "proposed",
+   "origin": {
+    "kind": "suggested",
+    "detail": "Kanjium lookalikes"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z"
+  },
+  {
+   "id": "kanjium-今-合",
+   "type": "looks-similar",
+   "members": [
+    "kanji:k-今",
+    "kanji:k-合"
+   ],
+   "status": "proposed",
+   "origin": {
+    "kind": "suggested",
+    "detail": "Kanjium lookalikes"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z"
+  },
+  {
+   "id": "kanjium-入-八",
+   "type": "looks-similar",
+   "members": [
+    "kanji:k-入",
+    "kanji:k-八"
+   ],
+   "status": "proposed",
+   "origin": {
+    "kind": "suggested",
+    "detail": "Kanjium lookalikes"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z"
+  },
+  {
+   "id": "kanjium-人-八",
+   "type": "looks-similar",
+   "members": [
+    "kanji:k-人",
+    "kanji:k-八"
+   ],
+   "status": "proposed",
+   "origin": {
+    "kind": "suggested",
+    "detail": "Kanjium lookalikes"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z"
+  },
+  {
+   "id": "kanjium-字-学",
+   "type": "looks-similar",
+   "members": [
+    "kanji:k-字",
+    "kanji:k-学"
+   ],
+   "status": "proposed",
+   "origin": {
+    "kind": "suggested",
+    "detail": "Kanjium lookalikes"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z"
+  },
+  {
+   "id": "kanjium-休-本",
+   "type": "looks-similar",
+   "members": [
+    "kanji:k-休",
+    "kanji:k-本"
+   ],
+   "status": "proposed",
+   "origin": {
+    "kind": "suggested",
+    "detail": "Kanjium lookalikes"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z"
+  },
+  {
+   "id": "kanjium-千-牛",
+   "type": "looks-similar",
+   "members": [
+    "kanji:k-千",
+    "kanji:k-牛"
+   ],
+   "status": "proposed",
+   "origin": {
+    "kind": "suggested",
+    "detail": "Kanjium lookalikes"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z"
+  },
+  {
+   "id": "kanjium-定-足",
+   "type": "looks-similar",
+   "members": [
+    "kanji:k-定",
+    "kanji:k-足"
+   ],
+   "status": "proposed",
+   "origin": {
+    "kind": "suggested",
+    "detail": "Kanjium lookalikes"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z"
+  },
+  {
+   "id": "kanjium-小-少",
+   "type": "looks-similar",
+   "members": [
+    "kanji:k-小",
+    "kanji:k-少"
+   ],
+   "status": "proposed",
+   "origin": {
+    "kind": "suggested",
+    "detail": "Kanjium lookalikes"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z"
+  },
+  {
+   "id": "kanjium-古-早",
+   "type": "looks-similar",
+   "members": [
+    "kanji:k-古",
+    "kanji:k-早"
+   ],
+   "status": "proposed",
+   "origin": {
+    "kind": "suggested",
+    "detail": "Kanjium lookalikes"
+   },
+   "created": "2026-11-24T23:14:13.471Z",
+   "updated": "2026-11-24T23:14:13.471Z"
   }
  ],
  "ratings": [],
